@@ -1,0 +1,2569 @@
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024/Arch Linux) (preloaded format=xelatex 2024.11.12)  10 FEB 2025 20:48
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**chapter2.tex
+(./chapter2.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-02-20>
+! Undefined control sequence.
+l.1 \chapter
+            {المعيار}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \chapter{ا
+              لمعيار}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no م ("645) in font nullfont!
+Missing character: There is no ع ("639) in font nullfont!
+Missing character: There is no ي ("64A) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ر ("631) in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 1--2
+[] 
+ []
+
+! Undefined control sequence.
+l.3 \section
+            {تعاريف و أمثلة}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 \section{ت
+              عاريف و أمثلة}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no ت ("62A) in font nullfont!
+Missing character: There is no ع ("639) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ر ("631) in font nullfont!
+Missing character: There is no ي ("64A) in font nullfont!
+Missing character: There is no ف ("641) in font nullfont!
+Missing character: There is no و ("648) in font nullfont!
+Missing character: There is no أ ("623) in font nullfont!
+Missing character: There is no م ("645) in font nullfont!
+Missing character: There is no ث ("62B) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ة ("629) in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 3--4
+[]
+ []
+
+
+! LaTeX Error: Environment definition undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 \begin{definition}
+                      [\cite{abstract_algebra2}]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 \begin{definition}[
+                       \cite{abstract_algebra2}]
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no [ ("5B) in font nullfont!
+Missing character: There is no [ ("5B) in font nullfont!
+\citation{abstract_algebra2}
+! Undefined control sequence.
+<write> ...: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .^^J
+l.5 \begin{definition}[\cite{abstract_algebra2}
+                                               ]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `abstract_algebra2' on page  undefined on input line 5.
+
+
+Missing character: There is no ] ("5D) in font nullfont!
+Missing character: There is no ] ("5D) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ت ("62A) in font nullfont!
+Missing character: There is no ك ("643) in font nullfont!
+Missing character: There is no ن ("646) in font nullfont!
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 6.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 6.
+Missing character: There is no ح ("62D) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ق ("642) in font nullfont!
+Missing character: There is no ة ("629) in font nullfont!
+Missing character: There is no ( ("28) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ي ("64A) in font nullfont!
+Missing character: There is no س ("633) in font nullfont!
+Missing character: There is no م ("645) in font nullfont!
+Missing character: There is no ن ("646) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ض ("636) in font nullfont!
+Missing character: There is no ر ("631) in font nullfont!
+Missing character: There is no و ("648) in font nullfont!
+Missing character: There is no ر ("631) in font nullfont!
+Missing character: There is no ي ("64A) in font nullfont!
+Missing character: There is no ت ("62A) in font nullfont!
+Missing character: There is no ب ("628) in font nullfont!
+Missing character: There is no د ("62F) in font nullfont!
+Missing character: There is no ي ("64A) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ي ("64A) in font nullfont!
+Missing character: There is no ة ("629) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no و ("648) in font nullfont!
+Missing character: There is no ت ("62A) in font nullfont!
+Missing character: There is no م ("645) in font nullfont!
+Missing character: There is no ت ("62A) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ك ("643) in font nullfont!
+Missing character: There is no م ("645) in font nullfont!
+Missing character: There is no ح ("62D) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ي ("64A) in font nullfont!
+Missing character: There is no د ("62F) in font nullfont!
+Missing character: There is no ) ("29) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no م ("645) in font nullfont!
+Missing character: There is no ع ("639) in font nullfont!
+Missing character: There is no ي ("64A) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ر ("631) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ي ("64A) in font nullfont!
+Missing character: There is no س ("633) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ر ("631) in font nullfont!
+Missing character: There is no ي ("64A) in font nullfont!
+Missing character: There is no ع ("639) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ى ("649) in font nullfont!
+Missing character: There is no ه ("647) in font nullfont!
+Missing character: There is no و ("648) in font nullfont!
+Missing character: There is no م ("645) in font nullfont!
+Missing character: There is no ج ("62C) in font nullfont!
+Missing character: There is no م ("645) in font nullfont!
+Missing character: There is no و ("648) in font nullfont!
+Missing character: There is no ع ("639) in font nullfont!
+Missing character: There is no ة ("629) in font nullfont!
+Missing character: There is no م ("645) in font nullfont!
+Missing character: There is no ع ("639) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ش ("634) in font nullfont!
+Missing character: There is no ر ("631) in font nullfont!
+Missing character: There is no و ("648) in font nullfont!
+Missing character: There is no ط ("637) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ت ("62A) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ي ("64A) in font nullfont!
+Missing character: There is no ة ("629) in font nullfont!
+
+Overfull \hbox (25.43pt too wide) in paragraph at lines 5--7
+[][]
+ []
+
+
+Overfull \hbox (7.67015pt too wide) in paragraph at lines 5--7
+\OML/cmm/m/it/10 R$
+ []
+
+
+Overfull \hbox (7.67015pt too wide) in paragraph at lines 5--7
+\OML/cmm/m/it/10 R$
+ []
+
+
+Overfull \hbox (10.79166pt too wide) in paragraph at lines 5--7
+\OML/cmm/m/it/10 M$
+ []
+
+Missing character: There is no ع ("639) in font nullfont!
+Missing character: There is no م ("645) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ي ("64A) in font nullfont!
+Missing character: There is no ة ("629) in font nullfont!
+Missing character: There is no ث ("62B) in font nullfont!
+Missing character: There is no ن ("646) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ئ ("626) in font nullfont!
+Missing character: There is no ي ("64A) in font nullfont!
+Missing character: There is no ة ("629) in font nullfont!
+Missing character: There is no + ("2B) in font nullfont!
+Missing character: There is no ع ("639) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ى ("649) in font nullfont!
+Missing character: There is no ب ("628) in font nullfont!
+Missing character: There is no ح ("62D) in font nullfont!
+Missing character: There is no ي ("64A) in font nullfont!
+Missing character: There is no ث ("62B) in font nullfont!
+Missing character: There is no ز ("632) in font nullfont!
+Missing character: There is no م ("645) in font nullfont!
+Missing character: There is no ر ("631) in font nullfont!
+Missing character: There is no ة ("629) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ب ("628) in font nullfont!
+Missing character: There is no د ("62F) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ي ("64A) in font nullfont!
+Missing character: There is no ة ("629) in font nullfont!
+
+Overfull \hbox (10.79166pt too wide) in paragraph at lines 8--9
+\OML/cmm/m/it/10 M$
+ []
+
+
+Overfull \hbox (30.23611pt too wide) in paragraph at lines 8--9
+\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 M; \OT1/cmr/m/n/10 +)$ 
+ []
+
+Missing character: There is no ت ("62A) in font nullfont!
+Missing character: There is no أ ("623) in font nullfont!
+Missing character: There is no ث ("62B) in font nullfont!
+Missing character: There is no ي ("64A) in font nullfont!
+Missing character: There is no ر ("631) in font nullfont!
+Missing character: There is no ع ("639) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ى ("649) in font nullfont!
+Missing character: There is no ( ("28) in font nullfont!
+Missing character: There is no د ("62F) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ة ("629) in font nullfont!
+Missing character: There is no ) ("29) in font nullfont!
+Missing character: There is no ي ("64A) in font nullfont!
+Missing character: There is no ر ("631) in font nullfont!
+Missing character: There is no م ("645) in font nullfont!
+Missing character: There is no ز ("632) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ه ("647) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ع ("639) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no د ("62F) in font nullfont!
+Missing character: There is no ة ("629) in font nullfont!
+Missing character: There is no ب ("628) in font nullfont!
+Missing character: There is no ـ ("640) in font nullfont!
+Missing character: There is no ـ ("640) in font nullfont!
+Missing character: There is no , ("2C) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ك ("643) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no و ("648) in font nullfont!
+Missing character: There is no و ("648) in font nullfont!
+Missing character: There is no ت ("62A) in font nullfont!
+Missing character: There is no ح ("62D) in font nullfont!
+Missing character: There is no ق ("642) in font nullfont!
+Missing character: There is no ق ("642) in font nullfont!
+
+! LaTeX Error: Environment tasks undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.10 ^^I^^I\begin{tasks}
+                        
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+l.11 ^^I^^I^^I\task
+                    $(r+s)m = rm + rs$ لكل $r,s\in R$ و $m\in M$.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ك ("643) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no و ("648) in font nullfont!
+Missing character: There is no . ("2E) in font nullfont!
+! Undefined control sequence.
+l.12 ^^I^^I^^I\task
+                    $(rs)m=r(sm)$ لكل $r,s\in R$ و $m\in M$.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ك ("643) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no و ("648) in font nullfont!
+Missing character: There is no . ("2E) in font nullfont!
+! Undefined control sequence.
+l.13 ^^I^^I^^I\task
+                    $r(m+n) = rm+rn$ لكل $r\in R$ و $m,n\in M$.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ك ("643) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no و ("648) in font nullfont!
+Missing character: There is no . ("2E) in font nullfont!
+
+! LaTeX Error: \begin{enumerate} on input line 7 ended by \end{tasks}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14 ^^I^^I\end{tasks}
+                      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ذ ("630) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ح ("62D) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ق ("642) in font nullfont!
+Missing character: There is no ة ("629) in font nullfont!
+Missing character: There is no ت ("62A) in font nullfont!
+Missing character: There is no م ("645) in font nullfont!
+Missing character: There is no ت ("62A) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ك ("643) in font nullfont!
+Missing character: There is no م ("645) in font nullfont!
+Missing character: There is no ح ("62D) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ي ("64A) in font nullfont!
+Missing character: There is no د ("62F) in font nullfont!
+Missing character: There is no 1 ("31) in font nullfont!
+Missing character: There is no ن ("646) in font nullfont!
+Missing character: There is no ض ("636) in font nullfont!
+Missing character: There is no ي ("64A) in font nullfont!
+Missing character: There is no ف ("641) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ش ("634) in font nullfont!
+Missing character: There is no ر ("631) in font nullfont!
+Missing character: There is no ط ("637) in font nullfont!
+
+! LaTeX Error: Environment tasks undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ^^I^^I\begin{tasks}
+                        [resume]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Missing character: There is no [ ("5B) in font nullfont!
+Missing character: There is no r ("72) in font nullfont!
+Missing character: There is no e ("65) in font nullfont!
+Missing character: There is no s ("73) in font nullfont!
+Missing character: There is no u ("75) in font nullfont!
+Missing character: There is no m ("6D) in font nullfont!
+Missing character: There is no e ("65) in font nullfont!
+Missing character: There is no ] ("5D) in font nullfont!
+! Undefined control sequence.
+l.17 ^^I^^I^^I\task
+                    $1m = m$ لكل $m\in M$.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ك ("643) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no . ("2E) in font nullfont!
+
+! LaTeX Error: \begin{enumerate} on input line 7 ended by \end{tasks}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18 ^^I^^I\end{tasks}
+                      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (7.67015pt too wide) in paragraph at lines 9--19
+\OML/cmm/m/it/10 R$
+ []
+
+
+Overfull \hbox (10.79166pt too wide) in paragraph at lines 9--19
+\OML/cmm/m/it/10 M$
+ []
+
+
+Overfull \hbox (15.44795pt too wide) in paragraph at lines 9--19
+\OML/cmm/m/it/10 R \OMS/cmsy/m/n/10 ^^B
+ []
+
+
+Overfull \hbox (23.56938pt too wide) in paragraph at lines 9--19
+\OML/cmm/m/it/10 M \OMS/cmsy/m/n/10 !
+ []
+
+
+Overfull \hbox (10.79166pt too wide) in paragraph at lines 9--19
+\OML/cmm/m/it/10 M$
+ []
+
+
+Overfull \hbox (13.5695pt too wide) in paragraph at lines 9--19
+\OML/cmm/m/it/10 rm$
+ []
+
+
+Overfull \hbox (14.23376pt too wide) in paragraph at lines 9--19
+\OML/cmm/m/it/10 r \OMS/cmsy/m/n/10 2
+ []
+
+
+Overfull \hbox (7.67015pt too wide) in paragraph at lines 9--19
+\OML/cmm/m/it/10 R$
+ []
+
+
+Overfull \hbox (18.22453pt too wide) in paragraph at lines 9--19
+\OML/cmm/m/it/10 m \OMS/cmsy/m/n/10 2
+ []
+
+
+Overfull \hbox (10.79166pt too wide) in paragraph at lines 9--19
+\OML/cmm/m/it/10 M$
+ []
+
+
+Overfull \hbox (16.45607pt too wide) in paragraph at lines 9--19
+\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 r \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (27.91205pt too wide) in paragraph at lines 9--19
+\OML/cmm/m/it/10 s\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 m \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (21.3473pt too wide) in paragraph at lines 9--19
+\OML/cmm/m/it/10 rm \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (9.47687pt too wide) in paragraph at lines 9--19
+\OML/cmm/m/it/10 rs$
+ []
+
+
+Overfull \hbox (22.81012pt too wide) in paragraph at lines 9--19
+\OML/cmm/m/it/10 r; s \OMS/cmsy/m/n/10 2
+ []
+
+
+Overfull \hbox (7.67015pt too wide) in paragraph at lines 9--19
+\OML/cmm/m/it/10 R$
+ []
+
+
+Overfull \hbox (18.22453pt too wide) in paragraph at lines 9--19
+\OML/cmm/m/it/10 m \OMS/cmsy/m/n/10 2
+ []
+
+
+Overfull \hbox (10.79166pt too wide) in paragraph at lines 9--19
+\OML/cmm/m/it/10 M$
+ []
+
+
+Overfull \hbox (36.59032pt too wide) in paragraph at lines 9--19
+\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 rs\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 m \OT1/cm
+r/m/n/10 =
+ []
+
+
+Overfull \hbox (26.0348pt too wide) in paragraph at lines 9--19
+\OML/cmm/m/it/10 r\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 sm\OT1/cmr/m/n/10 )$
+ []
+
+
+Overfull \hbox (22.81012pt too wide) in paragraph at lines 9--19
+\OML/cmm/m/it/10 r; s \OMS/cmsy/m/n/10 2
+ []
+
+
+Overfull \hbox (7.67015pt too wide) in paragraph at lines 9--19
+\OML/cmm/m/it/10 R$
+ []
+
+
+Overfull \hbox (18.22453pt too wide) in paragraph at lines 9--19
+\OML/cmm/m/it/10 m \OMS/cmsy/m/n/10 2
+ []
+
+
+Overfull \hbox (10.79166pt too wide) in paragraph at lines 9--19
+\OML/cmm/m/it/10 M$
+ []
+
+
+Overfull \hbox (25.2362pt too wide) in paragraph at lines 9--19
+\OML/cmm/m/it/10 r\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 m \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (20.44676pt too wide) in paragraph at lines 9--19
+\OML/cmm/m/it/10 n\OT1/cmr/m/n/10 ) =
+ []
+
+
+Overfull \hbox (21.3473pt too wide) in paragraph at lines 9--19
+\OML/cmm/m/it/10 rm \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (10.79172pt too wide) in paragraph at lines 9--19
+\OML/cmm/m/it/10 rn$
+ []
+
+
+Overfull \hbox (14.23376pt too wide) in paragraph at lines 9--19
+\OML/cmm/m/it/10 r \OMS/cmsy/m/n/10 2
+ []
+
+
+Overfull \hbox (7.67015pt too wide) in paragraph at lines 9--19
+\OML/cmm/m/it/10 R$
+ []
+
+
+Overfull \hbox (28.6713pt too wide) in paragraph at lines 9--19
+\OML/cmm/m/it/10 m; n \OMS/cmsy/m/n/10 2
+ []
+
+
+Overfull \hbox (10.79166pt too wide) in paragraph at lines 9--19
+\OML/cmm/m/it/10 M$
+ []
+
+
+Overfull \hbox (7.67015pt too wide) in paragraph at lines 9--19
+\OML/cmm/m/it/10 R$
+ []
+
+
+Overfull \hbox (24.33566pt too wide) in paragraph at lines 9--19
+\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 m \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (8.78014pt too wide) in paragraph at lines 9--19
+\OML/cmm/m/it/10 m$
+ []
+
+
+Overfull \hbox (18.22453pt too wide) in paragraph at lines 9--19
+\OML/cmm/m/it/10 m \OMS/cmsy/m/n/10 2
+ []
+
+
+Overfull \hbox (10.79166pt too wide) in paragraph at lines 9--19
+\OML/cmm/m/it/10 M$ 
+ []
+
+
+! LaTeX Error: \begin{document} ended by \end{definition}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \end{definition}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Missing character: There is no ت ("62A) in font nullfont!
+Missing character: There is no ع ("639) in font nullfont!
+Missing character: There is no ر ("631) in font nullfont!
+Missing character: There is no ي ("64A) in font nullfont!
+Missing character: There is no ف ("641) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no م ("645) in font nullfont!
+Missing character: There is no ع ("639) in font nullfont!
+Missing character: There is no ي ("64A) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ر ("631) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ي ("64A) in font nullfont!
+Missing character: There is no م ("645) in font nullfont!
+Missing character: There is no ي ("64A) in font nullfont!
+Missing character: There is no ن ("646) in font nullfont!
+Missing character: There is no ي ("64A) in font nullfont!
+Missing character: There is no ي ("64A) in font nullfont!
+Missing character: There is no ك ("643) in font nullfont!
+Missing character: There is no و ("648) in font nullfont!
+Missing character: There is no ن ("646) in font nullfont!
+Missing character: There is no م ("645) in font nullfont!
+Missing character: There is no ش ("634) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ب ("628) in font nullfont!
+Missing character: There is no ه ("647) in font nullfont!
+Missing character: There is no ت ("62A) in font nullfont!
+Missing character: There is no م ("645) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no م ("645) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ً ("64B) in font nullfont!
+Missing character: There is no و ("648) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ك ("643) in font nullfont!
+Missing character: There is no ن ("646) in font nullfont!
+Missing character: There is no ب ("628) in font nullfont!
+Missing character: There is no ت ("62A) in font nullfont!
+Missing character: There is no ع ("639) in font nullfont!
+Missing character: There is no ر ("631) in font nullfont!
+Missing character: There is no ي ("64A) in font nullfont!
+Missing character: There is no ف ("641) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ت ("62A) in font nullfont!
+Missing character: There is no أ ("623) in font nullfont!
+Missing character: There is no ث ("62B) in font nullfont!
+Missing character: There is no ي ("64A) in font nullfont!
+Missing character: There is no ر ("631) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ـ ("640) in font nullfont!
+Missing character: There is no ـ ("640) in font nullfont!
+Missing character: There is no ـ ("640) in font nullfont!
+Missing character: There is no ع ("639) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ى ("649) in font nullfont!
+Missing character: There is no ب ("628) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ش ("634) in font nullfont!
+Missing character: There is no ك ("643) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ك ("643) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no و ("648) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ك ("643) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no . ("2E) in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 22--23
+[]
+ []
+
+
+Overfull \hbox (7.67015pt too wide) in paragraph at lines 22--23
+\OML/cmm/m/it/10 R$
+ []
+
+
+Overfull \hbox (10.79166pt too wide) in paragraph at lines 22--23
+\OML/cmm/m/it/10 M$
+ []
+
+
+Overfull \hbox (13.5695pt too wide) in paragraph at lines 22--23
+\OML/cmm/m/it/10 mr$
+ []
+
+
+Overfull \hbox (14.23376pt too wide) in paragraph at lines 22--23
+\OML/cmm/m/it/10 r \OMS/cmsy/m/n/10 2
+ []
+
+
+Overfull \hbox (7.67015pt too wide) in paragraph at lines 22--23
+\OML/cmm/m/it/10 R$
+ []
+
+
+Overfull \hbox (18.22453pt too wide) in paragraph at lines 22--23
+\OML/cmm/m/it/10 m \OMS/cmsy/m/n/10 2
+ []
+
+
+Overfull \hbox (10.79166pt too wide) in paragraph at lines 22--23
+\OML/cmm/m/it/10 M$ 
+ []
+
+
+! LaTeX Error: Environment example undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.24 \begin{example}
+                    \label{ex:modules}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Missing character: There is no 1 ("31) in font nullfont!
+Missing character: There is no . ("2E) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ذ ("630) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ك ("643) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ن ("646) in font nullfont!
+Missing character: There is no ت ("62A) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ح ("62D) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ق ("642) in font nullfont!
+Missing character: There is no ة ("629) in font nullfont!
+Missing character: There is no ه ("647) in font nullfont!
+Missing character: There is no ي ("64A) in font nullfont!
+Missing character: There is no ح ("62D) in font nullfont!
+Missing character: There is no ق ("642) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no و ("648) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no د ("62F) in font nullfont!
+Missing character: There is no ي ("64A) in font nullfont!
+Missing character: There is no ن ("646) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ف ("641) in font nullfont!
+Missing character: There is no إ ("625) in font nullfont!
+Missing character: There is no ذ ("630) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ت ("62A) in font nullfont!
+Missing character: There is no ح ("62D) in font nullfont!
+Missing character: There is no ق ("642) in font nullfont!
+Missing character: There is no ق ("642) in font nullfont!
+Missing character: There is no ت ("62A) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ب ("628) in font nullfont!
+Missing character: There is no د ("62F) in font nullfont!
+Missing character: There is no ي ("64A) in font nullfont!
+Missing character: There is no ه ("647) in font nullfont!
+Missing character: There is no ي ("64A) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ت ("62A) in font nullfont!
+Missing character: There is no ف ("641) in font nullfont!
+Missing character: There is no ي ("64A) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ت ("62A) in font nullfont!
+Missing character: There is no ع ("639) in font nullfont!
+Missing character: There is no ر ("631) in font nullfont!
+Missing character: There is no ي ("64A) in font nullfont!
+Missing character: There is no ف ("641) in font nullfont!
+Missing character: There is no ي ("64A) in font nullfont!
+Missing character: There is no ص ("635) in font nullfont!
+Missing character: There is no ب ("628) in font nullfont!
+Missing character: There is no ح ("62D) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no د ("62F) in font nullfont!
+Missing character: There is no ي ("64A) in font nullfont!
+Missing character: There is no ن ("646) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ف ("641) in font nullfont!
+Missing character: There is no ض ("636) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ء ("621) in font nullfont!
+Missing character: There is no م ("645) in font nullfont!
+Missing character: There is no ت ("62A) in font nullfont!
+Missing character: There is no ج ("62C) in font nullfont!
+Missing character: There is no ه ("647) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ت ("62A) in font nullfont!
+Missing character: There is no ع ("639) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ى ("649) in font nullfont!
+Missing character: There is no . ("2E) in font nullfont!
+Missing character: There is no 2 ("32) in font nullfont!
+Missing character: There is no . ("2E) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ت ("62A) in font nullfont!
+Missing character: There is no ك ("643) in font nullfont!
+Missing character: There is no ن ("646) in font nullfont!
+Missing character: There is no ز ("632) in font nullfont!
+Missing character: There is no م ("645) in font nullfont!
+Missing character: There is no ر ("631) in font nullfont!
+Missing character: There is no ة ("629) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ب ("628) in font nullfont!
+Missing character: There is no د ("62F) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ي ("64A) in font nullfont!
+Missing character: There is no ة ("629) in font nullfont!
+Missing character: There is no ، ("60C) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ّ ("651) in font nullfont!
+Missing character: There is no ذ ("630) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ك ("643) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ن ("646) in font nullfont!
+! Undefined control sequence.
+l.26 ... $G=(G, +)$ زمرة ابدالية، اّذا كان $n\in\Z
+                                                  $ و $x\in G$ فإن $nx$ يعرف...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no و ("648) in font nullfont!
+Missing character: There is no ف ("641) in font nullfont!
+Missing character: There is no إ ("625) in font nullfont!
+Missing character: There is no ن ("646) in font nullfont!
+Missing character: There is no ي ("64A) in font nullfont!
+Missing character: There is no ع ("639) in font nullfont!
+Missing character: There is no ر ("631) in font nullfont!
+Missing character: There is no ف ("641) in font nullfont!
+Missing character: There is no ب ("628) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ش ("634) in font nullfont!
+Missing character: There is no ك ("643) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+
+! LaTeX Error: Environment align* undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.27 ^^I\begin{align*}
+                      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Missing character: There is no 0 ("30) in font nullfont!
+Missing character: There is no x ("78) in font nullfont!
+! Misplaced alignment tab character &.
+l.28 ^^I^^I0x &
+               = 0\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+Missing character: There is no = ("3D) in font nullfont!
+Missing character: There is no 0 ("30) in font nullfont!
+Missing character: There is no n ("6E) in font nullfont!
+Missing character: There is no x ("78) in font nullfont!
+! Misplaced alignment tab character &.
+l.29 ^^I^^Inx &
+               = \underbrace{x+x+\dots+x}_{\text{$n$ من المرات}}, \quad n>0\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+Missing character: There is no = ("3D) in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.29 ^^I^^Inx &= \underbrace{x+x+\dots+x}
+                                         _{\text{$n$ من المرات}}, \quad n>0\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Undefined control sequence.
+l.29 ^^I^^Inx &= \underbrace{x+x+\dots+x}_{\text
+                                                {$n$ من المرات}}, \quad n>0\\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.29 ^^I^^Inx &= \underbrace{x+x+\dots+x}_{\text{$
+                                                  n$ من المرات}}, \quad n>0\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.29 ^^I^^Inx &= \underbrace{x+x+\dots+x}_{\text{$
+                                                  n$ من المرات}}, \quad n>0\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no n ("6E) in font nullfont!
+! Extra }, or forgotten $.
+l.29 ...erbrace{x+x+\dots+x}_{\text{$n$ من المرات}
+                                                  }, \quad n>0\\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+l.29 ...rbrace{x+x+\dots+x}_{\text{$n$ من المرات}}
+                                                  , \quad n>0\\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Misplaced alignment tab character &.
+l.30 ^^I^^Inx &
+               = (-n)(-x), \quad n<0
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+! LaTeX Error: \begin{document} ended by \end{align*}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.31 ^^I\end{align*}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.31 ^^I\end{align*}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no م ("645) in font cmmi10!
+Missing character: There is no ن ("646) in font cmmi10!
+Missing character: There is no ا ("627) in font cmmi10!
+Missing character: There is no ل ("644) in font cmmi10!
+Missing character: There is no م ("645) in font cmmi10!
+Missing character: There is no ر ("631) in font cmmi10!
+Missing character: There is no ا ("627) in font cmmi10!
+Missing character: There is no ت ("62A) in font cmmi10!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ذ ("630) in font nullfont!
+Missing character: There is no ن ("646) in font nullfont!
+Missing character: There is no م ("645) in font nullfont!
+Missing character: There is no ع ("639) in font nullfont!
+Missing character: There is no ي ("64A) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ر ("631) in font nullfont!
+Missing character: There is no ي ("64A) in font nullfont!
+Missing character: There is no س ("633) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ر ("631) in font nullfont!
+Missing character: There is no ي ("64A) in font nullfont!
+Missing character: There is no ع ("639) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ى ("649) in font nullfont!
+! Undefined control sequence.
+<recently read> \Z 
+                   
+l.32 ^^Iاذن $G$ معيار يساري على $\Z
+                                   $ بواسطة دالة الضرب
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no ب ("628) in font nullfont!
+Missing character: There is no و ("648) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no س ("633) in font nullfont!
+Missing character: There is no ط ("637) in font nullfont!
+Missing character: There is no ة ("629) in font nullfont!
+Missing character: There is no د ("62F) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ة ("629) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ض ("636) in font nullfont!
+Missing character: There is no ر ("631) in font nullfont!
+Missing character: There is no ب ("628) in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 25--33
+[]
+ []
+
+
+Overfull \hbox (7.67015pt too wide) in paragraph at lines 25--33
+\OML/cmm/m/it/10 R$
+ []
+
+
+Overfull \hbox (30.23611pt too wide) in paragraph at lines 25--33
+\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 M; \OT1/cmr/m/n/10 +)$
+ []
+
+
+Overfull \hbox (7.67015pt too wide) in paragraph at lines 25--33
+\OML/cmm/m/it/10 R$ 
+ []
+
+
+Overfull \hbox (18.418pt too wide) in paragraph at lines 25--33
+\OML/cmm/m/it/10 G \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (27.8625pt too wide) in paragraph at lines 25--33
+\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 G; \OT1/cmr/m/n/10 +)$
+ []
+
+
+Overfull \hbox (15.44675pt too wide) in paragraph at lines 25--33
+\OML/cmm/m/it/10 n \OMS/cmsy/m/n/10 2$
+ []
+
+
+Overfull \hbox (15.15967pt too wide) in paragraph at lines 25--33
+\OML/cmm/m/it/10 x \OMS/cmsy/m/n/10 2
+ []
+
+
+Overfull \hbox (7.86249pt too wide) in paragraph at lines 25--33
+\OML/cmm/m/it/10 G$
+ []
+
+
+Overfull \hbox (11.71762pt too wide) in paragraph at lines 25--33
+\OML/cmm/m/it/10 nx$
+ []
+
+
+Overfull \hbox (86.48111pt too wide) in paragraph at lines 25--33
+[]$$\OML/cmm/m/it/10 ;  n >
+ []
+
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 25--33
+\OT1/cmr/m/n/10 0[] 
+ []
+
+
+Overfull \hbox (22.27313pt too wide) in paragraph at lines 25--33
+\OML/cmm/m/it/10 nx \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (63.8311pt too wide) in paragraph at lines 25--33
+\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 ^^@\OML/cmm/m/it/10 n\OT1/cmr/m/n/10 )(\OMS/c
+msy/m/n/10 ^^@\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;  n <
+ []
+
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 25--33
+\OT1/cmr/m/n/10 0$
+ []
+
+
+Overfull \hbox (7.86249pt too wide) in paragraph at lines 25--33
+\OML/cmm/m/it/10 G$
+ []
+
+! Undefined control sequence.
+l.34 ^^I\cdot : \Z
+                  \times G \to G, \quad (n,x) \mapsto nx
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (105.8265pt too wide) detected at line 35
+\OMS/cmsy/m/n/10 ^^A \OT1/cmr/m/n/10 : \OMS/cmsy/m/n/10 ^^B\OML/cmm/m/it/10 G \
+OMS/cmsy/m/n/10 ! \OML/cmm/m/it/10 G;  \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 n; x\O
+T1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 7! \OML/cmm/m/it/10 nx
+ []
+
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ك ("643) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+! Undefined control sequence.
+l.36 ^^Iلكل $m,n\in \Z
+                      $ و لكل $x,y\in G$ \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no و ("648) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ك ("643) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ( ("28) in font nullfont!
+Missing character: There is no a ("61) in font nullfont!
+
+! LaTeX Error: Environment align* undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.38 ^^I\begin{align*}
+                      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Missing character: There is no ( ("28) in font nullfont!
+Missing character: There is no m ("6D) in font nullfont!
+Missing character: There is no + ("2B) in font nullfont!
+Missing character: There is no n ("6E) in font nullfont!
+Missing character: There is no ) ("29) in font nullfont!
+Missing character: There is no x ("78) in font nullfont!
+! Misplaced alignment tab character &.
+l.39 ^^I^^I(m+n) x &
+                    = \underbrace{x+x+\dots+x}_{\text{$m+n$ من المرات}}\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+Missing character: There is no = ("3D) in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.39 ^^I^^I(m+n) x &= \underbrace{x+x+\dots+x}
+                                              _{\text{$m+n$ من المرات}}\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Undefined control sequence.
+l.39 ...(m+n) x &= \underbrace{x+x+\dots+x}_{\text
+                                                  {$m+n$ من المرات}}\\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.39 ...+n) x &= \underbrace{x+x+\dots+x}_{\text{$
+                                                  m+n$ من المرات}}\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.39 ...+n) x &= \underbrace{x+x+\dots+x}_{\text{$
+                                                  m+n$ من المرات}}\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no m ("6D) in font nullfont!
+Missing character: There is no + ("2B) in font nullfont!
+Missing character: There is no n ("6E) in font nullfont!
+! Extra }, or forgotten $.
+l.39 ...brace{x+x+\dots+x}_{\text{$m+n$ من المرات}
+                                                  }\\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+l.39 ...race{x+x+\dots+x}_{\text{$m+n$ من المرات}}
+                                                  \\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.40 ^^I^^I&
+            = \underbrace{(x+x+\dots+x)}_{\text{$m$ من المرات}} +  \underbra...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Undefined control sequence.
+l.40 ^^I^^I&= \underbrace{(x+x+\dots+x)}_{\text
+                                               {$m$ من المرات}} +  \underbra...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.40 ^^I^^I&= \underbrace{(x+x+\dots+x)}_{\text{$
+                                                 m$ من المرات}} +  \underbra...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.40 ^^I^^I&= \underbrace{(x+x+\dots+x)}_{\text{$
+                                                 m$ من المرات}} +  \underbra...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no م ("645) in font cmmi10!
+Missing character: There is no ن ("646) in font cmmi10!
+Missing character: There is no ا ("627) in font cmmi10!
+Missing character: There is no ل ("644) in font cmmi10!
+Missing character: There is no م ("645) in font cmmi10!
+Missing character: There is no ر ("631) in font cmmi10!
+Missing character: There is no ا ("627) in font cmmi10!
+Missing character: There is no ت ("62A) in font cmmi10!
+Missing character: There is no m ("6D) in font nullfont!
+! Extra }, or forgotten $.
+l.40 ...brace{(x+x+\dots+x)}_{\text{$m$ من المرات}
+                                                  } +  \underbrace{(x+x+\dot...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+l.40 ...race{(x+x+\dots+x)}_{\text{$m$ من المرات}}
+                                                   +  \underbrace{(x+x+\dots...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Undefined control sequence.
+l.40 ...رات}} +  \underbrace{(x+x+\dots+x)}_{\text
+                                                  {$n$ من المرات}} \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.40 ...ت}} +  \underbrace{(x+x+\dots+x)}_{\text{$
+                                                  n$ من المرات}} \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.40 ...ت}} +  \underbrace{(x+x+\dots+x)}_{\text{$
+                                                  n$ من المرات}} \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no م ("645) in font cmmi10!
+Missing character: There is no ن ("646) in font cmmi10!
+Missing character: There is no ا ("627) in font cmmi10!
+Missing character: There is no ل ("644) in font cmmi10!
+Missing character: There is no م ("645) in font cmmi10!
+Missing character: There is no ر ("631) in font cmmi10!
+Missing character: There is no ا ("627) in font cmmi10!
+Missing character: There is no ت ("62A) in font cmmi10!
+Missing character: There is no n ("6E) in font nullfont!
+! Extra }, or forgotten $.
+l.40 ...brace{(x+x+\dots+x)}_{\text{$n$ من المرات}
+                                                  } \\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+l.40 ...race{(x+x+\dots+x)}_{\text{$n$ من المرات}}
+                                                   \\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.41 ^^I^^I&
+            = mx+nx
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+! LaTeX Error: \begin{document} ended by \end{align*}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.42 ^^I\end{align*}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.42 ^^I\end{align*}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no م ("645) in font cmmi10!
+Missing character: There is no ن ("646) in font cmmi10!
+Missing character: There is no ا ("627) in font cmmi10!
+Missing character: There is no ل ("644) in font cmmi10!
+Missing character: There is no م ("645) in font cmmi10!
+Missing character: There is no ر ("631) in font cmmi10!
+Missing character: There is no ا ("627) in font cmmi10!
+Missing character: There is no ت ("62A) in font cmmi10!
+Missing character: There is no ( ("28) in font nullfont!
+Missing character: There is no b ("62) in font nullfont!
+
+! LaTeX Error: Environment align* undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.44 ^^I\begin{align*}
+                      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Missing character: There is no ( ("28) in font nullfont!
+Missing character: There is no m ("6D) in font nullfont!
+Missing character: There is no n ("6E) in font nullfont!
+Missing character: There is no ) ("29) in font nullfont!
+Missing character: There is no x ("78) in font nullfont!
+! Misplaced alignment tab character &.
+l.45 ^^I^^I(mn)x &
+                  = \underbrace{x+x+\dots+x}_{\text{$mn$ من المرات}}\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+Missing character: There is no = ("3D) in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.45 ^^I^^I(mn)x &= \underbrace{x+x+\dots+x}
+                                            _{\text{$mn$ من المرات}}\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Undefined control sequence.
+l.45 ...^I(mn)x &= \underbrace{x+x+\dots+x}_{\text
+                                                  {$mn$ من المرات}}\\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.45 ...(mn)x &= \underbrace{x+x+\dots+x}_{\text{$
+                                                  mn$ من المرات}}\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.45 ...(mn)x &= \underbrace{x+x+\dots+x}_{\text{$
+                                                  mn$ من المرات}}\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no m ("6D) in font nullfont!
+Missing character: There is no n ("6E) in font nullfont!
+! Extra }, or forgotten $.
+l.45 ...rbrace{x+x+\dots+x}_{\text{$mn$ من المرات}
+                                                  }\\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+l.45 ...brace{x+x+\dots+x}_{\text{$mn$ من المرات}}
+                                                  \\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.46 ^^I^^I&
+            = \underbrace{
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Undefined control sequence.
+<argument>  \underbrace {(x+x+\dots +x)}_{\text 
+                                                {$n$ من المرات}} + \underbra...
+l.48 ^^I^^I}
+            _{\text{$m$ من المرات}}\\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.48 ^^I^^I}
+            _{\text{$m$ من المرات}}\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.48 ^^I^^I}
+            _{\text{$m$ من المرات}}\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.48 ^^I^^I}
+            _{\text{$m$ من المرات}}\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no n ("6E) in font nullfont!
+! Extra }, or forgotten $.
+<argument> ...+x+\dots +x)}_{\text {$n$ من المرات}
+                                                  } + \underbrace {(x+x+\dot...
+l.48 ^^I^^I}
+            _{\text{$m$ من المرات}}\\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+<argument> ...x+\dots +x)}_{\text {$n$ من المرات}}
+                                                   + \underbrace {(x+x+\dots...
+l.48 ^^I^^I}
+            _{\text{$m$ من المرات}}\\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Undefined control sequence.
+<argument> ...\underbrace {(x+x+\dots +x)}_{\text 
+                                                  {$n$ من المرات}} + \dots +...
+l.48 ^^I^^I}
+            _{\text{$m$ من المرات}}\\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.48 ^^I^^I}
+            _{\text{$m$ من المرات}}\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.48 ^^I^^I}
+            _{\text{$m$ من المرات}}\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no م ("645) in font cmmi10!
+Missing character: There is no ن ("646) in font cmmi10!
+Missing character: There is no ا ("627) in font cmmi10!
+Missing character: There is no ل ("644) in font cmmi10!
+Missing character: There is no م ("645) in font cmmi10!
+Missing character: There is no ر ("631) in font cmmi10!
+Missing character: There is no ا ("627) in font cmmi10!
+Missing character: There is no ت ("62A) in font cmmi10!
+Missing character: There is no n ("6E) in font nullfont!
+! Extra }, or forgotten $.
+<argument> ...+x+\dots +x)}_{\text {$n$ من المرات}
+                                                  } + \dots + \underbrace {(...
+l.48 ^^I^^I}
+            _{\text{$m$ من المرات}}\\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+<argument> ...x+\dots +x)}_{\text {$n$ من المرات}}
+                                                   + \dots + \underbrace {(x...
+l.48 ^^I^^I}
+            _{\text{$m$ من المرات}}\\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Undefined control sequence.
+<argument> ...\underbrace {(x+x+\dots +x)}_{\text 
+                                                  {$n$ من المرات}} 
+l.48 ^^I^^I}
+            _{\text{$m$ من المرات}}\\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.48 ^^I^^I}
+            _{\text{$m$ من المرات}}\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.48 ^^I^^I}
+            _{\text{$m$ من المرات}}\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no م ("645) in font cmmi10!
+Missing character: There is no ن ("646) in font cmmi10!
+Missing character: There is no ا ("627) in font cmmi10!
+Missing character: There is no ل ("644) in font cmmi10!
+Missing character: There is no م ("645) in font cmmi10!
+Missing character: There is no ر ("631) in font cmmi10!
+Missing character: There is no ا ("627) in font cmmi10!
+Missing character: There is no ت ("62A) in font cmmi10!
+Missing character: There is no n ("6E) in font nullfont!
+! Extra }, or forgotten $.
+<argument> ...+x+\dots +x)}_{\text {$n$ من المرات}
+                                                  } 
+l.48 ^^I^^I}
+            _{\text{$m$ من المرات}}\\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+<argument> ...x+\dots +x)}_{\text {$n$ من المرات}}
+                                                   
+l.48 ^^I^^I}
+            _{\text{$m$ من المرات}}\\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+\underbrace  ...{##\crcr $\hfil \displaystyle {#1}
+                                                  \hfil $\crcr \noalign {\ke...
+l.48 ^^I^^I}
+            _{\text{$m$ من المرات}}\\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+Missing character: There is no م ("645) in font cmmi10!
+Missing character: There is no ن ("646) in font cmmi10!
+Missing character: There is no ا ("627) in font cmmi10!
+Missing character: There is no ل ("644) in font cmmi10!
+Missing character: There is no م ("645) in font cmmi10!
+Missing character: There is no ر ("631) in font cmmi10!
+Missing character: There is no ا ("627) in font cmmi10!
+Missing character: There is no ت ("62A) in font cmmi10!
+! Undefined control sequence.
+l.48 ^^I^^I}_{\text
+                   {$m$ من المرات}}\\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.48 ^^I^^I}_{\text{$
+                     m$ من المرات}}\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.48 ^^I^^I}_{\text{$
+                     m$ من المرات}}\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no م ("645) in font cmmi10!
+Missing character: There is no ن ("646) in font cmmi10!
+Missing character: There is no ا ("627) in font cmmi10!
+Missing character: There is no ل ("644) in font cmmi10!
+Missing character: There is no م ("645) in font cmmi10!
+Missing character: There is no ر ("631) in font cmmi10!
+Missing character: There is no ا ("627) in font cmmi10!
+Missing character: There is no ت ("62A) in font cmmi10!
+Missing character: There is no m ("6D) in font nullfont!
+! Extra }, or forgotten $.
+l.48 ^^I^^I}_{\text{$m$ من المرات}
+                                  }\\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+l.48 ^^I^^I}_{\text{$m$ من المرات}}
+                                   \\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.49 ^^I^^I&
+            = m(nx)
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+! LaTeX Error: \begin{document} ended by \end{align*}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.50 ^^I\end{align*}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.50 ^^I\end{align*}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no م ("645) in font cmmi10!
+Missing character: There is no ن ("646) in font cmmi10!
+Missing character: There is no ا ("627) in font cmmi10!
+Missing character: There is no ل ("644) in font cmmi10!
+Missing character: There is no م ("645) in font cmmi10!
+Missing character: There is no ر ("631) in font cmmi10!
+Missing character: There is no ا ("627) in font cmmi10!
+Missing character: There is no ت ("62A) in font cmmi10!
+Missing character: There is no ( ("28) in font nullfont!
+Missing character: There is no c ("63) in font nullfont!
+
+! LaTeX Error: Environment align* undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.52 ^^I\begin{align*}
+                      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Missing character: There is no m ("6D) in font nullfont!
+Missing character: There is no ( ("28) in font nullfont!
+Missing character: There is no x ("78) in font nullfont!
+Missing character: There is no + ("2B) in font nullfont!
+Missing character: There is no y ("79) in font nullfont!
+Missing character: There is no ) ("29) in font nullfont!
+! Misplaced alignment tab character &.
+l.53 ^^I^^Im(x+y) &
+                   = \underbrace{(x+y)+(x+y)+\dots+(x+y)}_{\text{$m$ من المر...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+Missing character: There is no = ("3D) in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.53 ...y) &= \underbrace{(x+y)+(x+y)+\dots+(x+y)}
+                                                  _{\text{$m$ من المرات}}\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Undefined control sequence.
+l.53 ...underbrace{(x+y)+(x+y)+\dots+(x+y)}_{\text
+                                                  {$m$ من المرات}}\\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.53 ...derbrace{(x+y)+(x+y)+\dots+(x+y)}_{\text{$
+                                                  m$ من المرات}}\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.53 ...derbrace{(x+y)+(x+y)+\dots+(x+y)}_{\text{$
+                                                  m$ من المرات}}\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no m ("6D) in font nullfont!
+! Extra }, or forgotten $.
+l.53 ...)+(x+y)+\dots+(x+y)}_{\text{$m$ من المرات}
+                                                  }\\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+l.53 ...+(x+y)+\dots+(x+y)}_{\text{$m$ من المرات}}
+                                                  \\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.54 ^^I^^I&
+            = \underbrace{(x+x+\dots+x)}_{\text{$m$ من المرات}} + \underbrac...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Undefined control sequence.
+l.54 ^^I^^I&= \underbrace{(x+x+\dots+x)}_{\text
+                                               {$m$ من المرات}} + \underbrac...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.54 ^^I^^I&= \underbrace{(x+x+\dots+x)}_{\text{$
+                                                 m$ من المرات}} + \underbrac...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.54 ^^I^^I&= \underbrace{(x+x+\dots+x)}_{\text{$
+                                                 m$ من المرات}} + \underbrac...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no م ("645) in font cmmi10!
+Missing character: There is no ن ("646) in font cmmi10!
+Missing character: There is no ا ("627) in font cmmi10!
+Missing character: There is no ل ("644) in font cmmi10!
+Missing character: There is no م ("645) in font cmmi10!
+Missing character: There is no ر ("631) in font cmmi10!
+Missing character: There is no ا ("627) in font cmmi10!
+Missing character: There is no ت ("62A) in font cmmi10!
+Missing character: There is no m ("6D) in font nullfont!
+! Extra }, or forgotten $.
+l.54 ...brace{(x+x+\dots+x)}_{\text{$m$ من المرات}
+                                                  } + \underbrace{(y+y+\dots...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+l.54 ...race{(x+x+\dots+x)}_{\text{$m$ من المرات}}
+                                                   + \underbrace{(y+y+\dots+...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Undefined control sequence.
+l.54 ...مرات}} + \underbrace{(y+y+\dots+y)}_{\text
+                                                  {$m$ من المرات}} \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.54 ...ات}} + \underbrace{(y+y+\dots+y)}_{\text{$
+                                                  m$ من المرات}} \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.54 ...ات}} + \underbrace{(y+y+\dots+y)}_{\text{$
+                                                  m$ من المرات}} \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no م ("645) in font cmmi10!
+Missing character: There is no ن ("646) in font cmmi10!
+Missing character: There is no ا ("627) in font cmmi10!
+Missing character: There is no ل ("644) in font cmmi10!
+Missing character: There is no م ("645) in font cmmi10!
+Missing character: There is no ر ("631) in font cmmi10!
+Missing character: There is no ا ("627) in font cmmi10!
+Missing character: There is no ت ("62A) in font cmmi10!
+Missing character: There is no m ("6D) in font nullfont!
+! Extra }, or forgotten $.
+l.54 ...brace{(y+y+\dots+y)}_{\text{$m$ من المرات}
+                                                  } \\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+l.54 ...race{(y+y+\dots+y)}_{\text{$m$ من المرات}}
+                                                   \\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.55 ^^I^^I&
+            = mx+ my
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+! LaTeX Error: \begin{document} ended by \end{align*}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.56 ^^I\end{align*}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.56 ^^I\end{align*}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no م ("645) in font cmmi10!
+Missing character: There is no ن ("646) in font cmmi10!
+Missing character: There is no ا ("627) in font cmmi10!
+Missing character: There is no ل ("644) in font cmmi10!
+Missing character: There is no م ("645) in font cmmi10!
+Missing character: There is no ر ("631) in font cmmi10!
+Missing character: There is no ا ("627) in font cmmi10!
+Missing character: There is no ت ("62A) in font cmmi10!
+Missing character: There is no ( ("28) in font nullfont!
+Missing character: There is no d ("64) in font nullfont!
+Missing character: There is no 3 ("33) in font nullfont!
+Missing character: There is no . ("2E) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ت ("62A) in font nullfont!
+Missing character: There is no ك ("643) in font nullfont!
+Missing character: There is no ن ("646) in font nullfont!
+Missing character: There is no ح ("62D) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ق ("642) in font nullfont!
+Missing character: There is no ة ("629) in font nullfont!
+Missing character: There is no ج ("62C) in font nullfont!
+Missing character: There is no ز ("632) in font nullfont!
+Missing character: There is no ئ ("626) in font nullfont!
+Missing character: There is no ي ("64A) in font nullfont!
+Missing character: There is no ة ("629) in font nullfont!
+Missing character: There is no م ("645) in font nullfont!
+Missing character: There is no ن ("646) in font nullfont!
+Missing character: There is no ، ("60C) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ذ ("630) in font nullfont!
+Missing character: There is no ن ("646) in font nullfont!
+Missing character: There is no ب ("628) in font nullfont!
+Missing character: There is no و ("648) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no س ("633) in font nullfont!
+Missing character: There is no ط ("637) in font nullfont!
+Missing character: There is no ة ("629) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no د ("62F) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ة ("629) in font nullfont!
+
+Overfull \hbox (28.6713pt too wide) in paragraph at lines 35--59
+ $\OML/cmm/m/it/10 m; n \OMS/cmsy/m/n/10 2$
+ []
+
+
+Overfull \hbox (24.86568pt too wide) in paragraph at lines 35--59
+\OML/cmm/m/it/10 x; y \OMS/cmsy/m/n/10 2
+ []
+
+
+Overfull \hbox (7.86249pt too wide) in paragraph at lines 35--59
+\OML/cmm/m/it/10 G$ 
+ []
+
+
+Overfull \hbox (65.47884pt too wide) in paragraph at lines 35--59
+[]$$[] 
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 35--59
+\OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (81.03444pt too wide) in paragraph at lines 35--59
+[]$$ \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (73.25664pt too wide) in paragraph at lines 35--59
+[]$$[] 
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 35--59
+\OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (22.27321pt too wide) in paragraph at lines 35--59
+\OML/cmm/m/it/10 mx \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (11.71762pt too wide) in paragraph at lines 35--59
+\OML/cmm/m/it/10 nx$
+ []
+
+
+Overfull \hbox (65.47884pt too wide) in paragraph at lines 35--59
+[]$$[] 
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 35--59
+\OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (268.10294pt too wide) in paragraph at lines 35--59
+[]$$[] 
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 35--59
+\OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (28.27556pt too wide) in paragraph at lines 35--59
+\OML/cmm/m/it/10 m\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 nx\OT1/cmr/m/n/10 )$
+ []
+
+
+Overfull \hbox (141.26344pt too wide) in paragraph at lines 35--59
+[]$$[] 
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 35--59
+\OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (81.03444pt too wide) in paragraph at lines 35--59
+[]$$ \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (71.89561pt too wide) in paragraph at lines 35--59
+[]$$[] 
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 35--59
+\OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (22.27321pt too wide) in paragraph at lines 35--59
+\OML/cmm/m/it/10 mx \OT1/cmr/m/n/10 +
+ []
+
+
+Overfull \hbox (14.04173pt too wide) in paragraph at lines 35--59
+\OML/cmm/m/it/10 my$
+ []
+
+
+Overfull \hbox (21.2708pt too wide) in paragraph at lines 35--59
+\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 x \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (5.71527pt too wide) in paragraph at lines 35--59
+\OML/cmm/m/it/10 x$ 
+ []
+
+
+Overfull \hbox (6.70831pt too wide) in paragraph at lines 35--59
+\OML/cmm/m/it/10 S$
+ []
+
+
+Overfull \hbox (7.67015pt too wide) in paragraph at lines 35--59
+\OML/cmm/m/it/10 R$
+ []
+
+
+Overfull \hbox (108.91977pt too wide) detected at line 61
+\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 s; r\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 7! \OM
+L/cmm/m/it/10 sr; \OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 r \OMS/cmsy/m/n/10 2 \OML/
+cmm/m/it/10 R; s \OMS/cmsy/m/n/10 2 \OML/cmm/m/it/10 S
+ []
+
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ح ("62D) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ق ("642) in font nullfont!
+Missing character: There is no ة ("629) in font nullfont!
+Missing character: There is no ت ("62A) in font nullfont!
+Missing character: There is no ص ("635) in font nullfont!
+Missing character: There is no ب ("628) in font nullfont!
+Missing character: There is no ح ("62D) in font nullfont!
+Missing character: There is no م ("645) in font nullfont!
+Missing character: There is no ع ("639) in font nullfont!
+Missing character: There is no ي ("64A) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ر ("631) in font nullfont!
+Missing character: There is no ي ("64A) in font nullfont!
+Missing character: There is no س ("633) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ر ("631) in font nullfont!
+Missing character: There is no ي ("64A) in font nullfont!
+Missing character: There is no ع ("639) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ى ("649) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no أ ("623) in font nullfont!
+Missing character: There is no ن ("646) in font nullfont!
+Missing character: There is no : ("3A) in font nullfont!
+Missing character: There is no ح ("62D) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ق ("642) in font nullfont!
+Missing character: There is no ة ("629) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ذ ("630) in font nullfont!
+Missing character: There is no ن ("646) in font nullfont!
+Missing character: There is no ز ("632) in font nullfont!
+Missing character: There is no م ("645) in font nullfont!
+Missing character: There is no ر ("631) in font nullfont!
+Missing character: There is no ة ("629) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ب ("628) in font nullfont!
+Missing character: There is no د ("62F) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ي ("64A) in font nullfont!
+Missing character: There is no ة ("629) in font nullfont!
+Missing character: There is no . ("2E) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no آ ("622) in font nullfont!
+Missing character: There is no ن ("646) in font nullfont!
+Missing character: There is no ن ("646) in font nullfont!
+Missing character: There is no ط ("637) in font nullfont!
+Missing character: There is no ب ("628) in font nullfont!
+Missing character: There is no ق ("642) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ب ("628) in font nullfont!
+Missing character: There is no د ("62F) in font nullfont!
+Missing character: There is no ي ("64A) in font nullfont!
+Missing character: There is no ه ("647) in font nullfont!
+Missing character: There is no ي ("64A) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ت ("62A) in font nullfont!
+Missing character: There is no : ("3A) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ك ("643) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no و ("648) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ك ("643) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+
+! LaTeX Error: Environment tasks undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.64 ^^I\begin{tasks}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+l.65 ^^I^^I^^I\task
+                    $(r+s)x=rx+sx$ لأن $R$ حلقة و بالتالي العملية $\cdot$ تت...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no أ ("623) in font nullfont!
+Missing character: There is no ن ("646) in font nullfont!
+Missing character: There is no ح ("62D) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ق ("642) in font nullfont!
+Missing character: There is no ة ("629) in font nullfont!
+Missing character: There is no و ("648) in font nullfont!
+Missing character: There is no ب ("628) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ت ("62A) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ي ("64A) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ع ("639) in font nullfont!
+Missing character: There is no م ("645) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ي ("64A) in font nullfont!
+Missing character: There is no ة ("629) in font nullfont!
+Missing character: There is no ت ("62A) in font nullfont!
+Missing character: There is no ت ("62A) in font nullfont!
+Missing character: There is no و ("648) in font nullfont!
+Missing character: There is no ز ("632) in font nullfont!
+Missing character: There is no ع ("639) in font nullfont!
+Missing character: There is no ع ("639) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ى ("649) in font nullfont!
+Missing character: There is no م ("645) in font nullfont!
+Missing character: There is no ن ("646) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ي ("64A) in font nullfont!
+Missing character: There is no م ("645) in font nullfont!
+Missing character: There is no ي ("64A) in font nullfont!
+Missing character: There is no ن ("646) in font nullfont!
+! Undefined control sequence.
+l.66 ^^I^^I\task
+                 $(rs)x=r(sx)$ لأن $R$ حلقة اذن $(R,\cdot)$ شبه زمرة و بالتا...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no أ ("623) in font nullfont!
+Missing character: There is no ن ("646) in font nullfont!
+Missing character: There is no ح ("62D) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ق ("642) in font nullfont!
+Missing character: There is no ة ("629) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ذ ("630) in font nullfont!
+Missing character: There is no ن ("646) in font nullfont!
+Missing character: There is no ش ("634) in font nullfont!
+Missing character: There is no ب ("628) in font nullfont!
+Missing character: There is no ه ("647) in font nullfont!
+Missing character: There is no ز ("632) in font nullfont!
+Missing character: There is no م ("645) in font nullfont!
+Missing character: There is no ر ("631) in font nullfont!
+Missing character: There is no ة ("629) in font nullfont!
+Missing character: There is no و ("648) in font nullfont!
+Missing character: There is no ب ("628) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ت ("62A) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ي ("64A) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ع ("639) in font nullfont!
+Missing character: There is no م ("645) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ي ("64A) in font nullfont!
+Missing character: There is no ة ("629) in font nullfont!
+Missing character: There is no ت ("62A) in font nullfont!
+Missing character: There is no ج ("62C) in font nullfont!
+Missing character: There is no م ("645) in font nullfont!
+Missing character: There is no ي ("64A) in font nullfont!
+Missing character: There is no ع ("639) in font nullfont!
+Missing character: There is no ي ("64A) in font nullfont!
+Missing character: There is no ة ("629) in font nullfont!
+! Undefined control sequence.
+l.67 ^^I^^I\task
+                 $r(x+y) = rx+ry$ لأن $R$ حلقة و بالتالي العملية $\cdot$ تتو...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no أ ("623) in font nullfont!
+Missing character: There is no ن ("646) in font nullfont!
+Missing character: There is no ح ("62D) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ق ("642) in font nullfont!
+Missing character: There is no ة ("629) in font nullfont!
+Missing character: There is no و ("648) in font nullfont!
+Missing character: There is no ب ("628) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ت ("62A) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ي ("64A) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ع ("639) in font nullfont!
+Missing character: There is no م ("645) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ي ("64A) in font nullfont!
+Missing character: There is no ة ("629) in font nullfont!
+Missing character: There is no ت ("62A) in font nullfont!
+Missing character: There is no ت ("62A) in font nullfont!
+Missing character: There is no و ("648) in font nullfont!
+Missing character: There is no ز ("632) in font nullfont!
+Missing character: There is no ع ("639) in font nullfont!
+Missing character: There is no ع ("639) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ى ("649) in font nullfont!
+Missing character: There is no م ("645) in font nullfont!
+Missing character: There is no ن ("646) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ل ("644) in font nullfont!
+Missing character: There is no ي ("64A) in font nullfont!
+Missing character: There is no س ("633) in font nullfont!
+Missing character: There is no ا ("627) in font nullfont!
+Missing character: There is no ر ("631) in font nullfont!
+
+! LaTeX Error: \begin{document} ended by \end{tasks}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.68 ^^I\end{tasks}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: \begin{document} ended by \end{example}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.69 \end{example}
+                  
+(That makes 100 errors; please try again.) 
+Here is how much of TeX's memory you used:
+ 41 strings out of 474773
+ 1000 string characters out of 5763518
+ 1923839 words of memory out of 5000000
+ 22290 multiletter control sequences out of 15000+600000
+ 558085 words of font info for 38 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 19i,16n,31p,178b,114s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+No pages of output.

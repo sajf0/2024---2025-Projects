@@ -1,0 +1,23 @@
+\documentclass{arabicClass}
+
+\addbibresource{references.bib}  
+
+\begin{document}
+	\renewcommand{\theequation}{\arabic{equation}.\arabic{chapter}}
+%
+	%\input{Title Page/titlepage}
+	
+	%\tableofcontents
+	
+	\input{chapter1}
+	\input{chapter2}
+	\input{chapter3}
+	
+	\chapter*{المراجع}
+	
+	\addcontentsline{toc}{chapter*}{المراجع}
+	\nocite{*}
+	\begin{english}
+		\printbibliography[heading=none]
+	\end{english}
+\end{document}

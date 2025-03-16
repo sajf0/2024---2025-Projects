@@ -1,0 +1,7 @@
+\selectlanguage *[numerals=maghrib]{arabic}
+\contentsline {chapter}{\numberline {الفصل الأول }مفاهيم أساسية}{1}{}%
+\contentsline {chapter}{\numberline {الفصل الثاني }}{6}{}%
+\contentsline {chapter}{\numberline {الفصل الثالث }معادلة القطع المكافئ}{12}{}%
+\contentsline {section}{\numberline {3 - 1}مقدمة}{13}{}%
+\contentsline {section}{\numberline {3 - 2}خصائص القطع المكافئ}{13}{}%
+\contentsfinish 

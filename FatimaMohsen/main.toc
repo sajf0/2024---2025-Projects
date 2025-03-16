@@ -1,0 +1,29 @@
+\selectlanguage *[numerals=maghrib]{arabic}
+\contentsline {chapter}{\numberline {الفصل الأول }مفاهيم اساسية}{1}{}%
+\contentsline {section}{\numberline {1 - 1}العلاقات والدوال}{2}{}%
+\selectlanguage *[]{english}
+\selectlanguage *[locale=default,calendar=gregorian,numerals=maghrib,hijricorrection=0,abjadjimnotail=false]{arabic}
+\selectlanguage *[numerals=maghrib]{arabic}
+\selectlanguage *[]{english}
+\selectlanguage *[locale=default,calendar=gregorian,numerals=maghrib,hijricorrection=0,abjadjimnotail=false]{arabic}
+\selectlanguage *[numerals=maghrib]{arabic}
+\contentsline {section}{\numberline {1 - 2}الغاية و الاستمرارية}{3}{}%
+\contentsline {section}{\numberline {1 - 3}المشتقة}{5}{}%
+\contentsline {section}{\numberline {1 - 4}التقارب للدوال}{5}{}%
+\contentsline {chapter}{\numberline {الفصل الثاني }الدوال غير المستمرة}{6}{}%
+\contentsline {section}{\numberline {2 - 1}نقاط عدم الاستمرارية}{7}{}%
+\contentsline {section}{\numberline {2 - 2}المشتقات عند الدوال غير المستمرة}{13}{}%
+\contentsline {section}{\numberline {2 - 3}الاستمرارية بالاجزاء}{15}{}%
+\contentsline {section}{\numberline {2 - 4}تكامل الدوال المستمرة بالاجزاء}{16}{}%
+\selectlanguage *[]{english}
+\selectlanguage *[locale=default,calendar=gregorian,numerals=maghrib,hijricorrection=0,abjadjimnotail=false]{arabic}
+\selectlanguage *[numerals=maghrib]{arabic}
+\contentsline {section}{\numberline {2 - 5}التقارب للدوال غير المستمرة}{18}{}%
+\selectlanguage *[]{english}
+\selectlanguage *[numerals=maghrib]{arabic}
+\selectlanguage *[locale=default,calendar=gregorian,numerals=maghrib,hijricorrection=0,abjadjimnotail=false]{arabic}
+\contentsline {chapter*}{المراجع}{19}{}%
+\selectlanguage *[]{english}
+\selectlanguage *[locale=default,calendar=gregorian,numerals=maghrib,hijricorrection=0,abjadjimnotail=false]{arabic}
+\selectlanguage *[numerals=maghrib]{arabic}
+\contentsfinish 

@@ -1,0 +1,128 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{abstract_algebra2}{book}{}
+      \name{author}{1}{}{%
+        {{hash=443f4f82c66f962c17fa80aced395dfd}{%
+           family={David\bibnamedelimb S.\bibnamedelimi Dummit},
+           familyi={D\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim D\bibinitperiod},
+           given={Richard\bibnamedelima M.Foote},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {University of Vermort}%
+      }
+      \strng{namehash}{443f4f82c66f962c17fa80aced395dfd}
+      \strng{fullhash}{443f4f82c66f962c17fa80aced395dfd}
+      \strng{bibnamehash}{443f4f82c66f962c17fa80aced395dfd}
+      \strng{authorbibnamehash}{443f4f82c66f962c17fa80aced395dfd}
+      \strng{authornamehash}{443f4f82c66f962c17fa80aced395dfd}
+      \strng{authorfullhash}{443f4f82c66f962c17fa80aced395dfd}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Abstract Algebra}
+      \field{year}{2004}
+    \endentry
+    \entry{first_course}{book}{}
+      \name{author}{1}{}{%
+        {{hash=acc48a2f36b5c5a942b71f1132d35539}{%
+           family={Fraleigh},
+           familyi={F\bibinitperiod},
+           given={John\bibnamedelima B.},
+           giveni={J\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Addision-Wesley Publishing}%
+      }
+      \strng{namehash}{acc48a2f36b5c5a942b71f1132d35539}
+      \strng{fullhash}{acc48a2f36b5c5a942b71f1132d35539}
+      \strng{bibnamehash}{acc48a2f36b5c5a942b71f1132d35539}
+      \strng{authorbibnamehash}{acc48a2f36b5c5a942b71f1132d35539}
+      \strng{authornamehash}{acc48a2f36b5c5a942b71f1132d35539}
+      \strng{authorfullhash}{acc48a2f36b5c5a942b71f1132d35539}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{A First Course in Abstract Algebra}
+      \field{year}{2003}
+    \endentry
+    \entry{abstract_algebra1}{book}{}
+      \name{author}{1}{}{%
+        {{hash=178397faeaba5f94f1fd7b6ce163ab7e}{%
+           family={Gerhard\bibnamedelima Rosenborg},
+           familyi={G\bibinitperiod\bibinitdelim R\bibinitperiod},
+           given={Annika\bibnamedelima Schuernborg},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{178397faeaba5f94f1fd7b6ce163ab7e}
+      \strng{fullhash}{178397faeaba5f94f1fd7b6ce163ab7e}
+      \strng{bibnamehash}{178397faeaba5f94f1fd7b6ce163ab7e}
+      \strng{authorbibnamehash}{178397faeaba5f94f1fd7b6ce163ab7e}
+      \strng{authornamehash}{178397faeaba5f94f1fd7b6ce163ab7e}
+      \strng{authorfullhash}{178397faeaba5f94f1fd7b6ce163ab7e}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Abstract Algebra}
+    \endentry
+    \entry{abstract_algebra3}{book}{}
+      \name{author}{3}{}{%
+        {{hash=09ee7c777bb859217d64eb3049fb8cdf}{%
+           family={Hodge},
+           familyi={H\bibinitperiod},
+           given={Jonathon\bibnamedelima K.},
+           giveni={J\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=fcc3967771f10c0c71df0056165b1748}{%
+           family={Schlicker},
+           familyi={S\bibinitperiod},
+           given={Steven},
+           giveni={S\bibinitperiod}}}%
+        {{hash=b40b4f9f61688c7e73a334d3f3c97432}{%
+           family={Sundstrom},
+           familyi={S\bibinitperiod},
+           given={Ted},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {CRC Press}%
+      }
+      \strng{namehash}{862efb522f7d558fbe339bd8671a7845}
+      \strng{fullhash}{862efb522f7d558fbe339bd8671a7845}
+      \strng{bibnamehash}{862efb522f7d558fbe339bd8671a7845}
+      \strng{authorbibnamehash}{862efb522f7d558fbe339bd8671a7845}
+      \strng{authornamehash}{862efb522f7d558fbe339bd8671a7845}
+      \strng{authorfullhash}{862efb522f7d558fbe339bd8671a7845}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Abstract Algebra}
+      \field{year}{2024}
+      \true{nocite}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

@@ -1,0 +1,235 @@
+\chapter{مفاهيم أساسية}
+\thispagestyle{empty}
+\newpage
+\section{المشتقة}
+
+\begin{definition}
+    $f$ دالة حقيقية يقال بأنها قابلة للإشتقاق عند نقطة $a\in\R$ إذا وفقط إذا كانت الدالة $f$ معرفة عند فترة تحوي $a$ والغاية
+    \begin{equation}
+    \label{diff_def}
+        f^{\prime}(a):=\lim\limits_{h\rightarrow 0}\frac{f(a+h)-f(a)}{h}
+    \end{equation}
+    موجودة. في هذه الحالة $f^{\prime}(a)$ تسمى مشتقة الدالة $f$ عند $a$. إذا فرضنا $x=a+h$ فإن \eqref{diff_def} تصبح بالشكل
+    \begin{equation*}
+        f'(a)=\lim\limits_{x\to a}\frac{f(x)-f(a)}{x-a}
+    \end{equation*}
+\end{definition}
+\noindent
+إذن عندما $x\rightarrow a$ فإن ميل الوتر الذي يمر بالنقاط $(x,f(x))$ و $(a,f(a))$ يُقرب ميل المماس الدالة $y=f(x)$ عند $x=a$ كما موضح بالشكل \ref{fig:tangent}
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+axis equal,
+    axis lines = middle,
+    xlabel = \(x\),
+    ylabel = {\(y\)},
+    xtick={1,2,3},
+    xticklabels={$a$,$x_1$,$x_2$},
+    ytick=\empty,
+    ymin=0, ymax=5,
+    xmin=0, xmax=6.5,
+]
+% Function plot
+\addplot [
+    domain=0.5:4.5,
+    samples=100,
+    thick,
+]
+{exp(x)/10};
+% Tangent line at x = 1
+\addplot [
+    domain=0:5,
+    samples=100
+]
+{exp(1)/10*x};
+% Line segment approaching tangent from left
+\addplot [
+    domain=0:4,
+    samples=100,
+    dashed,
+]
+{(exp(3)-exp(1))/20 *(x-1)+exp(1)/10};
+% Line segment approaching tangent from right
+\addplot [
+    domain=0:4,
+    samples=100,
+    dashed,
+]
+{(exp(2)-exp(1))/10 *(x-1)+exp(1)/10};
+\addplot [mark=*] coordinates {(1,e/10)};
+\addplot [mark=*] coordinates {(2,e^2/10)};
+\addplot [mark=*] coordinates {(3,e^3/10)};
+\end{axis}
+\end{tikzpicture}
+\caption{تقارب مستقيمات الوتر للمماس}
+\label{fig:tangent}
+\end{figure}
+\begin{note}
+    إذا كانت $f$ قابلة للإشتقاق عند كل نقطة في مجموعة $E$ ، فإن $f^{\prime}$ هي دالة على $E$. هذه الدالة لها عدة ترميزات
+\[
+D_x f= \frac{df}{dx} =f^{(1)}=f^{\prime}
+\]
+عندما $y=f(x)$ ، سوف نستخدم الترميز $dy/dx$ أو $y^{\prime}$
+\end{note}
+
+\begin{note}
+    المشتقات من الرتب العليا تعرف بشكل متكرر، ذلك بأن، إذا كان $n\in\N$ ، إذن \\$f^{(n+1)}(a)=(f^{(n)})^{\prime}(a)$
+    ونستخدم للمشتقات العليا الرموز $d^nf/dx^n$ أو $f^{(n)}$ أو بحالة \\$y=f(x)$ فإننا نكتب $d^ny/dx^n$ أو $y^{(n)}$.
+\end{note}
+\begin{theorem}
+    \label{linear_function_diff'able_Theorem_R}
+    $f$ دالة حقيقية تكون قابلة للإشتقاق عند $a$ إذا وفقط إذا وجدت دالة $T$ من الشكل $T(x):=mx$ بحيث
+\begin{equation}
+    \label{linear_diff_limit}
+    \lim\limits_{h\to0}\frac{f(a+h)-f(a)-T(h)}{h}=0
+\end{equation}
+\end{theorem}
+\begin{myproof}
+    أفرض أن $f$ قابلة للإشتقاق ، و أجعل $m=f'(a)$. إذن بواسطة \eqref{diff_def} نحصل على
+    \[
+    \frac{f(a+h)-f(a)-T(h)}{h}=\frac{f(a+h)-f(a)}{h}-f'(a)\to0
+    \]
+    عندما $h\to0$
+
+    بالعكس إذا كانت \eqref{linear_diff_limit} متحققة للدالة $T(x):=mx$ و $h\neq0$ ، إذن
+    \begin{align*}
+        \frac{f(a+h)-f(a)}{h}&=m+\frac{f(a+h)-f(a)-mh}{h}\\
+       &= m+\frac{f(a+h)-f(a)-T(h)}{h}
+    \end{align*}
+    بواسطة \eqref{linear_diff_limit}.الغاية للصيغة الأخيرة عليها وتساوي $m$. وبالتالي $\mfrac{f(a+h)-f(a)}{h}\to m$ عندما $h\to0$؛ وهذا يعني $f'(a)$ موجودة وتساوي $m$.
+\end{myproof}
+
+\begin{theorem}
+    إذا كانت $f$ قابلة للإشتقاق عند $a$ ، إذن $f$ مستمرة عند $a$.
+\end{theorem}
+\begin{myproof}
+\vspace{-30pt}
+    \begin{align*}
+        \lim\limits_{x\to a}f(x)-f(a)&=\lim\limits_{x\to a}f(x)-f(a)\cdot\frac{x-a}{x-a}\\
+       &= \lim\limits_{x\to a}\frac{f(x)-f(a)}{x-a}\cdot(x-a)\\
+       &= \lim\limits_{x\to a}\frac{f(x)-f(a)}{x-a}\cdot\lim\limits_{x\to a}(x-a)\\
+        &=f'(a)\cdot0\\
+        &=0
+    \end{align*}
+    إذن $f(x)\to f(a)$ عندما $x\to a$ ، وبالتالي $f$ مستمرة عند $a$.
+\end{myproof}
+
+\begin{example}
+    برهن أن الدالة $f(x)=\abs{x}$ مستمرة عند $0$ ولكن غير قابلة للإشتقاق عند $0$
+\end{example}
+\begin{myproof}
+    عندما $x\to0$ هذا يؤدي إلى أن $\abs{x}\to0$ و بالتالي فإن $f$ مستمرة عند $a$ ، من الناحية الأخرى ، بما أن
+   \[
+   \abs{h}=\begin{cases}
+       h & h>0\\
+      -h & h<0
+  \end{cases}
+   \]
+    لدينا
+    \[
+    \lim\limits_{h\rightarrow0^+}\frac{f(h)-f(0)}{h}=1\quad\text{و}\quad\lim\limits_{h\rightarrow0^-}\frac{f(h)-f(0)}{h}=-1
+    \]
+\end{myproof}
+\begin{definition}
+    لتكن $I$ فترة
+    \begin{enumerate}
+        \item الدالة $f:I\to\R$ قابلة للإشتقاق على $I$ إذا وفقط إذا كانت الغاية
+        \[
+        f'_I(a):=\lim_{\substack{x\to a \\ x\in I}}\frac{f(x)-f(a)}{x-a}
+        \]
+        موجودة ومنتهية لكل $a\in I$.
+
+        \item يقال بأن $f$ قابلة للإشتقاق بشكل مستمر على $I$ إذا وفقط إذا كانت $f'_I$ موجودة و مستمرة على $I$.
+    \end{enumerate}
+\end{definition}
+
+\begin{note}
+  إذا كانت $a$ ليست نقطة نهاية للفترة $I$ فإنه $f'_I(a)=f'(a)$ ، لذا بالعادة نستخدم الرمز $f'$ بدلاً من $f'_I$. بالخصوص إذا كانت $f$ قابلة للإشتقاق على $[a,b]$ فإن
+  \[
+  f'(a)=\lim\limits_{h\to0^+}\frac{f(a+h)-f(a)}{h},\quad f'(b)=\lim\limits_{h\to0^-}\frac{f(b+h)-f(b)}{h}
+  \]
+\end{note}
+
+\begin{note}
+    اشتقاق بعض الدوال المهمة 
+\[
+\begin{array}{c|c}
+f(x) & f'(x) \\
+\hline
+a & 0\\
+x^n & nx^{n-1} \\
+e^{\alpha x} & \alpha e^{\alpha x} \\
+\ln(x) & \mfrac{1}{x} \\
+\sin(x) & \cos(x) \\
+\cos(x) & -\sin(x) \\
+\tan(x) & \sec^2(x) \\
+\cot(x) & -\csc^2(x) \\
+\sec(x) & \sec(x) \tan(x) \\
+\csc(x) & -\csc(x) \cos(x) \\
+\end{array}
+\]
+\end{note}
+
+\begin{example}
+    الدالة $f(x)=x^{3/2}$ قابلة للإشتقاق على الفترة $[0,\infty)$ و $f'(x)=3\sqrt{x}/2$ لكل $x\in[0,\infty)$.
+\end{example}
+\begin{myproof}
+    باستخدام قانون المشتقة للقوى فإن $f'(x)=3\sqrt{x}/2$ لكل $x\in(0,\infty)$ وبإستخدام التعريف نجد أن
+    \[
+    f'(0)=\lim\limits_{h\to0^+}\frac{h^{3/2}-0}{h}=\lim\limits_{h\to0^+}\sqrt{h}=0
+    \]
+\end{myproof}
+
+\begin{definition}
+    نرمز إلى مجموعة الدوال التي تمتلك $n$ من المشتقات الموجودة و المستمرة على الفترة $I$ بالرمز $C^{(n)}(I)$ أي أن
+    \[
+    C^{(n)}(I):=\cbracket{f\mid f:I\to\R ; f^{(n)}\: \text{موجودة و مستمرة}}
+    \]
+وسوف نرمز إلى مجموعة الدوال التي تنتمي إلى $C^{(n)}(I)$ لكل $n\in\N$ بالرمز $C^{\infty}(I)$.
+\end{definition}
+
+\begin{theorem}
+\label{derivatives_rules}
+    لتكن $f,g$ دوال حقيقية و $\alpha\in\R$. إذا كانت $f,g$ دوال قابلة للإشتقاق عند $a$ فإن
+    \begin{gather}
+        (f\pm g)'(a)=f'(a)\pm g'(a)\\[7pt]
+        (\alpha f)'(a)=\alpha f'(a)\\[7pt]
+        (f\cdot g)'(a)=g(a)f'(a)+f(a)g'(a)\\[7pt]
+        \pbracket{\frac{f}{g}}'(a)=\frac{g(a)f'(a)-f(a)g'(a)}{[g(a)]^2},\quad g(a)\neq 0
+    \end{gather}
+\end{theorem}
+
+\begin{theorem}[{[قاعدة السلسلة]}]
+    لتكن $f,g$ دوال حقيقية. اذا كانت $f$ قابلة للإشتقاق عند $a$ و $g$ قابلة للإشتقاق عند $f(a)$ فإن $g\circ f$ قابلة للإشتقاق عند $a$ مع 
+    \[
+    (g\circ f)'(a)=g'[f(a)]f'(a)
+    \]
+\end{theorem}
+
+\section{مبرهنة القيمة المتوسطة}
+\begin{theorem}
+\label{mean_value_theorem}
+    افرض أن $a,b\in\R$ مع $a<b$.
+    \begin{enumerate}
+        \item[.i][مبرهنة القيمة المتوسطة المعممة] إذا كانت $f,g$ دوال مستمرة على $[a,b]$ و قابلة للإشتقاق على $(a,b)$ إذن يوجد عدد $c\in(a,b)$ بحيث
+        \[
+        g'(c)(f(b)-f(a))=f'(c)(g(b)-g(a))
+        \]
+
+        \item[.ii] [مبرهنة القيمة المتوسطة]  إذا كانت $f$ دوال مستمرة على $[a,b]$ و قابلة للإشتقاق على $(a,b)$ إذن يوجد عدد $c\in(a,b)$ بحيث
+        \[
+        f(b)-f(a)=f'(c)(b-a)
+        \]
+       
+    \end{enumerate}
+\end{theorem}
+
+\section{الضرب الديكارتي}
+\begin{definition}
+    لتكن $E_1,E_2,\dots,E_n$ تجمع منتهِ من المجموعات ، فإن الضرب الديكارتي يعرف بالشكل
+    \[
+    E_1\times E_2\times\dots\times E_n:=\cbracket{(x_1,x_2,\dots,x_n):x_j\in E_j\text{ for } j=1,2,\dots,n}
+    \]
+    إذن الضرب الديكارتي إلى $n$ من المجموعات الجزئية من $\R$ هو مجموعة جزئية من $\R^n$
+\end{definition}

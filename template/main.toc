@@ -1,0 +1,3 @@
+\selectlanguage *[numerals=maghrib]{arabic}
+\contentsfinish 
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

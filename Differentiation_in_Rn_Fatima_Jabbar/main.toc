@@ -1,0 +1,17 @@
+\selectlanguage *[]{arabic}
+\selectlanguage *[numerals=maghrib]{arabic}
+\contentsline {chapter*}{مقدمة}{1}{Doc-Start}%
+\contentsline {chapter}{\numberline {الفصل الأول }مفاهيم أساسية}{2}{chapter.1}%
+\contentsline {section}{\numberline {1-1}المشتقة}{3}{section.1.1}%
+\contentsline {section}{\numberline {1-2}مبرهنة القيمة المتوسطة}{8}{section.1.2}%
+\contentsline {section}{\numberline {1-3}الضرب الديكارتي}{8}{section.1.3}%
+\contentsline {chapter}{\numberline {الفصل الثاني }قابلية الإشتقاق في $\mathbb {R}^n$}{9}{chapter.2}%
+\contentsline {section}{\numberline {2-1}المشتقة الجزئية}{10}{section.2.1}%
+\contentsline {section}{\numberline {2-2}الفضاء $C^{\infty }$}{11}{section.2.2}%
+\contentsline {section}{\numberline {2-3}تعريف قابلية الاشتقاق في $\mathbb {R}^n$}{15}{section.2.3}%
+\contentsline {chapter*}{الخلاصة}{30}{definition.2.3.17}%
+\contentsline {chapter*}{المصادر}{31}{definition.2.3.17}%
+\selectlanguage *[]{english}
+\selectlanguage *[locale=default,calendar=gregorian,numerals=maghrib,hijricorrection=0,abjadjimnotail=false]{arabic}
+\selectlanguage *[numerals=maghrib]{arabic}
+\contentsfinish 

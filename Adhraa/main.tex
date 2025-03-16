@@ -1,0 +1,33 @@
+\documentclass{arabicClass}
+
+\addbibresource{references.bib}
+\begin{document}
+	\abovedisplayskip=7pt
+	\belowdisplayskip=7pt
+	\input{Title Page/titlepage}
+		\pagenumbering{roman}
+	\input{gift}
+	\input{thanks}
+	\tableofcontents
+	    \pagenumbering{arabic}
+	\input{intro}
+	\input{abstract}
+
+
+	
+	\input{chapter1}
+	
+	\input{chapter2}
+	
+	\input{conclusion}
+	
+	\nocite{*}
+	\chapter*{المراجع}
+	\addcontentsline{toc}{chapter*}{المراجع}
+	\subsection*{أولاً: المراجع الاجنبية}
+		\begin{english}
+		\printbibliography[keyword=english, heading=none]
+	\end{english}
+	\subsection*{ثانياً: المراجع العربية}
+	\printbibliography[keyword=arabic, heading=none]
+\end{document}

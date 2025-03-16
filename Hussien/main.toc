@@ -1,0 +1,15 @@
+\selectlanguage *[numerals=maghrib]{arabic}
+\contentsline {chapter}{\numberline {الفصل الأول }المعادلات التفاضلية}{2}{}%
+\contentsline {section}{\numberline {1 - 1}المعادلات التفاضلية الاعتيادية و الجزئية}{3}{}%
+\contentsline {section}{\numberline {1 - 2}رتبة المعادلة التفاضلية}{3}{}%
+\contentsline {section}{\numberline {1 - 3}المعادلات التفاضلية الخطية واللا خطية}{4}{}%
+\contentsline {section}{\numberline {1 - 4}المعادلات التفاضلية الخطية المتجانسة من الرتبة الثانية ذات المعاملات الثابتة}{4}{}%
+\contentsline {section}{\numberline {1 - 5}المعادلات التفاضلية الخطية غير المتجانسة ذات المعاملات الثابتة}{8}{}%
+\contentsline {chapter}{\numberline {الفصل الثاني }معادلات الفروق}{14}{}%
+\contentsline {section}{\numberline {2 - 1}التعريف}{15}{}%
+\contentsline {section}{\numberline {2 - 2}معادلات الفروق من الرتبة الاولى}{15}{}%
+\contentsline {section}{\numberline {2 - 3}معادلات الفروق من الرتبة الثانية: الدالة المتممة والحل الخاص}{16}{}%
+\contentsline {section}{\numberline {2 - 4}معادلات الفروق المتجانسة}{16}{}%
+\contentsline {section}{\numberline {2 - 5}الحلول الخاصة}{19}{}%
+\contentsfinish 
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

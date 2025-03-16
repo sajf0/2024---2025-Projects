@@ -1,0 +1,55 @@
+\selectlanguage *[numerals=maghrib]{arabic}
+\contentsline {chapter*}{مقدمة}{1}{}%
+\contentsline {chapter*}{المستخلص}{2}{}%
+\contentsline {chapter}{\numberline {الفصل الأول }الجبر البولياني}{2}{}%
+\contentsline {section}{\numberline {1 - 1}التعاريف الاساسية}{3}{}%
+\contentsline {section}{\numberline {1 - 2}الجبر البولياني بقيمتين}{4}{}%
+\selectlanguage *[]{english}
+\selectlanguage *[locale=default,calendar=gregorian,numerals=maghrib,hijricorrection=0,abjadjimnotail=false]{arabic}
+\selectlanguage *[numerals=maghrib]{arabic}
+\selectlanguage *[]{english}
+\selectlanguage *[locale=default,calendar=gregorian,numerals=maghrib,hijricorrection=0,abjadjimnotail=false]{arabic}
+\selectlanguage *[numerals=maghrib]{arabic}
+\contentsline {section}{\numberline {1 - 3}الدوال البوليانية}{5}{}%
+\contentsline {section}{\numberline {1 - 4}كيفية تحديد قيم الدالة البوليانية}{6}{}%
+\selectlanguage *[]{english}
+\selectlanguage *[locale=default,calendar=gregorian,numerals=maghrib,hijricorrection=0,abjadjimnotail=false]{arabic}
+\selectlanguage *[numerals=maghrib]{arabic}
+\contentsline {section}{\numberline {1 - 5}العمليات على الدوال البوليانية}{7}{}%
+\contentsline {section}{\numberline {1 - 6}قوانين الجبر البولياني}{8}{}%
+\contentsline {chapter}{\numberline {الفصل الثاني }نظرية البيان}{8}{}%
+\contentsline {section}{\numberline {2 - 1}تعاريف و امثلة}{9}{}%
+\contentsline {section}{\numberline {2 - 2}خواص البيانات}{11}{}%
+\contentsline {subsection}{\numberline {2 - 2 - 1}البيان البسيط}{11}{}%
+\contentsline {subsection}{\numberline {2 - 2 - 2}البيان الموجه}{11}{}%
+\contentsline {subsection}{\numberline {2 - 2 - 3}درجة العقدة}{12}{}%
+\contentsline {subsection}{\numberline {2 - 2 - 4}الدرجة الكلية}{12}{}%
+\contentsline {section}{\numberline {2 - 3}انواع خاصة من البيانات}{13}{}%
+\contentsline {subsection}{\numberline {2 - 3 - 1}البيانات التامة \textenglish {Complete Graphs}}{13}{}%
+\selectlanguage *[]{english}
+\selectlanguage *[locale=default,calendar=gregorian,numerals=maghrib,hijricorrection=0,abjadjimnotail=false]{arabic}
+\selectlanguage *[numerals=maghrib]{arabic}
+\contentsline {subsection}{\numberline {2 - 3 - 2}البيانات الدائرية \textenglish {Cycles}}{13}{}%
+\selectlanguage *[]{english}
+\selectlanguage *[locale=default,calendar=gregorian,numerals=maghrib,hijricorrection=0,abjadjimnotail=false]{arabic}
+\selectlanguage *[numerals=maghrib]{arabic}
+\contentsline {subsection}{\numberline {2 - 3 - 3}البيانات الدولابية \textenglish {Wheels}}{14}{}%
+\selectlanguage *[]{english}
+\selectlanguage *[locale=default,calendar=gregorian,numerals=maghrib,hijricorrection=0,abjadjimnotail=false]{arabic}
+\selectlanguage *[numerals=maghrib]{arabic}
+\contentsline {section}{\numberline {2 - 4}تمثيل البيانات \textenglish {Representing Graphs}}{14}{}%
+\contentsline {subsection}{\numberline {2 - 4 - 1}مصفوفة الجوار \textenglish {Adjacency Matrix}}{14}{}%
+\selectlanguage *[]{english}
+\selectlanguage *[numerals=maghrib]{arabic}
+\selectlanguage *[locale=default,calendar=gregorian,numerals=maghrib,hijricorrection=0,abjadjimnotail=false]{arabic}
+\selectlanguage *[]{english}
+\selectlanguage *[numerals=maghrib]{arabic}
+\selectlanguage *[locale=default,calendar=gregorian,numerals=maghrib,hijricorrection=0,abjadjimnotail=false]{arabic}
+\contentsline {subsection}{\numberline {2 - 4 - 2}مصفوفة الورود \textenglish {Incidence Matrix}}{15}{}%
+\selectlanguage *[]{english}
+\selectlanguage *[numerals=maghrib]{arabic}
+\selectlanguage *[locale=default,calendar=gregorian,numerals=maghrib,hijricorrection=0,abjadjimnotail=false]{arabic}
+\contentsline {chapter*}{الخلاصة}{17}{}%
+\contentsline {chapter*}{المراجع}{18}{}%
+\contentsfinish 
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

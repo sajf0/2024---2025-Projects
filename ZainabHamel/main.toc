@@ -1,0 +1,22 @@
+\selectlanguage *[numerals=maghrib]{arabic}
+\contentsline {chapter*}{مقدمة}{1}{}%
+\contentsline {chapter}{\numberline {الفصل الأول }مفاهيم أساسية}{2}{}%
+\contentsline {section}{\numberline {1 - 1}العلاقات والدوال}{3}{}%
+\contentsline {section}{\numberline {1 - 2}العملية الثنائية وخصائصها}{3}{}%
+\contentsline {section}{\numberline {1 - 3}الزمرة}{3}{}%
+\contentsline {section}{\numberline {1 - 4}الزمرة الجزئية}{4}{}%
+\contentsline {section}{\numberline {1 - 5}الزمر السوية و زمرة القسمة}{5}{}%
+\contentsline {section}{\numberline {1 - 6}الحلقة وبعض خصائصها}{5}{}%
+\contentsline {chapter}{\numberline {الفصل الثاني }المعيار}{7}{}%
+\contentsline {section}{\numberline {2 - 1}تعاريف و أمثلة}{8}{}%
+\contentsline {section}{\numberline {2 - 2}المعيار الجزئي}{10}{}%
+\contentsline {section}{\numberline {2 - 3}التشاكل المعياري}{11}{}%
+\contentsline {section}{\numberline {2 - 4}معيار القسمة}{12}{}%
+\contentsline {section}{\numberline {2 - 5}مبرهنات التماثل}{14}{}%
+\contentsline {chapter*}{الخلاصة}{18}{}%
+\contentsline {chapter*}{المراجع}{19}{}%
+\selectlanguage *[]{english}
+\selectlanguage *[locale=default,calendar=gregorian,numerals=maghrib,hijricorrection=0,abjadjimnotail=false]{arabic}
+\selectlanguage *[numerals=maghrib]{arabic}
+\contentsfinish 
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

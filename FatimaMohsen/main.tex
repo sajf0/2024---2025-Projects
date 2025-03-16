@@ -1,0 +1,22 @@
+\documentclass{arabicClass}
+
+\addbibresource{references.bib}
+
+\begin{document}
+	\abovedisplayskip=7pt
+	\belowdisplayskip=7pt
+	
+	\input{Title Page/titlepage.tex}
+	
+	\tableofcontents
+	
+	\input{chapter1}
+	\input{chapter2}
+	
+	\nocite{*}
+	\chapter*{المراجع}
+	\addcontentsline{toc}{chapter*}{المراجع}
+	\begin{english}
+				\printbibliography[heading=none]
+	\end{english}
+\end{document}

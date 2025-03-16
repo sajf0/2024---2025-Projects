@@ -1,0 +1,215 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{jhhe1}{book}{}
+      \name{author}{1}{}{%
+        {{hash=c26f76899de36e10c1d32abc48c7258c}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={J.H.},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Comm.in Nonlinear Sci,}%
+        {Nummer. Simul.2}%
+      }
+      \strng{namehash}{c26f76899de36e10c1d32abc48c7258c}
+      \strng{fullhash}{c26f76899de36e10c1d32abc48c7258c}
+      \strng{bibnamehash}{c26f76899de36e10c1d32abc48c7258c}
+      \strng{authorbibnamehash}{c26f76899de36e10c1d32abc48c7258c}
+      \strng{authornamehash}{c26f76899de36e10c1d32abc48c7258c}
+      \strng{authorfullhash}{c26f76899de36e10c1d32abc48c7258c}
+      \field{extraname}{1}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{A new approach to nonlinear partial differential equations}
+      \field{year}{1997}
+      \true{nocite}
+      \keyw{english}
+    \endentry
+    \entry{jhhe2}{book}{}
+      \name{author}{1}{}{%
+        {{hash=c26f76899de36e10c1d32abc48c7258c}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={J.H.},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Comp. Methods Appl. Merch. Engg}%
+      }
+      \strng{namehash}{c26f76899de36e10c1d32abc48c7258c}
+      \strng{fullhash}{c26f76899de36e10c1d32abc48c7258c}
+      \strng{bibnamehash}{c26f76899de36e10c1d32abc48c7258c}
+      \strng{authorbibnamehash}{c26f76899de36e10c1d32abc48c7258c}
+      \strng{authornamehash}{c26f76899de36e10c1d32abc48c7258c}
+      \strng{authorfullhash}{c26f76899de36e10c1d32abc48c7258c}
+      \field{extraname}{2}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{Approximate analytical solution for seepage flow with fractional derivatives}
+      \field{year}{1998}
+      \true{nocite}
+      \keyw{english}
+    \endentry
+    \entry{jhhe3}{book}{}
+      \name{author}{1}{}{%
+        {{hash=c26f76899de36e10c1d32abc48c7258c}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={J.H.},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Comp. Methods Appl. Merch. Engg}%
+      }
+      \strng{namehash}{c26f76899de36e10c1d32abc48c7258c}
+      \strng{fullhash}{c26f76899de36e10c1d32abc48c7258c}
+      \strng{bibnamehash}{c26f76899de36e10c1d32abc48c7258c}
+      \strng{authorbibnamehash}{c26f76899de36e10c1d32abc48c7258c}
+      \strng{authornamehash}{c26f76899de36e10c1d32abc48c7258c}
+      \strng{authorfullhash}{c26f76899de36e10c1d32abc48c7258c}
+      \field{extraname}{3}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{Approximate solution for non linear differentail equations with convolution product non-linearities}
+      \field{year}{1998}
+      \true{nocite}
+      \keyw{english}
+    \endentry
+    \entry{pde2}{book}{}
+      \name{author}{1}{}{%
+        {{hash=e8d0ef4442e4cfc37a42f32002bdbacd}{%
+           family={Ivrii},
+           familyi={I\bibinitperiod},
+           given={Victor},
+           giveni={V\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {University of Tornto}%
+      }
+      \strng{namehash}{e8d0ef4442e4cfc37a42f32002bdbacd}
+      \strng{fullhash}{e8d0ef4442e4cfc37a42f32002bdbacd}
+      \strng{bibnamehash}{e8d0ef4442e4cfc37a42f32002bdbacd}
+      \strng{authorbibnamehash}{e8d0ef4442e4cfc37a42f32002bdbacd}
+      \strng{authornamehash}{e8d0ef4442e4cfc37a42f32002bdbacd}
+      \strng{authorfullhash}{e8d0ef4442e4cfc37a42f32002bdbacd}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{Partial Differential Equations}
+      \field{year}{2022}
+      \keyw{english}
+    \endentry
+    \entry{pde3}{book}{}
+      \name{author}{2}{}{%
+        {{hash=2e74ea4806f645fee5a9c2c99afe77a5}{%
+           family={Zachmanoglou},
+           familyi={Z\bibinitperiod},
+           given={E.C.},
+           giveni={E\bibinitperiod}}}%
+        {{hash=671a2ba7c26ef3cdebd597d509c8db1f}{%
+           family={Thoe},
+           familyi={T\bibinitperiod},
+           given={Dale\bibnamedelima W.},
+           giveni={D\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Dover Publications, Inc., New York}%
+      }
+      \strng{namehash}{d541738c5e838e45cffbb79f97952eab}
+      \strng{fullhash}{d541738c5e838e45cffbb79f97952eab}
+      \strng{bibnamehash}{d541738c5e838e45cffbb79f97952eab}
+      \strng{authorbibnamehash}{d541738c5e838e45cffbb79f97952eab}
+      \strng{authornamehash}{d541738c5e838e45cffbb79f97952eab}
+      \strng{authorfullhash}{d541738c5e838e45cffbb79f97952eab}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{Introduction to Partial Differential Equations with Applications}
+      \field{year}{1986}
+      \keyw{english}
+    \endentry
+    \entry{pde1}{book}{}
+      \name{author}{1}{}{%
+        {{hash=769bf68e60c649812fd9d4a09744530b}{%
+           family={االعاني},
+           familyi={ا\bibinitperiod},
+           given={عطالله\bibnamedelima ثامر},
+           giveni={ع\bibinitperiod\bibinitdelim ث\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {جامعة بغداد}%
+      }
+      \strng{namehash}{769bf68e60c649812fd9d4a09744530b}
+      \strng{fullhash}{769bf68e60c649812fd9d4a09744530b}
+      \strng{bibnamehash}{769bf68e60c649812fd9d4a09744530b}
+      \strng{authorbibnamehash}{769bf68e60c649812fd9d4a09744530b}
+      \strng{authornamehash}{769bf68e60c649812fd9d4a09744530b}
+      \strng{authorfullhash}{769bf68e60c649812fd9d4a09744530b}
+      \field{sortinit}{ا}
+      \field{sortinithash}{2d941e91564ef9606364c68600fe16c3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{arabic}
+      \field{title}{مقدمة الى المعادلات التفاضلية الجزئية}
+      \field{year}{1990}
+      \keyw{arabic}
+    \endentry
+    \entry{ode}{book}{}
+      \name{author}{1}{}{%
+        {{hash=1ca9e8010e975043d703f69778177a55}{%
+           family={المناودة},
+           familyi={ا\bibinitperiod},
+           given={اسماعيل\bibnamedelimb بوقفة\bibnamedelimb و\bibnamedelima عايش},
+           giveni={ا\bibinitperiod\bibinitdelim ب\bibinitperiod\bibinitdelim و\bibinitperiod\bibinitdelim ع\bibinitperiod}}}%
+      }
+      \strng{namehash}{1ca9e8010e975043d703f69778177a55}
+      \strng{fullhash}{1ca9e8010e975043d703f69778177a55}
+      \strng{bibnamehash}{1ca9e8010e975043d703f69778177a55}
+      \strng{authorbibnamehash}{1ca9e8010e975043d703f69778177a55}
+      \strng{authornamehash}{1ca9e8010e975043d703f69778177a55}
+      \strng{authorfullhash}{1ca9e8010e975043d703f69778177a55}
+      \field{sortinit}{ا}
+      \field{sortinithash}{2d941e91564ef9606364c68600fe16c3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{arabic}
+      \field{title}{المعادلات التفاضلية العادية حلول وتطبيقات}
+      \keyw{arabic}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

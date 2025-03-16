@@ -1,0 +1,48 @@
+\selectlanguage *[numerals=maghrib]{arabic}
+\contentsline {chapter*}{الخلاصة}{2}{}%
+\contentsline {chapter*}{مقدمة}{3}{}%
+\contentsline {chapter}{\numberline {الفصل الأول }طريقة التفاضل التربيعي}{4}{}%
+\contentsline {section}{\numberline {1 - 1}مقدمة}{5}{}%
+\contentsline {section}{\numberline {1 - 2}صيغ التفاضل التربيعي}{5}{}%
+\contentsline {section}{\numberline {1 - 3}معاملات الوزن من الرتبة الأولى}{6}{}%
+\contentsline {subsection}{\numberline {1 - 3 - 1}طريقة بيلمان الأولى}{6}{}%
+\contentsline {subsection}{\numberline {1 - 3 - 2}طريقة بيلمان الثانية}{7}{}%
+\contentsline {subsection}{\numberline {1 - 3 - 3}طريقة كوان و جانك}{8}{}%
+\contentsline {section}{\numberline {1 - 4}معاملات الوزن من الرتبة الثانية}{8}{}%
+\contentsline {subsection}{\numberline {1 - 4 - 1}طريقة شو العامة}{9}{}%
+\contentsline {subsection}{\numberline {1 - 4 - 2}طريقة ضرب المصفوفات}{9}{}%
+\contentsline {section}{\numberline {1 - 5}اختيار نقاط الشبكة}{10}{}%
+\contentsline {subsection}{\numberline {1 - 5 - 1}النقاط متساوية الأبعاد}{10}{}%
+\contentsline {subsection}{\numberline {1 - 5 - 2}نقاط شيبيشيف-كاوس-لوباتو}{10}{}%
+\contentsline {chapter}{\numberline {الفصل الثاني }امثلة عددية}{12}{}%
+\contentsline {section}{\numberline {2 - 1}مقدمة}{13}{}%
+\selectlanguage *[]{english}
+\selectlanguage *[locale=default,calendar=gregorian,numerals=maghrib,hijricorrection=0,abjadjimnotail=false]{arabic}
+\selectlanguage *[numerals=maghrib]{arabic}
+\selectlanguage *[]{english}
+\selectlanguage *[locale=default,calendar=gregorian,numerals=maghrib,hijricorrection=0,abjadjimnotail=false]{arabic}
+\selectlanguage *[numerals=maghrib]{arabic}
+\selectlanguage *[numerals=maghrib]{arabic}
+\selectlanguage *[locale=default,calendar=gregorian,numerals=maghrib,hijricorrection=0,abjadjimnotail=false]{arabic}
+\selectlanguage *[]{english}
+\selectlanguage *[]{english}
+\selectlanguage *[locale=default,calendar=gregorian,numerals=maghrib,hijricorrection=0,abjadjimnotail=false]{arabic}
+\selectlanguage *[numerals=maghrib]{arabic}
+\selectlanguage *[numerals=maghrib]{arabic}
+\selectlanguage *[locale=default,calendar=gregorian,numerals=maghrib,hijricorrection=0,abjadjimnotail=false]{arabic}
+\selectlanguage *[]{english}
+\selectlanguage *[numerals=maghrib]{arabic}
+\selectlanguage *[locale=default,calendar=gregorian,numerals=maghrib,hijricorrection=0,abjadjimnotail=false]{arabic}
+\selectlanguage *[]{english}
+\selectlanguage *[numerals=maghrib]{arabic}
+\selectlanguage *[locale=default,calendar=gregorian,numerals=maghrib,hijricorrection=0,abjadjimnotail=false]{arabic}
+\selectlanguage *[]{english}
+\selectlanguage *[]{english}
+\selectlanguage *[locale=default,calendar=gregorian,numerals=maghrib,hijricorrection=0,abjadjimnotail=false]{arabic}
+\selectlanguage *[numerals=maghrib]{arabic}
+\contentsline {chapter*}{توصيات}{20}{}%
+\selectlanguage *[]{english}
+\selectlanguage *[locale=default,calendar=gregorian,numerals=maghrib,hijricorrection=0,abjadjimnotail=false]{arabic}
+\selectlanguage *[numerals=maghrib]{arabic}
+\contentsfinish 
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
