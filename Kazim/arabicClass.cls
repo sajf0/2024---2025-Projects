@@ -10,7 +10,7 @@ right=1in
 ]{geometry}
 
 % For the title page 
-\RequirePackage{graphicx}
+\RequirePackage{graphicx , xcolor}
 
 \RequirePackage{float}
 
@@ -100,12 +100,12 @@ right=1in
 
 % Chnage the section header format
 \titleformat{\section}[block]
-{\bfseries\fontsize{16}{17}\selectfont} 
+{\color{red}\bfseries\fontsize{16}{17}\selectfont} 
 {\thesection}{1em}{}  
 
 % Change the subsection header format
 \titleformat{\subsection}[block]
-{\bfseries\fontsize{15}{17}\selectfont} 
+{\color{red}\bfseries\fontsize{15}{17}\selectfont} 
 {\thesubsection}{1em}{}  
 
 % Change the chapter numbering to suit the arabic style

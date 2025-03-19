@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024/Arch Linux) (preloaded format=xelatex 2024.11.12)  15 MAR 2025 02:01
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024/Arch Linux) (preloaded format=xelatex 2024.11.12)  18 MAR 2025 17:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -280,65 +280,23 @@ Package: amsthm 2020/05/29 v2.20.6
 Package: nccmath 2006/01/20 v1.3 Additional Math Commands (NCC)
 \NCC@fracrulewidth=\dimen179
 )
-(/usr/share/texmf-dist/tex/latex/matlab-prettifier/matlab-prettifier.sty
-Package: matlab-prettifier 2014/06/19 v0.3 A package for prettyprinting Matlab 
-source code
-
-(/usr/share/texmf-dist/tex/latex/base/textcomp.sty
-Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
-)
-(/usr/share/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count292
-\lst@gtempboxa=\box60
-\lst@token=\toks32
-\lst@length=\count293
-\lst@currlwidth=\dimen180
-\lst@column=\count294
-\lst@pos=\count295
-\lst@lostspace=\dimen181
-\lst@width=\dimen182
-\lst@newlines=\count296
-\lst@lineno=\count297
-\lst@maxwidth=\dimen183
-
-(/usr/share/texmf-dist/tex/latex/listings/lstpatch.sty
-File: lstpatch.sty 2024/02/21 1.10 (Carsten Heinz)
-)
-(/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2024/02/21 1.10 (Carsten Heinz)
-\c@lstnumber=\count298
-\lst@skipnumbers=\count299
-\lst@framebox=\box61
-)
-(/usr/share/texmf-dist/tex/latex/listings/listings.cfg
-File: listings.cfg 2024/02/21 1.10 listings configuration
-))
-Package: listings 2024/02/21 1.10 (Carsten Heinz)
-\netBracketCount@mlpr=\count300
-\blkLvl@mlpr=\count301
-\blkLvlAtClassdef@mlpr=\count302
-\emHeight@mlpr=\skip64
-\jayDepth@mlpr=\skip65
-\sectionRuleOffset@mlpr=\skip66
-\toks@mlpr=\toks33
-)
 (/usr/share/texmf-dist/tex/latex/polyglossia/polyglossia.sty
 Package: polyglossia 2024/03/07 v2.1 Modern multilingual typesetting with XeLaT
 eX and LuaLaTeX
 
 (/usr/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count303
+\etb@tempcnta=\count292
 )
 (/usr/share/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
 
 (/usr/share/texmf-dist/tex/generic/xkeyval/xkeyval.tex
 (/usr/share/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks34
-\XKV@tempa@toks=\toks35
+\XKV@toks=\toks32
+\XKV@tempa@toks=\toks33
 )
-\XKV@depth=\count304
+\XKV@depth=\count293
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (/usr/share/texmf-dist/tex/latex/fontspec/fontspec.sty
@@ -347,20 +305,20 @@ Package: fontspec 2024/02/13 v2.9a Font selection for XeLaTeX and LuaLaTeX
 (/usr/share/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
 Package: fontspec-xetex 2024/02/13 v2.9a Font selection for XeLaTeX and LuaLaTe
 X
-\l__fontspec_script_int=\count305
-\l__fontspec_language_int=\count306
-\l__fontspec_strnum_int=\count307
-\l__fontspec_tmp_int=\count308
-\l__fontspec_tmpa_int=\count309
-\l__fontspec_tmpb_int=\count310
-\l__fontspec_tmpc_int=\count311
-\l__fontspec_em_int=\count312
-\l__fontspec_emdef_int=\count313
-\l__fontspec_strong_int=\count314
-\l__fontspec_strongdef_int=\count315
-\l__fontspec_tmpa_dim=\dimen184
-\l__fontspec_tmpb_dim=\dimen185
-\l__fontspec_tmpc_dim=\dimen186
+\l__fontspec_script_int=\count294
+\l__fontspec_language_int=\count295
+\l__fontspec_strnum_int=\count296
+\l__fontspec_tmp_int=\count297
+\l__fontspec_tmpa_int=\count298
+\l__fontspec_tmpb_int=\count299
+\l__fontspec_tmpc_int=\count300
+\l__fontspec_em_int=\count301
+\l__fontspec_emdef_int=\count302
+\l__fontspec_strong_int=\count303
+\l__fontspec_strongdef_int=\count304
+\l__fontspec_tmpa_dim=\dimen180
+\l__fontspec_tmpb_dim=\dimen181
+\l__fontspec_tmpc_dim=\dimen182
 
 (/usr/share/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
@@ -392,25 +350,25 @@ Applying: [2021/05/01] Usage of raw or classic option list on input line 252.
 Already applied: [0000/00/00] Usage of raw or classic option list on input line
  368.
 )
-\scr@dte@tocline@numberwidth=\skip67
-\scr@dte@tocline@numbox=\box62
+\scr@dte@tocline@numberwidth=\skip64
+\scr@dte@tocline@numbox=\box60
 )
 Package tocbasic Info: omitting babel extension for `toc'
 (tocbasic)             because of feature `nobabel' available
-(tocbasic)             for `toc' on input line 37.
+(tocbasic)             for `toc' on input line 33.
 
 (/usr/share/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
 
-\f@nch@headwidth=\skip68
-\f@nch@O@elh=\skip69
-\f@nch@O@erh=\skip70
-\f@nch@O@olh=\skip71
-\f@nch@O@orh=\skip72
-\f@nch@O@elf=\skip73
-\f@nch@O@erf=\skip74
-\f@nch@O@olf=\skip75
-\f@nch@O@orf=\skip76
+\f@nch@headwidth=\skip65
+\f@nch@O@elh=\skip66
+\f@nch@O@erh=\skip67
+\f@nch@O@olh=\skip68
+\f@nch@O@orh=\skip69
+\f@nch@O@elf=\skip70
+\f@nch@O@erf=\skip71
+\f@nch@O@olf=\skip72
+\f@nch@O@orf=\skip73
 )
 (/usr/share/texmf-dist/tex/latex/polyglossia/gloss-arabic.ldf
 File: gloss-arabic.ldf polyglossia: module for Arabic
@@ -448,19 +406,19 @@ etting in plain TeX and LaTeX
 ****************************************************
 (/usr/share/texmf-dist/tex/xelatex/bidi/biditools.sty
 Package: biditools 2022/06/15 v2.3 Programming tools for bidi package
-\@bidi@envbody=\toks36
-\@bidi@emptytoks=\toks37
-\bidi@poscount=\count316
-\bidi@tempcountb=\count317
-\bidi@temptoksa=\toks38
-\bidi@temptoksb=\toks39
-\bidi@dummies=\count318
-\bidi@are@these@correct=\toks40
-\bidi@toks@lista=\toks41
-\bidi@toks@listb=\toks42
-\bidi@stack@length=\count319
-\bidi@empty@stack=\toks43
-\bidi@looprepeat@depth=\count320
+\@bidi@envbody=\toks34
+\@bidi@emptytoks=\toks35
+\bidi@poscount=\count305
+\bidi@tempcountb=\count306
+\bidi@temptoksa=\toks36
+\bidi@temptoksb=\toks37
+\bidi@dummies=\count307
+\bidi@are@these@correct=\toks38
+\bidi@toks@lista=\toks39
+\bidi@toks@listb=\toks40
+\bidi@stack@length=\count308
+\bidi@empty@stack=\toks41
+\bidi@looprepeat@depth=\count309
 )
 (/usr/share/texmf-dist/tex/latex/zref/zref-abspage.sty
 Package: zref-abspage 2023-09-14 v2.35 Module abspage for zref (HO)
@@ -497,7 +455,7 @@ Package zref Info: New property list: main on input line 767.
 Package zref Info: New property: default on input line 768.
 Package zref Info: New property: page on input line 769.
 )
-\c@abspage=\count321
+\c@abspage=\count310
 Package zref Info: New property: abspage on input line 67.
 )
 \@bidi@copyins@=\insert252
@@ -505,14 +463,14 @@ Package zref Info: New property: abspage on input line 67.
 (/usr/share/texmf-dist/tex/xelatex/bidi/latex-xetex-bidi.def
 File: latex-xetex-bidi.def 2022/07/04 v1.4.9 bidi adaptations for `latex.ltx' f
 or XeTeX engine
-\bidi@n@everypar=\toks44
-\bidi@column@check@number=\count322
+\bidi@n@everypar=\toks42
+\bidi@column@check@number=\count311
 
 (/usr/share/texmf-dist/tex/xelatex/bidi/footnote-xetex-bidi.def
 File: footnote-xetex-bidi.def 2023/01/18 v1.2 bidi footnote macros for XeTeX en
 gine
-\c@footdir@label=\count323
-\footdir@toks=\toks45
+\c@footdir@label=\count312
+\footdir@toks=\toks43
 )
 (/usr/share/texmf-dist/tex/xelatex/bidi/tocbasic-xetex-bidi.def
 File: tocbasic-xetex-bidi.def 2022/06/15 v0.5 bidi adaptations for tocbasic pac
@@ -557,10 +515,6 @@ kage for XeTeX engine
 File: fancyhdr-xetex-bidi.def 2018/02/15 v0.7 bidi adaptations for fancyhdr pac
 kage for XeTeX engine
 )
-(/usr/share/texmf-dist/tex/xelatex/bidi/listings-xetex-bidi.def
-File: listings-xetex-bidi.def 2018/09/15 v1.5 bidi adaptations for listings pac
-kage for XeTeX engine
-)
 (/usr/share/texmf-dist/tex/xelatex/bidi/titlesec-xetex-bidi.def
 File: titlesec-xetex-bidi.def 2010/07/25 v0.1 bidi adaptations for titlesec pac
 kage for XeTeX engine
@@ -573,7 +527,7 @@ kage for XeTeX engine
 File: loadingorder-xetex-bidi.def 2017/12/29 v0.97 making sure that bidi is the
  last package loaded
 )
-\bidi@digits=\count324
+\bidi@digits=\count313
 \bidi@digits@charclass=\XeTeXcharclass1
 \bidi@sepmark@charclass=\XeTeXcharclass2
 )
@@ -586,28 +540,28 @@ Package: hijrical 2010/07/12 v0.2 Islamic calendar
 
 (/usr/share/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count325
-\calc@Bcount=\count326
-\calc@Adimen=\dimen187
-\calc@Bdimen=\dimen188
-\calc@Askip=\skip77
-\calc@Bskip=\skip78
+\calc@Acount=\count314
+\calc@Bcount=\count315
+\calc@Adimen=\dimen183
+\calc@Bdimen=\dimen184
+\calc@Askip=\skip74
+\calc@Bskip=\skip75
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count327
-\calc@Cskip=\skip79
+\calc@Ccount=\count316
+\calc@Cskip=\skip76
 )
 (/usr/share/texmf-dist/tex/latex/polyglossia/cal-util.def
-\c@tmpA=\count328
-\c@tmpB=\count329
-\c@tmpC=\count330
-\c@tmpD=\count331
-\c@tmpE=\count332
-\c@tmpF=\count333
+\c@tmpA=\count317
+\c@tmpB=\count318
+\c@tmpC=\count319
+\c@tmpD=\count320
+\c@tmpE=\count321
+\c@tmpF=\count322
 )
-\c@Hijriday=\count334
-\c@Hijrimonth=\count335
-\c@Hijriyear=\count336
+\c@Hijriday=\count323
+\c@Hijrimonth=\count324
+\c@Hijriyear=\count325
 )
 Package polyglossia Info: Option: arabic, locale=default.
 Package polyglossia Info: Option: Arabic, calendar=gregorian.
@@ -705,7 +659,7 @@ LaTeX Font Info:    Encoding `OMX' has changed to `LMP3' for symbol font
 .
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 (Font)                  OMX/cmex/m/n --> LMP3/mtt/m/n on input line 113.
-\pointcount@=\count337
+\pointcount@=\count326
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 140.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
 (Font)                  OT1/cmr/bx/n --> T1/ptm/b/n on input line 140.
@@ -799,32 +753,32 @@ LaTeX Font Info:    Redeclaring math symbol \mathsection on input line 484.
 LaTeX Font Info:    Redeclaring math symbol \hslash on input line 511.
 LaTeX Font Info:    Redeclaring math symbol \digamma on input line 512.
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 544.
-\prePbox@=\box63
-\Pbox@=\box64
-\LRbox@=\box65
-\HATbox@=\box66
-\TDbox@=\box67
-\CHbox@=\box68
-\ARCbox@=\box69
-\preSbox@=\box70
-\Sbox@=\box71
-\SQcount@=\count338
-\SQRTbox@=\box72
-\UPROOT@=\count339
-\LEFTROOT@=\count340
-\limtype@=\count341
-\xlfont@=\count342
-\xlposition@=\count343
-\xlposition@ii=\count344
-\optype@=\count345
-\x@count=\count346
-\maxXLscripts@=\dimen189
+\prePbox@=\box61
+\Pbox@=\box62
+\LRbox@=\box63
+\HATbox@=\box64
+\TDbox@=\box65
+\CHbox@=\box66
+\ARCbox@=\box67
+\preSbox@=\box68
+\Sbox@=\box69
+\SQcount@=\count327
+\SQRTbox@=\box70
+\UPROOT@=\count328
+\LEFTROOT@=\count329
+\limtype@=\count330
+\xlfont@=\count331
+\xlposition@=\count332
+\xlposition@ii=\count333
+\optype@=\count334
+\x@count=\count335
+\maxXLscripts@=\dimen185
 LaTeX Font Info:    Redeclaring math symbol \mathsterling on input line 1615.
 )
-\c@theorem=\count347
-\c@definition=\count348
-\c@example=\count349
-\c@corollary=\count350
+\c@theorem=\count336
+\c@definition=\count337
+\c@example=\count338
+\c@corollary=\count339
 ) (./main.aux)
 \openout1 = `main.aux'.
 
@@ -865,14 +819,14 @@ LaTeX Font Info:    ... okay on input line 4.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(72.26999pt, 452.9679pt, 72.26999pt)
+* h-part:(L,W,R)=(43.36243pt, 481.87546pt, 72.26999pt)
 * v-part:(T,H,B)=(72.26999pt, 671.37021pt, 101.40665pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=452.9679pt
+* \textwidth=481.87546pt
 * \textheight=671.37021pt
-* \oddsidemargin=0.0pt
-* \evensidemargin=0.0pt
+* \oddsidemargin=-28.90756pt
+* \evensidemargin=-28.90756pt
 * \topmargin=-39.0pt
 * \headheight=14.0pt
 * \headsep=25.0pt
@@ -891,8 +845,6 @@ LaTeX Font Info:    ... okay on input line 4.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@lstlisting=\count351
-Package tocbasic Info: setting babel extension for `lol' on input line 4.
 LaTeX Info: Command `\dddot' is already robust on input line 4.
 LaTeX Info: Command `\ddddot' is already robust on input line 4.
 Package polyglossia Info: Option: Arabic, numerals=maghrib.
@@ -903,7 +855,7 @@ Package polyglossia Info: Option: Arabic, numerals=maghrib.
 File: Title Page/university.png Graphic file (type bmp)
 <Title Page/university.png>
 
-Overfull \hbox (14.19745pt too wide) in paragraph at lines 3--4
+Overfull \hbox (8.41603pt too wide) in paragraph at lines 3--4
  [][][][][][]
  []
 
@@ -919,7 +871,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: Title Page/college.png Graphic file (type bmp)
 <Title Page/college.png>
 
-Overfull \hbox (24.23915pt too wide) in paragraph at lines 16--17
+Overfull \hbox (18.45773pt too wide) in paragraph at lines 16--17
 [][][][][][] 
  []
 
@@ -1080,9 +1032,9 @@ Package polyglossia Info: Option: Arabic, numerals=maghrib.
 Package polyglossia Info: Option: Arabic, numerals=maghrib.
 Package polyglossia Info: Option: Arabic, numerals=maghrib.
 Package polyglossia Info: Option: Arabic, numerals=maghrib.
-LaTeX Info: Redefining \rmfamily on input line 35.
-LaTeX Info: Redefining \sffamily on input line 35.
-LaTeX Info: Redefining \ttfamily on input line 35.
+LaTeX Info: Redefining \rmfamily on input line 33.
+LaTeX Info: Redefining \sffamily on input line 33.
+LaTeX Info: Redefining \ttfamily on input line 33.
 Package polyglossia Info: Option: arabic, locale=default.
 Package polyglossia Info: Option: Arabic, calendar=gregorian.
 Package polyglossia Info: Option: Arabic, numerals=maghrib.
@@ -1099,9 +1051,66 @@ Package polyglossia Info: Option: Arabic, numerals=maghrib.
 Package polyglossia Info: Option: Arabic, numerals=maghrib.
 Package polyglossia Info: Option: Arabic, numerals=maghrib.
 Package polyglossia Info: Option: Arabic, numerals=maghrib.
-LaTeX Info: Redefining \rmfamily on input line 38.
-LaTeX Info: Redefining \sffamily on input line 38.
-LaTeX Info: Redefining \ttfamily on input line 38.
+LaTeX Info: Redefining \rmfamily on input line 36.
+LaTeX Info: Redefining \sffamily on input line 36.
+LaTeX Info: Redefining \ttfamily on input line 36.
+Package polyglossia Info: Option: arabic, locale=default.
+Package polyglossia Info: Option: Arabic, calendar=gregorian.
+Package polyglossia Info: Option: Arabic, numerals=maghrib.
+Package polyglossia Info: Option: arabic, locale=default.
+Package polyglossia Info: Option: Arabic, calendar=gregorian.
+Package polyglossia Info: Option: Arabic, numerals=maghrib.
+Package polyglossia Info: Option: arabic, locale=default.
+Package polyglossia Info: Option: Arabic, calendar=gregorian.
+Package polyglossia Info: Option: Arabic, numerals=maghrib.
+Package polyglossia Info: Option: arabic, locale=default.
+Package polyglossia Info: Option: Arabic, calendar=gregorian.
+Package polyglossia Info: Option: Arabic, numerals=maghrib.
+Package polyglossia Info: Option: Arabic, numerals=maghrib.
+Package polyglossia Info: Option: Arabic, numerals=maghrib.
+Package polyglossia Info: Option: Arabic, numerals=maghrib.
+Package polyglossia Info: Option: Arabic, numerals=maghrib.
+LaTeX Info: Redefining \rmfamily on input line 41.
+LaTeX Info: Redefining \sffamily on input line 41.
+LaTeX Info: Redefining \ttfamily on input line 41.
+Package polyglossia Info: Option: arabic, locale=default.
+Package polyglossia Info: Option: Arabic, calendar=gregorian.
+Package polyglossia Info: Option: Arabic, numerals=maghrib.
+Package polyglossia Info: Option: arabic, locale=default.
+Package polyglossia Info: Option: Arabic, calendar=gregorian.
+Package polyglossia Info: Option: Arabic, numerals=maghrib.
+Package polyglossia Info: Option: arabic, locale=default.
+Package polyglossia Info: Option: Arabic, calendar=gregorian.
+Package polyglossia Info: Option: Arabic, numerals=maghrib.
+Package polyglossia Info: Option: arabic, locale=default.
+Package polyglossia Info: Option: Arabic, calendar=gregorian.
+Package polyglossia Info: Option: Arabic, numerals=maghrib.
+Package polyglossia Info: Option: Arabic, numerals=maghrib.
+Package polyglossia Info: Option: Arabic, numerals=maghrib.
+Package polyglossia Info: Option: Arabic, numerals=maghrib.
+Package polyglossia Info: Option: Arabic, numerals=maghrib.
+LaTeX Info: Redefining \rmfamily on input line 47.
+LaTeX Info: Redefining \sffamily on input line 47.
+LaTeX Info: Redefining \ttfamily on input line 47.
+Package polyglossia Info: Option: arabic, locale=default.
+Package polyglossia Info: Option: Arabic, calendar=gregorian.
+Package polyglossia Info: Option: Arabic, numerals=maghrib.
+Package polyglossia Info: Option: arabic, locale=default.
+Package polyglossia Info: Option: Arabic, calendar=gregorian.
+Package polyglossia Info: Option: Arabic, numerals=maghrib.
+Package polyglossia Info: Option: arabic, locale=default.
+Package polyglossia Info: Option: Arabic, calendar=gregorian.
+Package polyglossia Info: Option: Arabic, numerals=maghrib.
+Package polyglossia Info: Option: arabic, locale=default.
+Package polyglossia Info: Option: Arabic, calendar=gregorian.
+Package polyglossia Info: Option: Arabic, numerals=maghrib.
+Package polyglossia Info: Option: Arabic, numerals=maghrib.
+Package polyglossia Info: Option: Arabic, numerals=maghrib.
+Package polyglossia Info: Option: Arabic, numerals=maghrib.
+Package polyglossia Info: Option: Arabic, numerals=maghrib.
+LaTeX Info: Redefining \rmfamily on input line 52.
+LaTeX Info: Redefining \sffamily on input line 52.
+LaTeX Info: Redefining \ttfamily on input line 52.
 Package polyglossia Info: Option: arabic, locale=default.
 Package polyglossia Info: Option: Arabic, calendar=gregorian.
 Package polyglossia Info: Option: Arabic, numerals=maghrib.
@@ -1241,191 +1250,94 @@ Package polyglossia Info: Option: Arabic, calendar=gregorian.
 Package polyglossia Info: Option: Arabic, numerals=maghrib.
 Package polyglossia Info: Option: Arabic, numerals=maghrib.
 Package polyglossia Info: Option: Arabic, numerals=maghrib.
-LaTeX Info: Redefining \rmfamily on input line 24.
-LaTeX Info: Redefining \sffamily on input line 24.
-LaTeX Info: Redefining \ttfamily on input line 24.
-
-Missing character: There is no ت ("62A) in font ptmr8t!
-Missing character: There is no ح ("62D) in font ptmr8t!
-Missing character: There is no س ("633) in font ptmr8t!
-Missing character: There is no ي ("64A) in font ptmr8t!
-Missing character: There is no ن ("646) in font ptmr8t!
-Missing character: There is no م ("645) in font ptmr8t!
-Missing character: There is no ؤ ("624) in font ptmr8t!
-Missing character: There is no ث ("62B) in font ptmr8t!
-Missing character: There is no ر ("631) in font ptmr8t!
-Missing character: There is no ل ("644) in font ptmr8t!
-Missing character: There is no و ("648) in font ptmr8t!
-Missing character: There is no ب ("628) in font ptmr8t!
-Missing character: There is no ا ("627) in font ptmr8t!
-Missing character: There is no س ("633) in font ptmr8t!
-Missing character: There is no ا ("627) in font ptmr8t!
-Missing character: There is no ل ("644) in font ptmr8t!
-Missing character: There is no ا ("627) in font ptmr8t!
-Missing character: There is no ع ("639) in font ptmr8t!
-Missing character: There is no ت ("62A) in font ptmr8t!
-Missing character: There is no ي ("64A) in font ptmr8t!
-Missing character: There is no ا ("627) in font ptmr8t!
-Missing character: There is no د ("62F) in font ptmr8t!
-Missing character: There is no ي ("64A) in font ptmr8t!
-Missing character: There is no ا ("627) in font ptmr8t!
-Missing character: There is no ل ("644) in font ptmr8t!
-Missing character: There is no ف ("641) in font ptmr8t!
-Missing character: There is no ص ("635) in font ptmr8t!
-Missing character: There is no ل ("644) in font ptmr8t!
-Missing character: There is no ا ("627) in font ptmr8t!
-Missing character: There is no ل ("644) in font ptmr8t!
-Missing character: There is no ث ("62B) in font ptmr8t!
-Missing character: There is no ا ("627) in font ptmr8t!
-Missing character: There is no ن ("646) in font ptmr8t!
-Missing character: There is no ي ("64A) in font ptmr8t!
-[7]
-Missing character: There is no ت ("62A) in font ptmr8t!
-Missing character: There is no ح ("62D) in font ptmr8t!
-Missing character: There is no س ("633) in font ptmr8t!
-Missing character: There is no ي ("64A) in font ptmr8t!
-Missing character: There is no ن ("646) in font ptmr8t!
-Missing character: There is no م ("645) in font ptmr8t!
-Missing character: There is no ؤ ("624) in font ptmr8t!
-Missing character: There is no ث ("62B) in font ptmr8t!
-Missing character: There is no ر ("631) in font ptmr8t!
-Missing character: There is no ل ("644) in font ptmr8t!
-Missing character: There is no و ("648) in font ptmr8t!
-Missing character: There is no ب ("628) in font ptmr8t!
-Missing character: There is no ا ("627) in font ptmr8t!
-Missing character: There is no س ("633) in font ptmr8t!
-Missing character: There is no ا ("627) in font ptmr8t!
-Missing character: There is no ل ("644) in font ptmr8t!
-Missing character: There is no ا ("627) in font ptmr8t!
-Missing character: There is no ع ("639) in font ptmr8t!
-Missing character: There is no ت ("62A) in font ptmr8t!
-Missing character: There is no ي ("64A) in font ptmr8t!
-Missing character: There is no ا ("627) in font ptmr8t!
-Missing character: There is no د ("62F) in font ptmr8t!
-Missing character: There is no ي ("64A) in font ptmr8t!
-Missing character: There is no ا ("627) in font ptmr8t!
-Missing character: There is no ل ("644) in font ptmr8t!
-Missing character: There is no ف ("641) in font ptmr8t!
-Missing character: There is no ص ("635) in font ptmr8t!
-Missing character: There is no ل ("644) in font ptmr8t!
-Missing character: There is no ا ("627) in font ptmr8t!
-Missing character: There is no ل ("644) in font ptmr8t!
-Missing character: There is no ث ("62B) in font ptmr8t!
-Missing character: There is no ا ("627) in font ptmr8t!
-Missing character: There is no ن ("646) in font ptmr8t!
-Missing character: There is no ي ("64A) in font ptmr8t!
-[8]
-Missing character: There is no ت ("62A) in font ptmr8t!
-Missing character: There is no ح ("62D) in font ptmr8t!
-Missing character: There is no س ("633) in font ptmr8t!
-Missing character: There is no ي ("64A) in font ptmr8t!
-Missing character: There is no ن ("646) in font ptmr8t!
-Missing character: There is no م ("645) in font ptmr8t!
-Missing character: There is no ؤ ("624) in font ptmr8t!
-Missing character: There is no ث ("62B) in font ptmr8t!
-Missing character: There is no ر ("631) in font ptmr8t!
-Missing character: There is no ل ("644) in font ptmr8t!
-Missing character: There is no و ("648) in font ptmr8t!
-Missing character: There is no ب ("628) in font ptmr8t!
-Missing character: There is no ا ("627) in font ptmr8t!
-Missing character: There is no س ("633) in font ptmr8t!
-Missing character: There is no ا ("627) in font ptmr8t!
-Missing character: There is no ل ("644) in font ptmr8t!
-Missing character: There is no ا ("627) in font ptmr8t!
-Missing character: There is no ع ("639) in font ptmr8t!
-Missing character: There is no ت ("62A) in font ptmr8t!
-Missing character: There is no ي ("64A) in font ptmr8t!
-Missing character: There is no ا ("627) in font ptmr8t!
-Missing character: There is no د ("62F) in font ptmr8t!
-Missing character: There is no ي ("64A) in font ptmr8t!
-Missing character: There is no ا ("627) in font ptmr8t!
-Missing character: There is no ل ("644) in font ptmr8t!
-Missing character: There is no ف ("641) in font ptmr8t!
-Missing character: There is no ص ("635) in font ptmr8t!
-Missing character: There is no ل ("644) in font ptmr8t!
-Missing character: There is no ا ("627) in font ptmr8t!
-Missing character: There is no ل ("644) in font ptmr8t!
-Missing character: There is no ث ("62B) in font ptmr8t!
-Missing character: There is no ا ("627) in font ptmr8t!
-Missing character: There is no ن ("646) in font ptmr8t!
-Missing character: There is no ي ("64A) in font ptmr8t!
-[9]
+LaTeX Info: Redefining \rmfamily on input line 25.
+LaTeX Info: Redefining \sffamily on input line 25.
+LaTeX Info: Redefining \ttfamily on input line 25.
 Package polyglossia Info: Option: arabic, locale=default.
 Package polyglossia Info: Option: Arabic, calendar=gregorian.
 Package polyglossia Info: Option: Arabic, numerals=maghrib.
 Package polyglossia Info: Option: Arabic, numerals=maghrib.
 Package polyglossia Info: Option: Arabic, numerals=maghrib.
+ [7]
+LaTeX Info: Redefining \rmfamily on input line 35.
+LaTeX Info: Redefining \sffamily on input line 35.
+LaTeX Info: Redefining \ttfamily on input line 35.
+Package polyglossia Info: Option: arabic, locale=default.
+Package polyglossia Info: Option: Arabic, calendar=gregorian.
+Package polyglossia Info: Option: Arabic, numerals=maghrib.
+Package polyglossia Info: Option: Arabic, numerals=maghrib.
+Package polyglossia Info: Option: Arabic, numerals=maghrib.
+ [8]
+LaTeX Info: Redefining \rmfamily on input line 54.
+LaTeX Info: Redefining \sffamily on input line 54.
+LaTeX Info: Redefining \ttfamily on input line 54.
+Package polyglossia Info: Option: arabic, locale=default.
+Package polyglossia Info: Option: Arabic, calendar=gregorian.
+Package polyglossia Info: Option: Arabic, numerals=maghrib.
+Package polyglossia Info: Option: Arabic, numerals=maghrib.
+Package polyglossia Info: Option: Arabic, numerals=maghrib.
+ [9]
+LaTeX Info: Redefining \rmfamily on input line 90.
+LaTeX Info: Redefining \sffamily on input line 90.
+LaTeX Info: Redefining \ttfamily on input line 90.
+LaTeX Info: Redefining \rmfamily on input line 92.
+LaTeX Info: Redefining \sffamily on input line 92.
+LaTeX Info: Redefining \ttfamily on input line 92.
+Package polyglossia Info: Option: arabic, locale=default.
+Package polyglossia Info: Option: Arabic, calendar=gregorian.
+Package polyglossia Info: Option: Arabic, numerals=maghrib.
+Package polyglossia Info: Option: Arabic, numerals=maghrib.
+Package polyglossia Info: Option: Arabic, numerals=maghrib.
+ [10]) (./chapter3.tex [11]
+باب الفصل الثالث .
 
-Overfull \hbox (18.02457pt too wide) detected at line 87
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 1--1
+ [][][] 
+ []
+
+[12
+
+] [13] [14]
+LaTeX Info: Redefining \rmfamily on input line 56.
+LaTeX Info: Redefining \sffamily on input line 56.
+LaTeX Info: Redefining \ttfamily on input line 56.
+Package polyglossia Info: Option: arabic, locale=default.
+Package polyglossia Info: Option: Arabic, calendar=gregorian.
+Package polyglossia Info: Option: Arabic, numerals=maghrib.
+Package polyglossia Info: Option: Arabic, numerals=maghrib.
+Package polyglossia Info: Option: Arabic, numerals=maghrib.
+ [15] [16] [17]
+LaTeX Info: Redefining \rmfamily on input line 140.
+LaTeX Info: Redefining \sffamily on input line 140.
+LaTeX Info: Redefining \ttfamily on input line 140.
+LaTeX Info: Redefining \rmfamily on input line 142.
+LaTeX Info: Redefining \sffamily on input line 142.
+LaTeX Info: Redefining \ttfamily on input line 142.
+Package polyglossia Info: Option: arabic, locale=default.
+Package polyglossia Info: Option: Arabic, calendar=gregorian.
+Package polyglossia Info: Option: Arabic, numerals=maghrib.
+Package polyglossia Info: Option: Arabic, numerals=maghrib.
+Package polyglossia Info: Option: Arabic, numerals=maghrib.
+ [18]
+Overfull \hbox (33.08868pt too wide) detected at line 171
 []
  []
 
-[10] [11]
-LaTeX Info: Redefining \rmfamily on input line 125.
-LaTeX Info: Redefining \sffamily on input line 125.
-LaTeX Info: Redefining \ttfamily on input line 125.
-Package polyglossia Info: Option: arabic, locale=default.
-Package polyglossia Info: Option: Arabic, calendar=gregorian.
-Package polyglossia Info: Option: Arabic, numerals=maghrib.
-Package polyglossia Info: Option: Arabic, numerals=maghrib.
-Package polyglossia Info: Option: Arabic, numerals=maghrib.
-LaTeX Info: Redefining \rmfamily on input line 138.
-LaTeX Info: Redefining \sffamily on input line 138.
-LaTeX Info: Redefining \ttfamily on input line 138.
+) [19] [20
 
-Missing character: There is no ت ("62A) in font ptmr8t!
-Missing character: There is no ح ("62D) in font ptmr8t!
-Missing character: There is no س ("633) in font ptmr8t!
-Missing character: There is no ي ("64A) in font ptmr8t!
-Missing character: There is no ن ("646) in font ptmr8t!
-Missing character: There is no م ("645) in font ptmr8t!
-Missing character: There is no ؤ ("624) in font ptmr8t!
-Missing character: There is no ث ("62B) in font ptmr8t!
-Missing character: There is no ر ("631) in font ptmr8t!
-Missing character: There is no ل ("644) in font ptmr8t!
-Missing character: There is no و ("648) in font ptmr8t!
-Missing character: There is no ب ("628) in font ptmr8t!
-Missing character: There is no ا ("627) in font ptmr8t!
-Missing character: There is no س ("633) in font ptmr8t!
-Missing character: There is no ا ("627) in font ptmr8t!
-Missing character: There is no ل ("644) in font ptmr8t!
-Missing character: There is no ا ("627) in font ptmr8t!
-Missing character: There is no ع ("639) in font ptmr8t!
-Missing character: There is no ت ("62A) in font ptmr8t!
-Missing character: There is no ي ("64A) in font ptmr8t!
-Missing character: There is no ا ("627) in font ptmr8t!
-Missing character: There is no د ("62F) in font ptmr8t!
-Missing character: There is no ي ("64A) in font ptmr8t!
-Missing character: There is no ا ("627) in font ptmr8t!
-Missing character: There is no ل ("644) in font ptmr8t!
-Missing character: There is no ف ("641) in font ptmr8t!
-Missing character: There is no ص ("635) in font ptmr8t!
-Missing character: There is no ل ("644) in font ptmr8t!
-Missing character: There is no ا ("627) in font ptmr8t!
-Missing character: There is no ل ("644) in font ptmr8t!
-Missing character: There is no ث ("62B) in font ptmr8t!
-Missing character: There is no ا ("627) in font ptmr8t!
-Missing character: There is no ن ("646) in font ptmr8t!
-Missing character: There is no ي ("64A) in font ptmr8t!
-[12]
-Package polyglossia Info: Option: arabic, locale=default.
-Package polyglossia Info: Option: Arabic, calendar=gregorian.
-Package polyglossia Info: Option: Arabic, numerals=maghrib.
-Package polyglossia Info: Option: Arabic, numerals=maghrib.
-Package polyglossia Info: Option: Arabic, numerals=maghrib.
-) (./chapter3.tex) [13] (./main.aux)
+] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 14056 strings out of 474773
- 294238 string characters out of 5763518
- 1931839 words of memory out of 5000000
- 35887 multiletter control sequences out of 15000+600000
- 718196 words of font info for 154 fonts, out of 8000000 for 9000
+ 12588 strings out of 474773
+ 270240 string characters out of 5763518
+ 1938839 words of memory out of 5000000
+ 34441 multiletter control sequences out of 15000+600000
+ 719900 words of font info for 154 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 110i,14n,109p,1267b,624s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 110i,14n,109p,1267b,622s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (18 pages).
+Output written on main.pdf (25 pages).

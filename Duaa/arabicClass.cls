@@ -4,8 +4,8 @@
 \LoadClass[14pt, a4paper]{extreport}
 
 \RequirePackage[
-top=1.5in,
-left=1in,
+top=1in,
+left=0.8in,
 right=1in
 ]{geometry}
 
@@ -25,26 +25,29 @@ right=1in
 
 \allowdisplaybreaks
 
-% For inserting MATLAB code
-\RequirePackage[framed]{matlab-prettifier}
-\lstset{style=Matlab-editor, basicstyle=\small\ttfamily, morestring=[m]"}
+\RequirePackage{tocbasic}
+\addtotoclist[report.cls]{toc}
+\renewcommand{\tableofcontents}{\listoftoc[{\contentsname}]{toc}}
+\AfterTOCHead[toc]{\thispagestyle{empty}\pagestyle{empty}}
+\AfterStartingTOC[toc]{\clearpage}
+
+
 
 % To use the arabic language
 \RequirePackage{polyglossia}
 
-% For the refrences
-\RequirePackage{biblatex} 
-\DeclareFieldFormat[book]{title}{#1}
 
 % For fancy headers
 \RequirePackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhead{}
 %\fancyfoot{}
-\fancyhead[L]{\small \leftmark}
+\fancyhead[L]{\small \ar{\leftmark}}
 %\fancyhead[C]{\small \leftmark}
-\fancyhead[R]{\small \thechapter}
+\fancyhead[R]{\small \ar{\thechapter}}
 \renewcommand{\chaptermark}[1]{\markboth{\MakeUppercase{#1}}{}}
+
+\renewcommand{\thepage}{\ar{\arabic{page}}}
 
 % Set the arabic language as default and english as side langiage
 \setmainlanguage[numerals=maghrib]{arabic}
@@ -84,14 +87,12 @@ right=1in
 		\fbox{\parbox{1\textwidth}{\centering \thechapter\\[25pt]#1}} 
 		\vspace{20pt}
 	\end{center}
-	\thispagestyle{empty}   % No page number
-	\addtocounter{page}{-1} % Adjust page number
-	\cleardoublepage         % Start on a new page
+	\thispagestyle{empty}  
 	\newpage
 }
 
 \def\@makeschapterhead#1{%
-	\vspace*{1cm}
+	\vspace*{0cm}
 	{\centering\Large\bfseries #1\par}
 	\vspace{1cm}	
 }
@@ -99,12 +100,12 @@ right=1in
 
 % Chnage the section header format
 \titleformat{\section}[block]
-{\bfseries\fontsize{16}{17}\selectfont} 
+{\color{red}\bfseries\fontsize{16}{17}\selectfont} 
 {\thesection}{1em}{}  
 
 % Change the subsection header format
 \titleformat{\subsection}[block]
-{\bfseries\fontsize{14}{17}\selectfont} 
+{\color{blue}\bfseries\fontsize{15}{17}\selectfont} 
 {\thesubsection}{1em}{}  
 
 % Change the chapter numbering to suit the arabic style
@@ -180,23 +181,17 @@ right=1in
 
 \theoremstyle{mystyle}
 
-\newtheorem{definition}{تعريف}[section]
-\newtheorem{example}{مثال}[section]
+\newtheorem*{definition}{تعريف}
+\newtheorem*{example}{مثال}
 \newtheorem{corollary}{نتيجة}[section]
 \newtheorem*{note}{ملاحظة}
 
 \renewcommand{\thetheorem}{\arabic{chapter} - \arabic{section} - \arabic{theorem}}
-\renewcommand{\thedefinition}{\arabic{chapter} - \arabic{section} - \arabic{definition}}
-\renewcommand{\theexample}{\arabic{chapter} - \arabic{section} - \arabic{example}}
 \renewcommand{\thecorollary}{\arabic{chapter} - \arabic{section} - \arabic{corollary}}
 
 \newenvironment{myproof}{\noindent\textbf{البرهان}\vspace{5pt}\\ \noindent}{\hfill \(\qedsymbol\)}
 
 \newenvironment{solution}{\noindent\textbf{الحل}\vspace{5pt}\\}{}
-
-\renewcommand*\newunitpunct{\addcomma\space}
-\makeatletter
-\def\abx@comma{\ifdim\lastkern>\z@\unkern\fi\abx@puncthook{،}}
 
 \newcommand{\N}{\mathbb{N}}
 \newcommand{\Z}{\mathbb{Z}}

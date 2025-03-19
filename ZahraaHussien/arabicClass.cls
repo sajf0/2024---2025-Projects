@@ -5,7 +5,7 @@
 
 \RequirePackage[
 top=1in,
-left=1in,
+left=0.6in,
 right=1in
 ]{geometry}
 
@@ -24,10 +24,6 @@ right=1in
 \RequirePackage{amsmath, amssymb, amsthm, nccmath}
 
 \allowdisplaybreaks
-
-% For inserting MATLAB code
-\RequirePackage[framed]{matlab-prettifier}
-\lstset{style=Matlab-editor, basicstyle=\small\ttfamily, morestring=[m]"}
 
 % To use the arabic language
 \RequirePackage{polyglossia}

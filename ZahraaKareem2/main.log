@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024/Arch Linux) (preloaded format=xelatex 2024.11.12)  9 MAR 2025 16:40
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024/Arch Linux) (preloaded format=xelatex 2024.11.12)  18 MAR 2025 14:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1412,22 +1412,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 151--159
 [][]
  []
 
-[11] [12]) (./chapter3.tex [13]
-باب الفصل الثالث .
-
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 1--1
- [][][] 
- []
-
-[14
-
-] [15] [16]
-Overfull \hbox (14.87418pt too wide) in paragraph at lines 104--105
+[11] [12]) (./chapter3.tex [13] [14] [15]
+Overfull \hbox (14.87418pt too wide) in paragraph at lines 102--103
 [][]\TU/TimesNewRoman(0)/m/n/14.4 باستخدام المحددات عين صيغة لمعادلة القطع المك
 افئ المار بالنقاط $\LMP1/mtt/m/it/14.4 .x[]; y[]/; .x[]; y[]/; .x[]; y[]/$[]
  []
 
-[17]) [18] (./main.aux)
+[16]) [17] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -1445,4 +1436,4 @@ Here is how much of TeX's memory you used:
  1348 hyphenation exceptions out of 8191
  105i,16n,132p,1267b,3688s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (18 pages).
+Output written on main.pdf (17 pages).

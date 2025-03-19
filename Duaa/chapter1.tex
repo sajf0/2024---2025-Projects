@@ -1,21 +1,5 @@
 \chapter{المتجهات}
 
-	\begin{figure}[H]
-	\centering
-	\begin{tikzpicture}
-		\draw[thick, -latex] (-0.5, 0) -- (4, 0) node[right]{$x$};
-		\draw[thick, -latex] (0, -0.5) -- (0, 4) node[above]{$y$};
-		
-		\draw[thick, blue, ->] (0,0) -- (2,1) node[midway, below]{$a$};
-		\draw[thick, red, ->] (2,1) -- ++(1,2) node[midway, right]{$b$};
-		
-		\draw[->, thick, purple] (0, 0) -- (3,3) node[above] {$a+b$};
-		
-		\draw[dashed, red] (0, 0) -- (1,2);
-		\draw[dashed, blue] (1,2) -- (3,3);
-	\end{tikzpicture}
-\end{figure}
-
 \section{مقدمة}
 المتجهات او ما يطلق عليها الكمية المتجهة هي طريقة يتم من خلالها قياس الكميات والتعرف على مقادير الاشياء. وقد تكون معرفة الكمية المتجهة من الامور الطبيعية في حياتنا والتي لها فوائد متعددة في جميع المجالات الحياتية
 
@@ -29,6 +13,25 @@
 	\vec{U} + \vec{V} &= (U_1, U_2, \dots, U_n) + (V_1, V_2, \dots, V_n)\\
 	&= (U_1+V_1, U_2+V_2, \dots, U_n+V_n)
 \end{align*}
+الشكل \ref{fig:vecsum} يبين التمثيل الهندسي لعملية جمع المتجهات.
+	\begin{figure}[ht]
+	\centering
+	\begin{tikzpicture}
+		\draw[thick, -latex] (-0.5, 0) -- (4, 0);
+		\draw[thick, -latex] (0, -0.5) -- (0, 4);
+		
+		\draw[thick, blue, ->] (0,0) -- (2,1) node[pos=.75, below]{$\vec{U}$};
+		\draw[thick, red, ->] (2,1) -- ++(1,2) node[midway, right]{$\vec{V}$};
+		
+		\draw[->, thick, purple] (0, 0) -- (3,3) node[above] {$\vec{U}+\vec{V}$};
+		
+		\draw[dashed, red] (0, 0) -- (1,2);
+		\draw[dashed, blue] (1,2) -- (3,3);
+	\end{tikzpicture}
+	\caption{التمثيل الهندسي لجمع النتجهات}
+			\label{fig:vecsum}
+\end{figure}
+\newpage
 \begin{example}
 لجمع المتجهين
 	
@@ -47,6 +50,27 @@
 \[
 \vec{U} - \vec{V} = \vec{U} + (-\vec{V})
 \]
+الشكل \ref{fig:vecdiff} يبين التمثيل الهندسي لطرح المتجهات.
+	\begin{figure}[ht]
+	\centering
+	\begin{tikzpicture}
+		\draw[thick, -latex] (-0.5, 0) -- (4, 0);
+		\draw[thick, -latex] (0, -0.5) -- (0, 4);
+		
+		\draw[thick, blue, ->] (0,0) -- (3,2) node[pos=.75, below]{$\vec{U}$};
+		\draw[thick, red, ->] (0,0) -- (-1,2) node[midway, left]{$\vec{V}$};
+		
+		\draw[thick, red, ->] (3, 2) -- ++(-1, 2) node[pos=.5, right]{$-\vec{V}$}; 
+		
+		\draw[thick, purple, ->] (0,0) -- (2, 4) node[midway, sloped, above]{$\vec{U} - \vec{V}$};
+		
+        \draw[dashed, red] (0, 0) -- (-1, 2);
+        \draw[dashed, blue](-1, 2) -- ++(3,2);
+		
+	\end{tikzpicture}
+	\caption{التمثيل الهندسي لجمع النتجهات}
+	\label{fig:vecdiff}
+\end{figure}
 
 \begin{example}
 	ليكن
@@ -80,7 +104,7 @@ $k=12, \vec{V}=(1,-9,0,2)$
 	&= (12\times1, 12\times-9, 12\times0, 12\times2)\\
 	&= (12, -108, 0, 24)
 \end{align*}
-\newpage
+
 \section{خواص المتجهات}
 لتكن $\vec{U}, \vec{V}, \vec{W}$ متجهات في $\R^n$ و $c,k$ ثوابت
 \begin{english}
@@ -172,8 +196,7 @@ $k=12, \vec{V}=(1,-9,0,2)$
 \begin{align*}
 	\vec{U}\cdot\vec{V} &= u_1v_1 + u_2 v_2 + u_3 v_3\\
 	&= (1)(0) + (0)(0) + (0)(1)\\
-	&= 0+0+0\\
-	&=0
+	&= 0+0+0=0
 \end{align*}
 \[
 ||\vec{U}|| = \sqrt{1^2 + 0^2 + 0^2} = \sqrt{1} =1
@@ -231,9 +254,9 @@ $k=12, \vec{V}=(1,-9,0,2)$
 	\end{enumerate}
 \end{english}
 \noindent
-\textbf{متطابقة لاكرانج}
+\subsection*{متطابقة لاكرانج}
 \[
-\norm{\vec{U}\times\vec{V}}^2 = \norm{\vec{U}}^2 \cdot \norm{\vec{V}}^2 - (\vec{U}\cdot\vec{V})^2
+||\vec{U}\times\vec{V}||^2 = ||\vec{U}||^2 \cdot ||\vec{V}|| - (\vec{U}\cdot\vec{V})^2
 \]
 
 \begin{example}
@@ -255,17 +278,17 @@ $k=12, \vec{V}=(1,-9,0,2)$
 \end{align*}
 
 \begin{align*}
-	\norm{\vec{U}\times\vec{V}}^2 &= (-5)^2 + (-10)^2 + (-8)^2\\
+	||\vec{U}\times\vec{V}||^2 &= (-5)^2 + (-10)^2 + (-8)^2\\
 	&= 25 + 100 + 64 \\
 	&= 189
 \end{align*}
 \begin{align*}
-	\norm{\vec{U}}^2 &= (-2)^2 + 1^2 + 0^2\\
+	||\vec{U}||^2 &= (-2)^2 + 1^2 + 0^2\\
 	&= 4+1+0\\
 	&= 5
 \end{align*}
 \begin{align*}
-	\norm{\vec{V}}^2 &= 4^2 + 2^2 + (-5)^2\\
+	||\vec{V}|| &= 4^2 + 2^2 + (-5)^2\\
 	&= 16 + 4 + 25\\
 	&= 45
 \end{align*}
@@ -282,3 +305,5 @@ $k=12, \vec{V}=(1,-9,0,2)$
 	 189 = 189
 \end{gather*}
 اذن نلاحظ ان الطرف الايمن يجب ان يساوي الطرف الايسر لكي يحقق المتطابقة.
+
+

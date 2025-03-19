@@ -30,11 +30,25 @@
 \selectlanguage *[]{english}
 \selectlanguage *[locale=default,calendar=gregorian,numerals=maghrib,hijricorrection=0,abjadjimnotail=false]{arabic}
 \selectlanguage *[numerals=maghrib]{arabic}
-\contentsline {section}{\numberline {2 - 2}تعريف المؤثر $B_n(f(t); x)$}{10}{}%
-\contentsline {section}{\numberline {2 - 3}مبرهنة كورفكن للمؤثر $B_n(f(t); x)$}{12}{}%
 \selectlanguage *[]{english}
 \selectlanguage *[locale=default,calendar=gregorian,numerals=maghrib,hijricorrection=0,abjadjimnotail=false]{arabic}
 \selectlanguage *[numerals=maghrib]{arabic}
+\selectlanguage *[]{english}
+\selectlanguage *[locale=default,calendar=gregorian,numerals=maghrib,hijricorrection=0,abjadjimnotail=false]{arabic}
+\selectlanguage *[numerals=maghrib]{arabic}
+\contentsline {section}{\numberline {2 - 2}تعريف المؤثر $\tilde {L}_n(f(t);x)$}{10}{}%
+\contentsline {section}{\numberline {2 - 3}مبرهنة كورفكن للمؤثر $\tilde {L}_n(f(t); x)$}{10}{}%
+\selectlanguage *[]{english}
+\selectlanguage *[locale=default,calendar=gregorian,numerals=maghrib,hijricorrection=0,abjadjimnotail=false]{arabic}
+\selectlanguage *[numerals=maghrib]{arabic}
+\contentsline {chapter}{\numberline {الفصل الثالث }}{12}{}%
+\contentsline {section}{\numberline {3 - 1}تعريف المؤثر $B_n(f(t); x)$}{13}{}%
+\contentsline {section}{\numberline {3 - 2}مبرهنة كورفكن للمؤثر $B_n(f(t); x)$}{15}{}%
+\selectlanguage *[]{english}
+\selectlanguage *[locale=default,calendar=gregorian,numerals=maghrib,hijricorrection=0,abjadjimnotail=false]{arabic}
+\selectlanguage *[numerals=maghrib]{arabic}
+\contentsline {section}{\numberline {3 - 3}تعريف المؤثر $\tilde {B}_n(f(t); x)$}{18}{}%
+\contentsline {section}{\numberline {3 - 4}مبرهنة كورفكن للمؤثر $\tilde {B}_n(f(t); x)$}{18}{}%
 \selectlanguage *[]{english}
 \selectlanguage *[locale=default,calendar=gregorian,numerals=maghrib,hijricorrection=0,abjadjimnotail=false]{arabic}
 \selectlanguage *[numerals=maghrib]{arabic}
