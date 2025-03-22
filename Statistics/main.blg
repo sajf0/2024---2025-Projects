@@ -1,5 +1,0 @@
-[0] Config.pm:307> INFO - This is Biber 2.19
-[0] Config.pm:310> INFO - Logfile is 'main.blg'
-[249] biber:340> INFO - === Sat Dec  7, 2024, 21:53:46
-[505] Utils.pm:410> ERROR - main.bcf is malformed, last biblatex run probably failed. Deleted main.bbl
-[505] Biber.pm:136> INFO - ERRORS: 1

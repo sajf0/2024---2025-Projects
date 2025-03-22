@@ -1,8 +1,0 @@
-\selectlanguage *[numerals=maghrib]{arabic}
-\contentsline {chapter}{\numberline {الفصل الأول }مفاهيم أساسية}{1}{}%
-\contentsline {chapter}{\numberline {الفصل الثاني }الصيغة التكرارية الجديدة لحل المعادلات غير الخطية}{4}{}%
-\contentsline {chapter*}{المراجع}{8}{}%
-\selectlanguage *[]{english}
-\selectlanguage *[locale=default,calendar=gregorian,numerals=maghrib,hijricorrection=0,abjadjimnotail=false]{arabic}
-\selectlanguage *[numerals=maghrib]{arabic}
-\contentsfinish 
