@@ -4,7 +4,7 @@
 \LoadClass[14pt, a4paper]{extreport}
 
 \RequirePackage[
-top=1.5in,
+top=1in,
 left=1in,
 right=1in
 ]{geometry}
@@ -14,11 +14,13 @@ right=1in
 
 \RequirePackage{pgfplots, float}
 
+\usepackage{setspace}
+\setstretch{1.4}
+
 % For changing the headers formatting
-\RequirePackage{titletoc, titlesec, setspace, enumitem, tasks}
+\RequirePackage{titletoc, titlesec, enumitem, tasks}
 \setlist{noitemsep, topsep=5pt, partopsep=5pt, itemsep=5pt}
 \settasks{after-item-skip=2pt, before-skip=2pt, label=\en{\alph*})}
-\onehalfspacing
 
 % For math
 \RequirePackage{amsmath, amssymb, amsthm}
@@ -90,7 +92,7 @@ right=1in
 }
 
 \def\@makeschapterhead#1{%
-	\vspace*{1cm}
+	\vspace*{0cm}
 	{\centering\Large\bfseries #1\par}
 	\vspace{1cm}	
 }
@@ -102,7 +104,7 @@ right=1in
 
 % Change the subsection header format
 \titleformat{\subsection}[block]
-{\bfseries\fontsize{14}{17}\selectfont} 
+{\bfseries\fontsize{15}{17}\selectfont} 
 {\thesubsection}{1em}{}  
 
 % Change the chapter numbering to suit the arabic style

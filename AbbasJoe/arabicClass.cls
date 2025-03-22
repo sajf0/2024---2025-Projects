@@ -4,7 +4,7 @@
 \LoadClass[14pt, a4paper]{extreport}
 
 \RequirePackage[
-top=1.5in,
+top=1in,
 left=1in,
 right=1in
 ]{geometry}
@@ -27,7 +27,7 @@ right=1in
 
 \allowdisplaybreaks
 
-
+\usepackage{indentfirst}
 % To use the arabic language
 \RequirePackage{polyglossia}
 
@@ -44,10 +44,12 @@ right=1in
 \pagestyle{fancy}
 \fancyhead{}
 %\fancyfoot{}
-\fancyhead[L]{\small\leftmark}
+\fancyhead[L]{\small\ar{\leftmark}}
 %\fancyhead[C]{\small \leftmark}
-\fancyhead[R]{\small \thechapter}
+\fancyhead[R]{\small \ar{\thechapter}}
 \renewcommand{\chaptermark}[1]{\markboth{\MakeUppercase{#1}}{}}
+\renewcommand{\thepage}{\ar{\arabic{page}}}
+
 
 % Set the arabic language as default and english as side langiage
 \setmainlanguage[numerals=maghrib]{arabic}
@@ -152,7 +154,7 @@ right=1in
 
 \renewcommand{\thetable}{\arabic{chapter} - \arabic{table}}
 
-\renewcommand{\thefigure}{\arabic{chapter} - \arabic{figure}}
+\renewcommand{\thefigure}{\arabic{figure}}
 
 
 \newtheoremstyle{theoremstyle}
