@@ -6,7 +6,8 @@
 \RequirePackage[
 top=1in,
 left=1in,
-right=1in
+right=1in,
+bottom=0.7in
 ]{geometry}
 
 % For the title page 
@@ -212,6 +213,7 @@ right=1in
 \DeclareMathOperator{\arcsec}{arcsin}
 \DeclareMathOperator{\arccsc}{arccsc}
 \DeclareMathOperator{\arccot}{arccot}
+\DeclareMathOperator{\sech}{sech}
 
 \newcommand{\pbracket}[1]{\left(#1\right)}
 \newcommand{\sbracket}[1]{\left[#1\right]}
