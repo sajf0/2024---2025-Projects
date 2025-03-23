@@ -53,9 +53,13 @@ f''(y_n) = \frac{f'(y_n) - f(x_n)}{y_n - x_n} = A(x_n, y_n)
 \begin{equation}
 x_{n+1} = y_n - \frac{2f(y_n)[f'(y_n)+wf(y_n)]}{2f'(y_n) [f'(y_n) + wf(y_n)] -f(y_n)A(x_n, y_n)} 
 \end{equation}
+حيث
+\begin{equation}
+	y_n = x_n - \frac{f(x_n)}{f'(x_n) + wf(x_n)}, \quad n=0,1,2,\dots, \quad w\in\R
+\end{equation}
 
 \section*{3. تحليل رتبة التقارب}
-\textbf{مبرهنة:} لتكن $a\in I$ جذراً للمعادلة غير الخطية (1.1) و ليكن $x_0$ حل ابتدائي مناسب للجذر $\alpha$. فإن الصيغة التكرارية المعدلة تقترب تقارباً من الرتبة السادسة على الاقل.\\
+\textbf{مبرهنة:} لتكن $a\in I$ جذراً للمعادلة غير الخطية (1.1) و ليكن $x_0$ حل ابتدائي مناسب للجذر $\alpha$. فإن الصيغة التكرارية المعدلة تقترب تقارباً من الرتبة الخامسة على الاقل.\\
 \textbf{البرهان:} ليكن $\alpha$ جذراً للمعادلة (1.1) حيث ($f(\alpha)=0, f'(\alpha)\neq 0$) باستخدام مفكوك تايلر حول النقطة $\alpha$ نجد
 \begin{align*}
 	f(x_n) &= f'(\alpha)(x_n-\alpha) + \frac{1}{2!} f''(\alpha)(x_n-\alpha)^2\\
@@ -69,4 +73,13 @@ f'(x_n) = f'(\alpha) [1 + 2c_2e_n + 3c_3 e_n^2 + 4c_4 e_n^3+ 5c_5 e_n^4+ 6c_6 e_
 \]
 حيث 
 $c_k = \dfrac{f^{(k)}(\alpha)}{\dfrac{1}{k!}}; k=1,2,3,\dots$
-و $e_n = x_n-\alpha$
+و $e_n = x_n-\alpha$\\
+من التعريف
+$f(y_n), f'(y_n), f'(y_n)^2$ و $A= (x_n, y_n)$
+\[
+f(y_n) = \frac{f'(y_n - x_n)}{(y_n - x_n)} = A(x_n, y_n)
+\]
+نفرض ان
+\[
+y_n = \alpha + (c_2+w)e_n^2 + (-w^2-2wc_2-2c_2^2+2c_3)e_n^3 + O(e_n^{10})
+\]

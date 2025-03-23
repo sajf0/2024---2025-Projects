@@ -12,6 +12,8 @@ right=1in
 % For the title page 
 \RequirePackage{graphicx, pgfplots, subcaption}
 
+\pgfplotsset{compat=1.18}
+
 \RequirePackage{float, multirow}
 
 \usepackage{setspace}

@@ -152,3 +152,80 @@ c_6 = \frac{(7)(2)}{(5)(2)} c_4 = 0
 \end{align*}
 حيث $c_0, c_1 $ ثوابت اختيارية.
 \end{solution}
+
+\begin{example}
+	جد الحل العام للمعادلة التفاضلية
+	\[
+	y'' - \frac{y}{1+x^2} = 0
+	\]
+\end{example}
+\begin{solution}
+		نفرض ان الحل هو متسلسلة بالشكل التالي
+	\begin{align*}
+		& y = c_0 + c_1 x + c_2 x^2 + \cdots = \sum_{n=0}^{\infty} c_n x^n \\[10pt]
+		& y' = c_1 + 2c_2x + 3c_3 x^2 + \cdots = \sum_{n=0}^{\infty} (n+1)c_{n+1} x^n \\[10pt]
+		& y'' = 1\cdot2 c_2 + 2\cdot3 c_3x + 3\cdot4 c_4 x^2 + \cdots = \sum_{n=0}^{\infty} (n+1)(n+2)c_{n+2}x^n 
+	\end{align*}
+يمكن كتابة المعادلة الاصلية بالشكل 
+	\[
+	(1+x^2)y'' - y=0
+	\]
+	حيث ان $1+x^2\neq 0 $ الان بتعويض عن $y'', y$ في المعادلة، نحصل على
+	\[
+	(1+x^2) \sum_{n=0}^{\infty} (n+1)(n+2)c_{n+2}x^n - \sum_{n=0}^{\infty}c_n x^n=0
+	\]
+	\[
+	\sum_{n=0}^{\infty} (n+1)(n+2)c_{n+2}x^n + \sum_{n=0}^{\infty} (n+1)(n+2)c_{n+2}x^{n+2} - \sum_{n=0}^{\infty}c_n x^n=0
+	\]
+	\newpage
+	\noindent
+	\begin{multline*}
+			2c_2 + 6c_3 x - c_0 - c_1 x + 	\sum_{n=2}^{\infty} (n+1)(n+2)c_{n+2}x^n \\ +\sum_{n=0}^{\infty} (n+1)(n+2)c_{n+2}x^{n+2} - \sum_{n=2}^{\infty}c_n x^n=0
+	\end{multline*}
+\begin{multline*}
+	(2c_2 - c_0) + (6c_3 - c_1)x + \sum_{n=2}^{\infty} (n+1)(n+2)c_{n+2}x^n \\ +\sum_{n=2}^{\infty} n(n-1)c_{n}x^{n} - \sum_{n=2}^{\infty}c_n x^n=0		
+\end{multline*}
+\[
+	(2c_2 - c_0) + (6c_3 - c_1)x + \sum_{n=2}^{\infty} \big[(n+1)(n+2)c_{n+2} + (n(n-1)-1)c_n\big]x^n =0
+\]
+\[
+	(2c_2 - c_0) + (6c_3 - c_1)x + \sum_{n=2}^{\infty} \big[(n+1)(n+2)c_{n+2} + (n^2-n-1)c_n\big]x^n =0
+\]
+بمساواة المعاملات ، نحصل على
+\[
+2c_2 - c_0 = 0\Rightarrow c_2 = \frac{c_0}{2}, \quad 6c_3 - c_1 = 0 \Rightarrow c_3=\frac{c_1}{6}
+\]
+\[
+(n+1)(n+2)c_{n+2} + (n^2-n-1)c_n = 0
+\]
+\[
+c_{n+2} = \frac{1+n-n^2}{(n+1)(n+2)} \, c_n, \quad n=2,3,4,\dots
+\]
+عندما $n=2$ 
+\[
+c_4 = \frac{-1}{12}c_2 = \frac{-1}{12}\frac{1}{2}c_0 = \frac{-1}{24}c_0
+\]
+عندما $n=3 $
+\[
+c_5 = \frac{-5}{20} c_3 = \frac{-5}{20}\frac{1}{6}c_1 = \frac{-5}{120}c_1 
+\]
+عندما $n=4 $ 
+\[
+c_6 = \frac{-11}{30}c_4 = \frac{-11}{30} \frac{-1}{24}c_0 = \frac{11}{720} c_0
+\]
+عندما $n=5 $ 
+\[
+c_7 = \frac{-19}{42}c_5 = \frac{-19}{42}\frac{-5}{120} c_1 = \frac{95}{2880} c_1
+\]
+اذن الحل العام يكون
+\[
+y = c_0 + c_1 x + c_2 x^2 + c_3x^3  + c_4 x^4 + c_5 x^5 + c_6 x^6 + c_7 x^7 + \cdots 
+\]
+\[
+y = c_0 + c_1 x + \frac{1}{2}c_0 x^2 + \frac{1}{6}c_1 x^3 - \frac{1}{24}c_0 x^4 - \frac{5}{120} c_1 x^5 + \frac{11}{720} c_0 x^6 + \frac{95}{2880} c_1 x^7 + \cdots
+\]
+\begin{multline*}
+	y = c_0 \left[1 + \frac{1}{2} x^2 - \frac{1}{24}x^4 + \frac{11}{720} x^6 + \cdots\right] \\+ c_1 \left[x + \frac{1}{6}x^3 - \frac{5}{120} x^5 + \frac{95}{2880} x^7+ \cdots\right]
+\end{multline*}
+حيث $c_0, c_1 $ ثوابت اختيارية.
+\end{solution}

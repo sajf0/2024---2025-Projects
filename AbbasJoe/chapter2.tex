@@ -1,228 +1,411 @@
 \chapter{تطبيق طريقة التفاضل التربيعي لحل مسائل القيم الحدودية}
 
 \section[مقدمة]{مقدمة \LR{Introduction}}
-بعد أن بينّا في الفصل الأول كيفية الحصول على معاملات الوزن والفرق بين الطُرق الثلاثة وأيضاً بينّا طرق اختيار نقاط الشبكة. سوف نقوم في الفصل الثاني بحل معادلات جزئية أحادية البعد التي تكون بالصيغة 
+بعد أن بينّا في الفصل الأول كيفية الحصول على معاملات الوزن والفرق بين الطُرق الثلاثة وأيضاً بينّا طرق اختيار نقاط الشبكة. سوف نقوم في الفصل الثاني بتطبيق طريقة التفاضل التربيعي لحل المعادلات الجزئية على الشكل 
 \begin{equation}\label{eq:one_dim_diff_eq}
 	u_t=F(u,x,t,u_x,u_{xx})
 \end{equation}
-مع الشرط الإبتدائي $u(x,0)=g(x)$.\\
-\noindent
-و في هذا الفصل سوف نرمز إلى معاملات الوزن من الرتبة الأولى بالرمز $a_{ij}$.
+مع الشرط الإبتدائي $u(x,0)=g(x)$. حيث $g(x)$ دالة في $x$.
 
 \begin{example}
-	بإستخدام طريقة التفاضل التربيعي حل المعادلة 
-\begin{equation}
-	\label{eq:firstexample}
-	u_t = x^2 + \frac{1}{4} u_x^2, \quad u(x, 0) = 0
-\end{equation}
-\end{example}
-
-\begin{solution}
-	نقوم بتطبيق التفاضل التربيعي على المشتقة بالنسبة الى $x$. حيث 
-	\[
-	u_x(x_i, t) = \sum_{j=1}^{N} a_{ij} u(x_j, t)
-	\]
-	نعوض في\eqref{eq:firstexample} نحصل على
+	لنحاول تطبيق التفاضل التربيعي على المعادلة 
 	\begin{equation}
-		\label{eq:firstexampleDQM}
-		u_t(x_i, t) = x_i^2 + \frac{1}{4} \left[\sum_{j=1}^{N} a_{ij} u(x_j, t)\right]^2, i=1,2,\dots,N
+		\label{eq:firstex}
+		u_t = x^2 + \frac{1}{4} u_x^2
 	\end{equation}
-لنأخذ $N=3$ ونقاط الشبكة المتساوية المسافة $x_1=0, x_2=0.5, x_3=1 $. بإستخدام صيغ كوان و جانك \eqref{quan_chang_equations} لايجاد معاملات الوزن $a_{ij}$ نجد
-\begin{equation*}
+	مع الشرط الحدودي $u(x,0) = 0$. بتطبيق التفاضل التربيعي على المشتقة بالنسبة الى $x$ بواسطة الصيغة \eqref{eq:firstorderDQM} على نقاط الشبكة $x_1, x_2, \dots, x_N$ ، نحصل على
+	\begin{equation}
+		\label{eq:firstexapplied}
+		u_t (x_i, t) = x_i^2 + \frac{1}{4} \left[\sum_{j=1}^{N} a_{ij} u(x_j, t)\right]^2 , \quad i=1,2,\dots,N
+ 	\end{equation}
+ 	اصبح لدينا نظام مكون من $N$ من المعادلات التفاضلية الاعتيادية غير الخطية بالنسبة للمتغير المستقل $t$. سوف نستخدم طريقة رانج - كتا من الدرجة الرابعة (RK4) ، حيث نوجد الحل عند القيم $t_0, t_1, \dots, t_M$ بخطوة مقدارها $h$ حيث $t_{k+1} = t_k + h$ ، نفترض ان 
+ 	\[
+ 	\mathbf{u}_k = \langle u(x_1, t_k) , u(x_2,t_k), \dots, u(x_N, t_k)\rangle^T, \quad k=0,1,2,\dots,M
+ 	\]
+ 	\[
+ 	\mathbf{x} = \langle x_1, x_2, \dots, x_N\rangle^T
+ 	\]
+ 	الان نفرض ان
+ 	\[
+ 	G(t, \mathbf{u}) = \mathbf{x}.^2 + \frac{1}{4} (A \mathbf{u}).^2
+ 	\]
+ 	حيث $A$ مصفوفة معاملات الوزن $a_{ij}$ ، صيغة رانج كتا من الدرجة الرابعة تكون
+ 	\begin{equation}
+ 		\label{eq:firstexRK4}
+ 		\mathbf{u}_{k+1} = \mathbf{u}_k + \frac{k}{6} (\mathbf{k}_1+2\mathbf{k}_2+2\mathbf{k}_3+\mathbf{k}_4), \quad k=0,1,2,\dots,M-1
+ 	\end{equation}
+ 	حيث في كل خطوة $k$ نحسب
+ 	\[
+ 	\begin{aligned}
+ 		&\mathbf{k}_1 = G(t_k, \mathbf{y})\\
+ 		&\mathbf{k}_2 = G\left(t_k + \frac{h}{2}, \mathbf{y}_k + \frac{h}{2}\mathbf{k}_1  \right)\\
+ 		&\mathbf{k}_3 = G\left(t_k + \frac{h}{2}, \mathbf{y}_k + \frac{h}{2}\mathbf{k}_2  \right)\\
+ 		&\mathbf{k}_4 = G(t_k + h, \mathbf{y} + h\mathbf{k}_3)
+ 	\end{aligned}
+ 	\]
+ 	الآن نحدد $N=3, M=11, h=0.01 $ ، نعين اولاً معاملات الوزن من الصيغ \eqref{quan_chang_equations} نحصل على 
+ 	\[
+ 	A = 
 \begin{bmatrix}
-	a_{11}&a_{12}&a_{13}\\
-	a_{21}&a_{22}&a_{23}\\
-	a_{31}&a_{32}&a_{33}
-\end{bmatrix}=\begin{bmatrix}
-	-3&4&-1\\
-	-1&0&1\\
-	1&-4&3
+	-3 & 4 & -1 \\
+	-1 & 0 & 1 \\
+	1 & -4 & 3 \\
 \end{bmatrix}
-\end{equation*}
-الآن يمكن كتابة المعادلة \eqref{eq:firstexampleDQM} على الشكل 
-\begin{equation*}
-	\begin{bmatrix}
-		u_t(0,t)\\
-		u_t(0.5,t)\\
-		u_t(1,t)
-	\end{bmatrix}=\begin{bmatrix}
-		0\\
-		0.25\\
-		1
-	\end{bmatrix}+\frac{1}{4}\cbracket{\begin{bmatrix}
-			-3&4&-1\\
-			-1&0&1\\
-			1&-4&3
-		\end{bmatrix}\begin{bmatrix}
-			u(0,t)\\
-			u(0.5,t)\\
-			u(1,t)
-	\end{bmatrix}}^2
-\end{equation*}
-وهذا نظام من المعادلات التفاضلية الاعتيادية غير الخطية يمكن حلها بطريقة رانج كتا من الدرجة الرابعة (\textbf{RK4}) والنتائج ظاهرة في الجدول \ref{tab:firstexN3}
-بالمقارنة مع الحل الحقيقي $u(x, t) = x^2 \tan(t)$
-
-
+ 	\]
+ 	
 \begin{table}[ht]
 	\centering
-	\begin{english}	
-	\begin{tabular}{|c|c|c|c|c|}
-		\hline
-		$t$ & $x_i$ & DQM & Exact & Error \\
-		\hline
-		\multirow{3}{*}{0.1} & $x_1$ & 0.0000 & 0.0000 & 0.0000 \\
-		& $x_2$ & 0.0251 & 0.0251 & $2.0752 \times 10^{-8}$ \\
-		& $x_3$ & 0.1003 & 0.1003 & $8.3007 \times 10^{-8}$ \\
-		\hline
-		\multirow{3}{*}{0.01} & $x_1$ & 0.0000 & 0.0000 & 0.0000 \\
-		& $x_2$ & 0.0025 & 0.0025 & $2.0833 \times 10^{-13}$ \\
-		& $x_3$ & 0.0100 & 0.0100 & $8.3330 \times 10^{-13}$ \\
-		\hline
-	\end{tabular}
-\end{english}
-\caption{$N=3$}
-\label{tab:firstexN3}
-\end{table}
-
-
-الآن نأخذ $N=7$. نحسب معاملات الوزن من \eqref{quan_chang_equations}  
-\[
-\begin{bmatrix}
-	-14.7 & 36 & -45 & 40 & -22.5 & 7.2 & -1 \\
-	-1 & -7.7 & 15 & -10 & 5 & -1.5 & 0.2 \\
-	0.2 & -2.4 & -3.5 & 8 & -3 & 0.8 & -0.1 \\
-	-0.1 & 0.9 & -4.5 & -2.6645e-15 & 4.5 & -0.9 & 0.1 \\
-	0.1 & -0.8 & 3 & -8 & 3.5 & 2.4 & -0.2 \\
-	-0.2 & 1.5 & -5 & 10 & -15 & 7.7 & 1 \\
-	1 & -7.2 & 22.5 & -40 & 45 & -36 & 14.7
-\end{bmatrix}
-\]
-نعوض في \eqref{eq:firstexampleDQM} ونكمل الحل بواسطة \textbf{(RK4)} ينتج الحل في الجدول \ref{tab:firstexN7}.
-
-	\begin{table}[ht]
-		\centering
-		\begin{english}
-		\begin{tabular}{|c|c|c|c|c|}
+	\renewcommand{\arraystretch}{1.5}
+	\begin{english}
+		\begin{tabular}{|c|c|c|c|}
 			\hline
-			$t$ & $x_i$ & DQM & Exact & Error \\
+			$t$ & $x_i$ & Exact & Error\\
 			\hline
-			\multirow{7}{*}{0.1} & $x_1$ & $4.7266 \times 10^{-34}$ & 0.0000 & $4.7266 \times 10^{-34}$ \\
-			& $x_2$ & 0.0028 & 0.0028 & $2.3058 \times 10^{-9}$ \\
-			& $x_3$ & 0.0111 & 0.0111 & $9.2230 \times 10^{-9}$ \\
-			& $x_4$ & 0.0251 & 0.0251 & $2.0752 \times 10^{-8}$ \\
-			& $x_5$ & 0.0446 & 0.0446 & $3.6892 \times 10^{-8}$ \\
-			& $x_6$ & 0.0697 & 0.0697 & $5.7644 \times 10^{-8}$ \\
-			& $x_7$ & 0.1003 & 0.1003 & $8.3007 \times 10^{-8}$ \\
+			\multirow{3}{*}{0.1}  & $x_1$ & 0.00000000  & $0$ \\
+			& $x_2$ & 0.02508367  & $2.0752\times10^{-8}$ \\
+			& $x_3$ & 0.10033467  & $8.3007\times10^{-8}$ \\
 			\hline
-			\multirow{7}{*}{0.01} & $x_1$ & $9.2911 \times 10^{-37}$ & 0.0000 & $9.2911 \times 10^{-37}$ \\
-			& $x_2$ & 0.0003 & 0.0003 & $2.3147 \times 10^{-14}$ \\
-			& $x_3$ & 0.0011 & 0.0011 & $9.2589 \times 10^{-14}$ \\
-			& $x_4$ & 0.0025 & 0.0025 & $2.0833 \times 10^{-13}$ \\
-			& $x_5$ & 0.0044 & 0.0044 & $3.7036 \times 10^{-13}$ \\
-			& $x_6$ & 0.0069 & 0.0069 & $5.7868 \times 10^{-13}$ \\
-			& $x_7$ & 0.0100 & 0.0100 & $8.3330 \times 10^{-13}$ \\
+			\multirow{3}{*}{0.01} & $x_1$ & 0.00000000  & $0$ \\
+			& $x_2$ & 0.02508367  & $2.0752\times10^{-8}$ \\
+			& $x_3$ & 0.10033467  & $8.3007\times10^{-8}$ \\
 			\hline
 		\end{tabular}
 	\end{english}
-		\caption{$N=7$}
-		\label{tab:firstexN7}
-	\end{table}
-\end{solution}
-
-
-\begin{example}
-	جد حل المعادلة باستخدام طريقة التفاضل التربيعي 
-\begin{equation}
-	\label{eq:secondexample}
-		u_t + u u_x = x, \quad u(x, 0) = 2
-\end{equation}
-\end{example}
-\begin{solution}
-	نقوم باعادة  ترتيب المعادلة ونعوض التفاضل التربيعي للمشتقة بالنسبة الى $x$ في \eqref{eq:secondexample} نحصل على 
-	\begin{equation}
-		\label{eq:secondexampleDQM}
-		u_t(x_i, t) = - u(x_i, t) \sum_{j=1}^{N} a_{ij} u(x_j, t) + x_i,\quad i =1\dots,N 
-	\end{equation}
-	لنأخذ $N=5$ وبواسطة \eqref{quan_chang_equations} نحسب معاملات الوزن 
-\[
-[a_{ij}] =
-\begin{bmatrix}
-	-8.3333 & 16 & -12 & 5.3333 & -1 \\
-	-1 & -3.3333 & 6 & -2 & 0.33333 \\
-	0.33333 & -2.6667 & 0 & 2.6667 & -0.33333 \\
-	-0.33333 & 2 & -6 & 3.3333 & 1 \\
-	1 & -5.3333 & 12 & -16 & 8.3333
-\end{bmatrix}
-\]
-بطريقة مماثلة في المثال الاول. نعوض معاملات الوزن في \eqref{eq:secondexampleDQM} وينتج نظام من المعادلات التفاضلية غير الخطية نحلها بطريقة RK4 ينتج الحل في الجدول \ref{tab:secondexN5}.
-
-	\begin{table}[h!]
-	\centering
-	\begin{english}
-	\begin{tabular}{|c|c|c|c|c|}
-		\hline
-		$t$ & $x_i$ & DQM & Exact & Error \\
-		\hline
-		\multirow{5}{*}{0.1} & $x_1$ & 1.9900 & 1.9900 & $1.8168 \times 10^{-8}$ \\
-		& $x_2$ & 2.0150 & 2.0150 & $3.9086 \times 10^{-8}$ \\
-		& $x_3$ & 2.0399 & 2.0399 & $6.0004 \times 10^{-8}$ \\
-		& $x_4$ & 2.0648 & 2.0648 & $8.0922 \times 10^{-8}$ \\
-		& $x_5$ & 2.0897 & 2.0897 & $1.0184 \times 10^{-7}$ \\
-		\hline
-		\multirow{5}{*}{0.01} & $x_1$ & 1.9999 & 1.9999 & $1.7986 \times 10^{-14}$ \\
-		& $x_2$ & 2.0024 & 2.0024 & $2.2604 \times 10^{-13}$ \\
-		& $x_3$ & 2.0049 & 2.0049 & $4.3476 \times 10^{-13}$ \\
-		& $x_4$ & 2.0074 & 2.0074 & $6.4304 \times 10^{-13}$ \\
-		& $x_5$ & 2.0099 & 2.0099 & $8.5132 \times 10^{-13}$ \\
-		\hline
-	\end{tabular}
-\end{english}
-	\caption{$N=5$}
-	\label{tab:secondexN5}
+	\label{tab:firstN3}
+	\caption{مقارنة النتائج العددية مع التحليلية عندما $N=3$}
 \end{table}
 
+\end{example}
 
-الآن لهدف المقارنة نأخذ $N=7$ ونحسب معاملات الوزن
-\[
-\begin{bmatrix}
-	-14.7 & 36 & -45 & 40 & -22.5 & 7.2 & -1 \\
-	-1 & -7.7 & 15 & -10 & 5 & -1.5 & 0.2 \\
-	0.2 & -2.4 & -3.5 & 8 & -3 & 0.8 & -0.1 \\
-	-0.1 & 0.9 & -4.5 & -2.6645e-15 & 4.5 & -0.9 & 0.1 \\
-	0.1 & -0.8 & 3 & -8 & 3.5 & 2.4 & -0.2 \\
-	-0.2 & 1.5 & -5 & 10 & -15 & 7.7 & 1 \\
-	1 & -7.2 & 22.5 & -40 & 45 & -36 & 14.7
-\end{bmatrix}
-\]
-ونحصل على الحل في الجدول \ref{tab:secondexN7}
+\begin{table}[ht]
+	\centering
+	\renewcommand{\arraystretch}{1.5}
+	\begin{english}
+		\begin{tabular}{|c|c|c|c|}
+			\hline
+			$t$ & $x_i$ & Exact & Error\\
+			\hline
+			\multirow{3}{*}{0.1}  & $x_1$ & 1.99004150  & $1.8168\times10^{-8}$ \\
+			& $x_2$ & 2.03987550  & $6.0004\times10^{-8}$ \\
+			& $x_3$ & 2.08970949  & $1.0184\times10^{-7}$ \\
+			\hline
+			\multirow{3}{*}{0.01} & $x_1$ & 1.99004150  & $1.8168\times10^{-8}$ \\
+			& $x_2$ & 2.03987550  & $6.0004\times10^{-8}$ \\
+			& $x_3$ & 2.08970949  & $1.0184\times10^{-7}$ \\
+			\hline
+		\end{tabular}
+	\end{english}
+	\label{tab:secondN3}
+	\caption{مقارنة النتائج العددية مع التحليلية عندما $N=3$}
+\end{table}
 
-	\begin{table}[h!]
+	\begin{table}[ht]
+		\renewcommand{\arraystretch}{1.5}
 		\centering
 		\begin{english}
-		\begin{tabular}{|c|c|c|c|c|}
+\begin{tabular}{|c|c|c|c|c|c|}
 			\hline
-			$t$ & $x_i$ & DQM & Exact & Error \\
+			\multirow{2}{*}{\( t \)} & \multirow{2}{*}{\( x_i \)} & \multicolumn{2}{c|}{Equally Spacing Points} & \multicolumn{2}{c|}{Equally Spacing Points} \\
+			\cline{3-6}
+			& & Exact & Error & Exact & Error \\
 			\hline
-			\multirow{7}{*}{0.1} & $x_1$ & 1.9900 & 1.9900 & $1.8168 \times 10^{-8}$ \\
-			& $x_2$ & 2.0067 & 2.0067 & $3.2114 \times 10^{-8}$ \\
-			& $x_3$ & 2.0233 & 2.0233 & $4.6059 \times 10^{-8}$ \\
-			& $x_4$ & 2.0399 & 2.0399 & $6.0004 \times 10^{-8}$ \\
-			& $x_5$ & 2.0565 & 2.0565 & $7.3950 \times 10^{-8}$ \\
-			& $x_6$ & 2.0731 & 2.0731 & $8.7895 \times 10^{-8}$ \\
-			& $x_7$ & 2.0897 & 2.0897 & $1.0184 \times 10^{-7}$ \\
+			\multirow{5}{*}{0.1} & \( x_1 \) & 1.99004150 & \( 1.8168 \times 10^{-8} \) & 1.99004150 & \( 1.8168 \times 10^{-8} \) \\
+			& \( x_2 \) & 2.01495850 & \( 3.9086 \times 10^{-8} \) & 2.00463754 & \( 3.0422 \times 10^{-8} \) \\
+			& \( x_3 \) & 2.03987550 & \( 6.0004 \times 10^{-8} \) & 2.03987550 & \( 6.0004 \times 10^{-8} \) \\
+			& \( x_4 \) & 2.06479249 & \( 8.0922 \times 10^{-8} \) & 2.07511345 & \( 8.9587 \times 10^{-8} \) \\
+			& \( x_5 \) & 2.08970949 & \( 1.0184 \times 10^{-7} \) & 2.08970949 & \( 1.0184 \times 10^{-7} \) \\
 			\hline
-			\multirow{7}{*}{0.01} & $x_1$ & 1.9999 & 1.9999 & $1.7097 \times 10^{-14}$ \\
-			& $x_2$ & 2.0016 & 2.0016 & $1.5721 \times 10^{-13}$ \\
-			& $x_3$ & 2.0032 & 2.0032 & $2.9576 \times 10^{-13}$ \\
-			& $x_4$ & 2.0049 & 2.0049 & $4.3476 \times 10^{-13}$ \\
-			& $x_5$ & 2.0066 & 2.0066 & $5.7332 \times 10^{-13}$ \\
-			& $x_6$ & 2.0082 & 2.0082 & $7.1232 \times 10^{-13}$ \\
-			& $x_7$ & 2.0099 & 2.0099 & $8.5043 \times 10^{-13}$ \\
+			\multirow{5}{*}{0.01} & \( x_1 \) & 1.99990000 & \( 1.7986 \times 10^{-14} \) & 1.99990000 & \( 1.8208 \times 10^{-14} \) \\
+			& \( x_2 \) & 2.00239992 & \( 2.2604 \times 10^{-13} \) & 2.00136442 & \( 1.4033 \times 10^{-13} \) \\
+			& \( x_3 \) & 2.00489984 & \( 4.3476 \times 10^{-13} \) & 2.00489984 & \( 4.3476 \times 10^{-13} \) \\
+			& \( x_4 \) & 2.00739975 & \( 6.4304 \times 10^{-13} \) & 2.00843525 & \( 7.2964 \times 10^{-13} \) \\
+			& \( x_5 \) & 2.00989967 & \( 8.5132 \times 10^{-13} \) & 2.00989967 & \( 8.5132 \times 10^{-13} \) \\
 			\hline
 		\end{tabular}
 \end{english}
-	\caption{$N=7$}
-\label{tab:secondexN7}
-	\end{table}
-\end{solution}
+	\caption{\centering مقارنة النتائج العددية عند نقاط الشبكة متساوية المسافة وعند نقاط الشبكة غير متساوية المسافة عندما $N=5$}
+\label{tab:secondN5}
+\end{table}
+	
+	For \( N = 7 \)
+	
+	\begin{table}[ht]
+		\renewcommand{\arraystretch}{1.5}
+		\centering
+		\begin{english}
+\begin{tabular}{|c|c|c|c|c|c|}
+			\hline
+			\multirow{2}{*}{\( t \)} & \multirow{2}{*}{\( x_i \)} & \multicolumn{2}{c|}{Equally Spacing Points} & \multicolumn{2}{c|}{Equally Spacing Points} \\
+			\cline{3-6}
+			& & Exact & Error & Exact & Error \\
+			\hline
+			\multirow{7}{*}{0.1} & \( x_1 \) & 1.99004150 & \( 1.8168 \times 10^{-8} \) & 1.99004150 & \( 1.8168 \times 10^{-8} \) \\
+			& \( x_2 \) & 2.00665283 & \( 3.2114 \times 10^{-8} \) & 1.99671799 & \( 2.3773 \times 10^{-8} \) \\
+			& \( x_3 \) & 2.02326416 & \( 4.6059 \times 10^{-8} \) & 2.01495850 & \( 3.9086 \times 10^{-8} \) \\
+			& \( x_4 \) & 2.03987550 & \( 6.0004 \times 10^{-8} \) & 2.03987550 & \( 6.0004 \times 10^{-8} \) \\
+			& \( x_5 \) & 2.05648683 & \( 7.3950 \times 10^{-8} \) & 2.06479249 & \( 8.0922 \times 10^{-8} \) \\
+			& \( x_6 \) & 2.07309816 & \( 8.7895 \times 10^{-8} \) & 2.08303300 & \( 9.6235 \times 10^{-8} \) \\
+			& \( x_7 \) & 2.08970949 & \( 1.0184 \times 10^{-7} \) & 2.08970949 & \( 1.0184 \times 10^{-7} \) \\
+			\hline
+			\multirow{7}{*}{0.01} & \( x_1 \) & 1.99990000 & \( 1.7097 \times 10^{-14} \) & 1.99990000 & \( 1.7764 \times 10^{-14} \) \\
+			& \( x_2 \) & 2.00156662 & \( 1.5721 \times 10^{-13} \) & 2.00056985 & \( 7.3719 \times 10^{-14} \) \\
+			& \( x_3 \) & 2.00323323 & \( 2.9576 \times 10^{-13} \) & 2.00239992 & \( 2.2649 \times 10^{-13} \) \\
+			& \( x_4 \) & 2.00489984 & \( 4.3476 \times 10^{-13} \) & 2.00489984 & \( 4.3476 \times 10^{-13} \) \\
+			& \( x_5 \) & 2.00656645 & \( 5.7332 \times 10^{-13} \) & 2.00739975 & \( 6.4304 \times 10^{-13} \) \\
+			& \( x_6 \) & 2.00823306 & \( 7.1232 \times 10^{-13} \) & 2.00922982 & \( 7.9536 \times 10^{-13} \) \\
+			& \( x_7 \) & 2.00989967 & \( 8.5043 \times 10^{-13} \) & 2.00989967 & \( 8.5132 \times 10^{-13} \) \\
+			\hline
+		\end{tabular}
+\end{english}
+	\caption{\centering مقارنة النتائج العددية عند نقاط الشبكة متساوية المسافة وعند نقاط الشبكة غير متساوية المسافة عندما $N=5$}
+\label{tab:secondN7}
+\end{table}
+	
+	For \( N = 9 \)
+	
+	\begin{table}[ht]
+		\renewcommand{\arraystretch}{1.5}
+		\centering
+		\begin{english}
+\begin{tabular}{|c|c|c|c|c|c|}
+			\hline
+			\multirow{2}{*}{\( t \)} & \multirow{2}{*}{\( x_i \)} & \multicolumn{2}{c|}{Equally Spacing Points} & \multicolumn{2}{c|}{Equally Spacing Points} \\
+			\cline{3-6}
+			& & Exact & Error & Exact & Error \\
+			\hline
+			\multirow{9}{*}{0.1} & \( x_1 \) & 1.99004150 & \( 1.8168 \times 10^{-8} \) & 1.99004150 & \( 1.8169 \times 10^{-8} \) \\
+			& \( x_2 \) & 2.00250000 & \( 2.8627 \times 10^{-8} \) & 1.99383489 & \( 2.1353 \times 10^{-8} \) \\
+			& \( x_3 \) & 2.01495850 & \( 3.9086 \times 10^{-8} \) & 2.00463754 & \( 3.0422 \times 10^{-8} \) \\
+			& \( x_4 \) & 2.02741700 & \( 4.9545 \times 10^{-8} \) & 2.02080485 & \( 4.3994 \times 10^{-8} \) \\
+			& \( x_5 \) & 2.03987550 & \( 6.0004 \times 10^{-8} \) & 2.03987550 & \( 6.0004 \times 10^{-8} \) \\
+			& \( x_6 \) & 2.05233399 & \( 7.0463 \times 10^{-8} \) & 2.05894614 & \( 7.6014 \times 10^{-8} \) \\
+			& \( x_7 \) & 2.06479249 & \( 8.0922 \times 10^{-8} \) & 2.07511345 & \( 8.9587 \times 10^{-8} \) \\
+			& \( x_8 \) & 2.07725099 & \( 9.1381 \times 10^{-8} \) & 2.08591611 & \( 9.8656 \times 10^{-8} \) \\
+			& \( x_9 \) & 2.08970949 & \( 1.0184 \times 10^{-7} \) & 2.08970949 & \( 1.0184 \times 10^{-7} \) \\
+			\hline
+			\multirow{9}{*}{0.01} & \( x_1 \) & 1.99990000 & \( 1.7764 \times 10^{-14} \) & 1.99990000 & \( 1.8874 \times 10^{-14} \) \\
+			& \( x_2 \) & 2.00114996 & \( 1.2212 \times 10^{-13} \) & 2.00028059 & \( 4.9738 \times 10^{-14} \) \\
+			& \( x_3 \) & 2.00239992 & \( 2.2604 \times 10^{-13} \) & 2.00136442 & \( 1.4033 \times 10^{-13} \) \\
+			& \( x_4 \) & 2.00364988 & \( 3.3085 \times 10^{-13} \) & 2.00298648 & \( 2.7534 \times 10^{-13} \) \\
+			& \( x_5 \) & 2.00489984 & \( 4.3476 \times 10^{-13} \) & 2.00489984 & \( 4.3476 \times 10^{-13} \) \\
+			& \( x_6 \) & 2.00614980 & \( 5.3868 \times 10^{-13} \) & 2.00681319 & \( 5.9419 \times 10^{-13} \) \\
+			& \( x_7 \) & 2.00739975 & \( 6.4304 \times 10^{-13} \) & 2.00843525 & \( 7.2919 \times 10^{-13} \) \\
+			& \( x_8 \) & 2.00864971 & \( 7.4696 \times 10^{-13} \) & 2.00951908 & \( 8.1979 \times 10^{-13} \) \\
+			& \( x_9 \) & 2.00989967 & \( 8.5043 \times 10^{-13} \) & 2.00989967 & \( 8.5176 \times 10^{-13} \) \\
+			\hline
+		\end{tabular}
+\end{english}
+	\caption{\centering مقارنة النتائج العددية عند نقاط الشبكة متساوية المسافة وعند نقاط الشبكة غير متساوية المسافة عندما $N=5$}
+\label{tab:secondN9}
+\end{table}
+	
+	Table for \( u_{t} = x^2 + \frac{1}{4} u_{x}^2 \) with \( u(x,0) = 0 \)
+	For \( N = 5 \)
+	
+	\begin{table}[ht]
+		\renewcommand{\arraystretch}{1.5}
+		\centering
+		\begin{english}
+\begin{tabular}{|c|c|c|c|c|c|}
+			\hline
+			\multirow{2}{*}{\( t \)} & \multirow{2}{*}{\( x_i \)} & \multicolumn{2}{c|}{Equally Spacing Points} & \multicolumn{2}{c|}{Equally Spacing Points} \\
+			\cline{3-6}
+			& & Exact & Error & Exact & Error \\
+			\hline
+			\multirow{5}{*}{0.1} & \( x_1 \) & 0.00000000 & \( 0 \) & 0.00000000 & \( 0 \) \\
+			& \( x_2 \) & 0.00627092 & \( 5.1880 \times 10^{-9} \) & 0.00215184 & \( 1.7802 \times 10^{-9} \) \\
+			& \( x_3 \) & 0.02508367 & \( 2.0752 \times 10^{-8} \) & 0.02508367 & \( 2.0752 \times 10^{-8} \) \\
+			& \( x_4 \) & 0.05643825 & \( 4.6692 \times 10^{-8} \) & 0.07309917 & \( 6.0475 \times 10^{-8} \) \\
+			& \( x_5 \) & 0.10033467 & \( 8.3007 \times 10^{-8} \) & 0.10033467 & \( 8.3007 \times 10^{-8} \) \\
+			\hline
+			\multirow{5}{*}{0.01} & \( x_1 \) & 0.00000000 & \( 0 \) & 0.00000000 & \( 0 \) \\
+			& \( x_2 \) & 0.00062502 & \( 5.2081 \times 10^{-14} \) & 0.00021447 & \( 1.7871 \times 10^{-14} \) \\
+			& \( x_3 \) & 0.00250008 & \( 2.0833 \times 10^{-13} \) & 0.00250008 & \( 2.0833 \times 10^{-13} \) \\
+			& \( x_4 \) & 0.00562519 & \( 4.6873 \times 10^{-13} \) & 0.00728578 & \( 6.0710 \times 10^{-13} \) \\
+			& \( x_5 \) & 0.01000033 & \( 8.3330 \times 10^{-13} \) & 0.01000033 & \( 8.3330 \times 10^{-13} \) \\
+			\hline
+		\end{tabular}
+\end{english}
+	\caption{\centering مقارنة النتائج العددية عند نقاط الشبكة متساوية المسافة وعند نقاط الشبكة غير متساوية المسافة عندما $N=5$}
+\label{tab:firstN5}
+\end{table}
+	
+	For \( N = 7 \)
+	
+	\begin{table}[ht]
+		\renewcommand{\arraystretch}{1.5}
+		\centering
+		\begin{english}
+\begin{tabular}{|c|c|c|c|c|c|}
+			\hline
+			\multirow{2}{*}{\( t \)} & \multirow{2}{*}{\( x_i \)} & \multicolumn{2}{c|}{Equally Spacing Points} & \multicolumn{2}{c|}{Equally Spacing Points} \\
+			\cline{3-6}
+			& & Exact & Error & Exact & Error \\
+			\hline
+			\multirow{7}{*}{0.1} & \( x_1 \) & 0.00000000 & \( 0 \) & 0.00000000 & \( 0 \) \\
+			& \( x_2 \) & 0.00278707 & \( 2.3058 \times 10^{-9} \) & 0.00045023 & \( 3.7248 \times 10^{-10} \) \\
+			& \( x_3 \) & 0.01114830 & \( 9.2230 \times 10^{-9} \) & 0.00627092 & \( 5.1880 \times 10^{-9} \) \\
+			& \( x_4 \) & 0.02508367 & \( 2.0752 \times 10^{-8} \) & 0.02508367 & \( 2.0752 \times 10^{-8} \) \\
+			& \( x_5 \) & 0.04459319 & \( 3.6892 \times 10^{-8} \) & 0.05643825 & \( 4.6692 \times 10^{-8} \) \\
+			& \( x_6 \) & 0.06967686 & \( 5.7644 \times 10^{-8} \) & 0.08734261 & \( 7.2259 \times 10^{-8} \) \\
+			& \( x_7 \) & 0.10033467 & \( 8.3007 \times 10^{-8} \) & 0.10033467 & \( 8.3007 \times 10^{-8} \) \\
+			\hline
+			\multirow{7}{*}{0.01} & \( x_1 \) & 0.00000000 & \( 0 \) & 0.00000000 & \( 0 \) \\
+			& \( x_2 \) & 0.00027779 & \( 2.3147 \times 10^{-14} \) & 0.00004487 & \( 3.7393 \times 10^{-15} \) \\
+			& \( x_3 \) & 0.00111115 & \( 9.2589 \times 10^{-14} \) & 0.00062502 & \( 5.2081 \times 10^{-14} \) \\
+			& \( x_4 \) & 0.00250008 & \( 2.0833 \times 10^{-13} \) & 0.00250008 & \( 2.0833 \times 10^{-13} \) \\
+			& \( x_5 \) & 0.00444459 & \( 3.7036 \times 10^{-13} \) & 0.00562519 & \( 4.6873 \times 10^{-13} \) \\
+			& \( x_6 \) & 0.00694468 & \( 5.7868 \times 10^{-13} \) & 0.00870542 & \( 7.2540 \times 10^{-13} \) \\
+			& \( x_7 \) & 0.01000033 & \( 8.3330 \times 10^{-13} \) & 0.01000033 & \( 8.3330 \times 10^{-13} \) \\
+			\hline
+		\end{tabular}
+\end{english}
+	\caption{\centering مقارنة النتائج العددية عند نقاط الشبكة متساوية المسافة وعند نقاط الشبكة غير متساوية المسافة عندما $N=5$}
+\label{tab:firstN7}
+\end{table}
+	
+	For \( N = 9 \)
+	
+	\begin{table}[ht]
+		\renewcommand{\arraystretch}{1.5}
+		\centering
+		\begin{english}
+\begin{tabular}{|c|c|c|c|c|c|}
+			\hline
+			\multirow{2}{*}{\( t \)} & \multirow{2}{*}{\( x_i \)} & \multicolumn{2}{c|}{Equally Spacing Points} & \multicolumn{2}{c|}{Equally Spacing Points} \\
+			\cline{3-6}
+			& & Exact & Error & Exact & Error \\
+			\hline
+			\multirow{9}{*}{0.1} & \( x_1 \) & 0.00000000 & \( 0 \) & 0.00000000 & \( 0 \) \\
+			& \( x_2 \) & 0.00156773 & \( 1.2970 \times 10^{-9} \) & 0.00014534 & \( 1.2024 \times 10^{-10} \) \\
+			& \( x_3 \) & 0.00627092 & \( 5.1880 \times 10^{-9} \) & 0.00215184 & \( 1.7802 \times 10^{-9} \) \\
+			& \( x_4 \) & 0.01410956 & \( 1.1673 \times 10^{-8} \) & 0.00955888 & \( 7.9081 \times 10^{-9} \) \\
+			& \( x_5 \) & 0.02508367 & \( 2.0752 \times 10^{-8} \) & 0.02508367 & \( 2.0752 \times 10^{-8} \) \\
+			& \( x_6 \) & 0.03919323 & \( 3.2425 \times 10^{-8} \) & 0.04795529 & \( 3.9674 \times 10^{-8} \) \\
+			& \( x_7 \) & 0.05643825 & \( 4.6692 \times 10^{-8} \) & 0.07309917 & \( 6.0475 \times 10^{-8} \) \\
+			& \( x_8 \) & 0.07681873 & \( 6.3552 \times 10^{-8} \) & 0.09284249 & \( 7.6809 \times 10^{-8} \) \\
+			& \( x_9 \) & 0.10033467 & \( 8.3007 \times 10^{-8} \) & 0.10033467 & \( 8.3007 \times 10^{-8} \) \\
+			\hline
+			\multirow{9}{*}{0.01} & \( x_1 \) & 0.00000000 & \( 0 \) & 0.00000000 & \( 0 \) \\
+			& \( x_2 \) & 0.00015626 & \( 1.3020 \times 10^{-14} \) & 0.00001449 & \( 1.2071 \times 10^{-15} \) \\
+			& \( x_3 \) & 0.00062502 & \( 5.2081 \times 10^{-14} \) & 0.00021447 & \( 1.7871 \times 10^{-14} \) \\
+			& \( x_4 \) & 0.00140630 & \( 1.1718 \times 10^{-13} \) & 0.00095273 & \( 7.9389 \times 10^{-14} \) \\
+			& \( x_5 \) & 0.00250008 & \( 2.0833 \times 10^{-13} \) & 0.00250008 & \( 2.0833 \times 10^{-13} \) \\
+			& \( x_6 \) & 0.00390638 & \( 3.2551 \times 10^{-13} \) & 0.00477969 & \( 3.9828 \times 10^{-13} \) \\
+			& \( x_7 \) & 0.00562519 & \( 4.6873 \times 10^{-13} \) & 0.00728578 & \( 6.0710 \times 10^{-13} \) \\
+			& \( x_8 \) & 0.00765651 & \( 6.3800 \times 10^{-13} \) & 0.00925359 & \( 7.7108 \times 10^{-13} \) \\
+			& \( x_9 \) & 0.01000033 & \( 8.3330 \times 10^{-13} \) & 0.01000033 & \( 8.3330 \times 10^{-13} \) \\
+			\hline
+		\end{tabular}
+\end{english}
+	\caption{\centering مقارنة النتائج العددية عند نقاط الشبكة متساوية المسافة وعند نقاط الشبكة غير متساوية المسافة عندما $N=5$}
+\label{tab:firstN9}
+\end{table}
+	
 
+
+\begin{figure}[ht]
+	\centering
+	\begin{tikzpicture}
+		\begin{axis}[
+			tick align=outside,
+			tick label style={font=\small},
+			width=13cm,
+			height=11cm,
+			legend pos=north west,
+			legend style={font=\small}
+			]
+			\addplot[red, mark=o, thick] table {DATA/firstDQM0.1N5.txt};
+						\addlegendentry{DQM $t=0.1$}
+			\addplot[blue, mark=o, thick, dashed] table {DATA/firstExact0.1N5.txt};
+						\addlegendentry{Exact $t=0.1$}
+			\addplot[orange, mark=o, thick] table {DATA/firstDQM0.01N5.txt};
+						\addlegendentry{DQM $t=0.01$}
+			\addplot[cyan, mark=o, thick, dashed] table {DATA/firstExact0.01N5.txt};
+						\addlegendentry{Exact $t=0.01$}
+
+		\end{axis}
+	\end{tikzpicture}
+	\caption{\centering يوضح مقارنة بين الحل التحليلي والحل العددي عندما $N=5$}
+\label{fig:firstN5}
+\end{figure}
+
+
+\begin{figure}[ht]
+	\centering
+	\begin{tikzpicture}
+		\begin{axis}[
+				tick align=outside,
+			tick label style={font=\small},
+			width=13cm,
+			height=11cm,
+			legend pos=north west,
+			legend style={font=\small}
+			]
+			\addplot[red, mark=o, thick] table {DATA/firstDQM0.1N9.txt};
+			\addlegendentry{DQM $t=0.1$}
+			\addplot[blue, mark=o, thick, dashed] table {DATA/firstExact0.1N9.txt};
+			\addlegendentry{Exact $t=0.1$}
+			\addplot[orange, mark=o, thick] table {DATA/firstDQM0.01N9.txt};
+			\addlegendentry{DQM $t=0.01$}
+			\addplot[cyan, mark=o, thick, dashed] table {DATA/firstExact0.01N9.txt};
+			\addlegendentry{Exact $t=0.01$}
+			
+		\end{axis}
+	\end{tikzpicture}
+	\caption{\centering يوضح مقارنة بين الحل التحليلي والحل العددي عندما $N=9$}
+\label{fig:firstN9}
+\end{figure}
+
+
+\begin{figure}[ht]
+	\centering
+	\begin{tikzpicture}
+		\begin{axis}[
+				tick align=outside,
+			tick label style={font=\small},
+			width=13cm,
+			height=11cm,
+			legend pos=north west,
+			legend style={font=\small}
+			]
+			\addplot[red, mark=o, thick] table {DATA/secondDQM0.1N5.txt};
+			\addlegendentry{DQM $t=0.1$}
+			\addplot[blue, mark=o, thick, dashed] table {DATA/secondExact0.1N5.txt};
+			\addlegendentry{Exact $t=0.1$}
+			\addplot[orange, mark=o, thick] table {DATA/secondDQM0.01N5.txt};
+			\addlegendentry{DQM $t=0.01$}
+			\addplot[cyan, mark=o, thick, dashed] table {DATA/secondExact0.01N5.txt};
+			\addlegendentry{Exact $t=0.01$}
+			
+		\end{axis}
+	\end{tikzpicture}
+	\caption{\centering يوضح مقارنة بين الحل التحليلي والحل العددي عندما $N=5$}
+\label{fig:secondN5}
+\end{figure}
+
+\begin{figure}[ht]
+	\centering
+	\begin{tikzpicture}
+		\begin{axis}[
+				tick align=outside,
+			tick label style={font=\small},
+			width=13cm,
+			height=11cm,
+			legend pos=north west,
+			legend style={font=\small}
+			]
+			\addplot[red, mark=o, thick] table {DATA/secondDQM0.1N9.txt};
+			\addlegendentry{DQM $t=0.1$}
+			\addplot[blue, mark=o, thick, dashed] table {DATA/secondExact0.1N9.txt};
+			\addlegendentry{Exact $t=0.1$}
+			\addplot[orange, mark=o, thick] table {DATA/secondDQM0.01N9.txt};
+			\addlegendentry{DQM $t=0.01$}
+			\addplot[cyan, mark=o, thick, dashed] table {DATA/secondExact0.01N9.txt};
+			\addlegendentry{Exact $t=0.01$}
+			
+		\end{axis}
+	\end{tikzpicture}
+	\caption{\centering يوضح مقارنة بين الحل التحليلي والحل العددي عندما $N=9$}
+\label{fig:secondN9}
+\end{figure}

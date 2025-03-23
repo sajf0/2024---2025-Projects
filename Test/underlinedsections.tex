@@ -3,7 +3,25 @@
 \usepackage{multirow}
 \begin{document}
 
-For \( N = 5 \)
+\begin{table}[ht]
+		\centering
+	\renewcommand{\arraystretch}{1.5}
+	\begin{english}
+				\begin{tabular}{|c|c|c|c|}
+			\hline
+			$t$ & $x_i$ & Exact & Error\\
+			\hline
+			\multirow{3}{*}{0.1} & $x_1$  &1.182735 & $1.1237\times10^{-10}$ \\
+			& $x_2$ & 1.0136462 & $1.1237\times10^{-10}$ \\
+			& $x_2$ & 1.0136462 & $1.1237\times10^{-10}$ \\
+			\hline
+			\multirow{3}{*}{0.01} & $x_1$  &1.182735 & $1.1237\times10^{-10}$ \\
+			& $x_2$ & 1.0136462 & $1.1237\times10^{-10}$ \\
+			& $x_2$ & 1.0136462 & $1.1237\times10^{-10}$ \\
+			\hline
+		\end{tabular}
+	\end{english}
+\end{table}
 
 \begin{table}[ht]
 	\renewcommand{\arraystretch}{1.5}

@@ -10,7 +10,7 @@ right=1in
 ]{geometry}
 
 % For the title page 
-\RequirePackage{graphicx}
+\RequirePackage{graphicx, xcolor}
 
 \RequirePackage{setspace}
 \setstretch{1.5}
@@ -30,7 +30,8 @@ right=1in
 \lstset{style=Matlab-editor, basicstyle=\small\ttfamily, morestring=[m]"}
 
 % To use the arabic language
-\RequirePackage{polyglossia}
+\RequirePackage{polyglossia, quran}
+
 
 % For the refrences
 \RequirePackage{biblatex} 
@@ -58,6 +59,7 @@ right=1in
 
 % Set the arabic and the english font
 \newfontfamily{\arabicfont}[Script=Arabic]{Times New Roman}
+\newfontfamily{\quranfont}[Script=Arabic]{Amiri}
 
 \usepackage[T1]{fontenc}
 \usepackage{times}
