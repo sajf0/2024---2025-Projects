@@ -31,6 +31,8 @@ bottom=0.7in
 \allowdisplaybreaks
 
 \usepackage{indentfirst}
+\setlength{\parindent}{40pt}
+
 % To use the arabic language
 \RequirePackage{polyglossia}
 
@@ -52,6 +54,11 @@ bottom=0.7in
 \fancyhead[R]{\small \ar{\thechapter}}
 \renewcommand{\chaptermark}[1]{\markboth{\MakeUppercase{#1}}{}}
 \renewcommand{\thepage}{\ar{\arabic{page}}}
+
+\fancypagestyle{nohead}{
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+}
 
 
 % Set the arabic language as default and english as side langiage
