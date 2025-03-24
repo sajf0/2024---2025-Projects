@@ -1,0 +1,88 @@
+% compile with XeLaTeX
+% this template was created by salim bou 
+\documentclass[dvipsnames,mathserif]{beamer}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage{polyglossia}
+\setdefaultlanguage[numerals=maghrib,locale=algeria]{arabic} % locale=mashriq, libya, algeria, tunisia, morocco, or mauritania  for names of months in \date 
+\setotherlanguage{english}
+\newfontfamily\arabicfont[Script=Arabic]{Amiri}
+\newfontfamily\arabicfontsf[Script=Arabic]{Amiri}
+
+\usepackage[lite, zswash]{mtpro2}
+
+\usetheme{Warsaw}
+%\usecolortheme{crane}
+
+% for RTL liste
+\makeatletter
+\newcommand{\RTListe}{\raggedleft\rightskip\leftm}
+\newcommand{\leftm}{\@totalleftmargin}
+\makeatother
+
+
+
+% RTL frame title
+\setbeamertemplate{frametitle}
+{\vspace*{-1mm}
+	\nointerlineskip
+	\begin{beamercolorbox}[sep=0.3cm,ht=2.2em,wd=\paperwidth]{frametitle}
+		\vbox{}\vskip-2ex%
+		\strut\hskip1ex\insertframetitle\strut
+		\vskip-0.8ex%
+	\end{beamercolorbox}
+}
+
+
+% align subsection in toc
+\makeatletter
+\setbeamertemplate{subsection in toc}
+{\leavevmode\rightskip=5ex%
+	\llap{\raise0.1ex\beamer@usesphere{subsection number projected}{bigsphere}\kern1ex}%
+	\inserttocsubsection\par%
+}
+\makeatother
+
+% RTL triangle for itemize
+\setbeamertemplate{itemize item}{\scriptsize\raise1.25pt\hbox{\donotcoloroutermaths$\blacktriangleleft$}} 
+
+%\setbeamertemplate{itemize item}{\rule{4pt}{4pt}}
+
+\defbeamertemplate{enumerate item}{square2}
+{\LR{
+		%
+		\hbox{%
+			\usebeamerfont*{item projected}%
+			\usebeamercolor[bg]{item projected}%
+			\vrule width2.25ex height1.85ex depth.4ex%
+			\hskip-2.25ex%
+			\hbox to2.25ex{%
+				\hfil%
+				{\color{fg}\insertenumlabel}%
+				\hfil}%
+		}%
+}}
+
+\setbeamertemplate{enumerate item}[square2]
+
+\setbeamertemplate{navigation symbols}{}
+
+\title{\textbf{كثيرات حدود شيبشيف}}
+\author{\textbf{الطالبة : زهراء مؤيد}}
+\date{\textbf{اشراف : د. جنان}}
+\begin{document}
+	\begin{frame}
+		\maketitle
+	\end{frame}
+\begin{frame}{عنوان}
+		\pause
+\begin{exampleblock}{تعريف}
+
+ليكن لدينا $G_1$ مجموعة غير خالية
+\end{exampleblock}
+\pause
+\begin{exampleblock}{مثال}
+	الدالة $f$ غير قابلة للانعكاس
+\end{exampleblock}
+\end{frame}
+\end{document}

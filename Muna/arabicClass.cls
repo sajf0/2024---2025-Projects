@@ -88,7 +88,7 @@ right=1in
 \def\@makechapterhead#1{%
 	\begin{center}
 		\vspace*{190pt}
-		\Huge\bfseries
+		\Huge\bfseries\color{red}
 		\fbox{\parbox{1\textwidth}{\centering \thechapter\\[25pt]#1}} 
 		\vspace{20pt}
 	\end{center}
@@ -98,19 +98,19 @@ right=1in
 
 \def\@makeschapterhead#1{%
 	\vspace*{0cm}
-	{\centering\Large\bfseries #1\par}
+	{\color{red}\centering\Large\bfseries #1\par}
 	\vspace{1cm}	
 }
 \makeatother
 
 % Chnage the section header format
 \titleformat{\section}[block]
-{\bfseries\fontsize{16}{17}\selectfont} 
+{\color{red}\bfseries\fontsize{16}{17}\selectfont} 
 {\thesection}{1em}{}  
 
 % Change the subsection header format
 \titleformat{\subsection}[block]
-{\bfseries\fontsize{14}{17}\selectfont} 
+{\color{red}\bfseries\fontsize{14}{17}\selectfont} 
 {\thesubsection}{1em}{}  
 
 % Change the chapter numbering to suit the arabic style
@@ -141,9 +141,9 @@ right=1in
 
 \renewcommand{\thesubsection}{\arabic{chapter} - \arabic{section} - \arabic{subsection}}
 
-\titlecontents{chapter}[0em]{\bfseries\vspace{15pt}}{\thecontentslabel: }{}{\hfill}
+\titlecontents{chapter}[0em]{\color{red}\bfseries\vspace{15pt}}{\thecontentslabel: }{}{\hfill}
 
-\titlecontents{chapter*}[0em]{\bfseries\vspace{15pt}}{}{}{\hfill\normalfont{\contentspage}}
+\titlecontents{chapter*}[0em]{\color{red}\bfseries\vspace{15pt}}{}{}{\color{black}\hfill\normalfont{\contentspage}}
 
 \titlecontents{section}[1em]
 {\normalfont}
@@ -182,7 +182,7 @@ right=1in
 {\bfseries}
 {\vspace{5pt}\\}
 {.5ex}  
-{#1 #2 \textbf{#3}}
+{\textcolor{red}{#1 #2} \textbf{#3}}
 
 \theoremstyle{mystyle}
 
