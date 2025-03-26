@@ -31,16 +31,16 @@ x \cdot y = \sum_{i=1}^{n} x_i y_i
 
 \subsection{اثبات ان $\R^n$ فضاء متجهات}
 
-\selectlanguage{english}
+\setLR
 \noindent
-1) $
+(1 $
 \begin{aligned}[t]
 	x + y &= (x_1, x_2, \dots, x_n) + (y_1, y_2, \dots, x_n)\\
 	&= (x_1+y_1, x_2+y_2, \dots, x_n + y_n)\\
 	&= (y_1, y_2, \dots, y_n) + (x_1, x_2, \dots, x_n) = y + x
 \end{aligned}
 $\\ \\
-2) $
+(2 $
 \begin{aligned}[t]
 	x + (y + z) &= (x_1, x_2, \dots, x_n) + [(y_1, y_2, \dots, y_n) + (z_1, z_2, \dots, z_n)]\\
 	&= (x_1, x_2, \dots, x_n) + (y_1+z_1, y_2+z_2, \dots, y_n+z_n)\\
@@ -145,6 +145,79 @@ cA = [c\, a_{ij}] , 1\leq i\leq m, 1\leq j\leq n
 A\cdot B = \sum_{i=1}^{m}\sum_{j=1}^{n} a_{ij}b_{ij}
 \]
 
+\subsection{اثبات ان $M_{n\times m}(\R)$ فضاء متجهات}
+
+\selectlanguage{english}
+\noindent
+1. $
+\begin{aligned}[t]
+	A + B &= [a_{ij}] + [b_{ij}]\\
+	&= [a_{ij} + b_{ij}]\\
+	&= [b_{ij} + a_{ij}]\\
+	&= B+A
+\end{aligned}
+$\\
+2. $
+\begin{aligned}[t]
+	A + (B+C) &= [a_{ij}] + ([b_{ij}] + [c_{ij}])\\
+	&= [a_{ij}] + [b_{ij} + c_{ij}]\\
+	&= [a_{ij} + b_{ij} + c_{ij}]\\
+	&= [a_{ij} + b_{ij}] + [c_{ij}]\\
+	&= (A+B)+C
+\end{aligned}
+$
+
+\selectlanguage{arabic}
+\noindent
+المصفوفة الصفرية $0=[0]$ تمثل العنصر المحايد
+
+\selectlanguage{english}
+\noindent
+3. $A+0 = [a_{ij}] + [0] = A$
+
+\selectlanguage{arabic}
+\noindent
+لكل $A=[a_{ij}]$ نظيرها المصفوفة $-A=[-a_{ij}]$ بحيث 
+
+\selectlanguage{english}
+\noindent
+4. $A + (-A) = [a_{ij}] + [-a_{ij}] = [0] =0$  \\
+5. $
+\begin{aligned}[t]
+	\forall A &\in M_{n\times m}(\R) : 1\cdot A\\
+	&= 1\cdot [a_{ij}]\\
+	&= [a_{ij}] =A
+\end{aligned}
+$\\
+6. $
+\begin{aligned}[t]
+	\forall\alpha\in\R, &\forall A, B\in M_{n\times m}(\R) : \alpha(A+B)\\
+	&= \alpha [a_{ij}+b_{ij}]\\
+	&= [\alpha (a_{ij} + b_{ij})]\\
+	&= [\alpha a_{ij} + \alpha b_{ij}]\\
+	&= [\alpha a_{ij} ] + [\alpha b_{ij}]\\
+	&= \alpha A + \alpha B
+\end{aligned}
+$\\
+7. $
+\begin{aligned}[t]
+	\forall \alpha, \beta &\in \R, \forall A\in M_{n\times m}(\R) : (\alpha+\beta)A\\
+	&= (\alpha+\beta) [a_{ij}]\\
+	&= [(\alpha+\beta)a_{ij}]\\
+	&= [\alpha a_{ij} + \beta a_{ij}]\\
+	&= \alpha A + \beta A
+\end{aligned}
+$\\
+8. $
+\begin{aligned}[t]
+	\forall \alpha, \beta &\in \R, \forall A\in M_{n\times m}(\R) : (\alpha\beta)A\\
+	&= (\alpha\beta) [a_{ij}]\\
+	&= [(\alpha\beta)a_{ij}]\\
+	&= [\alpha(\beta a_{ij})]\\
+	&= \alpha (\beta A)
+\end{aligned}
+$
+\selectlanguage{arabic}
 \begin{example}
 	مجموعة المصفوفات المتناظرة
 	 $W=\{A\in M_{m\times n}(\R) : A^T = A\}$
@@ -163,6 +236,7 @@ A\cdot B = \sum_{i=1}^{m}\sum_{j=1}^{n} a_{ij}b_{ij}
 (cA)^T = cA^T = cA
 \]
 اذن $cA \in W$ وبالتالي $W$ يمثل فضاء جزئي من $M_{m\times n}(\R)$.
+
 
 \section{فضاء كثيرات الحدود $P_n$}
 مجموعة كثيرات الحدود من الدرجة $n$ او اقل تعرف كالآتي
@@ -187,6 +261,66 @@ $B = \{1, x, x^2, \dots, x^n\}$
 
 \subsection{اثبات ان $P_n$ فضاء متجهات}
 
+\selectlanguage{english}
+\noindent
+1. $(p+q)(x) = p(x) + q(x) = q(x) + p(x) = (q+p)(x)$\\
+2. $
+\begin{aligned}[t]
+	[p+(q+r)](x) &= p(x) + (q+r)(x)\\
+	&= p(x) + q(x) + r(x) \\
+	&= (p+q) + r(x)\\
+	&= [(p+q)+r](x)
+\end{aligned}
+$\\
+
+
+\selectlanguage{arabic}
+\noindent
+كثيرة الحدود الصفرية $0(x)=0 $ تمثل العنصر المحايد 
+
+\selectlanguage{english}
+.\\
+\noindent
+3. $(p+0)(x) = p(x) + 0(x) = p(x) + 0 = p(x)$
+
+\selectlanguage{arabic}
+\noindent
+لكل $p(x)\in P_n$ نظيرها كثيرة الحدود $(-p)(x) = -p(x)$ 
+
+\selectlanguage{english}
+\noindent
+4. $(p+(-p))(x) = p(x) + (-p)(x) = p(x) - p(x) = 0$\\
+5. $\forall p(x) \in P_n : (1\cdot p)(x) = 1\cdot p(x) = p(x)$\\
+6. $
+\begin{aligned}[t]
+	\forall\alpha\in\R, &\forall p,q\in P_n : (\alpha(p+q))(x)\\
+	&= \alpha (p+q)(x)\\
+	&= \alpha[p(x) + q(x)]\\
+	&= \alpha p(x) + \alpha q(x)\\
+	&= (\alpha p)(x) + (\alpha q)(x)\\
+	&= [\alpha p + \alpha q](x)
+\end{aligned}
+$\\
+\\
+7. $
+\begin{aligned}[t]
+	\forall\alpha,\beta&\in\R, \forall p\in P_n : [(\alpha + \beta)p](x)\\
+	&= (\alpha+\beta)p(x)\\
+	&= \alpha p(x) + \beta p(x)\\
+	&= (\alpha p)(x) + (\beta p)(x)\\
+	&= (\alpha p + \beta p)(x) 
+\end{aligned}
+$\\
+8. $
+\begin{aligned}[t]
+	\forall\alpha,\beta&\in\R, \forall p\in P_n : [(\alpha  \beta)p](x)\\
+	&= (\alpha\beta)p(x)\\
+	&= \alpha (\beta p(x))\\
+	&= \alpha [\beta p](x)\\
+	&= [\alpha(\beta p)](x)
+\end{aligned}
+$
+\selectlanguage{arabic}
 \begin{example}
 	مجموعة كثيرات الحدود الزوجية 
 	$W = \{p(x) \in P_n : p(-x) = p(x) : a_i \in \R\}$
@@ -204,7 +338,7 @@ $B = \{1, x, x^2, \dots, x^n\}$
 \[
 (\alpha p)(-x) = \alpha p(-x) = \alpha p(x) = (\alpha p)(x) 
 \] 
-اذن $(\alpha p)(x) \in W$.
+اذن $(\alpha p)(x) \in W$. ومنه $W$ فضاء جزئي من $P_n$.
 
 \section{فضاء الدوال المستمرة $C[a, b]$}
 مجموعة الدوال المستمرة على الفترة $[a, b]$ تعرف بالشكل
@@ -213,5 +347,102 @@ C[a, b] = \{f:[a, b] \to \R \mid \text{$f$ دالة مستمرة}\}
 \]
 
 \subsection{عمليتي الجمع والضرب}
-\textbf{الحمع:} لكل $f(x), g(x) $ دوال مستمرة على الفترة $[a, b]$ :$(f+g)(x) = f(x) + g(x)$
-\textbf{}
+\textbf{الحمع:} لكل $f(x), g(x) $ دوال مستمرة على الفترة $[a, b]$ :$(f+g)(x) = f(x) + g(x)$.
+\textbf{الضرب:} لكل $c\in\R$ و لكل $f(x)\in C[a, b]$ : $(cf)(x) = cf(x)$.
+
+\subsection{الضرب النقطي}
+لكل $f(x), g(x) \in C[a, b]$ يعرف الضرب النقطي في فضاء الدوا ل المستمرة كالآتي
+\[
+f\cdot g = \int_{a}^{b} f(x) g(x) \, dx
+ \]
+ \subsection{الاساس والبعد}
+ ان الفضاء $C[a, b]$ يمتلك اساس غير منتهي وهو $B=\{1,x,x^2,\dots\}$ ويمكن استخدام متسلسلات تايلر لكتابة اي دالة مستمرة كتركيب خطي من $B$.\\
+ \textbf{مثال:} الدالة $f(x) = e^x$ مستمرة على الفترة $[0,1]$ ويمكن كتابتها بالشكل
+ $
+ e^x = \sum_{n=0}^{\infty} \frac{x^n}{n!}
+$
+ . اذن يمكن القول بأن الفضاء $C[a, b]$ ذات بعد لا نهائي.
+ 
+ \subsection{اثبات ان $C[a, b]$ فضاء متجهات}
+ 
+ \selectlanguage{english}
+ \noindent
+ 1. $(f+g)(x) = f(x) + g(x) = g(x) + f(x) = (g+f)(x)$\\
+ 2. $
+ \begin{aligned}[t]
+ 	[f+(g+h)](x) &= f(x) + (g+h)(x)\\
+ 	&= f(x) + g(x) + h(x) \\
+ 	&= (f+g) + h(x)\\
+ 	&= [(f+g)+h](x)
+ \end{aligned}
+ $\\
+ 
+ \selectlanguage{arabic}
+ \noindent
+ الدالة الصفرية $0(x)=0 $ تمثل العنصر المحايد 
+ 
+ \selectlanguage{english}
+ \noindent
+ 3. $(f+0)(x) = f(x) + 0(x) = f(x) + 0 = f(x)$
+ 
+ \selectlanguage{arabic}
+ \noindent
+ لكل $f(x)\in C[a, b]$ نظيرها  الدالة $(-f)(x) = -f(x)$ 
+ 
+ \selectlanguage{english}
+ \noindent
+ 4. $(f+(-f))(x) = f(x) + (-f)(x) = f(x) - f(x) = 0$\\
+ 5. $\forall f(x) \in C[a, b] : (1\cdot f)(x) = 1\cdot f(x) = f(x)$\\
+ 6. $
+ \begin{aligned}[t]
+ 	\forall\alpha\in\R, &\forall f,g\in C[a, b] : (\alpha(f+g))(x)\\
+ 	&= \alpha (f+g)(x)\\
+ 	&= \alpha[f(x) + g(x)]\\
+ 	&= \alpha f(x) + \alpha g(x)\\
+ 	&= (\alpha f)(x) + (\alpha g)(x)\\
+ 	&= [\alpha f + \alpha g](x)
+ \end{aligned}
+ $\\
+ 7. $
+ \begin{aligned}[t]
+ 	\forall\alpha,\beta&\in\R, \forall f\in C[a, b] : [(\alpha + \beta)f](x)\\
+ 	&= (\alpha+\beta)f(x)\\
+ 	&= \alpha f(x) + \beta f(x)\\
+ 	&= (\alpha f)(x) + (\beta f)(x)\\
+ 	&= (\alpha f + \beta f)(x) 
+ \end{aligned}
+ $\\
+ 8. $
+ \begin{aligned}[t]
+ 	\forall\alpha,\beta&\in\R, \forall f\in C[a, b] : [(\alpha  \beta)f](x)\\
+ 	&= (\alpha\beta)f(x)\\
+ 	&= \alpha (\beta f(x))\\
+ 	&= \alpha [\beta f](x)\\
+ 	&= [\alpha(\beta f)](x)
+ \end{aligned}
+ $
+ \selectlanguage{arabic}
+ 
+ 
+ \begin{example}
+ 	المجموعة $W = \{f\in C[a, b] : f(a) = f(b) =0\}$ تمثل فضاء جزئي من $C[a, b]$. اثبت ذلك 
+ \end{example}
+ \noindent
+ \textbf{البرهان}\\
+ \noindent
+ 1. لكل $f, g\in W$ فإن $f(a)=f(b)=g(a)=g(b)=0$ وبالتالي
+ \[
+ (f+g)(a) = f(a) + g(a) = 0+0 =0
+ \]
+ \[
+ (f+g)(b) = f(b) + g(b) = 0+0=0
+ \]
+ اذن $f+g\in W$.\\
+ 2. لكل $c\in \R$ ولكل $f\in W$ فإن $f(a)=f(b)=0$ بالتالي
+ \[
+ (cf)(a) = cf(a) = c\cdot 0 =0
+ \]
+ \[
+  (cf)(b) = cf(b) = c\cdot 0 =0
+ \]
+ اذن $cf \in W$. ومنه $W$ فضاء جزئي من $C[a, b]$. 
