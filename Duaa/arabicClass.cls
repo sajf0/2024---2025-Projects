@@ -14,11 +14,13 @@ right=1in
 % For the title page 
 \RequirePackage{graphicx, xcolor, pst-node}
 
+\usepackage{setspace}
+\setstretch{1.4}
+
 % For changing the headers formatting
-\RequirePackage{titletoc, titlesec, setspace, enumitem, tasks}
+\RequirePackage{titletoc, titlesec, enumitem, tasks}
 \setlist{noitemsep, topsep=5pt, partopsep=5pt, itemsep=5pt}
 \settasks{after-item-skip=2pt, before-skip=2pt, label=\en{\alph*})}
-\onehalfspacing
 
 % For math
 \RequirePackage{amsmath, amssymb, amsthm}
