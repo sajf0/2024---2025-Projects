@@ -4,17 +4,19 @@
 \LoadClass[14pt, a4paper]{extreport}
 
 \RequirePackage[
-top=1in,
-left=0.8in,
-right=0.8in
+top=1.5in,
+left=1in,
+right=1in
 ]{geometry}
 
 % For the title page 
-\RequirePackage{graphicx, float} 
+\RequirePackage{graphicx}
+
+\RequirePackage{float}
 
 \usepackage{setspace}
-%\setstretch{1.5}
- 
+\setstretch{1.3}
+
 % For changing the headers formatting
 \RequirePackage{titletoc, titlesec, enumitem, tasks}
 \setlist{noitemsep, topsep=5pt, partopsep=5pt, itemsep=5pt}
@@ -26,9 +28,15 @@ right=0.8in
 \allowdisplaybreaks
 
 
-
 % To use the arabic language
 \RequirePackage{polyglossia}
+
+
+\RequirePackage{tocbasic}
+\addtotoclist[report.cls]{toc}
+\renewcommand{\tableofcontents}{\listoftoc[{\contentsname}]{toc}}
+\AfterTOCHead[toc]{\thispagestyle{empty}\pagestyle{empty}}
+\AfterStartingTOC[toc]{\clearpage}
 
 
 % For fancy headers
@@ -47,7 +55,6 @@ right=0.8in
 
 % Set the arabic and the english font
 \newfontfamily{\arabicfont}[Script=Arabic]{Times New Roman}
-\newfontfamily{\amirifont}[Script=Arabic]{Amiri}
 
 \usepackage[T1]{fontenc}
 \usepackage{times}
@@ -80,7 +87,7 @@ right=0.8in
 		\fbox{\parbox{1\textwidth}{\centering \thechapter\\[25pt]#1}} 
 		\vspace{20pt}
 	\end{center}
-	\thispagestyle{empty}   
+	\thispagestyle{empty}   % No page number
 	\newpage
 }
 
@@ -98,7 +105,7 @@ right=0.8in
 
 % Change the subsection header format
 \titleformat{\subsection}[block]
-{\bfseries\fontsize{14}{17}\selectfont} 
+{\bfseries\fontsize{15}{17}\selectfont} 
 {\thesubsection}{1em}{}  
 
 % Change the chapter numbering to suit the arabic style
@@ -143,7 +150,7 @@ right=0.8in
 {\thecontentslabel\hspace*{5pt} }
 {}{\titlerule*[0.3pc]{.}\contentspage}
 
-\renewcommand{\thetable}{(\arabic{chapter} - \arabic{table})}
+\renewcommand{\thetable}{\arabic{chapter} - \arabic{table}}
 
 \renewcommand{\thefigure}{\arabic{chapter} - \arabic{figure}}
 
@@ -170,7 +177,7 @@ right=0.8in
 {\bfseries}
 {\vspace{5pt}\\}
 {.5ex}  
-{\fontsize{16}{17}\selectfont#1 #2 \textbf{#3}}
+{#1 #2 \textbf{#3}}
 
 \theoremstyle{mystyle}
 
@@ -180,14 +187,13 @@ right=0.8in
 \newtheorem*{note}{ملاحظة}
 
 \renewcommand{\thetheorem}{\arabic{chapter} - \arabic{section} - \arabic{theorem}}
-\renewcommand{\thedefinition}{\arabic{chapter} - \arabic{definition}}
+\renewcommand{\thedefinition}{\arabic{chapter} - \arabic{section} - \arabic{definition}}
 \renewcommand{\theexample}{\arabic{chapter} - \arabic{section} - \arabic{example}}
 \renewcommand{\thecorollary}{\arabic{chapter} - \arabic{section} - \arabic{corollary}}
 
 \newenvironment{myproof}{\noindent\textbf{البرهان}\vspace{5pt}\\ \noindent}{\hfill \(\qedsymbol\)}
 
 \newenvironment{solution}{\noindent\textbf{الحل}\vspace{5pt}\\}{}
-
 
 \newcommand{\N}{\mathbb{N}}
 \newcommand{\Z}{\mathbb{Z}}

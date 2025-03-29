@@ -44,6 +44,7 @@ right=1in
 %\fancyhead[C]{\small \leftmark}
 \fancyhead[R]{\small \thechapter}
 \renewcommand{\chaptermark}[1]{\markboth{\MakeUppercase{#1}}{}}
+\renewcommand{\thepage}{$\thepage$}
 
 % Set the arabic language as default and english as side langiage
 \setmainlanguage[numerals=maghrib]{arabic}
@@ -51,6 +52,7 @@ right=1in
 
 % Set the arabic and the english font
 \newfontfamily{\arabicfont}[Script=Arabic]{Times New Roman}
+\newfontfamily{\amirifont}[Script=Arabic]{Amiri}
 
 \usepackage[T1]{fontenc}
 \usepackage{times}
