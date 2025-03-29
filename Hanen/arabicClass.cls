@@ -181,15 +181,15 @@ right=1in
 
 \theoremstyle{mystyle}
 
-\newtheorem{definition}{تعريف}[section]
-\newtheorem{example}{مثال}[section]
-\newtheorem{corollary}{نتيجة}[section]
+\newtheorem{definition}{تعريف}[chapter]
+\newtheorem{example}{مثال}[chapter]
+\newtheorem{corollary}{نتيجة}[chapter]
 \newtheorem*{note}{ملاحظة}
 
-\renewcommand{\thetheorem}{\arabic{chapter} - \arabic{section} - \arabic{theorem}}
-\renewcommand{\thedefinition}{\arabic{chapter} - \arabic{section} - \arabic{definition}}
-\renewcommand{\theexample}{\arabic{chapter} - \arabic{section} - \arabic{example}}
-\renewcommand{\thecorollary}{\arabic{chapter} - \arabic{section} - \arabic{corollary}}
+\renewcommand{\thetheorem}{\arabic{chapter} - \arabic{theorem}}
+\renewcommand{\thedefinition}{\arabic{chapter} - \arabic{definition}}
+\renewcommand{\theexample}{\arabic{chapter} - \arabic{example}}
+\renewcommand{\thecorollary}{\arabic{chapter} - \arabic{corollary}}
 
 \newenvironment{myproof}{\noindent\textbf{البرهان}\vspace{5pt}\\ \noindent}{\hfill \(\qedsymbol\)}
 

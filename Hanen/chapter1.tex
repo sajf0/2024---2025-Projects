@@ -1,0 +1,181 @@
+\chapter{نظرية الزمر}
+
+\begin{definition}[(العملية الثنائية)]
+			\addcontentsline{toc}{section}{العملية الثنائية}
+	لتكن $G$ مجموعة غير خالية ، نطلق على التطبيق $*:G\to G\times G$ بأنه عملية ثنائية على $G$.
+\end{definition}
+
+\begin{note}
+	اذا كانت $*$ عملية ثنائية على مجموعة $G$ سنكتب العلاقة بين عناصرها بالشكل $a*b$ بدل من $*(a, b)$ لغرض السهولة.
+\end{note}
+
+\begin{example}
+عملية الجمع الاعتيادية على مجموعة الاعداد الصحيحة والطبيعية والنسبية والحقيقية تمثل عملية ثنائية وكذلك عملية الضرب الاعتيادي. 
+\end{example}
+
+\begin{example}
+	لتكن $X = \{1,2,3\}$ ، العملية $*$ معرفة على المجموعة $X$ بالشكل
+	\begin{table}[H]
+		\renewcommand{\arraystretch}{1.4}
+		\centering
+		\setLR
+		\begin{tabular}{|c|c|c|c|}
+			\hline
+			$*$ & 1&2&3\\
+			\hline
+			1&1&2&3\\
+			\hline
+			2&2&2&1\\
+			\hline
+			3&3&1&3\\
+			\hline
+		\end{tabular}
+	\end{table}
+	\setRL\noindent
+	نلاحظ ان $*$ تمثل عملية ثنائية.
+\end{example}
+
+\begin{definition}[( الانغلاق )]
+			\addcontentsline{toc}{section}{الانغلاق}
+	لتكن $*$ عملية ثنائية على المجموعة $X$ ، المجموعة الجزئية $A$ من $G$ تسمى مغلقة تحت العملية $*$ اذا كان $a*b \in A$ لكل عنصرين $a, b\in A$.
+\end{definition}
+
+\begin{example}
+	نحن نعلم ان $+$ عملية الجمع الاعتيادي على مجموعة الاعداد الحقيقية ، نلاحظ ان $+$ عملية ثنائية مغلقة على مجموعة الاعداد الصحيحة لأن
+	\[
+	a+b \in \Z ,\quad \forall a, b\in \Z
+	\]
+\end{example}
+
+\begin{definition}[( النظام الرياضي )]
+			\addcontentsline{toc}{section}{النظام الرياضي}
+	هو مجموعة غير خالية $G$ مع عملية ثنائية واحدة او اكثر معرفة عليه. ويرمز له بالرمز المرتب $(G, *, \#)$ او $(G, *)$.
+\end{definition}
+
+\begin{definition}[( العملية التجميعية )]
+			\addcontentsline{toc}{section}{العملية التجميعية}
+	ليكن $(G, *)$ نظاماً رياضياً مع $*$ عملية ثنائية معرفة عليه ، يقال ان العملية $*$ تجميعية اذا حققت الشرط
+	\[
+	a*(b*c) = (a*b)*c,\quad \forall a,b,c\in G
+	\]
+\end{definition}
+
+\begin{example}
+	لتكن $X = \{1,2,3\}$ ، العملية $*$ معرفة على المجموعة $X$ بالشكل
+	\begin{table}[H]
+		\renewcommand{\arraystretch}{1.4}
+		\centering
+		\setLR
+		\begin{tabular}{|c|c|c|c|}
+			\hline
+			$*$ & 1&2&3\\
+			\hline
+			1&1&2&3\\
+			\hline
+			2&2&1&2\\
+			\hline
+			3&3&3&3\\
+			\hline
+		\end{tabular}
+	\end{table}
+	\setRL\noindent
+	نلاحظ ان $*$ تمثل عملية تجميعية.
+\end{example}
+
+\begin{example}
+	لتكن $*$ عملية معرفة على $\Z$ كما يأتي : $a*b =a+b-1$ لكل عنصرين $a, b\in \Z$ ، فإن $*$ عملية تجميعية.
+\end{example}
+
+\begin{definition}[( العنصر المحايد )]
+			\addcontentsline{toc}{section}{العنصر المحايد}
+	ليكن $(G, *)$ نظاماً رياضياً ، يقال ان النظام الرياضي $(G, *)$ يمتلك عنصراً محايداً بالنسبة للعملية الثنائية $*$ اذا وجد عنصر $e \in G$ بحيث ان
+	\[
+	a * e = e*a = a,\quad \forall a\in G
+	\]
+\end{definition}
+
+\begin{theorem}
+	لتكن $(G, *)$ نظاماً رياضياً بعنصر محايد فإن المحايد وحيد.
+\end{theorem}
+\noindent
+\textbf{البرهان}\\
+\noindent
+لتكن $e, e'$ عنصران محايدان بالنسبة للعملية $*$ اذن\\
+$e*e' =e'$ لان $e$ عنصر محايد.\\
+$e*e' =e'$ لان $e'$ عنصر محايد.\\
+اذن $e=e'$. \qed
+
+\begin{definition}[(monoid)]
+			\addcontentsline{toc}{section}{Monoid}
+	لتكن $(G, *)$ شبه زمرة ، اذا كانت تمتلك عنصر محايد فإنها تسمى (monoid).
+\end{definition}
+
+\begin{definition}[(  المعكوس )]
+			\addcontentsline{toc}{section}{المعكوس}
+	لتكن $(G, *)$ شبه زمرة بمحايد اذا كان $a\in G$ يحقق الخاصية : $a'*a=a*a'=e$ حيث ان $a'\in G$ ، فإن العنصر $a'$ يسمى معكوس العنصر $a$ بالنسبة للعملية $*$ ويرمز له بالرمز $a^{-1}$.
+\end{definition}
+
+\begin{note}
+	لتكن $(G, *)$ شبه زمرة بعنصر محايد $e$ فأن $e^{-1}=e$
+\end{note}
+
+\begin{theorem}
+	لتكن $(G, *)$ شبه زمرة بعنصر محايد وليكن $a\in G$ وله معكوس في $G$ فأن المعكوس وحيد.
+\end{theorem}
+
+\begin{definition}[( العملية الابدالية )]
+			\addcontentsline{toc}{section}{العملية الابدالية}
+	ليكن $(G, *)$ نظاماً رياضياً مع $*$ عملية ثنائية معرفة عليه ، يقال ان العملية $*$ ابدالية اذا حققت الشرط
+	\[
+	a*b = b*a,\quad \forall a,b\in G
+	\]
+\end{definition}
+
+\begin{example}
+	عمليتي الجمع والضرب الاعتياديتين على مجموعة الاعداد الحقيقية والصحيحة والنسبية $\Q, \Z, \R$ تمثل عمليات ثنائية ابدالية. 
+\end{example}
+\newpage
+\begin{definition}[( الزمرة )]
+			\addcontentsline{toc}{section}{الزمرة}
+	لتكن $(G, *)$ شبه زمرة بعنصر محايد فأن $G$ تسمى زمرة Group اذا كان كل عنصر فيها له معكوس بالنسبة للعملية الثنائية $*$. او نقول ان $(G, *)$ زمرة اذا تحققت الشروط التالية
+	\begin{enumerate}[label=$\boxed{\arabic*}$]
+		\item مغلقة بالنسبة للعملية $*$ اي : $a*b \in G , \forall a, b\in G$.
+		\item العملية $*$ تجميعية : $a*(b*c) = (a*b)*c , \forall a, b,c\in G$.
+		\item $G$ تمتلك عنصر محايد مثل $e$ : $a*e =e*a=a, \forall a\in G$.
+		\item كل عنصر $a\in G$ يمتلك معكوس : $\forall a\in G, \exists a^{-1}\in G : a*a^{-1}=a^{-1}*a=e$.
+	\end{enumerate}    
+\end{definition}
+
+\begin{example}
+	كل الانظمة الرياضية التالية تمثل زمرة
+	\[
+	(\Q-\{0\}, \cdot), \quad(\R-\{0\}, \cdot),\quad (\Q, +) ,\quad (\R, +) ,\quad (\Z, +)
+	\]
+\end{example}
+
+
+\begin{definition}[( الزمرة الابدالية )]
+	\addcontentsline{toc}{section}{الزمرة الابدالية}
+	الزمرة $(G, *)$ تسمى زمرة ابدالية اذا كانت العملية $*$ عملية ثنائية ابدالية.
+\end{definition}
+
+\begin{example}
+	كل الانظمة الرياضية التالية تمثل زمرة ابدالية
+	\[
+	(\R-\{0\}, \cdot),\quad (\Q, +) ,\quad (\R, +) ,\quad (\Z, +)
+	\]
+\end{example}
+
+\begin{definition}[( الزمرة المنتهية وغير المنتهية )]
+	\addcontentsline{toc}{section}{الزمرة المنتهية وغير المنتهية}
+	الزمرة $(G, * )$ تسمى زمرة منتهية اذا كانت المجموعة $G$ منتهية. عدا ذلك تسمى الزمرة $(G, *)$ زمرة غير منتهية. 
+\end{definition}
+
+\begin{definition}[( رتبة الزمرة )]
+	\addcontentsline{toc}{section}{رتبة الزمرة}
+	لتكن $(G, *)$ زمرة منتهية ، نطلق على عدد عناصر المجموعة $G$ اسم رتبة الزمرة ويرمز له بالرمز $O(G)$ اما اذا كانت المجموعة غير منتهية فتكون رتبتها غير منتهية ايضاً.
+\end{definition}
+
+
+
+
