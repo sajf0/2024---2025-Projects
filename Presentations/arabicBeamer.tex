@@ -1,6 +1,8 @@
 % compile with XeLaTeX
 % this template was created by salim bou 
 \documentclass[dvipsnames,mathserif]{beamer}
+\usepackage{setspace}
+\setstretch{1.5}
 \usepackage{tikz}
 \usetikzlibrary{calc}
 \usepackage{polyglossia}
@@ -9,7 +11,21 @@
 \newfontfamily\arabicfont[Script=Arabic]{Amiri}
 \newfontfamily\arabicfontsf[Script=Arabic]{Amiri}
 
+\usepackage[T1]{fontenc}
+\usepackage{times}
+
 \usepackage[lite, zswash]{mtpro2}
+
+\DeclareMathSymbol{0}{\mathalpha}{operators}{`0}
+\DeclareMathSymbol{1}{\mathalpha}{operators}{`1}
+\DeclareMathSymbol{2}{\mathalpha}{operators}{`2}
+\DeclareMathSymbol{3}{\mathalpha}{operators}{`3}
+\DeclareMathSymbol{4}{\mathalpha}{operators}{`4}
+\DeclareMathSymbol{5}{\mathalpha}{operators}{`5}
+\DeclareMathSymbol{6}{\mathalpha}{operators}{`6}
+\DeclareMathSymbol{7}{\mathalpha}{operators}{`7}
+\DeclareMathSymbol{8}{\mathalpha}{operators}{`8}
+\DeclareMathSymbol{9}{\mathalpha}{operators}{`9}
 
 \usetheme{Warsaw}
 %\usecolortheme{crane}
@@ -67,22 +83,5 @@
 
 \setbeamertemplate{navigation symbols}{}
 
-\title{\textbf{كثيرات حدود شيبشيف}}
-\author{\textbf{الطالبة : زهراء مؤيد}}
-\date{\textbf{اشراف : د. جنان}}
-\begin{document}
-	\begin{frame}
-		\maketitle
-	\end{frame}
-\begin{frame}{عنوان}
-		\pause
-\begin{exampleblock}{تعريف}
 
-ليكن لدينا $G_1$ مجموعة غير خالية
-\end{exampleblock}
-\pause
-\begin{exampleblock}{مثال}
-	الدالة $f$ غير قابلة للانعكاس
-\end{exampleblock}
-\end{frame}
-\end{document}
+

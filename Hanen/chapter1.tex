@@ -1,7 +1,8 @@
 \chapter{نظرية الزمر}
 
+\section{مفاهيم أولية}
+
 \begin{definition}[(العملية الثنائية)]
-			\addcontentsline{toc}{section}{العملية الثنائية}
 	لتكن $G$ مجموعة غير خالية ، نطلق على التطبيق $*:G\to G\times G$ بأنه عملية ثنائية على $G$.
 \end{definition}
 
@@ -36,7 +37,6 @@
 \end{example}
 
 \begin{definition}[( الانغلاق )]
-			\addcontentsline{toc}{section}{الانغلاق}
 	لتكن $*$ عملية ثنائية على المجموعة $X$ ، المجموعة الجزئية $A$ من $G$ تسمى مغلقة تحت العملية $*$ اذا كان $a*b \in A$ لكل عنصرين $a, b\in A$.
 \end{definition}
 
@@ -48,12 +48,10 @@
 \end{example}
 
 \begin{definition}[( النظام الرياضي )]
-			\addcontentsline{toc}{section}{النظام الرياضي}
 	هو مجموعة غير خالية $G$ مع عملية ثنائية واحدة او اكثر معرفة عليه. ويرمز له بالرمز المرتب $(G, *, \#)$ او $(G, *)$.
 \end{definition}
 
 \begin{definition}[( العملية التجميعية )]
-			\addcontentsline{toc}{section}{العملية التجميعية}
 	ليكن $(G, *)$ نظاماً رياضياً مع $*$ عملية ثنائية معرفة عليه ، يقال ان العملية $*$ تجميعية اذا حققت الشرط
 	\[
 	a*(b*c) = (a*b)*c,\quad \forall a,b,c\in G
@@ -87,7 +85,6 @@
 \end{example}
 
 \begin{definition}[( العنصر المحايد )]
-			\addcontentsline{toc}{section}{العنصر المحايد}
 	ليكن $(G, *)$ نظاماً رياضياً ، يقال ان النظام الرياضي $(G, *)$ يمتلك عنصراً محايداً بالنسبة للعملية الثنائية $*$ اذا وجد عنصر $e \in G$ بحيث ان
 	\[
 	a * e = e*a = a,\quad \forall a\in G
@@ -106,12 +103,10 @@ $e*e' =e'$ لان $e'$ عنصر محايد.\\
 اذن $e=e'$. \qed
 
 \begin{definition}[(monoid)]
-			\addcontentsline{toc}{section}{Monoid}
 	لتكن $(G, *)$ شبه زمرة ، اذا كانت تمتلك عنصر محايد فإنها تسمى (monoid).
 \end{definition}
 
 \begin{definition}[(  المعكوس )]
-			\addcontentsline{toc}{section}{المعكوس}
 	لتكن $(G, *)$ شبه زمرة بمحايد اذا كان $a\in G$ يحقق الخاصية : $a'*a=a*a'=e$ حيث ان $a'\in G$ ، فإن العنصر $a'$ يسمى معكوس العنصر $a$ بالنسبة للعملية $*$ ويرمز له بالرمز $a^{-1}$.
 \end{definition}
 
@@ -124,7 +119,6 @@ $e*e' =e'$ لان $e'$ عنصر محايد.\\
 \end{theorem}
 
 \begin{definition}[( العملية الابدالية )]
-			\addcontentsline{toc}{section}{العملية الابدالية}
 	ليكن $(G, *)$ نظاماً رياضياً مع $*$ عملية ثنائية معرفة عليه ، يقال ان العملية $*$ ابدالية اذا حققت الشرط
 	\[
 	a*b = b*a,\quad \forall a,b\in G
@@ -135,8 +129,8 @@ $e*e' =e'$ لان $e'$ عنصر محايد.\\
 	عمليتي الجمع والضرب الاعتياديتين على مجموعة الاعداد الحقيقية والصحيحة والنسبية $\Q, \Z, \R$ تمثل عمليات ثنائية ابدالية. 
 \end{example}
 \newpage
+\section{تعريف الزمرة وبعض خصائصها}
 \begin{definition}[( الزمرة )]
-			\addcontentsline{toc}{section}{الزمرة}
 	لتكن $(G, *)$ شبه زمرة بعنصر محايد فأن $G$ تسمى زمرة Group اذا كان كل عنصر فيها له معكوس بالنسبة للعملية الثنائية $*$. او نقول ان $(G, *)$ زمرة اذا تحققت الشروط التالية
 	\begin{enumerate}[label=$\boxed{\arabic*}$]
 		\item مغلقة بالنسبة للعملية $*$ اي : $a*b \in G , \forall a, b\in G$.
@@ -153,9 +147,7 @@ $e*e' =e'$ لان $e'$ عنصر محايد.\\
 	\]
 \end{example}
 
-
 \begin{definition}[( الزمرة الابدالية )]
-	\addcontentsline{toc}{section}{الزمرة الابدالية}
 	الزمرة $(G, *)$ تسمى زمرة ابدالية اذا كانت العملية $*$ عملية ثنائية ابدالية.
 \end{definition}
 
@@ -167,15 +159,297 @@ $e*e' =e'$ لان $e'$ عنصر محايد.\\
 \end{example}
 
 \begin{definition}[( الزمرة المنتهية وغير المنتهية )]
-	\addcontentsline{toc}{section}{الزمرة المنتهية وغير المنتهية}
 	الزمرة $(G, * )$ تسمى زمرة منتهية اذا كانت المجموعة $G$ منتهية. عدا ذلك تسمى الزمرة $(G, *)$ زمرة غير منتهية. 
 \end{definition}
 
 \begin{definition}[( رتبة الزمرة )]
-	\addcontentsline{toc}{section}{رتبة الزمرة}
 	لتكن $(G, *)$ زمرة منتهية ، نطلق على عدد عناصر المجموعة $G$ اسم رتبة الزمرة ويرمز له بالرمز $O(G)$ اما اذا كانت المجموعة غير منتهية فتكون رتبتها غير منتهية ايضاً.
 \end{definition}
 
+\begin{definition}[( قوى العنصر )]
+	لتكن $(G, *)$ زمرة وليكن $n$ عدد موجب فأن 
+	$a^n =\underbrace{a*a*\cdots*a}_{\text{$n$ من المرات}}$ 
+\end{definition}
 
+\begin{theorem}
+	لتكن $(G, *)$ زمرة وليكن $n, m\in \Z$ فإن
+	\setLR
+	\begin{enumerate}[label=$\boxed{\arabic*}$]
+		\item $e^n =e$
+		\item $a^0 =e, \forall a\in G$
+		\item $(a^m)^n = a^{mn}$
+		\item $a^m * a^n = a^{m+n}$
+		\item $a^{-m} = (a^{-1})^m$
+	\end{enumerate}
+\end{theorem}
 
+\begin{definition}[( الزمرة الدوارة )]
+	$(G, *)$ تسمى زمرة دوارة اذا وجد عنصر فيها $a\in G$ بحيث ان اي عنصر اخر في الزمرة $b\in G$ يمكن كتابته بالصيغة $b =a^k , k \in \Z$ ، يطلق على العنصر $a$ بالعنصر المولد للزمرة. او يقال ان الزمرة $G$ مولدة بواسطة العنصر $a$ ونكتب $G= \langle a\rangle$ او $G=(a)$
+ \end{definition}
+
+\begin{example}
+	لتكن $G=\{1,-1,i,-i\}$ حيث ان $i = \sqrt{-1}$ ، فإن $(G, \cdot)$ تمثل زمرة دوارة.
+\end{example}
+
+\begin{theorem}
+	الزمرة $(G, *)$ تكون ابدالية اذا وفقط اذا كان $(a*b)^{-1} = a^{-1} * b^{-1}$.
+\end{theorem}
+
+\section{زمرة التناظر (التباديل)}
+
+\begin{definition}[( زمرة التناظر )]
+	لتكن $X$ مجموعة غير خالية ، الدالة $f:X\to X$ تسمى تباديل على $X$ اذا كانت $f$ تقابل على $X$ ، مجموعة كل التباديل على $X$ يرمز لها بالرمز $\sym{X}$ حيث ان 
+	\[
+	\sym{X} = \{ f\mid f:X\to X \,\,\text{\LR{bijective}}\}
+	\]
+\end{definition}
+
+\begin{example}
+	لتكن $X=\{1,2,3\}$ و $f \in S_3$ معرفة كالآتي
+	\[
+	f(1)=1, f(2)=3, f(3)=2
+	\]
+	نستطيع كتابة عناصر الدالة $f$ بالشكل التالي
+	\[
+	f = \begin{pmatrix}
+		1&2&3\\
+		1&3&2
+	\end{pmatrix}
+	\]
+	ترتيب الاعمدة هنا ليس مهماً فنستطيع كتابة الدالة كما يأتي
+	\[
+	\begin{pmatrix}
+		2&1&3\\
+		3&1&2
+	\end{pmatrix} \quad \text{او} \quad 
+	\begin{pmatrix}
+		2&3&1\\
+		3&2&1
+	\end{pmatrix}
+	\]
+\end{example}
+
+\begin{note}
+	طريقة تعريف دالة التركيب على عناصر $f, g\in S_n$ 
+	\[
+	f = \begin{pmatrix}
+		1&2&\cdots&n\\
+		f(1)&f(2)&\cdots&f(n)
+	\end{pmatrix}, \quad 
+	g = \begin{pmatrix}
+	1&2&\cdots&n\\
+	g(1)&g(2)&\cdots&g(n)
+\end{pmatrix}, \quad 
+	\]
+	فأن دالة التركيب تكتب بالشكل
+	\[
+		f\circ g = \begin{pmatrix}
+		1&2&\cdots&n\\
+		f(g(1))&f(g(2))&\cdots&f(g(2))
+	\end{pmatrix}, \quad 
+	\]
+	وتكتب الدالة المحايدة بالشكل
+	\[
+		(1)= \begin{pmatrix}
+		1&2&\cdots&n\\
+		1&2&\cdots&n
+	\end{pmatrix}, \quad 
+	\]
+	وتكتب دالة المعكوس بالشكل
+	\[
+	f^{-1}=
+		 \begin{pmatrix}
+		f(1)&f(2)&\cdots&f(n)\\
+				1&2&\cdots&n
+	\end{pmatrix}, \quad 
+	\]
+\end{note}
+
+\begin{definition}
+	لتكن $f\in S_n$ بحيث ان $x_1, x_2, \dots, x_n$ فإذا كان $f(x_i) = x_{i+1}$ لكل $1\leq i\leq n-1$ وأن $f(x_n)=x_1$ اذن نستطيع كتابة $f$ بشكل دورة $\cycle{x_1, x_2, \cdots, x_n}$ وتسمى دورة ذات طول  $n$ 
+\end{definition}
+
+\begin{example}
+	لنفرض ان $f, g\in S_5$ حيث ان
+	\[
+	f = \begin{pmatrix}
+		1&2&3&4&5\\
+		2&3&4&1&5
+	\end{pmatrix}, \quad
+		g = \begin{pmatrix}
+		1&2&3&4&5\\
+		1&3&2&4&5
+	\end{pmatrix}, 
+	\]
+	اذن $f=\cycle{1,2,3,4}$ وهذا يعني انها دورة ذات طول 4 ، اما $g=\cycle{2,3}$ وهذا يعني انها دورة ذات طول 2.
+\end{example}
+
+\begin{definition}
+	اي دورة طولها 2 فقط تسمى مناقلة.
+\end{definition}
+
+\begin{lemma}
+معكوس اي مناقلة هي المناقلة نفسها.
+\end{lemma}
+\noindent
+\textbf{مثال: }$\cycle{2,3}^{-1} = \cycle{2,3}$
+
+\begin{lemma}
+	لتكن $\cycle{x_1, x_2, \cdots, x_n}$ دورة ذات طول $n$ فإن
+	\[
+	\cycle{x_1, x_2, \cdots, x_n}^{-1} = = \cycle{x_1, x_{n-1}, x_{n-2}, \cdots, x_2}
+	\]
+\end{lemma}
+
+\begin{example}
+	معكوس الدورة $\cycle{4,5,6,7}$ الدورة $\cycle{4, 7,6,5}$.
+\end{example}
+
+\begin{note}
+	نكتب العنصر المحايد في الزمرة $S_n$ بشكل دورة ذات طول 1، ويرمز له  بالرمز $(1)$
+\end{note}
+
+\begin{theorem}
+	كل دورة $\cycle{x_1, x_2, \cdots, x_n}$ ممكن كتابتها على صورة حاصل ضرب مناقلات وهذا التعبير غير وحيد
+	\[
+	\cycle{x_1, x_2, \cdots, x_n} = \cycle{x_1, x_n}\cycle{x_2, x_n}\cdots\cycle{x_{n-1}, x_n}
+	\]
+\end{theorem}
+\begin{example}
+	في الزمرة $S_8$ 
+	\[
+	\cycle{3,4,5,6,7,8} = \cycle{3, 8} \cycle{3, 7} \cycle{3, 6} \cycle{3, 5} \cycle{3, 4}
+	\]
+	\[
+	\cycle{1,3,2}\cycle{5,8,6,7} =  \cycle{1,2 } \cycle{1,3} \cycle{5,7 }  \cycle{5,6 }\cycle{5,8}
+	\]
+\end{example}
+
+\begin{corollary}
+	كل تبديل نستطيع كتابته على شكل حاصل ضرب مناقلات
+\end{corollary}
+
+\begin{definition}
+	التبديل $f$ يسمى تبديل زوجي (فردي) اذا كان يكتب على شكل حاصل ضرب عدد زوجي (فردي) من المناقلات
+\end{definition}
+
+\begin{example}
+	$\cycle{1,2}$ تبديل فردي.\\
+	$\cycle{1,2,3} = \cycle{1,3}\cycle{1,2}$ تبديل زوجي.
+\end{example}
+
+\begin{lemma}
+	الدورة (التباديل) ذات الطول $n$ تكون تبديل فردي اذا كان الطول زوجي والعكس بالعكس.
+\end{lemma}
+
+\begin{example}
+	$\cycle{1,2}$ دورة ذات طول 2 اذن تبديل فردي\\
+	$\cycle{1,2,3}$ دورة ذات طول 3 اذن تبديل زوجي.
+\end{example}
+
+\begin{theorem}
+	عند ضرب تبديلين زوجيين او فرديين فالناتج يكون تبديل زوجي ، اما عند ضرب تبديل فردي بتديل زوجي او العكس فالناتج تبديل فردي.
+\end{theorem}
+
+\begin{example}
+	حاصل الضرب $\cycle{1,2,3} \cycle{5,4}\cycle{7,8,9}$ ، التبديل الاول والثالث زوجيان اما التبديل الثاني فردي ، اذن الناتج يكون تبديل زوجي.
+\end{example}
+
+\begin{lemma}
+	$(S_n, \circ)$ ليست زمرة ابدالية لكل $n\geq 3$.
+\end{lemma}
+\noindent
+\textbf{البرهان}\\
+\noindent
+لنأخذ $\cycle{1,2}, \cycle{2,3} \in S_n$ نلاحظ ان ، 
+$\cycle{1,2}\cycle{2,3} = \cycle{1,2,3}$ بينما
+$\cycle{2,3}\cycle{1,2} = \cycle{1,3,2}$
+لذلك فإن 
+$\cycle{1,2}\cycle{2,3} \neq\cycle{2,3}\cycle{1,2}$
+بالتالي فإن $(S_n , \circ)$ ليست زمرة ابدالية.\qed
+
+\begin{definition}
+	مجموعة كل التبديلات الزوجية في الزمرة $S_n$ مع عملية التركيب $\circ$ تسمى الزمرة المتناوبة ويرمز لها بالرمز $(A_n, \circ)$ ورتبتها $O(A_n) = \dfrac{n!}{2}$.
+\end{definition}
+
+\section{زمرة الاعداد الصحيحة مقياس \textit{n}}
+\begin{definition}
+	ليكن $n\in \Z_+$ نعرف العلاقة $\equiv_n$ (او قياس $n$) على $\Z$ كما يلي: $a\equiv_n b$ اذا وفقط اذا $a-b$ يقبل القسمة على $n$ او $a-b = kn$ او $a=b+kn$
+\end{definition}
+\noindent\textbf{مثال:} $3\equiv1\Mod 2$ او $3\equiv_2 1$
+
+\begin{theorem}
+	علاقة القياس $n$ ($\equiv_n$) لمجموعة الاعداد الصحيحة هي علاقة تكافؤ.
+\end{theorem}
+
+\begin{note}
+	بما ان العلاقة $\equiv_n$ هي علاقة تكافؤ على الاعداد الصحيحة (عكسية ، متناظرة ، متعدية) اذن هي تشكل تجزئة على $\Z$ وتوجد صفوف تكافؤ او صفوف التكافؤ، حيث نستخدم اقل عدد موجب لتمثيل صف التكافؤ بشكل عام، اذا كان $a\in \Z$ فإن
+	\begin{align*}
+			[a] &= \{x\in \Z \mid a=x\Mod n\}\\
+			&= \{x\mid a-x = kn, k\in \Z\}\\
+			&= \{x\mid a = x + kn, k\in \Z \}
+	\end{align*}
+\end{note}
+
+\begin{theorem}
+	الزوج المرتب  $(\Z_n, +_n)$ يشكل زمرة ابدالية التي يطلق عليها زمرة الاعداد الصحيحة مقياس $n$
+\end{theorem}
+\noindent
+\textbf{البرهان}\\
+\noindent
+$\boxed{1}$ لنبرهن ان $\Z_n$ مغلقة تحت العملية $+_n$ ، لنفرض ان $[a], [b] \in \Z_n$ نجد ان
+\[
+[a] +_n [b] = [a + b] \in \Z_n
+\]
+$\boxed{2}$ لبرهان ان $+_n$ تجميعية على $\Z_n$ لنفرض ان $[a], [b], [c] \in \Z_n$ نجد
+\begin{align*}
+	[a] +_n \Big([b] +_n [c]\Big)&= [a] +_n [b+c]\\
+	&= [a + b+ c] \\
+	&= [a + b] +_n [c\\
+	&= \Big( [a] +_n [b]\Big) +_n [c]
+\end{align*}
+$\boxed{3}$ $[0] \in \Z_n$ هو  العنصر المحايد لــ $\Z_n $ لأن لكل $[a] \in \Z_n $
+\[
+[a] +_n [0] = [a+0] = [a]
+\]
+$\boxed{4}$ ليكن $[a]\in \Z$ فأن $[a]^{-1} = [n-a] $ لأن 
+\[
+[a] +_n [n-a] = [a+n-a] = [n] = [0]
+\]
+$\boxed{5}$ لبرهان خاصية الابدال لنفرض ان $[a], [b] \in \Z_n$ فان 
+\[
+[a] +_n [b] = [a+b] = [b+a] = [b] +_n [a]
+\]
+
+\begin{note}
+	تكتب عناصر $\Z_n$ بالشكل $a$ بدل من $[a]$ و $-a$ بدل من $[n-a]$
+\end{note}
+
+\begin{theorem}
+	الزمرة $(\Z_n, +_n)$ تشكل زمرة دوارة مولدة بواسطة العنصر 1.
+\end{theorem}
+
+\begin{note}
+	اي عنصر في $\Z_n$ ممكن ان يكون مولد للزمرة اذا وفقط اذا $\gcd(a,n)=1$
+\end{note}
+\begin{note}
+ تعرف عملية الضرب على المجموعة $\Z_n$ كالآتي 
+\[
+[a] \cdot_n [b] = [a\cdot b] , \forall [a],[b] \in \Z_n
+\]
+\end{note}
+
+\begin{example}
+	$5\cdot_6 4 =2,\quad 7\cdot_9 2=5,\quad 3\cdot_4 2=2$
+\end{example}
+
+\begin{note}
+	الزوج المرتب $(\Z_n - \{0\}, \cdot_n)$ ربما يكون زمرة اذا كان $n$ عدد اولي. للتوضيح اكثر $(\Z_4-\{0\}, \cdot_4)$ لا تمثل زمرة لان 2 لا يملك معكوس ضربي بينما $(\Z_5-\{0\},\cdot_5)$ تمثل زمرة.
+\end{note}
+
+\begin{note}
+	العنصر $a$ في $\Z_n$ يمتلك معكوس ضربي اذا وفقط اذا كان $\gcd(a,n)=1$
+\end{note}
+
+\section{الزمرة الجزئية}
 

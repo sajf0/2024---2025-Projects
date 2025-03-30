@@ -27,6 +27,21 @@ right=1in
 
 \allowdisplaybreaks
 
+\ExplSyntaxOn
+\NewDocumentCommand{\cycle}{ O{\;} m }{
+(
+\alec_cycle:nn { #1 } { #2 }
+)
+}
+
+\seq_new:N \l_alec_cycle_seq
+\cs_new_protected:Npn \alec_cycle:nn #1 #2
+ {
+ \seq_set_split:Nnn \l_alec_cycle_seq { , } { #2 } 
+ \seq_use:Nn \l_alec_cycle_seq { #1 }
+ }
+\ExplSyntaxOff
+
 
 % To use the arabic language
 \RequirePackage{polyglossia}
@@ -167,7 +182,7 @@ right=1in
 
 \theoremstyle{theoremstyle}
 
-\newtheorem{theorem}{مبرهنة}[section]
+\newtheorem{theorem}{مبرهنة}[chapter]
 
 \newtheoremstyle{mystyle}
 {\topsep}
@@ -183,7 +198,8 @@ right=1in
 
 \newtheorem{definition}{تعريف}[chapter]
 \newtheorem{example}{مثال}[chapter]
-\newtheorem{corollary}{نتيجة}[chapter]
+\newtheorem{corollary}[theorem]{نتيجة}
+\newtheorem{lemma}[theorem]{ممهدة}
 \newtheorem*{note}{ملاحظة}
 
 \renewcommand{\thetheorem}{\arabic{chapter} - \arabic{theorem}}
@@ -208,6 +224,8 @@ right=1in
 \DeclareMathOperator{\arcsec}{arcsin}
 \DeclareMathOperator{\arccsc}{arccsc}
 \DeclareMathOperator{\arccot}{arccot}
+\DeclareMathOperator{\sym}{sym}
+\DeclareMathOperator{\Mod}{mod}
 
 \renewcommand{\mathbf}[1]{\textbf{\en{#1}}}
 
