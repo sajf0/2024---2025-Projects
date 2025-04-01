@@ -1,15 +1,19 @@
 % compile with XeLaTeX
 % this template was created by salim bou 
 \documentclass[dvipsnames,mathserif]{beamer}
-\usepackage{setspace}
+\usepackage{setspace, float}
 \setstretch{1.5}
 \usepackage{tikz}
-\usetikzlibrary{calc}
+
 \usepackage{polyglossia}
 \setdefaultlanguage[numerals=maghrib,locale=algeria]{arabic} % locale=mashriq, libya, algeria, tunisia, morocco, or mauritania  for names of months in \date 
 \setotherlanguage{english}
 \newfontfamily\arabicfont[Script=Arabic]{Amiri}
 \newfontfamily\arabicfontsf[Script=Arabic]{Amiri}
+\newfontfamily{\timesfont}{Times New Roman}
+
+\newcommand{\ar}{\textarabic}
+\newcommand{\en}{\textenglish}
 
 \usepackage[T1]{fontenc}
 \usepackage{times}

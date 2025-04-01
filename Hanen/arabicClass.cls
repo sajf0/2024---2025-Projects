@@ -226,6 +226,7 @@ right=1in
 \DeclareMathOperator{\arccot}{arccot}
 \DeclareMathOperator{\sym}{sym}
 \DeclareMathOperator{\Mod}{mod}
+\DeclareMathOperator{\cent}{cent}
 
 \renewcommand{\mathbf}[1]{\textbf{\en{#1}}}
 

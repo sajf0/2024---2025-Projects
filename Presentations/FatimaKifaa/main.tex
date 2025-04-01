@@ -10,4 +10,62 @@
 \begin{frame}
 	\maketitle
 \end{frame}
+\timesfont
+\begin{frame}
+\begin{exampleblock}{تعريف}
+	البيان $G$ عبارة عن ثنائي مرتب $(V,E)$ حيث $V$ هي مجموعة غير خالية منتهية من العقد \en{Vertcies} و $E$ هي مجموعة الاسهم \en{Edges}.
+\end{exampleblock}
+
+\pause
+\noindent
+\textbf{ملاحظات}
+\begin{enumerate}
+	
+		\pause
+	\item كل سهم له عقدة او عقدتين مرتبطتين تسمى أطراف السهم \en{Endpoints}.
+	
+	\pause
+	\item يسمى السهم الذي له عقدة واحدة مرتبطة به بالحلقة \en{Loop}.
+	
+		\pause
+	\item تسمى الاسهم التي تتشارك بنفس النهايات بالاسهم المتوازية \en{Parallel}.
+	
+		\pause
+	\item تسمى العقدتين المرتبطتين بالسهم على انهما متجاورتين \en{Adjacent}.
+	
+		\pause
+	\item  تسمى العقدة التي ليس لها اسهم واردة بالمعزولة \en{Isolated}.
+\end{enumerate}
+\end{frame}
+\begin{frame}
+
+\textbf{مثال}
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}[->, thick]
+		\node[fill=black, circle, draw, inner sep=2pt, label={left: $v_1$}] (v1) at (0,0) {};
+		\node[fill=black, circle, draw, inner sep=2pt, label={left: $v_2$}] (v2) at (0,3) {};
+		\node[fill=black, circle, draw, inner sep=2pt, label={right: $v_3$}] (v3) at (3,3) {};
+		\node[fill=black, circle, draw, inner sep=2pt, label={right: $v_4$}] (v4) at (3,0) {};
+		\node[fill=black, circle, draw, inner sep=2pt, label={right: $v_5$}] (v5) at (5,2) {};
+		\node[fill=black, circle, draw, inner sep=2pt, label={right: $v_6$}] (v6) at (7,0) {};
+		\node[fill=black, circle, draw, inner sep=2pt, label={right: $v_7$}] (v7) at (10,2) {};
+		
+		
+		\path (v1) edge node[midway, above] {$e_1$} (v4);
+		\path (v4) edge [loop below] node[midway, below] {$e_5$} (v4);
+		\path (v3) edge node[midway, right] {$e_4$} (v4);
+		\draw[->, thick] (v2) .. controls (2,2) .. (v3) node[midway, below]{$e_2$};
+		\draw[->, thick] (v3) .. controls (2,4) .. (v2) node[midway, above]{$e_3$};
+		\path (v6) edge node[midway,above, sloped] {$e_6$} (v7);
+	\end{tikzpicture}
+\end{figure}
+
+\pause
+في الشكل اعلاه السهم $e_5$ مثال على الحلقة و $e_2,e_3$ أسهم متوازية و العقدة $v_5$ مثال على العقدة المعزولة و العقدتان $v_6,v_7$ مثال على العقد المتجاورة.
+\end{frame}
+
+\begin{frame}
+	content
+\end{frame}
 \end{document}

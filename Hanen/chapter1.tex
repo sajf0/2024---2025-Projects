@@ -453,3 +453,196 @@ $\boxed{5}$ لبرهان خاصية الابدال لنفرض ان $[a], [b] \in
 
 \section{الزمرة الجزئية}
 
+\begin{definition}
+	لتكن $(G, *)$ زمرة و $H$ مجموعة غير خالية جزئية من $G$ فإن $(H, *)$ تسمى زمرة جزئية من الزمرة $(G, *)$ اذا كانت $H$ هي زمرة كذلك ونكتب $(H, *)\leq (G, *)$
+\end{definition}
+\begin{example}
+	كل زمرة على الاقل لها زمرتان جزئيتان هما $(G, *) $ و $(\{e\}, *)$.
+\end{example}
+
+\begin{definition}
+	الزمرة الجزئية $(H, *)$ تسمى زمرة جزئية فعلية من $(G, *)$ اذا كانت $H$ هي مجموعة جزئية فعلية $H \subset G$.
+\end{definition}
+
+\begin{definition}
+		الزمرة الجزئية $(H, *)$ تسمى زمرة جزئية غير تافهة اذا كانت $\varnothing\neq H\neq G$.  
+\end{definition}
+
+\begin{example}
+	$(\R, +). (\Z, +). (\Q, +), (\R-\{0\}, \cdot), (\Q-\{0\}, \cdot)$ جميع هذه الانظمة هي زمر جزئية غير تافهة من زمرة الاعداد المركبة $(\C, +), (\C-\{0\}, \cdot)$ على التوالي
+\end{example}
+
+\begin{theorem}
+	لتكن $(G, *)$ زمرة و $\varnothing\neq H\subseteq G$ اذن $(H, *)$ تكون زمرة جزئية من $(G, *)$ اذا وفقط اذا حققت الشرط 
+	\[
+	a * b^{-1} \in H, \forall a, b\in H
+	\]
+\end{theorem}
+
+\begin{example}
+	$(\Z_e, +) \leq (\Z, +)$
+\end{example}
+\noindent
+\textbf{الحل}\\
+\noindent
+لفترض ان $a, b\in \Z_e$ اذن يوجد $n,m\in Z$ بحيث ان $a=2n, b=2m$ اذن
+\[
+a * b^{-1} = a- b=2n-2m=2\underbrace{(n-m)}_{\in \Z} \in \Z_e
+\]
+اذن 	$(\Z_e, +) \leq (\Z, +)$
+
+\begin{example}
+	وضح ان $(A_3, \circ) \leq (S_3, \circ)$
+\end{example}
+\noindent
+\textbf{الحل}
+\begin{table}[H]
+	\centering
+	\renewcommand{\arraystretch}{1.3}
+	\setLR
+	\begin{tabular}{c|c|c|c}
+		$\circ$ & $\cycle{1}$ & $\cycle{1,2,3}$ & $\cycle{1,3,2}$\\
+		\hline
+		$\cycle{1}$ & $\cycle{1}$ & $\cycle{1,2,3}$ & $\cycle{1,3,2}$\\
+		$\cycle{1,2,3}$& $\cycle{1,2,3}$ & $\cycle{1,3,2}$&$\cycle{1}$\\
+		$\cycle{1,3,2}$& $\cycle{1,3,2}$&$\cycle{1}$ & $\cycle{1,2,3}$ \\
+		\hline
+	\end{tabular}
+\end{table}
+\setRL
+من الجدول اعلاه نلاحظ ان
+ $a\circ b^{-1} \in A_3$
+ لأي  $a, b\in A_3$ اذن  $(A_3, \circ) \leq (S_3, \circ)$
+ 
+ \begin{example}
+ 	وضح ان  $(A_n, \circ) \leq (S_n, \circ)$
+ \end{example}
+ \noindent
+ \textbf{الحل}\\
+ \noindent
+  نلاحظ ان $A_n \subseteq S_n $ و $(1) \in A_n$ اذن $A_n \neq \varnothing$ ، لنفترض ان $f, g \in A_n$ وهذا يعني كل من $f,g$ تبديلات زوجية ، نبين ان $f^{-1}$ تبديل زوجي ، نلاحظ ان $f\circ f^{-1}=(1)$ وهذا يعني $f^{-1}$ تبديل زوجي وبالتالي 
+  $g\circ f^{-1}$ تبديل زوجي كذلك اي ان $g\circ f^{-1} \in A_n$ اذن $A_n \leq S_n$.\qed
+  
+   \begin{note}
+   	كل زمرة جزئية من زمرة ابدالية تكون ابدالية.
+   \end{note}
+   
+   \begin{definition}
+   	لتكن $(G, *)$ زمرة ، مجموعة كل العناصر في $G$ التي تتبادل مع جميع عناصر $G$ تسمى مركز الزمرة $G$ ويرمز لها بالرمز $\cent{G}$.
+   	\[
+   	\cent G = \{c \in G : x*c=c*x , \forall x\in G\}
+   	\]
+   \end{definition}
+   
+   \begin{example}
+   	$\cent\Z_n=\Z_n, \quad \cent S_n = (1)$.
+   \end{example}
+   
+   \begin{note}
+   	$(\cent G, *) \leq (G, *)$.
+   \end{note}
+   
+   \begin{lemma}
+   	الزمرة $(G, *)$ تكون ابدالية اذا وفقط اذا $\cent G = G$.
+   \end{lemma}
+   
+   \begin{theorem}
+   	لتكن كل من $(K, *)$ و $(H, *)$ زمرة جزئية من $(G, *)$ فإن $(K \cap H, *) \leq (G, *)$ بمعنى اخر تقاطع اي زمرتين جزئيتين هو زمرة جزئية.
+   \end{theorem}
+\noindent
+\textbf{البرهان}\\
+\noindent
+لتكن $a, b\in K\cap H$ اذن $a, b\in H$ و $a, b\in K$ ولأن كل منهما زمرة جزئية ، فإن 
+$a*b^{-1} \in H$ و $a*b^{-1} \in G$
+لذلك فإن $a*b^{-1} \in K\cap H$ وبالتالي  $(K \cap H, *) \leq (G, *)$.\qed
+   
+   \begin{note}
+   	اذا كان كل من $(K, *)$ و $(H, *)$ زمرة جزئية من $(G, *)$  فليس من الضروري ان يكــــــــــــــون \\
+   	$(K \cup H, *) \leq (G, *)$  ، بمعنى آخر اتحاد اي زمرتين جزئيتين لا يعطي بالضرورة زمرة جزئية.
+   \end{note}
+   
+   \begin{theorem}
+   	 	لتكن كل من $(K, *)$ و $(H, *)$ زمرة جزئية من $(G, *)$ فإن $(K \cup H, *) \leq (G, *)$ اذا وفقط اذا كان اما $K\subseteq H$ أو $H\subseteq K$.
+   \end{theorem}
+   
+   \begin{definition}
+   	لتكن $(G, *)$ زمرة و $\varnothing\neq S\subseteq G$ ولتكن
+   	$(S) = \{H : S\subseteq H , (H, *) \leq (G, *)\}$
+   	تسمى $((S), *)$ زمرة جزئية مولدة بواسطة المجموعة $S$.
+   \end{definition}
+   
+   \begin{note}
+   	الزمرة الجزئية $((S), *)$ هي اصغر زمرة تحتوي على المجموعة $S$.
+   \end{note}
+   
+\begin{definition}
+	لتكن $(G, *)$ زمرة وليكن $a\in G$ فإن الزمرة الجزئية 	$\big((\{a\}) , *\big)$ وتكتب بالصيغة $((a), *) $ وهي الزمرة الجزئية المولدة بواسطة العنصر $a$.
+\end{definition}
+
+\noindent
+\textbf{ملاحظة}
+\begin{enumerate}
+	\item لتكن $(G, *)$ زمرة ، اذا كان $a\in G$ يمتلك رتبة منتهية فإن $O(a) = O\Big((a)\Big)$
+	\item  لتكن $(G, *)$ زمرة ، اذا كان $a\in G$ فإن $(a) = \{a^n : n\in \Z\}$.
+\end{enumerate}
+
+\begin{example}
+	جد $(3)$ في $(\Z, +)$
+\end{example}
+   \noindent
+   \textbf{الحل}\\
+   \noindent
+   $(3) = \{3^n : n\in \Z\} = \{3n : n\in \Z\}$.
+   
+   \begin{example}
+   	اوجد $(2)$ فــــي $(\Z_8, +_8)$.
+   \end{example}
+   \noindent
+   \textbf{الحل}\\
+   \noindent
+   $(2) = \{2^n : n\in \Z\} = \{2n : n\in \Z\} = \{0,2,4,6\}$.
+   
+\begin{definition}
+	لتكن كل من $(K, *)$ و $(H, *)$ زمرة جزئية من $(G, *)$ فإن حاصل ضرب الزمرتان الجزئيتيان يعرف بالشكل
+	$
+	H * K = \{h * k : h \in H, k \in K\}
+	$.
+\end{definition}
+
+\begin{example}
+	ليكن $H=(2)$ و $K=(3)$ زمرتان جزئيتيان من الزمرة $(\Z_{12}, +_{12})$ اوجد $H_{12}K$
+\end{example}
+\noindent
+\textbf{الحل}\\
+\noindent
+$H=\{0,2,4,6,8,10\}$ ، $K=\{0,3,6,9\}$ اذن\\
+ $H+_{12} K=\{0,1,2,3,4,5,6,7,8,9,10,11\} = \Z_{12}$
+ 
+ \begin{note}
+ 		لتكن كل من $(K, *)$ و $(H, *)$ زمرة جزئية من $(G, *)$ فإن حاصل ضرب الزمرتان الجزئيتيان $H*K$ ربما لا يكون زمرة جزئية من $(G,*)$.
+ \end{note}
+ 
+ \begin{theorem}
+ 		لتكن كل من $(K, *)$ و $(H, *)$ زمرة جزئية من $(G, *)$ فإن حاصل ضرب الزمرتان الجزئيتيان $(H*K, *)$ يكون زمرة اذا كان $H*K=K*H$.
+ \end{theorem}
+ 
+ \begin{note}
+ 		لتكن كل من $(K, *)$ و $(H, *)$ زمرة جزئية من $(G, *)$ فإن $(H*K, *) = (H\cup K, *)$.
+ \end{note}
+ 
+ \begin{example}
+ 	لتكن $H=\{3\}$  و $K=\{4\}$ زمرتان جزئيتيان من الزمرة $(\Z_{12}, +_{12})$ اوجد 
+ 	$(H\cup K, +_{12})$
+ \end{example}
+ \noindent
+ \textbf{الحل}\\
+ \noindent
+ $H = \{0,3,6,9\}$ ، $K=\{0,4,8\} $ اذن \\
+ $H \cup K = H+_{12} K = \{0,4,8,3,7,11,6,10,2,9,1,5\} = \Z_{12}$
+ 
+ 
+ \begin{theorem}
+ 	لتكن $(G, *)$ زمرة ابدالية و	لتكن كل من $(K, *)$ و $(H, *)$ زمرة جزئية من $(G, *)$ فإن\\
+ 	 $(H*K, *) \leq (G, *)$.
+ \end{theorem}
+ 
