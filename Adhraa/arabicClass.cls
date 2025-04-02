@@ -12,27 +12,23 @@ right=1in
 % For the title page 
 \RequirePackage{graphicx}
 
+\usepackage{setspace}
+\setstretch{1.4}
+
 % For changing the headers formatting
-\RequirePackage{titletoc, titlesec, setspace, enumitem, tasks}
+\RequirePackage{titletoc, titlesec, enumitem, tasks}
 \setlist{noitemsep, topsep=5pt, partopsep=5pt, itemsep=5pt}
 \settasks{after-item-skip=2pt, before-skip=2pt, label=\en{\alph*})}
-\onehalfspacing
 
 % For math
 \RequirePackage{amsmath, amssymb, amsthm}
 
 \allowdisplaybreaks
 
-% For inserting MATLAB code
-\RequirePackage[framed]{matlab-prettifier}
-\lstset{style=Matlab-editor, basicstyle=\small\ttfamily, morestring=[m]"}
 
 % To use the arabic language
 \RequirePackage{polyglossia}
 
-% For the refrences
-\RequirePackage{biblatex} 
-\DeclareFieldFormat[book]{title}{#1}
 
 % For fancy headers
 \RequirePackage{fancyhdr}
@@ -191,10 +187,6 @@ right=1in
 \newenvironment{myproof}{\noindent\textbf{البرهان}\vspace{5pt}\\ \noindent}{\hfill \(\qedsymbol\)}
 
 \newenvironment{solution}{\noindent\textbf{الحل}\vspace{5pt}\\}{}
-
-\renewcommand*\newunitpunct{\addcomma\space}
-\makeatletter
-\def\abx@comma{\ifdim\lastkern>\z@\unkern\fi\abx@puncthook{،}}
 
 \newcommand{\N}{\mathbb{N}}
 \newcommand{\Z}{\mathbb{Z}}
