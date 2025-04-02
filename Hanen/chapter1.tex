@@ -749,4 +749,81 @@ $O(G) = \underbrace{O(H)+O(H)+\cdots+O(h)}_{\text{$k$ من المرات}} $
  $\big((a), *\big)$ رتبتها تساوي $m_1$ وبالتالي فإنها زمرة جزئية غير تافهة.\qed
  
  
+ \begin{corollary}
+ 	كل زمرة منتهية ذات رتبة اولية تكون دائرية.
+ \end{corollary}
+ 
+ \section{الزمر الجزئية الناظمية}
+ 
+ \begin{definition}
+ 	لتكن $(H, *)$ زمرة جزئية من $(G, *)$ فإن $(H, *)$ تسمى زمرة جزئية ناظمية (سوية) اذا وفقط اذا كان $a*H = H*a$ لكل $a\in G$ ونكتب $ H \trianglelefteq G$.
+ \end{definition}
+ 
+ \begin{example}
+ 	كل زمرة جزئية دليلها 2 تكون زمرة ناظمية.
+ \end{example}
+ \noindent
+ \textbf{البرهان}\\
+ \noindent
+ لتكن $(H, *)\leq (G, *)$ بما ان $[G:H]=2$ اذن $G$ تمتلك مجموعتين مشاركتين يسرى هما $H, a*H$ وكذلك مجموعتين مشاركتين يمنى $H, H*a$ \\
+ ليكن $b\in G$. اذا كان $b\in H$ نحصل على $H=H*b$ و $H=b*H$ $\Leftarrow$ $H*a=a*H$\\
+ اما اذا كان $b\notin H$ فإن $b*H\neq H$ اذن $H*b = a*H$ كذلك $H*b \neq H$ ومنه $H*b = H*a=a*H$ اذن $H\trianglelefteq G$.\qed
+ 
+ \begin{example}
+ 	اثبت ان 
+ 	$(A_n, \circ) \trianglelefteq (S_n, \circ)$ 
+ \end{example}
+ \noindent
+ \textbf{البرهان}\\
+ \noindent
+ بما ان 
+ $[S_n : A_n] = \dfrac{O(S_n)}{O(A_n) } = \dfrac{n!}{\mfrac{n!}{2}} = 2$ ، 
+ اذن  	$(A_n, \circ) \trianglelefteq (S_n, \circ)$ \qed
+ 
+ \begin{theorem}
+ 	كل زمرة جزئية من زمرة ابدالية تكون زمرة سوية.
+ \end{theorem}
+ \noindent
+ \textbf{البرهان}\\
+ \noindent
+ نفترض ان $(H, *)\leq (G, *)$ ،
+ لبرهان $a*H = H*a$ لكل $a\in G$ ،
+ ليكن $a*h \in a*H$ ، وبما ان $(G, *)$ زمرة ابدالية ، اذن $a*h = h*a \in H*a$ ،
+  اذن $a*H\subseteq H*a$ ، وبنفس الطريقة نبرهن $H*a\subseteq a*H$ وبالتالي $a*H=H*a$ ومنه 
+  $(H, *) \trianglelefteq (G, *)$.\qed
+  
+  \begin{definition}
+  	الزمرة $(G, *)$ تسمى زمرة بسيطة اذا كانت تحوي فقط زمرتين سويتين هما 
+  	$(G, *) , \big(\{e\}, *\big)$.
+  \end{definition}
+  
+  \newpage
+  
+  \section{زمرة القسمة}
+  \begin{definition}
+  	لتكن $(H, *)$ زمرة جزئية من $(G, *)$ نعرف المجموعة
+  $G/H = \{a*H : a\in G\}$  او $ G/H = \{H*a : a\in G\}$ ، بأنها مجموعة القسمة لــ $G$ على $H$ وتمثل مجموعة كل المجموعات المصاحبة اليمنى او اليسرى للزمرة الجزئية $H$ في الزمرة $G$.
+  \end{definition}
+  
+  \begin{definition}
+  	لتكن $(H, *)$ زمرة جزئية من $(G , *)$ ، نعرف العملية الثنائية $\circledast$ على $G/H$ بالشكل التالي\\
+  	$
+  	(a*H)\circledast (b*H) = (a*b) *H, \forall a, b\in G
+  	$
+  	ويسمى الزوج المرتب $(G/H, \circledast)$ بزمرة القسمة.
+  \end{definition}
+  
+  \begin{theorem}
+  	لتكن $(G, *)$ زمرة و $(H, *)$ زمرة جزئية سوية منها فإن الثنائي $(G/H, \circledast)$ يشكل زمرة.
+  \end{theorem}
+  
+  \begin{theorem}
+  	لتكن $(G, *)$ زمرة ابدالية ، فإن $(G/H, \circledast)$ زمرة ابدالية لأي زمرة جزئية سوية $(H, *)$.
+  \end{theorem}
+  
+  \begin{theorem}
+  	لتكن $(G, *)$ زمرة دائرية ، فإن $(G/H, \circledast)$ زمرة دائرية لأي زمرة جزئية سوية $(H, *)$.
+  \end{theorem}
+  
+  
  

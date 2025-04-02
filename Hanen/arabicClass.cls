@@ -23,7 +23,7 @@ right=1in
 \settasks{after-item-skip=2pt, before-skip=2pt, label=\en{\alph*})}
 
 % For math
-\RequirePackage{amsmath, amssymb, amsthm}
+\RequirePackage{amsmath, amssymb, amsthm, nccmath}
 
 \allowdisplaybreaks
 
