@@ -1,16 +1,23 @@
 \documentclass{arabicClass}
 
-\addbibresource{references.bib}  
-
 \begin{document}
 	\abovedisplayskip=7pt
 	\belowdisplayskip=7pt
-	%\input{Title Page/titlepage}
-	
-	%\tableofcontents
-	
+	\input{Title Page/titlepage}
+	\pagenumbering{roman}
+	\input{gift}
+	\input{thanks}
+	\tableofcontents
+	\clearpage
+	\pagenumbering{arabic}
+	\input{intro}
+	\input{abstract}
 	\input{chapter1}
 	\input{chapter2}
 	\input{chapter3}
 	
+	
+	\begin{thebibliography}{9}
+		\bibitem{k}
+	\end{thebibliography}
 \end{document}

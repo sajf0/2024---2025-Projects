@@ -23,7 +23,7 @@ right=1in
 \settasks{after-item-skip=2pt, before-skip=2pt, label=\en{\alph*})}
 
 % For math
-\RequirePackage{amsmath, amssymb, amsthm, nccmath}
+\RequirePackage{amsmath, amssymb, amsthm, nccmath, dsfont}
 
 \allowdisplaybreaks
 
@@ -211,11 +211,11 @@ right=1in
 
 \newenvironment{solution}{\noindent\textbf{الحل}\vspace{5pt}\\}{}
 
-\newcommand{\N}{\mathbb{N}}
-\newcommand{\Z}{\mathbb{Z}}
-\newcommand{\Q}{\mathbb{Q}}
-\newcommand{\R}{\mathbb{R}}
-\newcommand{\C}{\mathbb{C}}
+\newcommand{\N}{\mathds{N}}
+\newcommand{\Z}{\mathds{Z}}
+\newcommand{\Q}{\mathds{Q}}
+\newcommand{\R}{\mathds{R}}
+\newcommand{\C}{\mathds{C}}
 \newcommand{\LL}{\mathcal{L}}
 
 % Define new math operators
@@ -227,6 +227,7 @@ right=1in
 \DeclareMathOperator{\sym}{sym}
 \DeclareMathOperator{\Mod}{mod}
 \DeclareMathOperator{\cent}{cent}
+\DeclareMathOperator{\Char}{char}
 
 \renewcommand{\mathbf}[1]{\textbf{\en{#1}}}
 
