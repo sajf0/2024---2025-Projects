@@ -1,16 +1,75 @@
-\input{$HOME/Programming/LaTeX/Presentations/arabicBeamer.tex}
+\input{/home/sajad/Programming/LaTeX/Presentations/arabicBeamer.tex}
 
 \begin{document}
 	\author{\textbf{الطالبة : زهراء مؤيد}}
-	\title{\textbf{كثيرات حدود شيبشيف}}
+	\title{\textbf{كثيرات حدود شيبشيف من النوع الثاني}}
 	\date{\textbf{اشراف\\
-		د. جنان}}
+		م.م. ايمان عزيز عبدالصمد}}
 	
 	\begin{frame}
 		\maketitle
 	\end{frame}
 	
+	\timesfont
 	\begin{frame}{مقدمة}
-		content
+		كانت مسألة التقريب محط اهتمام الكثير من العلماء في الرياضيات والفيزياء. وتعد القدرة على استبدال دالة معطاة بأخرى ابسط منها مثل كثيرات الحدود من الامور المفيدة جداً في مسائل الرياضيات التي توصف ظواهر معينة في الفيزياء والكيمياء وغيرها، حيث توضع شروط وقيود تكون في معظم الاحيان شروطاً صعبة ليس من السهل معها الحصول على الحلول الدقيقة ولا تطابق قيك هذه الدالة المعطاة ولكن اما ان تكون قريبة منها بالقدر الكافي او انها تتحكم بدرجة التقريب. \\[5pt]
+		\pause
+		في الرياضيات حدوديات شيبشيف هي حدوديات يعود اسمها الى عالم الرياضيات الروسي بافنوتي شيبشيف في عام (1953) (مؤسس علم التقريب المنتظم) هي متتالية من حدوديات متعامدة ذات اهمية اساسية في العديد من العلوم وفروع الرياضيات ونظرية التقريب وتطبيقاتها. وساهم الكثير من الباحثين باستخدام كثيرات الحدود المتعامدة في حل مسائل قيم حدية ومسائل قيم ابتدائية المتمثلة بمعادلات تفاضلية اعتيادية غير خطية والتي لها تطبيقات عملية عديدة في الهندسة التفاضلية والفيزياء اللا خطية والعلوم التطبيقية وغيرها. سنهتم بشكل اساسي بدراسة النوع الثاني لكثيرات حدود شيبشيف.  
 	\end{frame}
+	
+		\begin{frame}
+		\begin{center}
+			\Huge
+			\textbf{النوع الاول}
+		\end{center}
+	\end{frame}
+	
+	\begin{frame}{كثيرات حدود شيبشيف من  النوع الاول}
+		\pause
+		\begin{exampleblock}{ تعريف}
+			
+			تعرف كثيرات حدود شيبشيف من النوع الاول بالشكل التالي
+			\begin{equation}
+				T_n(x) = \cos(n\cos^{-1}x);\quad n\geq 0 , x\in [-1,1]
+			\end{equation}
+			
+			\pause\noindent
+			نفرض $x = \cos\theta$ فتصبح المعادلة (1) بالشكل $T_n(x) = \cos n\theta$
+		\end{exampleblock}
+		
+		\pause
+		\begin{exampleblock}{ الصيغة التكرارية}
+				$$T_{n+1(x)} = 2xT_n(x) - T_{n-1}(x)$$ 
+		\end{exampleblock}
+	\end{frame}
+	
+	
+		\begin{frame}
+		\begin{center}
+			\Huge
+			\textbf{النوع الثاني}
+		\end{center}
+	\end{frame}
+	
+	\begin{frame}{كثيرات حدود شيبشيف من النوع الثاني}
+		\begin{exampleblock}{تعريف}
+				كثيرات حدود شيبشيف من النوع الثاني $U_n(x)$ تعرف كالاتي
+			\begin{equation}
+							U_n(x) = \frac{\sin(n+1)\theta}{\sin\theta},\quad n\geq 0 \quad -1 \leq x \leq 1
+			\end{equation}
+
+			
+			حيث $x=\cos\theta \iff \theta = \cos^{-1}(x)$
+		\end{exampleblock}
+		
+		\pause
+		\begin{exampleblock}{الصيغة التكرارية}
+			$$
+				U_{n+1}(x) = 2x U_n(x) - U_{n-1}(x), \quad n = 1,2,3,\dots
+		$$
+	يمكن من خلال الصيغة التكرارية ، ايجاد $U_2(x), U_3(x), \dots$
+		\end{exampleblock}
+	\end{frame}
+	
+	
 \end{document}

@@ -40,9 +40,9 @@ right=1in
 \pagestyle{fancy}
 \fancyhead{}
 %\fancyfoot{}
-\fancyhead[L]{\small\leftmark}
+\fancyhead[L]{\small\ar{\leftmark}}
 %\fancyhead[C]{\small \leftmark}
-\fancyhead[R]{\small \thechapter}
+\fancyhead[R]{\small \ar{\thechapter}}
 \renewcommand{\chaptermark}[1]{\markboth{\MakeUppercase{#1}}{}}
 \renewcommand{\thepage}{$\thepage$}
 

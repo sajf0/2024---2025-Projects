@@ -1,1 +1,66 @@
 \chapter{تحويل لابلاس وخواصه}
+
+\section*{المقدمة}
+في هذا الفصل تقدم طريقة أخرى لحل المعادلات التفاضلية الخطية ذات المعاملات الثابتة وأنظمة هذه المعادلات. تسعى هذه الطريقة بطريقة تحويل لايلاس. يهذه الطريقة، يتم تحويل مسألة القيمة الأولية إلى معادلة جبرية أو نظام معادلات يمكن حله باستخدام الطرق الجبرية وجدول تحويلات لايلاس. تشبه هذه الطريقة في بعض النواحي استخدام اللوغاريتمات لحل المعادلات الأسبة.
+
+\section{ تحويل لايلاس}
+تحويل لايلاس هو عملية أخرى على الدول الرياضية لتحويلها من مجال إلى آخر، عادة التحويل من مجال الزمن إلى مجال التردد. يستخدم أيضاً لحل المعادلات التفاضلية لأنه يحولها إلى معادلات جبرية. شمي هذا التحويل نسبة إلى العالم الفرنسي لايلاس الذي عاش في القرن التاسع عشر.
+
+\section{التعريف }
+افترض أن الدالة \( f \) معرفة للقيم \( t \geq 0 \)، فإن تحويل التكامل:
+\[
+F(s) = \mathcal{L}[f(t)] = \int_{0}^{\infty} e^{-st}f(t) \, dt
+\]
+يُسمى تحويل لايلاس للدالة \( f \).
+
+\begin{example}
+احسب تحويل لايلاس للدالة \( f(t) = 1 \).
+\end{example}
+\noindent
+\textbf{الحل}
+\begin{align*}
+\mathcal{L}[f(t)] &= \int_{0}^{\infty} e^{-st}f(t) \, dt
+\\
+&= \int_{0}^{\infty} e^{-st}(1) \, dt
+\\
+&= \int_{0}^{\infty} e^{-st} \, dt
+\\
+&= \lim_{t \to \infty} \int_0^\infty e^{-st} \, dt
+\\
+&= \lim_{t \to \infty} - \left[ \frac{e^{-st}}{s} \right]_0^\infty
+\\
+&= \lim_{t \to \infty} \frac{-1}{s} \left[ e^{-st} \right]_0^\infty
+\\
+&= \lim_{t \to \infty} \frac{-1}{s} \left[ e^{-\infty} - e^0 \right]
+\\
+&= \frac{-1}{s} \left[ 0 - 1 \right]
+\\
+&= \frac{-1}{s} (-1) = \frac{1}{s}
+\end{align*}
+\[
+\Rightarrow\int_0^\infty e^{-st} f(t) \, dt = \frac{1}{s}
+\]
+\noindent
+إذا كان \( s > 0 \)، فإن التكامل أعلاه موجود ونحصل على
+\section{تحويل لايلاس لبعض الدوال}
+\begin{align}
+	\mathcal{L}\{1\}         &= \frac{1}{s}      \\
+	\mathcal{L}\{t^n\}       &= \frac{n!}{s^{n+1}}   \quad (n = 1, 2, 3, \dots) \\
+	\mathcal{L}\{e^{kt}\}    &= \frac{1}{s-k}        \\
+	\mathcal{L}\{\sin(kt)\}  &= \frac{k}{s^2+k^2} \\
+	\mathcal{L}\{\cos(kt)\} &= \frac{s}{s^2+k^2}   \\
+	\mathcal{L}\{\sinh(kt)\} &= \frac{k}{s^2-k^2}   \\
+	\mathcal{L}\{\cosh(kt)\} &= \frac{s}{s^2-k^2}    \
+\end{align}
+
+\begin{example}
+	احسب تحويل لابلاس للدالة $f(t) = e^{kt}$
+\end{example}
+\noindent
+\textbf{الحل}\\
+\noindent
+باستخدام تعريف تحويل لابلاس
+\begin{align*}
+	F(s) &= \LL[f(t)] = \int_{0}^{\infty} e^{-st} f(t)\\
+	&= 
+\end{align*}

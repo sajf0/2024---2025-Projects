@@ -78,15 +78,12 @@ B_n(f(t); x) \geq 0 \iff f(t) \geq 0
 	&= \frac{n-1}{n+\beta} \sum_{k=0}^{\infty} p_{n, k}(x) \int_{0}^{\infty} p_{n, k}(t) (nt + \alpha) \, dt\\
 	&= \frac{n-1}{n+\beta} \sum_{k=0}^{\infty} p_{n, k}(x) \left[n\int_{0}^{\infty} t p_{n, k}(t\, dt) + \alpha \int_{0}^{\infty} \alpha p_{n,k}(t)\, dt\right]\\
 	&= \frac{n-1}{n+\beta} \sum_{k=0}^{\infty} p_{n, k}(x) \left[\textstyle
-	\frac{n(k+m)!(n-m-2)!}{k!(n-1)!} + \frac{\alpha(k+m)! + (n-m-2)!}{k!(n-1)!}
-	\right]\\
-	&= \frac{n-1}{n+\beta} \sum_{k=0}^{\infty} p_{n, k}(x) \left[\textstyle
 	\frac{n(k+1)! (n-3)!}{k!(n-1)!} + \frac{\alpha k!(n-2)!}{k!(n-1)!}
 	\right]\\
 	&= \frac{n-1}{n+\beta} \sum_{k=0}^{\infty} p_{n, k}(x) \left[\textstyle
 	\frac{n(k+1)k!(n-3)!}{k!(n-1)(n-2)(n-3)!} + \frac{\alpha k! (n-2)!}{k! (n-1)(n-2)!}
 	\right]\\
-	&= \frac{n-1}{n+\beta} \sum_{k=0}^{\infty} p_{n, k}(x) \frac{n(k+1)!}{(n-2)(n-2)} + \frac{\alpha(n-1)}{n+\beta} \sum_{k=0}^{\infty} p_{n, k}(x) \frac{1}{n-1}\\
+	&= \frac{n-1}{n+\beta} \sum_{k=0}^{\infty} p_{n, k}(x) \frac{n(k+1)!}{(n-1)(n-2)} + \frac{\alpha(n-1)}{n+\beta} \sum_{k=0}^{\infty} p_{n, k}(x) \frac{1}{n-1}\\
 	&= \frac{n(nx + 1)}{(n+\beta)(n-2)} + \frac{\alpha}{n + \beta}\\
 	&= \frac{nx^2 + n}{(n+\beta)(n-2)} + \frac{\alpha}{n + \beta} \to x
 \end{align*}
@@ -105,9 +102,6 @@ B_n(f(t); x) \geq 0 \iff f(t) \geq 0
 	& \qquad\qquad\qquad + \left. 2n\int_{0}^{\infty} p_{n, k} t \alpha \, dt + \int_{0}^{\infty} p_{n, k}(t) \alpha^2 \, dt \right]
 \end{align*}
 \begin{align*}
-	&= \frac{n-1}{(n+\beta)^2} \sum_{k=0}^{\infty}p_{n, k}(x) \left[\textstyle
-	\frac{n^2 (k+m)! (n-m-2)!}{k!(n-1)!} 
-	\frac{2n \alpha(k+m)!(n-m-2)!}{k!(n-1)!} + \frac{\alpha^2 (k+m)!(n-m-2)!}{k!(n-1)!}\right]\\
 	&= \frac{n-1}{(n+\beta)^2} \sum_{k=0}^{\infty}p_{n, k}(x) \left[\textstyle
 	\frac{n^2(k+2)(n-4)!}{k!(n-1)!} + \frac{2n\alpha(k+1)(n-3)!}{k!(n-1)!} + \frac{\alpha^2 k!(n-2)!}{k!(n-1)!}
 	\right]\\
@@ -170,5 +164,5 @@ B_n(f(t); x) \geq 0 \iff f(t) \geq 0
 	&= \sum_{k=0}^{\infty} p_{n+2, k}(x) \left[\frac{k^2+5k+6}{(n-2)(n-3)}\right]\\
 	&= \frac{1}{(n-2)(n-3)} \sum_{k=0}^{\infty} p_{n+2, k}(x) \left[k^2+5k+6\right]\\
 	&= \frac{1}{(n-2)(n-3)} \left[\sum_{k=0}^{\infty} p_{n+2, k}(x) k^2+5\sum_{k=0}^{\infty} p_{n+2, k}(x)  k + 6\sum_{k=0}^{\infty} p_{n+2, k}(x) \right]\\
-	&= \frac{(n-2)^2x^2 + (n+2)x^2 + (n+2)x + 5(n+2)x+6}{(n-2)(n-3)}
+&= \frac{(n+2)(n+3)x^2 + 6(n+2)x + 6}{(n-2)(n-3)}
 \end{align*}

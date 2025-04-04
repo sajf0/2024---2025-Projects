@@ -4,7 +4,7 @@
 \LoadClass[14pt, a4paper]{extreport}
 
 \RequirePackage[
-top=1.5in,
+top=1in,
 left=1in,
 right=1in
 ]{geometry}
@@ -88,7 +88,7 @@ right=1in
 }
 
 \def\@makeschapterhead#1{%
-	\vspace*{1cm}
+	\vspace*{0cm}
 	{\centering\Large\bfseries #1\par}
 	\vspace{1cm}	
 }

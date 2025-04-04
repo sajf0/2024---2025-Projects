@@ -1,5 +1,5 @@
 \chapter{تحسين مؤثر لوباس الاعتيادي}
-\section{مؤثر لوباس (Lupas) الاعتيادي}
+\section{مؤثر لوباس (Lupas) الاعتيادي [2]}
 
 تعرف متتابعة من المؤثرات الخطية الموجبة من الفضاء $C_h[0, \infty)$ إلى نفسه كما يلي:
 \[
@@ -32,7 +32,7 @@ p_{n,k} (x) = \binom{n+k-1}{k} x^k (1+x)^{-(n+k)}, \quad x \in [0, \infty)
 \begin{english}
 2)	$\begin{aligned}[t]
 		\sum_{k=0}^{\infty} k p_{n,k}(x) &= \sum_{k=0}^{\infty} k \binom{n+k-1}{k} x^k (1+x)^{-(n+k)} \\
-		&= \sum_{k=0}^{\infty} k \frac{(n+k-1)!}{k(k-1)!(n-1)!} x^k (1+x)^{-(n+k)} \\
+		&= \sum_{k=0}^{\infty} k \frac{(n+k-1)!}{k!(n-1)!} x^k (1+x)^{-(n+k)} \\
 		&= 0 + \sum_{k=1}^{\infty} k \frac{(n+k-1)!}{k(k-1)!(n-1)!} x^k (1+x)^{-(n+k)} \\
 		&= \sum_{k=0}^{\infty} \frac{(n+k)(n+k-1)!}{k!(n-1)!} x^{k+1} (1+x)^{-(n+k+1)} \\
 		&= \frac{x}{1+x} \sum_{k=0}^{\infty} (n+k) p_{n,k}(x)
@@ -50,7 +50,7 @@ p_{n,k} (x) = \binom{n+k-1}{k} x^k (1+x)^{-(n+k)}, \quad x \in [0, \infty)
 	3) $ 
 	\begin{aligned}[t]
 		\sum_{k=0}^{\infty} k^2 p_{n,k}(x) &= \sum_{k=1}^{\infty} k^2 \binom{n+k-1}{k} x^k (1+x)^{-(n+k)} \\
-		&= \sum_{k=0}^{\infty} k^2 \frac{(n+k-1)!}{k(k-1)!(n-1)!} x^k (1+x)^{-(n+k)} \\
+		&= \sum_{k=0}^{\infty} k^2 \frac{(n+k-1)!}{k!(n-1)!} x^k (1+x)^{-(n+k)} \\
 		&= 0 + \sum_{k=1}^{\infty} k^2 \frac{(n+k-1)!}{k(k-1)!(n-1)!} x^k (1+x)^{-(n+k)} \\
 		&= \sum_{k=0}^{\infty} (k+1) \frac{(n+k)(n+k-1)!}{(k!(n-1)!} x^{k+1} (1+x)^{-(n+k)} \\
 		&= \frac{x}{1+x} \sum_{k=0}^{\infty} (k+1)(n+k) p_{n,k}(x)\\

@@ -1,14 +1,14 @@
 \chapter{مفاهيم اساسية}
 
 \section{العلاقات والدوال}
-\begin{definition}
+\begin{definition}[( العلاقة ) \cite{elemrealanal}]
 	اي مجموعة من الازواج المرتبة تسمى علاقة
 \end{definition}
 \noindent
 \textbf{ملاحظة}\\
 اذا كانت $S$ علاقة. فإن مجموعة كل العناصر التي تكن في المسقط الاول تسمى بالمجال. ومجموعة كل العناصر التي  تكون في المسقط الثاني تسمى بالمدى.
 
-\begin{definition}
+\begin{definition}[( الدالة ) \cite{elemrealanal}]
 	الدالة $F$ هي مجموعة الازواج المرتبة $(x, y)$ بحيث لا يوجد زوجين مرتبين بنفس المسقط الاول. اي ان اذا كان
 	$(x, y) \in F$ و $(x,z) \in F$
 	فإن  $y=z$.
@@ -45,7 +45,7 @@ $(1, 0), (1, 2\pi) \in B$
 \newpage
 \section{الغاية و الاستمرارية}
 
-\begin{definition}
+\begin{definition}[( غاية اليمين واليسار ) \cite{mathanalysis}]
 	لتكن $f$ دالة معرفة على الفترة $(a, b)$. نفرض ان $c\in (a,b)$ اذا كان
 	$f(x) \to A$ عندما $x\to c$ من خلال قيم اكبر من $c$ نقول ان $A$ هي غاية اليمين للدالة $f$ عند $c$ ونكتب
 	\[
@@ -63,7 +63,7 @@ $(1, 0), (1, 2\pi) \in B$
 	f(c^-) = \lim\limits_{x \to c^-} f(x) = B
 \]
 حيث $x$ تاخذ قيم اصغر من $c$.
-\begin{definition} 
+\begin{definition}[( الاستمرارية من اليمين)  \cite{mathanalysis}]
 	اذا كانت الدالة $f$ معرفة عند $c$ وكان $f(c^+) = f(c)$ نقول ان $f$ مستمرة من اليمين عند $c$
 \end{definition}
 
@@ -75,7 +75,7 @@ f(0^+) = \lim\limits_{x \to 0^+} \sqrt{x} = 0 = f(0)
 \]
 \end{example}
 
-\begin{definition} 
+\begin{definition}[( الاستمرارية من اليسار)  \cite{mathanalysis}]
 اذا كانت الدالة $f$ معرفة عند $c$ وكان $f(c^-) = f(c)$ نقول ان $f$ مستمرة من اليسار عند $c$
 \end{definition}
 \noindent
@@ -85,7 +85,7 @@ f(0^+) = \lim\limits_{x \to 0^+} \sqrt{x} = 0 = f(0)
 f(0^-) = \lim\limits_{x \to 0^-} \sqrt{-x} = 0 = f(0)
 \]
 \newpage
-\begin{definition}
+\begin{definition}[( الاستمرارية ) \cite{mathanalysis}]
 	اذا كانت $a<c<b$. فإننا نقول ان $f$ دالة مستمرة عند $x=c$ اذا وقثط اذا  كان
 	\[
 	f(c) = f(c^+) = f(c^-)
@@ -123,7 +123,7 @@ f(0^+) = f(0^-) = 0 = f(0)
 \end{figure}
 \end{example}
 \newpage
-\section{المشتقة}
+\section{المشتقة \cite{realanal}}
 \begin{definition}
 	لتكن $f$ دالة معرفة على الفترة المفتوحة $(a, b)$ ولتكن $c\in (a, b)$ فإن $f$ تكون قابلة للاشتقاق عند $c$ اذا كانت الغاية
 	\[
@@ -132,37 +132,10 @@ f(0^+) = f(0^-) = 0 = f(0)
 	موجودة. وتسمى المشتقة للدالة $f$ عند $c$.
 \end{definition}
 
-\begin{theorem}
-	اذا كانت الدالة $f$ قابلة للاشتقاق عند $c$ فإنها تكون مستمرة عند $c$.
-\end{theorem}
 
-\begin{note}
-	عكس المبرهنة السابقة ليس بالضرورة ان يكون صحيح. 
-\end{note}
-
-\begin{example}
-		
-	لنأخذ الدالة $f(x) = |x|$ التي تكون مستمرة لكل $x\in\R$ بالخصوص عند $x=0$ ولكن
-	\[
-	f'(0) = \lim\limits_{x\to0}\frac{f(x)-f(0)}{x-0} = \lim\limits_{x\to 0}\frac{|x|}{x}
-	\]
-	هذه الغاية غير موجودة لأن 
-	\[
-	\lim\limits_{x\to0^+} \frac{|x|}{x} = \lim\limits_{x\to0^+} \frac{x}{x} =1
-	\]
-	\[
-	\lim\limits_{x\to0^-} \frac{|x|}{x} = \lim\limits_{x\to0^-} \frac{-x}{x}=- 1
-	\]
-\end{example}
-
-	
-	\begin{note}
-		عندما تكون الدالة $f$ غير مستمرة عند النقطة $c$ فإنها تكون غير قابلة للاشتقاق عند $c$.
-	\end{note}
-
-\section{التقارب للدوال} 
+\section{التقارب للدوال \cite{elemrealanal}} 
 لتكن $A\subseteq\R$ ونفرض ان لكل $n\in\N$ توجد دالة $f_n:A\to\R$ سوف نقول ان $(f_n)$ متتابعة من الدوال على $A$.
-\begin{definition}[{[التقارب النقطي]}]
+\begin{definition}[{[التقارب النقطي] \cite{elemrealanal}}]
  	لتكن $(f_n)$ متتابعة من الدوال على $A\subseteq\R$. لتكن $A_0\subseteq A$ ولتكن $f:A_0\to\R$. نقول ان المتتابعة $(f_n)$ تتقارب نقطياً الى الدالة $f$ اذا كان لكل $x\in A_0 $ فإن المتتابعة $f_n(x)$ تتقارب الى $f(x)$.
 \end{definition}
 
@@ -187,7 +160,7 @@ f(0^+) = f(0^-) = 0 = f(0)
 	\]
 \end{example}
 
-\begin{definition}[{[التقارب المنتظم]}]
+\begin{definition}[{[التقارب المنتظم]} \cite{elemrealanal}]
 	متتابعة من الدوال $(f_n)$ على $A\subseteq\R$ تقترب بشكل منتظم الى الدالة $f:A_0\to\R$ اذا كان لكل $\epsilon>0$ يوجد عدد طبيعي $K(\epsilon)$ بحيث اذا كان $n\geq K(\epsilon)$ فإن 
 	\[
 	|f_n(x) - f(x) | < \epsilon, \quad \text{لكل $x\in A_0$}

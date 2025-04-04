@@ -27,16 +27,11 @@ right=1in
 
 \allowdisplaybreaks
 
-% For inserting MATLAB code
-\RequirePackage[framed]{matlab-prettifier}
-\lstset{style=Matlab-editor, basicstyle=\small\ttfamily, morestring=[m]"}
+% For inserting MATLAB
 
 % To use the arabic language
 \RequirePackage{polyglossia}
 
-% For the refrences
-\RequirePackage{biblatex} 
-\DeclareFieldFormat[book]{title}{#1}
 
 % For fancy headers
 \RequirePackage{fancyhdr}
@@ -194,8 +189,6 @@ right=1in
 
 \newenvironment{solution}{\noindent\textbf{الحل}\vspace{5pt}\\}{}
 
-\renewcommand*\newunitpunct{\addcomma\space}
-\def\abx@comma{\ifdim\lastkern>\z@\unkern\fi\abx@puncthook{،}}
 
 \newcommand{\N}{\mathbb{N}}
 \newcommand{\Z}{\mathbb{Z}}
