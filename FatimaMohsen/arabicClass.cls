@@ -177,7 +177,7 @@ right=1in
 
 \newtheorem{definition}{تعريف}[section]
 \newtheorem{example}{مثال}[section]
-\newtheorem{corollary}{نتيجة}[section]
+\newtheorem{corollary}[theorem]{نتيجة}
 \newtheorem*{note}{ملاحظة}
 
 \renewcommand{\thetheorem}{\arabic{chapter} - \arabic{section} - \arabic{theorem}}
