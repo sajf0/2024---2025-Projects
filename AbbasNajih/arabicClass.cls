@@ -132,9 +132,9 @@ right=1in
 	\fi
 	\fi}
 	
-\renewcommand{\thesection}{\arabic{chapter} - \arabic{section}}
+\renewcommand{\thesection}{\arabic{chapter}.\arabic{section}}
 
-\renewcommand{\thesubsection}{\arabic{chapter} - \arabic{section} - \arabic{subsection}}
+\renewcommand{\thesubsection}{\arabic{chapter}.\arabic{section}.\arabic{subsection}}
 
 \titlecontents{chapter}[0em]{\bfseries\vspace{15pt}}{\thecontentslabel: }{}{\hfill}
 
@@ -150,9 +150,9 @@ right=1in
 {\thecontentslabel\hspace*{5pt} }
 {}{\titlerule*[0.3pc]{.}\contentspage}
 
-\renewcommand{\thetable}{\arabic{chapter} - \arabic{table}}
+\renewcommand{\thetable}{\arabic{chapter}.\arabic{table}}
 
-\renewcommand{\thefigure}{\arabic{chapter} - \arabic{figure}}
+\renewcommand{\thefigure}{\arabic{chapter}.\arabic{figure}}
 
 
 \newtheoremstyle{theoremstyle}
@@ -163,11 +163,11 @@ right=1in
 {\bfseries}
 {\vspace{5pt}\\}
 {.5ex}  
-{#1 #2 \textbf{#3}}
+{#2 #1 \textbf{#3}}
 
 \theoremstyle{theoremstyle}
 
-\newtheorem{theorem}{مبرهنة}[section]
+\newtheorem{theorem}{نظرية}[section]
 
 \newtheoremstyle{mystyle}
 {\topsep}
@@ -177,16 +177,16 @@ right=1in
 {\bfseries}
 {\vspace{5pt}\\}
 {.5ex}  
-{#1 #2 \textbf{#3}}
+{#2 #1 \textbf{#3}}
 
 \theoremstyle{mystyle}
 
 \newtheorem{definition}{تعريف}[section]
-\newtheorem{example}{مثال}[section]
+\newtheorem{example}[theorem]{مثال}
 \newtheorem{corollary}{نتيجة}[section]
 \newtheorem*{note}{ملاحظة}
 
-\renewcommand{\thetheorem}{\arabic{chapter} - \arabic{section} - \arabic{theorem}}
+\renewcommand{\thetheorem}{\arabic{chapter}.\arabic{section}.\arabic{theorem}}
 \renewcommand{\thedefinition}{\arabic{chapter} - \arabic{section} - \arabic{definition}}
 \renewcommand{\theexample}{\arabic{chapter} - \arabic{section} - \arabic{example}}
 \renewcommand{\thecorollary}{\arabic{chapter} - \arabic{section} - \arabic{corollary}}

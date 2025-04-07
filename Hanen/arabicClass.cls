@@ -197,14 +197,14 @@ right=1in
 \theoremstyle{mystyle}
 
 \newtheorem{definition}{تعريف}[chapter]
-\newtheorem{example}{مثال}[chapter]
+\newtheorem*{example}{مثال}
 \newtheorem{corollary}[theorem]{نتيجة}
 \newtheorem{lemma}[theorem]{ممهدة}
 \newtheorem*{note}{ملاحظة}
 
 \renewcommand{\thetheorem}{\arabic{chapter} - \arabic{theorem}}
 \renewcommand{\thedefinition}{\arabic{chapter} - \arabic{definition}}
-\renewcommand{\theexample}{\arabic{chapter} - \arabic{example}}
+%\renewcommand{\theexample}{\arabic{chapter} - \arabic{example}}
 \renewcommand{\thecorollary}{\arabic{chapter} - \arabic{corollary}}
 
 \newenvironment{myproof}{\noindent\textbf{البرهان}\vspace{5pt}\\ \noindent}{\hfill \(\qedsymbol\)}

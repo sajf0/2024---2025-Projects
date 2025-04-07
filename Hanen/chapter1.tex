@@ -826,4 +826,161 @@ $O(G) = \underbrace{O(H)+O(H)+\cdots+O(h)}_{\text{$k$ من المرات}} $
   \end{theorem}
   
   
+\newpage
+ 
+ \section{تعريف الحلقة}
+ 
+ \begin{definition}
+ 	الحلقة هي ثلاثي مرتب $(R, +, \cdot)$ مكون من مجموعة غير خالية $R$ وعمليتي الجمع والضرب بحيث 
+ 	\begin{enumerate}[label=$\boxed{\arabic*}$]
+ 		\item $(R, +)$ زمرة ابدالية.
+ 		\item  $(R, \cdot) $ شبه زمرة.
+ 		\item العملية $\cdot$ تتوزع على العملية + ، أي أن:
+ 		\begin{gather*}
+ 			a\cdot (b+c) = a\cdot b + a\cdot c \tag{التوزيع من اليسار}\\
+ 			(b + c) \cdot a = b\cdot a + c\cdot a \tag{التوزيع من اليمين}
+ 		\end{gather*}
+ 		لكل $a ,b,c\in R$
+ 	\end{enumerate}
+ \end{definition}
+ 
+ \begin{example}
+ 	الانظمة التالية تمثل حلقات
+ 	$
+ 	(\Z, + ,\cdot), (\Q, + ,\cdot),(\R, + ,\cdot),(\C, + ,\cdot)
+ 	$\\
+ 	بينما الانظمة 
+ 	$
+ 	(\N, +, \cdot), (\R, \cdot, +)
+ 	$
+ 	لا تمثل حلقات
+ \end{example}
+ 
+ \begin{definition}
+ 	يقال ان حلقة $(R, +, \cdot)$ تحتوي على قواسم الصفر ، اذا كان هناك عنصرين $a, b\in R$ بحيث $a\neq 0$ ، $b\neq 0$ مع ذلك فأن $a\cdot b=0$ ، يطلق على العناصر $a,b$ قواسم الصفر
+ \end{definition}
+ 
+ \begin{example}
+ 	الحلقة
+ 	$(\Z_6, +_6, \cdot_6)$ تمتلك قواسم للصفر ، لأن $2\cdot_6 3=0 $ بينما الحلقة 
+ 	$(\Z_7, +_7, \cdot_7)$ لا تمتلك قواسم للصفر.
+ \end{example}
+ 
+ \begin{theorem}
+ 	لتكن $(R, +, \cdot)$ حلقة بحيث $R\neq \{0\}$ ، عندئذٍ تكون العناصر 0 و 1 مختلفة ($0\neq 1$).
+ \end{theorem}
+ 
+ \begin{theorem}
+ 	لتكن $(R, +, \cdot)$ حلقة و $a,b\in R$ فإن 
+ 	$-(a\cdot b) = a\cdot (-b) = (-a)\cdot b$.
+ \end{theorem}
+ 
+ \begin{corollary}
+ 	لكل $a,b\in R$ فإن
+ 	$a\cdot (b-c) = a\cdot b - a\cdot c$\,\,  و \,\,$(b-c) \cdot a = b\cdot a - c\cdot a$\\
+ 	اي ان عملية الضرب تتوزع على الطرح.
+ \end{corollary}
+ 
+ \begin{theorem}
+ 	الحلقة $(R, +, \cdot)$ لا تحتوي على قواسم صفرية اذا وفقط اذا كان قانون الاختصار ينطبق على عملية الضرب.
+ \end{theorem}
+ 
+ \begin{corollary}
+ 	لتكن $(R, +, \cdot)$ حلقة لا تحتوي على قواسم صفرية فإن الحلول الوحيدة للمعادلة $a^2=a$ هي  $a=0, a=1$ 
+ \end{corollary}
+ \noindent
+ \textbf{البرهان}\\
+ \noindent
+ $a^2 =a\Rightarrow a^2-a=0\Rightarrow a\cdot(a-1)=0 $ ، وبما ان $R$ ليس لها قواسم صفرية فإن $a=0$ او $a-1=0$ وبالتالي $a=0 $ أو $a=1$.\qed
+ 
+ \begin{definition}[( الساحة التامة )]
+ 	لتكن $(R, +, \cdot)$ حلقة مع عنصر محايد لعملية الضرب ، نقول ان $(R, +, \cdot)$ ساحة تامة اذا لم تحوي على قواسم الصفر وكانت ابدالية بالنسبة لعملية الضرب.
+ \end{definition}
+ 
+ \begin{example}
+ 	الحلقة $(\Z, +, \cdot)$ هي ساحة تامة لتحقيقها الشروط ، ولكن الحلقة 
+ 	$\Z_6, +_6, \cdot_6$ ليست ساحة تامة لأحتوائها على قواسم الصفر.
+ \end{example}
+ \newpage
+ \section{الحلقة الجزئية}
+ 
+ \begin{definition}
+ 	لتكن $(R, +, \cdot)$ حلقة و أن $\varnothing\neq S\subseteq R$ ، اذا كانت $(S, +, \cdot)$ حلقة بحد ذاتها نقول بأنها حلقة جزئية من $(R, +, \cdot)$ و اختصاراً نقول $S$ حلقة جزئية من $R$.
+ \end{definition}
+ 
+ \begin{note}
+ 	نقول ان $S$ حلقة جزئية من $R$ اذا تحقق الآتي
+ 	\begin{enumerate}[label=$\boxed{\arabic*}$]
+ 		\item $S\neq \varnothing$.
+ 		\item $\forall a,b\in S \Rightarrow a-b\in S$.
+ 		\item $\forall a,b\in S\Rightarrow a\cdot b\in S$.
+ 	\end{enumerate}
+ \end{note}
+ 
+ \begin{example}
+ 	لتكن $S = \{a+b\sqrt{3} : a, b\in \R \}$ فإن $S$ حلقة جزئية من $\R$.
+ \end{example}
+ 
+ \begin{definition}
+ 	لنفرض ان $R$ حلقة ، اذا كان هناك عدد صحيح موجب $n$ بحيث يكون $na=0$ لكل $a\in R$ ، فإن اقل عدد صحيح موجب يحقق هذه الخاصية يسمى المميز للحلقة $R$ و نكتب $\Char R = n$ ، اذا لم يوجد عدد صحيح موجب يحقق هذه الخاصية لجميع عناصر $R$ ، فإننا نقول $R$ ليست لها مميز او يكون المميز للحلقة يساوي 0 ($\Char R=0$)
+ \end{definition}
+ 
+ \begin{example}
+ 	الحلقة 
+ 	$(\Z_4, +_4, \cdot_4) $ تمتلك المميز 4. اي ان $\Char \Z_4=4$
+ \end{example}
+ 
+ \begin{theorem}
+ 	لتكن $R$ حلقة ذات محايد ، فأن $\Char R=n >0$ اذا وفقط اذا كان $n$ هو اقل عدد صحيح موجب بحيث $n1=0$.
+ \end{theorem}
+ \newpage
+ 
+ \section{المثاليات}
+ \begin{definition}
+ 	لتكن $R$ حلقة و $I$ مجموعة جزئية من $R$ ، نقول ان $I$ هي مثالية في $R$ اذا تحققت الشروط
+ 	\begin{enumerate}[label=$\boxed{\arabic*}$]
+ 		\item $a-b\in I, \forall a, b\in I$.
+ 		\item $r\cdot a \in I$ و $a\cdot r\in I$ لكل $r\in R, a\in I$.
+ 	\end{enumerate}
+ \end{definition}
+ 
+ \begin{example}
+ 	المجموعة 
+ 	$I = \{3k : k\in \Z\}$ تمثل مثالية في الحلقة $\Z$.
+ \end{example}
+ \noindent
+ \textbf{الحل}
+ 
+ \setLR
+ \begin{enumerate}[leftmargin=*, label=$\boxed{\arabic*}$]
+ 	\item $\forall n,m\in I \Rightarrow n=3r, m=3s, \exists r,s\in \Z \Rightarrow n-m =3\underbrace{(r-s)}_{\in \Z} \in I$.
+ 	\item $\forall n\in I, \forall r\in \Z \Rightarrow rn = r(3m) = 3\underbrace{(rm)}_{\in \Z} \in I$. 
+ \end{enumerate}
+ 
+ \setRL
+ \section{بعض الانواع الخاصة للمثاليات}
+ 
+ \begin{definition}[( المثالية الاعظمية )]
+ 	لتكن $R$ حلقة و $I$ مثالية فيها ، تسمى $I$ مثالية اعظمية في $R$ ، اذا كانت $I\neq R$ و عندما توجد مثالية $J$ بحيث 
+ 	$I \subseteq J \subseteq R$ فإن $J=R$.
+ \end{definition}
+ 
+ \begin{note}
+ 	لتكن $R$ حلقة و ان $I$ مثالية في $R$ بحيث  $I\neq R$ و $a\in R - I$ فإن
+ 	\begin{enumerate}
+ 		\item $\subset (I, a) \subseteq R $.
+ 		\item  اذا كانت $I$ مثالية اعظمية فإن $(I, a) = R$.
+ 	\end{enumerate}
+ \end{note}
+ 
+ \begin{theorem}
+ 	في الحلقة $\Z$ و حيث $n>1$ ، فأن $(n)$ مثالية اعظمية اذا وفقط اذا كان $n$ عدد أولي.
+ \end{theorem}
+ 
+ \noindent
+ \textbf{البرهان}\\
+ \noindent
+ ($\Leftarrow$) نفرض $(n)$ مثالية اعظمية في $\Z$ ونفرض ان $n$ ليس عدد اولي ، اي يمكن كتابته بالشكل $n=a\cdot b$ لبعض $a, b\in \Z$ ، من الواضح ان $(n) \subset (a)$ لأن $n=a\cdot b$ و لكن $(a)\neq \Z$ وبالتالي حصلنا على $(n) \subset (a) \subset \Z$ وهذا تناقض مع كون $(n)$ مثالية اعظمية.\\
+ ($\Rightarrow$) اذا كان $n$ عدداً اولياً ، نفترض وجود مثالية $I$ في $\Z$ بحيث $(n )\subset I \subset \Z$ ، لنأخذ $a\in I$ حيث $a\notin (n)$ ، بما أن $n$  عدد أولي فأن $\gcd(a, n) = 1$ ، وبالتالي يوجد $x, y\in \Z$ بحيث $ax + ny=1$ وبما ان $I$ مثالية فأن $ax, ny\in I$ وبالتالي $1\in I$ اذن $I = \Z$ وبالتالي $(n)$ مثالية اعظمية.\qed  
+ 
  

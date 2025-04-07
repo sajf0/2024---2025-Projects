@@ -1,157 +1,200 @@
-\chapter{نظرية الحلقات}
+\chapter{التشاكل الزمري والتشاكل الحلقي}
 
-\section{تعريف الحلقة}
+\section{التشاكل الزمري}
 
 \begin{definition}
-	الحلقة هي ثلاثي مرتب $(R, +, \cdot)$ مكون من مجموعة غير خالية $R$ وعمليتي الجمع والضرب بحيث 
-	\begin{enumerate}[label=$\boxed{\arabic*}$]
-		\item $(R, +)$ زمرة ابدالية.
-		\item  $(R, \cdot) $ شبه زمرة.
-		\item العملية $\cdot$ تتوزع على العملية + ، أي أن:
-	\begin{gather*}
-				a\cdot (b+c) = a\cdot b + a\cdot c \tag{التوزيع من اليسار}\\
-				(b + c) \cdot a = b\cdot a + c\cdot a \tag{التوزيع من اليمين}
-	\end{gather*}
-	لكل $a ,b,c\in R$
+	لتكن كل من $(G_1, *)$ و $(G_2, \circ)$ زمرة ، تسمى الدالة $f : G_1\to G_2 $ انها تشاكل زمري اذا حققت الشرط  $f(a * b) = f(a) \circ f(b)$ لكل $a, b \in G_1 $ 
+\end{definition}
+
+\begin{example}
+	لتكن كل من $(G_1, *)$ و $(G_2, \circ)$ زمرة بعنصر محايد $e_1 $ و $e_2$ على التوالي ولتكن الدالة $f : G_1\to G_2 $ معرفة بالشكل 
+	\[
+	f(a) = e_2, \forall a\in G_1
+	\]
+	الدالة $f$ تحقق شرط التشاكل ويسمى هذا التشاكل بالتشاكل التافه.
+\end{example}
+\noindent
+\textbf{الحل}\\
+$
+\forall a, b\in G_1 , \quad f(a * b) = e_2 = e_2 \circ e_2 = f(a) \circ f(b)
+$\\
+بالتالي $f$ دالة تشاكل.
+
+\begin{example}
+	لتكن 
+	$f : (\Z, +) \to (\Z_n, +_n)$ دالة معرفة بالشكل التالي $f(a) = [a], \forall a\in \Z$. بين هل ان $f$ تمثل تشاكل
+\end{example}
+\noindent
+\textbf{الحل}\\
+\noindent
+لكل $a, b\in \Z$
+\[
+f(a + b) = [a + b] = [a] +_n [b] = f(a) +_n f(b)
+\]
+بالتالي $f$ دالة تشاكل.
+
+\begin{definition}
+	ليكن 
+	$f : (G_1, *) \to (G_2, \circ)$ تشاكل زمري ، فإن
+	\begin{enumerate}
+		\item اذا كانت $f$ دالة شاملة فإن التشاكل يسمى تشاكل شامل.
+		\item اذا كانت $f$ دالة متباينة فإن التشاكل يسمى تشاكل متباين.
+		\item اذا كانت $f$ دالة تقابل فإن التشاكل يسمى تشاكل تقابلي.
 	\end{enumerate}
 \end{definition}
-
-\begin{example}
-	الانظمة التالية تمثل حلقات
-	$
-	(\Z, + ,\cdot), (\Q, + ,\cdot),(\R, + ,\cdot),(\C, + ,\cdot)
-	$\\
-	بينما الانظمة 
-	$
-	(\N, +, \cdot), (\R, \cdot, +)
-	$
-	لا تمثل حلقات
-\end{example}
-
-\begin{definition}
-	يقال ان حلقة $(R, +, \cdot)$ تحتوي على قواسم الصفر ، اذا كان هناك عنصرين $a, b\in R$ بحيث $a\neq 0$ ، $b\neq 0$ مع ذلك فأن $a\cdot b=0$ ، يطلق على العناصر $a,b$ قواسم الصفر
-\end{definition}
-
-\begin{example}
-	الحلقة
-	 $(\Z_6, +_6, \cdot_6)$ تمتلك قواسم للصفر ، لأن $2\cdot_6 3=0 $ بينما الحلقة 
-	$(\Z_7, +_7, \cdot_7)$ لا تمتلك قواسم للصفر.
-\end{example}
-
+\newpage
 \begin{theorem}
-	لتكن $(R, +, \cdot)$ حلقة بحيث $R\neq \{0\}$ ، عندئذٍ تكون العناصر 0 و 1 مختلفة ($0\neq 1$).
+	ليكن 	$f : (G_1, *) \to (G_2, \circ)$ تشاكل زمري ، فإن
+	\begin{enumerate}[leftmargin=*]
+		\item $f(e_1) = e_2$.
+		\item  $f(a^{-1}) = [f(a)]^{-1}$.
+	\end{enumerate}
 \end{theorem}
-
-\begin{theorem}
-	لتكن $(R, +, \cdot)$ حلقة و $a,b\in R$ فإن 
-	$-(a\cdot b) = a\cdot (-b) = (-a)\cdot b$.
-\end{theorem}
-
-\begin{corollary}
-	لكل $a,b\in R$ فإن
-	 $a\cdot (b-c) = a\cdot b - a\cdot c$\,\,  و \,\,$(b-c) \cdot a = b\cdot a - c\cdot a$\\
-	 اي ان عملية الضرب تتوزع على الطرح.
-\end{corollary}
-
-\begin{theorem}
-	الحلقة $(R, +, \cdot)$ لا تحتوي على قواسم صفرية اذا وفقط اذا كان قانون الاختصار ينطبق على عملية الضرب.
-\end{theorem}
-
-\begin{corollary}
-	لتكن $(R, +, \cdot)$ حلقة لا تحتوي على قواسم صفرية فإن الحلول الوحيدة للمعادلة $a^2=a$ هي  $a=0, a=1$ 
-\end{corollary}
 \noindent
 \textbf{البرهان}\\
 \noindent
-$a^2 =a\Rightarrow a^2-a=0\Rightarrow a\cdot(a-1)=0 $ ، وبما ان $R$ ليس لها قواسم صفرية فإن $a=0$ او $a-1=0$ وبالتالي $a=0 $ أو $a=1$.\qed
-
-\begin{definition}[( الساحة التامة )]
-	لتكن $(R, +, \cdot)$ حلقة مع عنصر محايد لعملية الضرب ، نقول ان $(R, +, \cdot)$ ساحة تامة اذا لم تحوي على قواسم الصفر وكانت ابدالية بالنسبة لعملية الضرب.
-\end{definition}
-
-\begin{example}
-	الحلقة $(\Z, +, \cdot)$ هي ساحة تامة لتحقيقها الشروط ، ولكن الحلقة 
-	$\Z_6, +_6, \cdot_6$ ليست ساحة تامة لأحتوائها على قواسم الصفر.
-\end{example}
-\newpage
-\section{الحلقة الجزئية}
+1. $f(e_1)  \circ e_2= f(e_1 * e_1) = f(e_1) \circ f(e_1)$ وبقانون الاختصار نحصل على $f(e_1) = e_2$
+2. $f(e_1) = f(a * a^{-1}) = f(a) \circ f(a^{-1})$\\
+\hspace*{9pt} $f(e_1) = f(a^{-1} * a) = f(a^{-1}) \circ f(a)$\\
+\hspace*{9pt} بالتالي $f(a^{-1}) = [f(a)]^{-1}$
 
 \begin{definition}
-	لتكن $(R, +, \cdot)$ حلقة و أن $\varnothing\neq S\subseteq R$ ، اذا كانت $(S, +, \cdot)$ حلقة بحد ذاتها نقول بأنها حلقة جزئية من $(R, +, \cdot)$ و اختصاراً نقول $S$ حلقة جزئية من $R$.
-\end{definition}
-
-\begin{note}
-	نقول ان $S$ حلقة جزئية من $R$ اذا تحقق الآتي
-	\begin{enumerate}[label=$\boxed{\arabic*}$]
-		\item $S\neq \varnothing$.
-		\item $\forall a,b\in S \Rightarrow a-b\in S$.
-		\item $\forall a,b\in S\Rightarrow a\cdot b\in S$.
-	\end{enumerate}
-\end{note}
-
-\begin{example}
-	لتكن $S = \{a+b\sqrt{3} : a, b\in \R \}$ فإن $S$ حلقة جزئية من $\R$.
-\end{example}
-
-\begin{definition}
-	لنفرض ان $R$ حلقة ، اذا كان هناك عدد صحيح موجب $n$ بحيث يكون $na=0$ لكل $a\in R$ ، فإن اقل عدد صحيح موجب يحقق هذه الخاصية يسمى المميز للحلقة $R$ و نكتب $\Char R = n$ ، اذا لم يوجد عدد صحيح موجب يحقق هذه الخاصية لجميع عناصر $R$ ، فإننا نقول $R$ ليست لها مميز او يكون المميز للحلقة يساوي 0 ($\Char R=0$)
+		ليكن 	$f : (G_1, *) \to (G_2, \circ)$ تشاكل زمري ، فإن مجموعة كل عناصر المجموعة $G_1$ التي تكون صورتها عنصر المحايد للزمرة $G_2$ تسمى نواة التشاكل ويرمز لها بالرمز $\ker f$ اي
+		\[
+		\ker f = \{a\in G : f(a) = e_2\}
+		\]
 \end{definition}
 
 \begin{example}
-	الحلقة 
-	$(\Z_4, +_4, \cdot_4) $ تمتلك المميز 4. اي ان $\Char \Z_4=4$
-\end{example}
-
-\begin{theorem}
-	لتكن $R$ حلقة ذات محايد ، فأن $\Char R=n >0$ اذا وفقط اذا كان $n$ هو اقل عدد صحيح موجب بحيث $n1=0$.
-\end{theorem}
-\newpage
-
-\section{المثاليات}
-\begin{definition}
-	لتكن $R$ حلقة و $I$ مجموعة جزئية من $R$ ، نقول ان $I$ هي مثالية في $R$ اذا تحققت الشروط
-		\begin{enumerate}[label=$\boxed{\arabic*}$]
-			\item $a-b\in I, \forall a, b\in I$.
-			\item $r\cdot a \in I$ و $a\cdot r\in I$ لكل $r\in R, a\in I$.
-		\end{enumerate}
-\end{definition}
-
-\begin{example}
-	المجموعة 
-	$I = \{3k : k\in \Z\}$ تمثل مثالية في الحلقة $\Z$.
+	لتكن
+	$f : (\R, +) \to (\R-\{0\}, \cdot)$
+	دالة معرفة بالشكل 
+	$f(a) = 2^a, \forall a\in \R$
+	جد نواة التشاكل
 \end{example}
 \noindent
 \textbf{الحل}
-
-\setLR
-\begin{enumerate}[leftmargin=*, label=$\boxed{\arabic*}$]
-	\item $\forall n,m\in I \Rightarrow n=3r, m=3s, \exists r,s\in \Z \Rightarrow n-m =3\underbrace{(r-s)}_{\in \Z} \in I$.
-	\item $\forall n\in I, \forall r\in \Z \Rightarrow rn = r(3m) = 3\underbrace{(rm)}_{\in \Z} \in I$. 
-\end{enumerate}
-
-\setRL
-\section{بعض الانواع الخاصة للمثاليات}
-
-\begin{definition}[( المثالية الاعظمية )]
-	لتكن $R$ حلقة و $I$ مثالية فيها ، تسمى $I$ مثالية اعظمية في $R$ ، اذا كانت $I\neq R$ و عندما توجد مثالية $J$ بحيث 
-	$I \subseteq J \subseteq R$ فإن $J=R$.
-\end{definition}
-
-\begin{note}
-	لتكن $R$ حلقة و ان $I$ مثالية في $R$ بحيث  $I\neq R$ و $a\in R - I$ فإن
-	\begin{enumerate}
-		\item $\subset (I, a) \subseteq R $.
-		\item  اذا كانت $I$ مثالية اعظمية فإن $(I, a) = R$.
-	\end{enumerate}
-\end{note}
-
-\begin{theorem}
-	في الحلقة $\Z$ و حيث $n>1$ ، فأن $(n)$ مثالية اعظمية اذا وفقط اذا كان $n$ عدد أولي.
-\end{theorem}
-
+\begin{align*}
+	\ker f &= \{a \in \R  : f(a) = 1\}\\
+&= \{a\in \R : 2^a = 1\}\\
+&= \{a\in \R : a =0 \}\\
+&= \{0\}
+\end{align*}
+	\begin{example}
+		لتكن 
+		$f : (\Z, +) \to (\Z_n, +_n)$ دالة معرفة بالشكل التالي $f(a) = [a], \forall a\in \Z$. جد نواة التشاكل؟
+	\end{example}
+	\noindent
+	\textbf{الحل}
+	\begin{align*}
+		 \ker f &= \{a \in \Z: f(a) = [0]\}\\
+		 &= \{a\in \Z: [a] = [0]\}\\
+&= (n)
+	\end{align*}
+	
+	\begin{theorem}
+			ليكن 	$f : (G_1, *) \to (G_2, \circ)$ تشاكل زمري ، فإن $\ker f\leq G_1$.
+	\end{theorem}
+	\noindent
+	\textbf{البرهان}\\
+	\noindent
+	بما ان $f(e_1) = e_2$ اذن $e_1\in \ker f$ وبالتالي $\ker f\neq \varnothing$ وبواسطة التعريف $\ker f \subseteq G_1$ \\
+	الآن نفرض $a, b\in \ker f$ اذن $f(a) = f(b) = e_2$ اذن
+	\begin{align*}
+		f(a * b^{-1}) &= f(a) \circ f(b^{-1})\\
+		&= f(a) \circ  [f(b)]^{-1}\\
+		&= e_2 \circ  e_2^{-1}\\
+		&= e_2
+	\end{align*}
+	بالتالي $a * b^{-1} \in \ker f$. اذن $\ker f\leq G_1$.\qed
+	
+	\begin{theorem}
+					ليكن 	$f : (G_1, *) \to (G_2, \circ)$ تشاكل زمري ، فإن $\ker f=\{e_1\}$ اذا وفقط اذا كانت $f$ دالة متباينة.
+	\end{theorem}
+	\noindent
+	\textbf{البرهان}\\
+	\noindent
+	($\Leftarrow$) لنفرض ان $a, b\in G_1$ بحيث $f(a) = f(b)$ اذن $f(a) \circ [f(b)]^{-1} = e_2$ وبالتالــــي $f(a * b^{-1}) = f(a) \circ f(b^{-1}) = e_2$ ولكن $\ker f = \{e_1\}$ اذن $a*b^{-1} = e_1$ اي ان $a = b$. اذن $f$ دالة متباينة.\\
+	($\Rightarrow$) لنفرض ان $a \in \ker f$ بحيث $a\neq e_1$ وبما ان $f(e_1) = e_2$ اذن $f(a) = f(e_1) = e_2$ ولكن $f$ دالة متباينة اذن $a = e_1$ وهذا تناقض اذن $\ker f = \{e_1\}$.\qed
+	\newpage
+	\begin{theorem}
+	ليكن 	$f : (G_1, *) \to (G_2, \circ)$ تشاكل زمري ، ولتكن $(H, *)$ زمرة جزئية من 
+	$(G_1, *)$ فأن $(f(H), \circ )$ زمرة جزئية من $(G_2, \circ)$.
+	\end{theorem}
+	\noindent
+	\textbf{البرهان}\\
+	\noindent
+	بما ان
+	$f(H) = \{ f(h) : h\in H\}$ اذن $f(H) \subseteq G_2$ و $f(H) \neq \varnothing$ لأن $f(e_1) = e_2$ حيث $e_1 \in H$. الآن نفرض $f(h_1) , f(h_2) \in f(H)$ فإن 
+	\[
+	f(h_1) \circ f(h_2)^{-1} = f(h_1) \circ f(h_2^{-1}) = f(h_1 * h_2^{-1} )  = f(e_1)\in f(H). 
+ 	\]
+ 	اذن $(f(H), \circ )$ زمرة جزئية من $(G_2, \circ)$.\qed
+ 	
+ 	\begin{theorem}
+ ليكن $f : (G_1, *) \to (G_2, \circ)$ تشـــــــــــاكل زمـــــــري شـــامل وأن 
+ $(H, *) \trianglelefteq (G_1, *)$ ، فأن\\
+ $(f(H), \circ) \trianglelefteq (G_2, \circ)$
+ ، هذا يعني الصورة التشاكلية الشاملة لأي زمرة جزئية سوية تكون أيضاً زمرة جزئية سوية.
+ 	\end{theorem}
 \noindent
 \textbf{البرهان}\\
 \noindent
-($\Leftarrow$) نفرض $(n)$ مثالية اعظمية في $\Z$ ونفرض ان $n$ ليس عدد اولي ، اي يمكن كتابته بالشكل $n=a\cdot b$ لبعض $a, b\in \Z$ ، من الواضح ان $(n) \subset (a)$ لأن $n=a\cdot b$ و لكن $(a)\neq \Z$ وبالتالي حصلنا على $(n) \subset (a) \subset \Z$ وهذا تناقض مع كون $(n)$ مثالية اعظمية.\\
-($\Rightarrow$) اذا كان $n$ عدداً اولياً ، نفترض وجود مثالية $I$ في $\Z$ بحيث $(n )\subset I \subset \Z$ ، لنأخذ $a\in I$ حيث $a\notin (n)$ ، بما أن $n$  عدد أولي فأن $\gcd(a, n) = 1$ ، وبالتالي يوجد $x, y\in \Z$ بحيث $ax + ny=1$ وبما ان $I$ مثالية فأن $ax, ny\in I$ وبالتالي $1\in I$ اذن $I = \Z$ وبالتالي $(n)$ مثالية اعظمية.\qed  
+ $(f(H), \circ) \leq (G_2, \circ)$ من المبرهنة السابقة ، الآن نفرض ان $f(h) \in f(H)$ و $a\in G_2$. وليكن $a\circ f(h) \circ a^{-1} \in a \circ f(H) \circ a^{-1}$، وبما أن $a\in G_2$ و $f$ دالة شاملة اذن يوجد $b\in G_1$ بحيث ان $a = f(b)$.  اذن
+ $
+ a\circ f(h) \circ a^{-1}= f(b) \circ f(h) \circ f(b)^{-1} = f(b*h*b^{-1})
+ $
+ وبما أن
+ $b * h * b^{-1} \in H$ بالتالي $(f(H), \circ) \trianglelefteq (G_2, \circ)$.\qed
+ 
+ \begin{theorem}
+ ليكن $f : (G_1, *) \to (G_2, \circ)$ تشاكل زمري ولتكن 
+ $(H, \circ) \trianglelefteq (G_2, \circ)$
+ فأن 
+ $(f^{-1}(H), *) \trianglelefteq (G_1, *)$
+ \end{theorem}
+\noindent
+\textbf{البرهان}\\
+\noindent
+لنفرض ان $x \in f^{-1}(H)$ و $a\in G_1$ وليكن 
+$a * x * a^{-1} \in a * f^{-1}(H) *a^{-1}$ بالتالــي
+$f(a * x * a^{-1}) = f(a) * f(x) * [f(a)]^{-1} \in H$ اذن $(f^{-1}(H), *) \trianglelefteq (G_1, *)$.\qed
+\newpage
+\begin{corollary}
+ليكن $f : (G_1, *) \to (G_2, \circ)$ تشاكل زمري فأن 
+$(\ker f, *) \leq (G_1, *)$ 
+هذا يعني ان نواة اي تشاكل زمري يكون زمرة جزئية.
+\end{corollary}
+\noindent
+\textbf{البرهان}\\
+\noindent
+بما ان
+$\ker f = f^{-1}(\{e\})$
+اذن بواسطة المبرهنة السابقة نستنتج ان 
+$(\ker f, *) \leq (G_1, *)$. \qed 
 
+\begin{definition}
+	ليكن 
+	$(G_1, *) , (G_2, \circ)$ زمرتان ، يقال انهما متشاكلتان اذا وجدت دالة بينهما تشاكل تقابلي و نكتب $(G_1, *) \cong (G_2, \circ)$.
+\end{definition}
+
+\begin{example}
+	ببين أن 
+	$(\Z_2, +_2) \cong (\{1,-1\}, \cdot)$.
+\end{example}
+\begin{solution}
+	لتكن 
+	$f  : (\Z_2, +_2) \to (\{1,-1\}, \cdot)$  دالة معرفة بالشكل
+	\[
+	f(0) = 1, \quad f(1) = -1
+	\]
+	اذن نلاحظ
+	$
+	\begin{gathered}[t]
+		f(0 +_2 0) = f(0) = 1 = f(0)\cdot f(0)\\
+		f(1+_2 0) = f(1) = -1 = f(1) \cdot f(0)\\
+		f(1 +_2 1) = f(0) = 1 = f(1) \cdot f(1)
+	\end{gathered}
+	$\\
+	اذن $f$ دالة تشاكل ، ايضاً $f(\Z_2) = \{1,-1\}$ اذن الدالة شاملة وواضح انها متباينة لذلك هي تقابل. اذن 	$(\Z_2, +_2) \cong (\{1,-1\}, \cdot)$.\qed
+\end{solution}
