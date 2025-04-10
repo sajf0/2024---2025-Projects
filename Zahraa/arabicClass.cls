@@ -7,6 +7,7 @@
 \RequirePackage{graphicx}
 
 \RequirePackage[
+bottom=1in,
 top=1in,
 left=1in,
 right=1in
@@ -23,16 +24,8 @@ right=1in
 \RequirePackage{amsmath, amssymb, amsthm}
 \allowdisplaybreaks
 
-% For inserting MATLAB code
-\RequirePackage[framed]{matlab-prettifier}
-\lstset{style=Matlab-editor, basicstyle=\small\ttfamily, morestring=[m]"}
-
 % To use the arabic language
 \RequirePackage{polyglossia}
-
-% For the refrences
-\RequirePackage{biblatex} 
-\DeclareFieldFormat[book]{title}{#1}
 
 \RequirePackage{tocbasic}
 \addtotoclist[report.cls]{toc}
@@ -45,9 +38,9 @@ right=1in
 \pagestyle{fancy}
 \fancyhead{}
 \fancyfoot{}
-\fancyhead[L]{\thepage}
+\fancyhead[L]{\small\thechapter}
 \fancyhead[C]{\small \leftmark}
-\fancyhead[R]{\small \thechapter}
+\fancyhead[R]{ \thepage}
 \renewcommand{\chaptermark}[1]{\markboth{\MakeUppercase{#1}}{}}
 
 % Set the arabic language as default and english as side langiage
@@ -56,6 +49,7 @@ right=1in
 
 % Set the arabic and the english font
 \newfontfamily{\arabicfont}[Script=Arabic]{Times New Roman}
+\newfontfamily{\amiri}{Amiri}[Script=Arabic]
 
 \usepackage[T1]{fontenc}
 \usepackage{times}
@@ -88,6 +82,7 @@ right=1in
 		\fbox{\parbox{1\textwidth}{\centering \thechapter\\[25pt]#1}} 
 		\vspace{20pt}
 	\end{center}     % Start on a new page
+	\thispagestyle{empty}
 	\newpage
 }
 
@@ -190,10 +185,6 @@ right=1in
 \newenvironment{myproof}{\noindent\textbf{البرهان}\vspace{5pt}\\ \noindent}{\hfill \(\qedsymbol\)}
 
 \newenvironment{solution}{\noindent\textbf{الحل}\vspace{5pt}\\}{}
-
-\renewcommand*\newunitpunct{\addcomma\space}
-\makeatletter
-\def\abx@comma{\ifdim\lastkern>\z@\unkern\fi\abx@puncthook{،}}
 
 \newcommand{\N}{\mathbb{N}}
 \newcommand{\Z}{\mathbb{Z}}

@@ -1,13 +1,13 @@
 \chapter{كثيرات حدود شيبشيف من النوع الثاني مع بعض خواصها}
 \section{المقدمة}
-كثيرة حدود شيبشيف هي عبارة عن متتالية من كثيرات حدود متعامدة وهي اربعة انواع كثيرة حدود من النوع الاول و يرمز لها $T_n(x)$ و كثيرات حدود من النوع الثاني و يرمز لها بالرمز $U_n(x)$ وكثيرة حدود من النوع الثالث  ويرمزلها $V_n(x)$ و كثيرة حدود من النوع الرابع و يرمز لها $W_n(x)$. حيث النوع الاول والنوع الثاني  تم اشتقاقها من حلول المعادلة التفاضلية
+كثيرة حدود شيبشيف هي عبارة عن متتالية من كثيرات حدود متعامدة وهي اربعة انواع كثيرة حدود من النوع الاول و يرمز لها $T_n(x)$ و كثيرات حدود من النوع الثاني و يرمز لها بالرمز $U_n(x)$ وكثيرة حدود من النوع الثالث  ويرمزلها $V_n(x)$ و كثيرة حدود من النوع الرابع و يرمز لها $W_n(x)$. حيث النوع الاول والنوع الثاني هما حلول المعادلة التفاضلية
 \begin{equation}
 	(1-x^2)y'' - xy' + n^2 y = 0
 \end{equation}
 $n$ عدد صحيح أكبر من الصفر. و هذه المعادلة لها حلان مستقلان هما
 \begin{align}
-	&T_n(x) = \cos (n \cos^{-1} x) & -1\leq x \leq 1, &\quad n\geq 0 \\
-	&U_n(x) = \sin (n \cos^{-1} x) & -1\leq x \leq 1, &\quad n\geq 0 
+	&\text{النوع الاول}\quad T_n(x) = \cos (n \cos^{-1} x) & -1\leq x \leq 1, &\quad n\geq 0 \\
+	&\text{النوع الثاني} \quad U_n(x) = \sin (n \cos^{-1} x) & -1\leq x \leq 1, &\quad n\geq 0 
 \end{align}
 و هنا سوف نهتم بدراسة النوع الثاني فقط
 
@@ -17,19 +17,26 @@ $n$ عدد صحيح أكبر من الصفر. و هذه المعادلة لها 
 	\[
 	U_n(x) = \frac{\sin(n+1)\theta}{\sin\theta},\quad n\geq 0 \quad -1 \leq x \leq 1
 	\]
-	حيث $x=\cos\theta \iff \theta = \cos^{-1}(x)$
+	حيث $x=\cos\theta \iff \theta = \cos^{-1}(x)$ ، حيث أن 
+\[
+U_0(x) = 1, \quad U_1(x) = \frac{\sin2\theta}{\sin\theta} = \frac{2\sin \theta\cos\theta}{\sin\theta}= 2\cos\theta=2x
+\]
 \end{definition}
 \noindent
 الآن لايجاد الصيغة التكرارية لكثيرة حدود شيبشيف نضع
 \begin{align}
 U_{n+1} (x) &= \frac{\sin(n+2)\theta}{\sin\theta}\notag\\[5pt]
 &= \frac{\sin[(n+1)\theta + \theta]}{\sin \theta}\notag\\[5pt]
-&= \frac{\sin(n+1)\theta\cos\theta + \sin\theta\cos(n+1)\theta}{\sin\theta}\\[5pt]
+&= \frac{\sin(n+1)\theta\cos\theta + \sin\theta\cos(n+1)\theta}{\sin\theta}
+\end{align}
+حيث استخدمنا قانون جمع الزاويتين لدالة $\sin$
+\begin{align}
 	U_{n-1} (x) &= \frac{\sin n\theta}{\sin\theta}\notag\\[5pt]
-&= \frac{\sin[(n+1)\theta + \theta]}{\sin \theta}\notag\\[5pt]
+&= \frac{\sin[(n+1)\theta -\theta]}{\sin \theta}\notag\\[5pt]
  &= \frac{\sin(n+1)\theta\cos\theta - \sin\theta\cos(n+1)\theta}{\sin\theta}
 \end{align}
-حيث استخدمنا المتطابقات المثلثية (دالة الجيب لمجموع و طرح زاويتين). الآن  بجمع المعادلتين (4) و (5) نحصل على
+حيث استخدمنا قانون طرح الزاويتين لدالة $\sin$\\
+الآن  بجمع المعادلتين (4) و (5) نحصل على
 \begin{align*}
 	U_{n+1}(x) + U_{n-1}(x) &= \frac{2\sin(n+1)\theta\cos\theta}{\sin\theta}\\
    &= 2\cos\theta \cdot \frac{\sin(n+1)\theta}{\sin \theta}\\
@@ -39,10 +46,6 @@ U_{n+1} (x) &= \frac{\sin(n+2)\theta}{\sin\theta}\notag\\[5pt]
 \begin{equation}
 	\boxed{U_{n+1}(x) = 2x U_n(x) - U_{n-1}(x), \quad n = 1,2,3,\dots}
 \end{equation}
-نلاحظ
-\[
-U_0(x) = 1, \quad U_1(x) = \frac{\sin2\theta}{\sin\theta} = \frac{2\sin \theta\cos\theta}{\sin\theta}= 2\cos\theta=2x
-\]
 و هذه اول سبع حدود لكثيرات حدود شيبشيف بأستخدام العلاقة التكرارية (6)
 \begin{align*}
 	U_2(x) &= 2x U_1(x) - U_0(x) = 2x(2x) - 1 = 4x^2 - 1\\
@@ -59,7 +62,7 @@ U_0(x) = 1, \quad U_1(x) = \frac{\sin2\theta}{\sin\theta} = \frac{2\sin \theta\c
 		&= 128 x^7 - 192x^5 + 80 x^3 - 80 x
 \end{align*}
 
-\section{التعبير عن الدوال $\mathbf{x}^{\mathbf{n}}$ بكثيرات حدود شيبشيف}
+\section{التعبير عن الدوال \LR{\textit{x}\,\textsuperscript{\textit{n}}} بكثيرات حدود شيبشيف من النوع الثاني}  
 يمكن التعبير عن أي دالة أسية $x^n$ لأي متعددة حدود بإستخدام كثيرات حدود شيبشيف بالشكل التالي
 \begin{align*}
 	&1 = U_0(x)\\
@@ -97,7 +100,7 @@ e^x = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!}
 \]
 بإستخدام كثيرات حدود شيبشيف من النوع الثاني نستطيع التعبير عنها
 \begin{align*}
-	e^x &= U_0(x) + \frac{1}{2}U_1(x) + \frac{1}{2}\frac{1}{4}[U_0(x) + U_2(x)] + \frac{1}{6}\frac{1}{8}[2U_1(x) + U_3(x)]\\
+	e^x &= U_0(x) + \frac{1}{2}U_1(x) + \frac{1}{2}\cdot\frac{1}{4}[U_0(x) + U_2(x)] + \frac{1}{6}\cdot\frac{1}{8}[2U_1(x) + U_3(x)]\\
 	&= U_0(x) + \frac{1}{2}U_1(x) + \frac{1}{8}U_0(x) + \frac{1}{8}U_2(x) + \frac{1}{24}U_1(x) + \frac{1}{48}U_3(x)\\
 	&= \frac{9}{8}U_0(x) + \frac{13}{24}U_1(x) + \frac{1}{8}U_2(x) + \frac{1}{48}U_3(x)
 \end{align*}
@@ -114,7 +117,7 @@ e^x = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!}
 \]
 بإستخدام كثيرات حدود شيبشيف من النوع الثاني نستطيع التعبير عنها
 \begin{align*}
-	\sin x &= \frac{1}{2} U_1(x) - \frac{1}{6}\frac{1}{8}[2U_1(x) + U_3(x)] + \frac{1}{120}\frac{1}{32}[U_5(x) + 5U_1(x) + 4U_3(x)]\\
+	\sin x &= \frac{1}{2} U_1(x) - \frac{1}{6}\cdot\frac{1}{8}[2U_1(x) + U_3(x)] + \frac{1}{120}\cdot\frac{1}{32}[U_5(x) + 5U_1(x) + 4U_3(x)]\\
 	&= \frac{1}{2}U_1(x) - \frac{1}{24}U_1(x) - \frac{1}{48}U_3(x) + \frac{1}{3840}U_5(x)  + \frac{1}{768} U_1(x) + \frac{1}{960} U_3(x)\\
 	&= \frac{353}{768} U_1(x) - \frac{19}{960}U_3(x) + \frac{1}{3840} U_5(x)
 \end{align*}
@@ -144,6 +147,7 @@ e^x = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!}
 	&= \frac{\sin(r\pi)}{\sin\left(\dfrac{r}{n+1}\pi\right)}\\[5pt]
 	&= 0
 \end{align*}
+
 \noindent
 \textbf{برهان خاصية (3)}\\
 \noindent
@@ -168,7 +172,7 @@ x=-1 \Rightarrow \theta = \pi , \quad x=1 \Rightarrow \theta = 0
 
 
 \section{العلاقة بين النوع الاول و النوع الثاني}
-بما أن 
+هناك علاقة وثيقة بين متعددات حدود شيبشيف من النوع الاول  $T_n(x)$ والنوع الثاني $U_n(x)$ حيث ان كلاهما مشتقة من الدوال المثلثية ولهما خصائص متشابهة و بما أن   
 \[
 T_n(x) = \cos(n \theta), \quad U_n(x) = \frac{\sin(n+1)\theta}{\sin\theta}
 \]
@@ -181,13 +185,13 @@ T_{n-1}(x) = \cos(n-1)\theta = \cos(n\theta)\cos\theta + \sin(n\theta)\sin\theta
 \]
 و بالتالي
 \[
-T_{n-1}(x) - T_{n+1}(x) = 2 \sin(n\theta) \sin\theta = 2 \sin^2\theta \frac{\sin(n\theta)}{\sin\theta} 
+T_{n-1}(x) - T_{n+1}(x) = 2 \sin(n\theta) \sin\theta = 2 \sin^2\theta \frac{\sin(n\theta)}{\sin\theta} = 2(1-\cos^2 \theta)\cdot\frac{\sin(n\theta)}{\sin \theta}
 \]
 إذن 
 \begin{equation}
 	T_{n-1}(x) - T_{n+1}(x) = 2 (1-x^2) U_{n-1}(x) 
 \end{equation}
-بطرح المعادلتين (4) و (5) 
+ويمكن الحصول على علاقة اخرى من خلال طرح المعادلتين (4) و (5) ، حيث
 \[
 U_{n+1}(x) - U_{n-1}(x) = \frac{2\sin\theta\cos(n+1)\theta}{\sin\theta} = 2 \cos(n+1)\theta
 \]
@@ -197,4 +201,6 @@ U_{n+1}(x) - U_{n-1}(x) = \frac{2\sin\theta\cos(n+1)\theta}{\sin\theta} = 2 \cos
 \end{equation}
 
 
+\section{استخدامات كلا النوعين}
+يستخدم النوع الاول بشكل اساسي في التقريب متعددات الحدود وتقليل الاخطاء اما النوع الثاني يستخدم في تحليل الدوال وخصائصها علماً ان كلا النوعين يكملان بعضهما البعض في العديد من التطبيقات الرياضية والتحليلية. 
 

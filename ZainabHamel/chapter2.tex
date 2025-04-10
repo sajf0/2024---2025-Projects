@@ -2,7 +2,7 @@
 
 \section{تعاريف و أمثلة}
 
-\begin{definition}[\cite{abstract_algebra2}]
+\begin{definition}
 	لتكن $R$ حلقة (ليس من الضروري تبديلية او تمتلك محايد) المعيار اليساري على $R$ هو مجموعة $M$ مع الشروط التالية
 	\begin{enumerate}
 		\item عملية ثنائية + على $M$ بحيث $(M, +)$ زمرة ابدالية
@@ -80,7 +80,7 @@ nx =
 	\end{tasks}
 
 \section{المعيار الجزئي}
-\begin{definition}[\cite{abstract_algebra1}]
+\begin{definition}
   ليكن $M$ هو معيار يساري على $R$ فإن $\varnothing\neq U\subseteq M$ يسمى معيار جزئي من $M$ اذا تحقق
   \begin{enumerate}
   	\item $(U, +) \leq (M, +)$ (زمرة جزئية)
@@ -111,26 +111,26 @@ nx =
 	\end{enumerate}
 
 	\begin{example}
-		 ليكن $M$ معيار يساري على الحلقة $R$ فإن المجموعة $Rx=\{ax\mid a\in R\}$ هو معيار جزئي من $M$ لكل $x\in M$.
+		 ليكن $M$ معيار يساري على الحلقة $R$ فإن المجموعة $R_x=\{ax\mid a\in R\}$ هو معيار جزئي من $M$ لكل $x\in M$.
 	\end{example}
 	\noindent
 	\textbf{الحل}\\
 	\noindent
-	ليكن $x\in M$ يجب ان نثبت $Rx$ معيار جزئي من $M$ على الحلقة $R$.
+	ليكن $x\in M$ يجب ان نثبت $R_x$ معيار جزئي من $M$ على الحلقة $R$.
 	\begin{enumerate}
 		\item لكل $a,b\in R$:
 		\[
-		ax - bx = \underbrace{(a-b)}_{\in R} x \in Rx
+		ax - bx = \underbrace{(a-b)}_{\in R} x \in R_x
 		\]
-		فإن $(Rx,+)\leq (M,+)$
+		فإن $(R_x,+)\leq (M,+)$
 		\item لكل $a,b\in R$:
 		\[
-		b(ax) = \underbrace{(ba)}_{\in R}x \in Rx
+		b(ax) = \underbrace{(ba)}_{\in R}x \in R_x
 		\]
 	\end{enumerate}
 
 
-\begin{theorem}[\cite{abstract_algebra2}]
+\begin{theorem}
 	لتكن $R$ حلقة و ليكن $M$ معيار يساري على $R$ فإن $N\subseteq M$ يكون معيار جزئي من $M$ اذا و فقط اذا
 	\begin{enumerate}
 		\item $N\neq \varnothing$
@@ -145,7 +145,7 @@ nx =
 
 \section{التشاكل المعياري}
 
-\begin{definition}[\cite{abstract_algebra2}]
+\begin{definition}
 	لتكن $R$ حلقة و ليكن كل من $M$ و $N$ معيار يساري على $R$ فإن الدالة $\phi:M\to N$ تسمى تشاكل معياري يساري اذا كان 
 	\begin{enumerate}
 		\item $\phi(x+y) = \phi(x) + \phi(y)$ لكل $x,y\in M$.
@@ -168,7 +168,7 @@ nx =
 \end{note}
 
 \section{معيار القسمة}
-\begin{theorem}[\cite{abstract_algebra1}]
+\begin{theorem}
 	ليكن $U$ معيار جزئي من المعيار اليساري $M$ على الحلقة $R$. لتكن $M/U$ زمرة القسمة، نعرف عملية الضرب
 	\[
 	\cdot : R \times M/U \to M/U, \quad a(x+U):= ax + U
@@ -210,7 +210,7 @@ nx =
 		&= \alpha[\beta (x+U)]
 	\end{align*}
 \end{enumerate}
-\begin{theorem}[\cite{abstract_algebra2}]
+\begin{theorem}
 	لتكن $R$ حلقة، $M$ معيار يساري على $R$ و $N$ هو معيار جزئي منه. فإن التطبيق الطبيعي
 	\[
 	\pi:M \to M/N, \quad \pi(x) = x+N
@@ -232,7 +232,7 @@ nx =
 	&= r \pi(x)
 \end{align*}
 
-\begin{theorem}[\cite{abstract_algebra2}]
+\begin{theorem}
 	ليكن $M,N$ معايير يسارية على الحلقة $R$، فإن الدالة $\phi:M\to N$ تكون تشاكل معياري اذا و فقط اذا كان
 	\[
 	\phi(rx + y) = r\phi(x) + \phi(y)
@@ -258,7 +258,7 @@ nx =
 	
 \section{مبرهنات التماثل}
 	
-\begin{theorem}[\cite{abstract_algebra2}]
+\begin{theorem}
 		ليكن كل من $M,N$ معيار يساري على الحلقة $R$ و لتكن الدالة $\phi:M\to N$ تشاكل معياري يساري فإن $\ker \phi$ هو معيار جزئي من $M$ و $M/\ker\phi\cong \phi(M)$
 \end{theorem}
 \noindent
@@ -301,7 +301,7 @@ f:M/K \to \phi(M), \quad f(x+K) = \phi(x), \forall x\in M
 \]
 اذن الدالة $f$ شاملة و بالتالي $f$ تماثل معياري و من ثم $M/K\cong\phi(M)$
 %\newpage
-\begin{theorem}[\cite{abstract_algebra2}]
+\begin{theorem}
 	ليكن كل من $A,B$ معيار جزئي من المعيار اليساري $M$ على  الحلقة $R$ فإن
 \[
 (A+B)/B\cong A/(A\cap B)
@@ -341,7 +341,7 @@ a_1 + (A\cap B) = a_2 + (A\cap B) \Rightarrow f(a_1 + b_1) = f(a_2+b_2)
 \boxed{(A+B)/\ker f \cong A/(A\cap B)} \Rightarrow \boxed{(A+B)/B \cong A/(A\cap B)}
 \]
 \newpage
-\begin{theorem}[\cite{abstract_algebra2}]
+\begin{theorem}
 	 ليكن $M$ معيار على الحلقة $R$ و كل من $A, B$ معيار جزئي منه مع $A\subseteq B$ فإن
 	 \[
 	 (M/A) / (B/A) \cong M/B

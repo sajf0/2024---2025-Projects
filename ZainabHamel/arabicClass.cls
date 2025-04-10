@@ -30,21 +30,6 @@ right=1in
 % To use the arabic language
 \RequirePackage{polyglossia}
 
-% For the refrences
-\RequirePackage{biblatex} 
-\DeclareCiteCommand{\supercite}[\mkbibsuperscript]
-{\iffieldundef{prenote}
-	{}
-	{\BibliographyWarning{Ignoring prenote argument}}%
-	\iffieldundef{postnote}
-	{}
-	{\BibliographyWarning{Ignoring postnote argument}}}
-{\usebibmacro{citeindex}%
-	\bibopenbracket\usebibmacro{cite}\bibclosebracket}
-{\supercitedelim}
-{}
-\let\cite=\supercite
-\DeclareFieldFormat[book]{title}{#1}
 
 \RequirePackage{tocbasic}
 \addtotoclist[report.cls]{toc}
@@ -206,10 +191,6 @@ right=1in
 \newenvironment{myproof}{\noindent\textbf{البرهان}\vspace{5pt}\\ \noindent}{\hfill \(\qedsymbol\)}
 
 \newenvironment{solution}{\noindent\textbf{الحل}\vspace{5pt}\\}{}
-
-\renewcommand*\newunitpunct{\addcomma\space}
-\makeatletter
-\def\abx@comma{\ifdim\lastkern>\z@\unkern\fi\abx@puncthook{،}}
 
 \newcommand{\N}{\mathbb{N}}
 \newcommand{\Z}{\mathbb{Z}}

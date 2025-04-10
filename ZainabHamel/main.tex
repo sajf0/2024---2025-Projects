@@ -1,6 +1,5 @@
 \documentclass{arabicClass}
 
-\addbibresource{references.bib}  
 
 \begin{document}
 	\abovedisplayskip=7pt
@@ -22,11 +21,30 @@
 	
 	\input{conclusion}
 	
-	\chapter*{المراجع}
+	\begin{thebibliography}{9}
+		\addcontentsline{toc}{chapter*}{المصادر}
+		\begin{english}
+			\bibitem{first_course}
+		John B. Fraleigh.  
+		\textit{A First Course in Abstract Algebra}.  
+		Addison-Wesley Publishing, 2003.
+		
+		\bibitem{abstract_algebra3}
+		Jonathon K. Hodge, Steven Schlicker, and Ted Sundstrom.  
+		\textit{Abstract Algebra}.  
+		CRC Press, 2024.
+		
+		\bibitem{abstract_algebra1}
+		Gerhard Rosenborg, Annika Schuernborg, and Leonard Wienke.  
+		\textit{Abstract Algebra With Applications to Galois Theory, Algebraic Geometry, Representation Theory and Cryptography}.  
+		Mathematics Subject Classification, 2020.
+		
+		\bibitem{abstract_algebra2}
+		David S. Dummit and Richard M. Foote.  
+		\textit{Abstract Algebra}.  
+		University of Vermont, 2004.
+		\end{english}
+		
+	\end{thebibliography}
 	
-	\addcontentsline{toc}{chapter*}{المراجع}
-	\nocite{*}
-	\begin{english}
-			\printbibliography[heading=none]
-	\end{english}
 \end{document}

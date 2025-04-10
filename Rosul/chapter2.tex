@@ -204,3 +204,115 @@ R_1 \to 6R_2 + 29R_1 \quad
 \[
 X=1, \quad Y=2 
 \]
+\newpage
+\section{طريقة تجزئة \textit{LU}}
+لدينا النظام الخطي $AX=b$ ، حيث $A$ مصفوفة المعاملات و $X$ قيم المتغيرات و $b$ متجه القيم المطلقة ، لحل هذا النظام بطريقة تجزئة $LU$  نقوم أولاً بكتابة المصفوفة $A$ بالشكل 
+\begin{equation*}
+	A = LU
+\end{equation*}
+حيث $L$ مصفوفة مثلثية سفلى ، و $U$ مصفوفة مثلثية عليا. بعد ذلك نعوض هذا التحليل في النظام الاصلي ليصبح لدينا 
+\[
+(LU)X = b
+\]
+ومن ثم بأستخدام خواص فضاء المتجهات نحصل على $L(UX) = b$ ، لنفرض ان $UX = Y$ فنختزل النظام الى $L Y = b$ الذي يمكن حله بطريقة التعويض الامامي للحصول على المتجه $Y$ فيصبح متجه معلوم ، ونحل النظام $UX = Y$ بالتعويض الخلفي للحصول على المتجه $X$.\\
+\noindent
+\textbf{مثال:}\\
+\noindent
+حل النظام الخطي التالي بطريقة تجزئة $LU$
+\begin{align*}
+	2X_1+ 3X_2 &= 8\\
+	4X_1 + 7X_2 &= 18
+\end{align*}
+\noindent
+\textbf{الحل}\\
+\noindent
+مصفوفة النظام هي 
+\[
+A = 
+\begin{bmatrix}
+	2&3\\
+	4&7
+\end{bmatrix}
+\]
+نحلل المصفوفة بالشكل $A = LU$ حيث
+\[
+L = 
+\begin{bmatrix}
+	1 & 0\\
+	a & 1
+\end{bmatrix},\quad
+U = 
+\begin{bmatrix}
+	b & c\\
+	0 & d
+\end{bmatrix}
+\]
+\newpage\noindent
+بالتالي
+\begin{align*}
+	\begin{bmatrix}
+		2&3\\
+		4&7
+	\end{bmatrix} =
+	\begin{bmatrix}
+		1 & 0\\
+		a & 1
+	\end{bmatrix}\cdot
+	\begin{bmatrix}
+		b & c\\
+		0 & d
+	\end{bmatrix}
+	= 
+	\begin{bmatrix}
+		b & c\\
+		ab & ac + d
+	\end{bmatrix}
+\end{align*}
+اذن 
+\begin{align*}
+	b = 2,\quad
+	c&= 3\\
+	ab = 4,\quad
+	ac + d &= 7 
+\end{align*}
+وبالتالي
+\[
+a=2, \quad b=2, \quad c=3, \quad d=1
+\]
+\[
+\Rightarrow 
+L = 
+\begin{bmatrix}
+	1&0\\
+	2&1
+\end{bmatrix},
+\quad
+U=
+\begin{bmatrix}
+	2&3\\
+	0&1
+\end{bmatrix}
+\]
+نفرض ان $ UX = Y$ حيث 
+\[
+Y = 
+\begin{bmatrix}
+	Y_1\\
+	Y_2
+\end{bmatrix}
+\]
+اذن يصبح لدينا النظام $LY= b$ اي ان 
+\begin{align*}
+	Y_1 &= 8\\
+	2Y_1 + Y_2 &= 18
+\end{align*}
+اذن $Y_1=8, Y_2=2 $ وبالتعويض في $UX = Y$ يصبح لدينا
+\begin{align*}
+	2X_1 + 3X_2 &= 8\\
+	X_2 &= 2
+\end{align*}
+اذن $2X_1+3(2) = 8 $ وبالتالي $X_1=1 $ ، اذن الحل النهائي
+\[
+X_1 = 1, \quad X_2 = 2
+\]
+
