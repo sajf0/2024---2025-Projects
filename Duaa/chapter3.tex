@@ -1,8 +1,6 @@
 \chapter{انواع فضاء المتجهات}
 
-\section{الفضاء الاقليدي $\R^n$}
-\subsection{التعريف}
-
+\section[متجه الفضاء الاقليدي $\R^n$]{متجه الفضاء الاقليدي $\R^n$ \cite{key3}}
 مجموعة العناصر على الشكل
 \[
 \R^n = \{(x_1, x_2, \dots, x_n) : x_i \in \R\}
@@ -15,21 +13,10 @@
 \alpha (x_1, x_2, \dots, x_n)  = (\alpha x_1,\alpha x_2, \dots, \alpha x_n) 
 \]
 
-\subsection{الاساس والبعد}
-اساس الفضاء الاقليدي هو المجموعة $B = \{e_1, e_2, \dots, e_n \}$
-حيث 
-\[
-e_1 = (1,0,\dots,0) , e_2 = (0,1,\dots,0) , \dots , e_n = (0,0,\dots,1)
-\]
-ومن تعريف البعد : $\dim\R^n = n$
 
-\subsection{الضرب النقطي}
-يعرف الضرب النقطي في الفضاء الاقليدي كالآتي : لكل $x, y\in \R^n$ فإن
-\[
-x \cdot y = \sum_{i=1}^{n} x_i y_i
-\]
 
-\subsection{اثبات ان $\R^n$ فضاء متجهات}
+\subsection*{اثبات ان $\R^n$ فضاء متجهات}
+حسب التعريف 2 - 1 لكي يكون فضاء متجهات يجب ان يحقق ما يلي\\
 
 \setLR
 \noindent
@@ -73,7 +60,7 @@ $\\
 \\
 5) $
 \begin{aligned}[t]
-	\forall x &= (x_1, x_2, \dots, x_n) \in \R^n: 1\cdot x\\
+	\forall x = (x_1, x_2, \dots, x_n) \in \R^n: 1\cdot x
 	&= 1 \cdot (x_1, x_2, \dots, x_n)\\
 	&= (x_1, x_2, \dots, x_n) \\
 	&= x
@@ -82,7 +69,7 @@ $\\
 \noindent
 6) $
 \begin{aligned}[t]
-	\forall \alpha&\in\R , \forall x,y \in \R^n: \alpha (x+y)\\
+	\forall \alpha\in\R , \forall x,y \in \R^n: \alpha (x+y)
 	&= \alpha(x_1+y_1, x_2+y_2, \dots, x_n+y_n)\\
 	&= (\alpha(x_1+y_1), \alpha(x_2+y_2), \dots, \alpha(x_n+y_n))\\
 	&= (\alpha x_1+\alpha y_1, \alpha x_2+\alpha y_2, \dots, \alpha x_n+\alpha y_n)\\
@@ -92,7 +79,7 @@ $\\\\
 \noindent
 7) $
 \begin{aligned}[t]
-	\forall \alpha, \beta &\in \R, \forall x\in \R^n: (\alpha + \beta)\cdot x\\
+	\forall \alpha, \beta \in \R, \forall x\in \R^n: (\alpha + \beta)\cdot x
 	&= (\alpha + \beta)\cdot (x_1, x_2, \dots, x_n)\\
 	&= ((\alpha+\beta)x_1, (\alpha+\beta)x_2, \dots, (\alpha+\beta)x_n)\\
 	&= (\alpha x_1 + \beta x_1, \alpha x_2 + \beta x_2, \dots , \alpha x_n + \beta x_n)\\
@@ -102,7 +89,7 @@ $\\
 \\
 8) $
 \begin{aligned}[t]
-	\forall \alpha, \beta &\in \R, \forall x\in \R^n: (\alpha \beta)\cdot x\\
+	\forall \alpha, \beta \in \R, \forall x\in \R^n: (\alpha \beta)\cdot x
 	&= (\alpha\beta)(x_1, x_2, \dots, x_n)\\
 	&= (\alpha\beta x_1, \alpha\beta x_2, \dots, \alpha\beta x_n)\\
 	&= (\alpha(\beta x_1), \alpha(\beta x_2), \dots, \alpha(\beta x_n))\\
@@ -111,23 +98,38 @@ $\\
 $
 \selectlanguage{arabic}
 \begin{example}
-	المجموعة 
-	$W = \{(x_1, x_2, x_3) \in \R^3: x_1+x_2+x_3=0\}$
-	تمثل فضاء جزئي من $\R^3$ ، اوجد القاعدة والبعد لـــ $W$.
+	لتكن $W = \{ (x, y, z) \in \mathbb{R}^3 \mid x + y + z = 0 \}$. أثبت أن $W$ فضاء جزئي من $\mathbb{R}^3$.
 \end{example}
+
 \begin{solution}
-	بما ان $x_1+x_2+x_3=0 $ اذن $x_3=-x_1-x_2 $ وبالتالي
-	\begin{align*}
-		(x_1, x_2, x_3) &= (x_1, x_2, -x_1-x_2)\\
-		&= x_1(1,0,-1) + x_2 (0,1,-1)
-	\end{align*}
-	اذن القاعدة تكون 
-	$B=\{(1,0,-1), (0,1,-1)\}$ اذن ومنه نحصل على البعد $\dim W=2$
+	للتحقق من أن $W$ فضاء جزئي من $\mathbb{R}^3$، نتحقق من الشرطين:\\
+	\noindent
+	أولاً، إذا كانت $\vec{u} = (x_1, y_1, z_1) \in W$ و$\vec{v} = (x_2, y_2, z_2) \in W$، فإن:
+	\[
+	x_1 + y_1 + z_1 = 0 \quad \text{و} \quad x_2 + y_2 + z_2 = 0
+	\]
+	وبالتالي:
+	\[
+	\vec{u} + \vec{v} = (x_1 + x_2, y_1 + y_2, z_1 + z_2)
+	\]
+	ومجموع مركباته:
+	\[
+	(x_1 + x_2) + (y_1 + y_2) + (z_1 + z_2) = (x_1 + y_1 + z_1) + (x_2 + y_2 + z_2) = 0 + 0 = 0
+	\]
+	أي أن $\vec{u} + \vec{v} \in W$.\\
+	\noindent
+	ثانياً، إذا كانت $\vec{u} = (x, y, z) \in W$ و$c \in \mathbb{R}$، فإن:
+	\[
+	c\vec{u} = (cx, cy, cz) \quad \text{و} \quad cx + cy + cz = c(x + y + z) = c \cdot 0 = 0
+	\]
+	إذًا $c\vec{u} \in W$.
+	
+	بما أن الشروط الثلاثة محققة، فإن $W$ فضاء جزئي من $\mathbb{R}^3$.
 \end{solution}
 
-\section{فضاء المصفوفات $M_{m\times n}(\R)$}
+
+\section[فضاء المصفوفات $M_{m\times n}(\R)$]{فضاء المصفوفات $M_{m\times n}(\R)$ \cite{key2}}
 تعرف $M_{m\times n}(\R)$ على انها مجموعة كل المصفوفات ذات البعد $m \times n$ على حقل الاعداد الحقيقية $\R$. 
-\subsection{عمليتي الجمع والضرب}
 \textbf{الجمع:} لتكن $A=[a_{ij}]$ و $B=[b_{ij}]$ مصفوفات من $M_{m\times n}(\R)$ فإن 
 \[
 A + B = [a_{ij} + b_{ij}] , 1\leq i\leq m, 1\leq j\leq n  
@@ -137,15 +139,9 @@ A + B = [a_{ij} + b_{ij}] , 1\leq i\leq m, 1\leq j\leq n
 cA = [c\, a_{ij}] , 1\leq i\leq m, 1\leq j\leq n
 \]
 
-\subsection{الاساس والبعد}
-اساس الفضاء $M_{m\times n}(\R)$ هو المجموعة  $B = \{E_{ij} : 1\leq i\leq m, 1\leq j\leq m\}$ حيث ان $E_{ij}$ مصفوفة تكون في الصف $i$ والعمود $j$ تساوي 1 وباقــــي المواقع تساوي صفراً. اذن البعد $\dim(M_{m\times n}(\R))=m\times n$
-\subsection{الضرب النقطي}
-لكل $A, B\in M_{m\times n}(\R)$ يعرف الضرب النقطي كالآتي
-\[
-A\cdot B = \sum_{i=1}^{m}\sum_{j=1}^{n} a_{ij}b_{ij}
-\]
 
-\subsection{اثبات ان $M_{n\times m}(\R)$ فضاء متجهات}
+\subsection*{اثبات ان $M_{n\times m}(\R)$ فضاء متجهات}
+حسب التعريف 2 - 1 لكي يكون فضاء متجهات يجب ان يحقق ما يلي\\
 
 \selectlanguage{english}
 \noindent
@@ -184,14 +180,14 @@ $
 4. $A + (-A) = [a_{ij}] + [-a_{ij}] = [0] =0$  \\
 5. $
 \begin{aligned}[t]
-	\forall A &\in M_{n\times m}(\R) : 1\cdot A\\
+	\forall A \in M_{n\times m}(\R) : 1\cdot A
 	&= 1\cdot [a_{ij}]\\
 	&= [a_{ij}] =A
 \end{aligned}
 $\\
 6. $
 \begin{aligned}[t]
-	\forall\alpha\in\R, &\forall A, B\in M_{n\times m}(\R) : \alpha(A+B)\\
+	\forall\alpha\in\R, \forall A, B\in M_{n\times m}(\R) : \alpha(A+B)
 	&= \alpha [a_{ij}+b_{ij}]\\
 	&= [\alpha (a_{ij} + b_{ij})]\\
 	&= [\alpha a_{ij} + \alpha b_{ij}]\\
@@ -201,7 +197,7 @@ $\\
 $\\
 7. $
 \begin{aligned}[t]
-	\forall \alpha, \beta &\in \R, \forall A\in M_{n\times m}(\R) : (\alpha+\beta)A\\
+	\forall \alpha, \beta \in \R, \forall A\in M_{n\times m}(\R) : (\alpha+\beta)A
 	&= (\alpha+\beta) [a_{ij}]\\
 	&= [(\alpha+\beta)a_{ij}]\\
 	&= [\alpha a_{ij} + \beta a_{ij}]\\
@@ -210,7 +206,7 @@ $\\
 $\\
 8. $
 \begin{aligned}[t]
-	\forall \alpha, \beta &\in \R, \forall A\in M_{n\times m}(\R) : (\alpha\beta)A\\
+	\forall \alpha, \beta \in \R, \forall A\in M_{n\times m}(\R) : (\alpha\beta)A
 	&= (\alpha\beta) [a_{ij}]\\
 	&= [(\alpha\beta)a_{ij}]\\
 	&= [\alpha(\beta a_{ij})]\\
@@ -219,31 +215,40 @@ $\\
 $
 \selectlanguage{arabic}
 \begin{example}
-	مجموعة المصفوفات المتناظرة
-	 $W=\{A\in M_{m\times n}(\R) : A^T = A\}$
-	 تمثل فضاء جزئي من الفضاء $M_{m\times n}(\R)$. اثبت ذلك
+	لتكن $W = \left\{ \begin{bmatrix} a & b \\ 0 & 0 \end{bmatrix} \mid a, b \in \mathbb{R} \right\}$. أثبت أن $W$ فضاء جزئي من $M_2(\mathbb{R})$.
 \end{example}
-\noindent
-\textbf{البرهان}\\
-\noindent
-1. لكل $A, B\in W$ فــــإن $A^T=A, B^T=B$ لذا 
-\[
-(A+B)^T = A^T + B^T = A+B
-\]
-اذن $A+B\in W$ \\
-2. لكل $c\in\R$ ولكل $A\in W$ فــــإن $A^T=A$ وبالتالي
-\[
-(cA)^T = cA^T = cA
-\]
-اذن $cA \in W$ وبالتالي $W$ يمثل فضاء جزئي من $M_{m\times n}(\R)$.
 
+\begin{solution}
+	للتحقق من أن $W$ فضاء جزئي من $M_2(\mathbb{R})$، نتحقق من الشرطين:\\
+	\noindent
+	أولاً، إذا كانت 
+	\[
+	A = \begin{bmatrix} a_1 & b_1 \\ 0 & 0 \end{bmatrix}, \quad B = \begin{bmatrix} a_2 & b_2 \\ 0 & 0 \end{bmatrix} \in W
+	\]
+	فإن:
+	\[
+	A + B = \begin{bmatrix} a_1 + a_2 & b_1 + b_2 \\ 0 & 0 \end{bmatrix} \in W
+	\]
+	لأن مجموع الصف السفلي يبقى صفراً.
+	
+	\noindent
+	ثانياً، إذا كانت 
+	\[
+	A = \begin{bmatrix} a & b \\ 0 & 0 \end{bmatrix} \in W \quad \text{و} \quad c \in \mathbb{R}
+	\]
+	فإن:
+	\[
+	cA = \begin{bmatrix} ca & cb \\ 0 & 0 \end{bmatrix} \in W
+	\]
+	
+	بما أن الشرطين محققان، فإن $W$ فضاء جزئي من $M_2(\mathbb{R})$.
+\end{solution}
 
-\section{فضاء كثيرات الحدود $P_n$}
+\section[فضاء كثيرات الحدود $P_n$]{فضاء كثيرات الحدود $P_n$ \cite{key4}}
 مجموعة كثيرات الحدود من الدرجة $n$ او اقل تعرف كالآتي
 \[
 P_n = \{p(x) = a_0 + a_1 x + \cdots + a_n x^n\}
 \]
-\subsection{عمليتي الجمع والضرب}
 \textbf{الجمع:} لكل $p(x), q(x) \in P_n$ لدينا 
 $
 (p+q)(x) = p(x) + q(x)
@@ -253,18 +258,13 @@ $
 (\alpha p)(x) = \alpha p(x)
 $
 
-\subsection{الاساس والبعد}
-تكون المجموعة
-$B = \{1, x, x^2, \dots, x^n\}$
-اساس الفضاء $P_n$ \\
-ويكون الفضاء ذات بعد $\dim P_n = n+1 $.
+\subsection*{اثبات ان $P_n$ فضاء متجهات}
+حسب التعريف 2 - 1 لكي يكون فضاء متجهات يجب ان يحقق ما يلي\\
 
-\subsection{اثبات ان $P_n$ فضاء متجهات}
-
-\selectlanguage{english}
+\setLR
 \noindent
-1. $(p+q)(x) = p(x) + q(x) = q(x) + p(x) = (q+p)(x)$\\
-2. $
+.1 $(p+q)(x) = p(x) + q(x) = q(x) + p(x) = (q+p)(x)$\\
+.2 $
 \begin{aligned}[t]
 	[p+(q+r)](x) &= p(x) + (q+r)(x)\\
 	&= p(x) + q(x) + r(x) \\
@@ -274,26 +274,26 @@ $B = \{1, x, x^2, \dots, x^n\}$
 $\\
 
 
-\selectlanguage{arabic}
+\setRL
 \noindent
 كثيرة الحدود الصفرية $0(x)=0 $ تمثل العنصر المحايد 
 
-\selectlanguage{english}
-.\\
-\noindent
-3. $(p+0)(x) = p(x) + 0(x) = p(x) + 0 = p(x)$
+\setLR
 
-\selectlanguage{arabic}
+\noindent
+.3 $(p+0)(x) = p(x) + 0(x) = p(x) + 0 = p(x)$
+
+\setRL
 \noindent
 لكل $p(x)\in P_n$ نظيرها كثيرة الحدود $(-p)(x) = -p(x)$ 
 
-\selectlanguage{english}
+\setLR
 \noindent
-4. $(p+(-p))(x) = p(x) + (-p)(x) = p(x) - p(x) = 0$\\
-5. $\forall p(x) \in P_n : (1\cdot p)(x) = 1\cdot p(x) = p(x)$\\
-6. $
+.4 $(p+(-p))(x) = p(x) + (-p)(x) = p(x) - p(x) = 0$\\
+.5 $\forall p(x) \in P_n : (1\cdot p)(x) = 1\cdot p(x) = p(x)$\\
+.6 $
 \begin{aligned}[t]
-	\forall\alpha\in\R, &\forall p,q\in P_n : (\alpha(p+q))(x)\\
+	\forall\alpha\in\R, \forall p,q\in P_n : (\alpha(p+q))(x)
 	&= \alpha (p+q)(x)\\
 	&= \alpha[p(x) + q(x)]\\
 	&= \alpha p(x) + \alpha q(x)\\
@@ -302,147 +302,46 @@ $\\
 \end{aligned}
 $\\
 \\
-7. $
+.7 $
 \begin{aligned}[t]
-	\forall\alpha,\beta&\in\R, \forall p\in P_n : [(\alpha + \beta)p](x)\\
+	\forall\alpha,\beta\in\R, \forall p\in P_n : [(\alpha + \beta)p](x)
 	&= (\alpha+\beta)p(x)\\
 	&= \alpha p(x) + \beta p(x)\\
 	&= (\alpha p)(x) + (\beta p)(x)\\
 	&= (\alpha p + \beta p)(x) 
 \end{aligned}
 $\\
-8. $
+.8 $
 \begin{aligned}[t]
-	\forall\alpha,\beta&\in\R, \forall p\in P_n : [(\alpha  \beta)p](x)\\
+	\forall\alpha,\beta\in\R, \forall p\in P_n : [(\alpha  \beta)p](x)
 	&= (\alpha\beta)p(x)\\
 	&= \alpha (\beta p(x))\\
 	&= \alpha [\beta p](x)\\
 	&= [\alpha(\beta p)](x)
 \end{aligned}
 $
-\selectlanguage{arabic}
+
+\setRL
 \begin{example}
-	مجموعة كثيرات الحدود الزوجية 
-	$W = \{p(x) \in P_n : p(-x) = p(x) : a_i \in \R\}$
-	تمثل فضاء جزئي من $P_n$. اثبت ذلك
+	لتكن $W = \{ p(x) \in P_2 \mid p(1) = 0 \}$. أثبت أن $W$ فضاء جزئي من $P_2$.
 \end{example}
 \noindent
-\textbf{البرهان}\\
+\textbf{الحل}\\
 \noindent
-1. لكل $p(x), q(x) \in P_n$ اذن $p(-x) = p(x) \wedge q(-x) = q(x)$ ، اذن
-\[
-(p+q)(-x) = p(-x) + q(-x)= p(x) + q(x) = (p+q)(x)
-\]
-اذن $(p+q)(x) \in P_n$.\\ \noindent
-2. لكل $\alpha \in\R$ ولكل $p(x) \in W$ فــــإن $p(-x) = p(x)$ وبالتالي
-\[
-(\alpha p)(-x) = \alpha p(-x) = \alpha p(x) = (\alpha p)(x) 
-\] 
-اذن $(\alpha p)(x) \in W$. ومنه $W$ فضاء جزئي من $P_n$.
+	للتحقق من أن $W$ فضاء جزئي من 
+	$P_2$، نتحقق من الشرطين:\\
+	\noindent
+	أولاً، إذا كانت $p(x), q(x) \in W$، أي أن $p(1) = 0$ و$q(1) = 0$، فإن:
+	\[
+	(p + q)(1) = p(1) + q(1) = 0 + 0 = 0
+	\]
+	إذًا $p(x) + q(x) \in W$.
+	ثانياً، إذا كانت $p(x) \in W$ و$c \in \mathbb{R}$، فإن:
+	\[
+	(cp)(1) = c \cdot p(1) = c \cdot 0 = 0
+	\]
+	إذًا $cp(x) \in W$.
+	بما أن الشرطين محققان، فإن $W$ فضاء جزئي من 
+	$P_2$.
 
-\section{فضاء الدوال المستمرة $C[a, b]$}
-مجموعة الدوال المستمرة على الفترة $[a, b]$ تعرف بالشكل
-\[
-C[a, b] = \{f:[a, b] \to \R \mid \text{$f$ دالة مستمرة}\}
-\]
 
-\subsection{عمليتي الجمع والضرب}
-\textbf{الحمع:} لكل $f(x), g(x) $ دوال مستمرة على الفترة $[a, b]$ :$(f+g)(x) = f(x) + g(x)$.
-\textbf{الضرب:} لكل $c\in\R$ و لكل $f(x)\in C[a, b]$ : $(cf)(x) = cf(x)$.
-
-\subsection{الضرب النقطي}
-لكل $f(x), g(x) \in C[a, b]$ يعرف الضرب النقطي في فضاء الدوا ل المستمرة كالآتي
-\[
-f\cdot g = \int_{a}^{b} f(x) g(x) \, dx
- \]
- \subsection{الاساس والبعد}
- ان الفضاء $C[a, b]$ يمتلك اساس غير منتهي وهو $B=\{1,x,x^2,\dots\}$ ويمكن استخدام متسلسلات تايلر لكتابة اي دالة مستمرة كتركيب خطي من $B$.\\
- \textbf{مثال:} الدالة $f(x) = e^x$ مستمرة على الفترة $[0,1]$ ويمكن كتابتها بالشكل
- $
- e^x = \sum_{n=0}^{\infty} \frac{x^n}{n!}
-$
- . اذن يمكن القول بأن الفضاء $C[a, b]$ ذات بعد لا نهائي.
- 
- \subsection{اثبات ان $C[a, b]$ فضاء متجهات}
- 
- \selectlanguage{english}
- \noindent
- 1. $(f+g)(x) = f(x) + g(x) = g(x) + f(x) = (g+f)(x)$\\
- 2. $
- \begin{aligned}[t]
- 	[f+(g+h)](x) &= f(x) + (g+h)(x)\\
- 	&= f(x) + g(x) + h(x) \\
- 	&= (f+g) + h(x)\\
- 	&= [(f+g)+h](x)
- \end{aligned}
- $\\
- 
- \selectlanguage{arabic}
- \noindent
- الدالة الصفرية $0(x)=0 $ تمثل العنصر المحايد 
- 
- \selectlanguage{english}
- \noindent
- 3. $(f+0)(x) = f(x) + 0(x) = f(x) + 0 = f(x)$
- 
- \selectlanguage{arabic}
- \noindent
- لكل $f(x)\in C[a, b]$ نظيرها  الدالة $(-f)(x) = -f(x)$ 
- 
- \selectlanguage{english}
- \noindent
- 4. $(f+(-f))(x) = f(x) + (-f)(x) = f(x) - f(x) = 0$\\
- 5. $\forall f(x) \in C[a, b] : (1\cdot f)(x) = 1\cdot f(x) = f(x)$\\
- 6. $
- \begin{aligned}[t]
- 	\forall\alpha\in\R, &\forall f,g\in C[a, b] : (\alpha(f+g))(x)\\
- 	&= \alpha (f+g)(x)\\
- 	&= \alpha[f(x) + g(x)]\\
- 	&= \alpha f(x) + \alpha g(x)\\
- 	&= (\alpha f)(x) + (\alpha g)(x)\\
- 	&= [\alpha f + \alpha g](x)
- \end{aligned}
- $\\
- 7. $
- \begin{aligned}[t]
- 	\forall\alpha,\beta&\in\R, \forall f\in C[a, b] : [(\alpha + \beta)f](x)\\
- 	&= (\alpha+\beta)f(x)\\
- 	&= \alpha f(x) + \beta f(x)\\
- 	&= (\alpha f)(x) + (\beta f)(x)\\
- 	&= (\alpha f + \beta f)(x) 
- \end{aligned}
- $\\
- 8. $
- \begin{aligned}[t]
- 	\forall\alpha,\beta&\in\R, \forall f\in C[a, b] : [(\alpha  \beta)f](x)\\
- 	&= (\alpha\beta)f(x)\\
- 	&= \alpha (\beta f(x))\\
- 	&= \alpha [\beta f](x)\\
- 	&= [\alpha(\beta f)](x)
- \end{aligned}
- $
- \selectlanguage{arabic}
- 
- 
- \begin{example}
- 	المجموعة $W = \{f\in C[a, b] : f(a) = f(b) =0\}$ تمثل فضاء جزئي من $C[a, b]$. اثبت ذلك 
- \end{example}
- \noindent
- \textbf{البرهان}\\
- \noindent
- 1. لكل $f, g\in W$ فإن $f(a)=f(b)=g(a)=g(b)=0$ وبالتالي
- \[
- (f+g)(a) = f(a) + g(a) = 0+0 =0
- \]
- \[
- (f+g)(b) = f(b) + g(b) = 0+0=0
- \]
- اذن $f+g\in W$.\\
- 2. لكل $c\in \R$ ولكل $f\in W$ فإن $f(a)=f(b)=0$ بالتالي
- \[
- (cf)(a) = cf(a) = c\cdot 0 =0
- \]
- \[
-  (cf)(b) = cf(b) = c\cdot 0 =0
- \]
- اذن $cf \in W$. ومنه $W$ فضاء جزئي من $C[a, b]$. 

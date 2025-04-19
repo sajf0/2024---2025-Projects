@@ -1,5 +1,8 @@
 \chapter{المعيار}
 
+\section*{مقدمة}
+سنتناول في هذا الفصل التعريف الرياضي للمعيار و بعض الامثلة عليه و كذلك اهم النظريات التي تخص المعيار، وكذلك سنتعرف على مفهوم المعيار الجزئي وبعض النتائج التي تخص المعيار الجزئي و أيضاً سندرس التشاكل المعياري والمبرهنات الاساسية له.
+
 \section{تعاريف و أمثلة}
 
 \begin{definition}
@@ -8,7 +11,7 @@
 		\item عملية ثنائية + على $M$ بحيث $(M, +)$ زمرة ابدالية
 		\item تأثير $R$ على $M$ (دالة $R\times M \to M$) يرمز لها عادة بــ $rm$, لكل $r\in R$ و $m\in M$ و تحقق
 		\begin{tasks}
-			\task $(r+s)m = rm + rs$ لكل $r,s\in R$ و $m\in M$.
+			\task $(r+s)m = rm + sm$ لكل $r,s\in R$ و $m\in M$.
 			\task $(rs)m=r(sm)$ لكل $r,s\in R$ و $m\in M$.
 			\task $r(m+n) = rm+rn$ لكل $r\in R$ و $m,n\in M$.
 		\end{tasks}
@@ -37,7 +40,7 @@ nx =
 	\]
 	لكل $m,n\in \Z$ و لكل $x,y\in G$
 \end{example}
-\newpage
+
 \noindent
 	\textbf{الحل}\\
 	\noindent
@@ -331,16 +334,16 @@ a_1 + (A\cap B) = a_2 + (A\cap B) \Rightarrow f(a_1 + b_1) = f(a_2+b_2)
 \]
 الآن نوجد نواة التشاكل
 \begin{align*}
-	\ker f &= \{a+b \mid f(a+b) = A\cap B\}\\
-	&= \{a+b \mid a+(A\cap B) = A\cap B\} \\
-	&= \{a+b\mid a\in A\cap B\}\\
-	&= \{a+b \mid a\in B\} \\&= B
+	\ker f = \{a+b \mid f(a+b) = A\cap B\}
+	= \{a+b \mid a+(A\cap B) &= A\cap B\} \\
+	= \{a+b\mid a\in A\cap B\}=
+	 \{a+b \mid a\in B\} &= B
 \end{align*}
 اذن من مبرهنة التماثل الاولى نحصل على
 \[
 \boxed{(A+B)/\ker f \cong A/(A\cap B)} \Rightarrow \boxed{(A+B)/B \cong A/(A\cap B)}
 \]
-\newpage
+
 \begin{theorem}
 	 ليكن $M$ معيار على الحلقة $R$ و كل من $A, B$ معيار جزئي منه مع $A\subseteq B$ فإن
 	 \[
@@ -373,8 +376,7 @@ x+B = y+B \Rightarrow f(x+A) = f(y+A)
 \begin{align*}
 	\ker f &= \{x+A \mid f(x+A) = B\}\\
 	&= \{x+A\mid x+B = B\}\\
-	&= \{x+A\mid x\in B\}\\
-	&= B/A 
+	&= \{x+A\mid x\in B\}= B/A 
 \end{align*}
 اذن من مبرهنة التماثلل الأولى
 \[

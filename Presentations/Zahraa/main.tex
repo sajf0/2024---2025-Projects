@@ -193,13 +193,23 @@
 	\end{equation}
 	
 	\pause
-	ويمكن الحصول على علاقة اخرى من خلال طرح المعادلتين (3) و (4) ، حيث
-	\[
-	U_{n+1}(x) - U_{n-1}(x) = \frac{2\sin\theta\cos(n+1)\theta}{\sin\theta} = 2 \cos(n+1)\theta
-	\]
+	ويمكن الحصول على علاقة اخرى من خلال
+	\begin{align}
+		U_{n+1} (x) &= \frac{\sin(n+2)\theta}{\sin\theta}\notag\\[5pt]
+		&= \frac{\sin[(n+1)\theta + \theta]}{\sin \theta}\notag\\[5pt]
+		&= \frac{\sin(n+1)\theta\cos\theta + \sin\theta\cos(n+1)\theta}{\sin\theta}
+	\end{align}
+\end{frame}
+\begin{frame} 
+	و
+	\begin{align}
+		U_{n-1} (x) &= \frac{\sin n\theta}{\sin\theta}\notag\\[5pt]
+		&= \frac{\sin[(n+1)\theta -\theta]}{\sin \theta}\notag\\[5pt]
+		&= \frac{\sin(n+1)\theta\cos\theta - \sin\theta\cos(n+1)\theta}{\sin\theta}
+	\end{align}
 	
 	\pause
-	إذن 
+	إذن بطرح المعادلتين (6) و (7)
 	\begin{equation}
 		U_{n+1}(x) - U_{n-1}(x)  = 2T_{n+1}(x)
 	\end{equation}
@@ -209,5 +219,12 @@
 	
 	\pause
 	تناول هذا البحث دراسة كثيرات حدود شيبشيف من النوع الاول والثاني، حيث تم تحليل خصائص كل منهما. تم استخدام كثيرات حدود شيبشيف من النوع الثاني في تقريب الدوال ، لما تتميز به من خصائص مناسبة في هذا السياق. وقد بينت الدراسة اهمية فهم النوعين معاً لتعزيز استخدامهما في التقريب والتحليل العددي.
+\end{frame}
+
+\begin{frame}
+	\begin{center}
+		\Huge
+		\textbf{شكراً لحسن استماعكم}
+	\end{center}
 \end{frame}
 \end{document}

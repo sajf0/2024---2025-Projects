@@ -6,7 +6,8 @@
 \RequirePackage[
 top=1in,
 left=0.8in,
-right=1in
+right=1in,
+bottom=1in
 ]{geometry}
 
 \usepackage{tikz, float}
@@ -36,7 +37,7 @@ right=1in
 
 
 % To use the arabic language
-\RequirePackage{polyglossia}
+\RequirePackage{polyglossia, quran}
 
 
 % For fancy headers
@@ -44,9 +45,9 @@ right=1in
 \pagestyle{fancy}
 \fancyhead{}
 %\fancyfoot{}
-\fancyhead[L]{\small \ar{\leftmark}}
+\fancyhead[L]{\small \ar{\thechapter}}
 %\fancyhead[C]{\small \leftmark}
-\fancyhead[R]{\small \ar{\thechapter}}
+\fancyhead[R]{\small \ar{\leftmark}}
 \renewcommand{\chaptermark}[1]{\markboth{\MakeUppercase{#1}}{}}
 
 \renewcommand{\thepage}{\ar{\arabic{page}}}
@@ -57,6 +58,7 @@ right=1in
 
 % Set the arabic and the english font
 \newfontfamily{\arabicfont}[Script=Arabic]{Times New Roman}
+\newfontfamily{\amirifont}{Amiri}[Script=Arabic]
 
 \usepackage[T1]{fontenc}
 \usepackage{times}

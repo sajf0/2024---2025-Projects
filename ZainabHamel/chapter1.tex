@@ -59,7 +59,7 @@
 \end{example}
 
 \begin{example}
-	المجموعة $M_{m\times n}(\R)$ مجموعة كل المصفوفات مع عملية جمع المفوفات مع العنصر المحايد (المصفوفة الصفرية) تشكل زمرة ابدالية.
+	المجموعة $M_{m\times n}(\R)$ مجموعة كل المصفوفات مع عملية جمع المصفوفات مع العنصر المحايد (المصفوفة الصفرية) تشكل زمرة ابدالية.
 \end{example}
 
 \section{الزمرة الجزئية}
@@ -69,7 +69,7 @@
 \end{definition}
 
 \begin{definition}
-	لتكن $G$ زمرة و $H$ زمرة جزئية منها. وليكن $x\in G$. الجموعة المصاحبة اليسارية $xH$ تعرف بالشكل
+	لتكن $G$ زمرة و $H$ زمرة جزئية منها. وليكن $x\in G$. المجموعة المصاحبة اليسارية $xH$ تعرف بالشكل
 	\[
 	x*H = \{x*h : h \in H\}
 	\]
@@ -125,7 +125,75 @@ G/H = \{x*H : x\in G\}
 \begin{example}
 	$(\Z, +, \cdot), (\Q, +, \cdot), (\R, +, \cdot), (\Z_n, +_n, \cdot_n)$ حلقات ابدالية ذات محايد.
 \end{example}
-
+\newpage
 \begin{example}
 	$(M_{n\times n}(\R), +, \cdot)$ حلقة ذات محايد ولكن غير ابدالية.
 \end{example}
+\noindent
+\textbf{الحل}\\
+\noindent
+نثبت اولا ان 
+$(M_{n\times n}, +)$ زمرة ابدالية:\\
+1. المجموعة $M_{n\times n}$ مغلقة بالنسبة للعملية +\\
+2. لكل $A, B, C\in M_{n\times n}$ 
+\begin{align*}
+	A + (B + C) &= [a_{ij}] + \Big([b_{ij}] + [c_{ij}]\Big)\\
+	&= [a_{ij}] + [b_{ij} + c_{ij}]\\
+	&= [a_{ij} + b_{ij} + c_{ij}]\\
+	&= \Big([a_{ij}] + [b_{ij}]\Big) + [c_{ij}]\\
+	&= (A + B) + C
+\end{align*}
+3. المصفوفة الصفرية تكون العنصر المحايد لأن لكل $A\in M_{n\times n}$ لدينا $A + 0 = 0 + A = A$.\\
+4. لكل $A\in M_{n\times n}$ النظير الجمعي يكون $-A = [-a_{ij}]$.\\
+5. العملية + تكون ابدالية 
+\[
+A + B = [a_{ij}] + [b_{ij}] = [a_{ij} + b_{ij}] = [b_{ij} + a_{ij}] = B + A
+\] 
+اذن $(M_{n\times n}, +)$ زمرة ابدالية.\\
+نلاحظ أن العملية $\cdot$ تكون تجميعية. اي ان
+$
+A\cdot (B\cdot C) = (A\cdot B)\cdot C
+$\\
+ايضا نلاحظ ان العملية $\cdot$ تتوزع على العملية + من اليمين و من اليسار اي ان
+\[
+A\cdot (B+C) = A\cdot B + A\cdot C
+\]
+\[
+(A + B) \cdot C = A\cdot C + B\cdot C
+\]
+والمصفوفة الواحدية (المحايدة) $I$ تمثل العنصر المحايد لعملية الضرب اي ان 
+$A\cdot I = I \cdot A = A$
+اذن $(M_{n\times n}(\R), +, \cdot)$ حلقة ذات محايدة ولكن غير تبديلية لان في 
+$M_{2\times 2}(\R)$
+\[
+\begin{bmatrix}
+	1 & 2\\
+	3 & 4
+\end{bmatrix}\cdot
+\begin{bmatrix}
+	2 & -1\\
+	3 & -5
+\end{bmatrix}
+=
+\begin{bmatrix}
+	8 & -11\\
+	18 & -23
+\end{bmatrix}
+\]
+ولكن
+\[
+\begin{bmatrix}
+	2 & -1\\
+	3 & -5
+\end{bmatrix}\cdot
+\begin{bmatrix}
+	1 & 2\\
+	3 & 4
+\end{bmatrix}=
+\begin{bmatrix}
+	-1 & 0\\
+	-12 & -14
+\end{bmatrix}
+\]
+
+

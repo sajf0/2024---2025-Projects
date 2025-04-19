@@ -4,9 +4,7 @@
 \LoadClass[14pt, a4paper]{extreport}
 
 \RequirePackage[
-top=1.5in,
-left=1in,
-right=1in
+margin=1in
 ]{geometry}
 
 % For the title page 
@@ -28,7 +26,7 @@ right=1in
 \lstset{style=Matlab-editor, basicstyle=\small\ttfamily, morestring=[m]"}
 
 % To use the arabic language
-\RequirePackage{polyglossia}
+\RequirePackage{polyglossia, quran}
 
 
 \RequirePackage{tocbasic}
@@ -42,9 +40,9 @@ right=1in
 \pagestyle{fancy}
 \fancyhead{}
 %\fancyfoot{}
-\fancyhead[L]{\small\leftmark}
+\fancyhead[L]{\small\thechapter}
 %\fancyhead[C]{\small \leftmark}
-\fancyhead[R]{\small \thechapter}
+\fancyhead[R]{\small \leftmark}
 \renewcommand{\chaptermark}[1]{\markboth{\MakeUppercase{#1}}{}}
 
 % Set the arabic language as default and english as side langiage
@@ -53,6 +51,7 @@ right=1in
 
 % Set the arabic and the english font
 \newfontfamily{\arabicfont}[Script=Arabic]{Times New Roman}
+\newfontfamily{\amirifont}{Amiri}[Script=Arabic]
 
 \usepackage[T1]{fontenc}
 \usepackage{times}
@@ -89,7 +88,7 @@ right=1in
 }
 
 \def\@makeschapterhead#1{%
-	\vspace*{1cm}
+	\vspace*{0cm}
 	{\centering\Large\bfseries #1\par}
 	\vspace{1cm}	
 }

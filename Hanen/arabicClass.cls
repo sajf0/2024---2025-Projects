@@ -4,9 +4,7 @@
 \LoadClass[14pt, a4paper]{extreport}
 
 \RequirePackage[
-top=1.5in,
-left=1in,
-right=1in
+margin=1in
 ]{geometry}
 
 % For the title page 
@@ -44,7 +42,7 @@ right=1in
 
 
 % To use the arabic language
-\RequirePackage{polyglossia}
+\RequirePackage{polyglossia, quran}
 
 
 \RequirePackage{tocbasic}
@@ -70,6 +68,7 @@ right=1in
 
 % Set the arabic and the english font
 \newfontfamily{\arabicfont}[Script=Arabic]{Times New Roman}
+\newfontfamily{\amirifont}{Amiri}[Script=Arabic]
 
 \usepackage[T1]{fontenc}
 \usepackage{times}
@@ -202,10 +201,10 @@ right=1in
 \newtheorem{lemma}[theorem]{ممهدة}
 \newtheorem*{note}{ملاحظة}
 
-\renewcommand{\thetheorem}{\arabic{chapter} - \arabic{theorem}}
-\renewcommand{\thedefinition}{\arabic{chapter} - \arabic{definition}}
-\renewcommand{\theexample}{\arabic{chapter} - \arabic{example}}
-\renewcommand{\thecorollary}{\arabic{chapter} - \arabic{corollary}}
+\renewcommand{\thetheorem}{(\arabic{chapter} - \arabic{theorem})}
+\renewcommand{\thedefinition}{(\arabic{chapter} - \arabic{definition})}
+\renewcommand{\theexample}{(\arabic{chapter} - \arabic{example})}
+\renewcommand{\thecorollary}{(\arabic{chapter} - \arabic{corollary})}
 
 \newenvironment{myproof}{\noindent\textbf{البرهان}\vspace{5pt}\\ \noindent}{\hfill \(\qedsymbol\)}
 

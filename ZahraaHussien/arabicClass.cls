@@ -6,7 +6,8 @@
 \RequirePackage[
 top=1in,
 left=0.6in,
-right=1in
+right=1in,
+bottom=1in
 ]{geometry}
 
 % For the title page 
@@ -26,7 +27,7 @@ right=1in
 \allowdisplaybreaks
 
 % To use the arabic language
-\RequirePackage{polyglossia}
+\RequirePackage{polyglossia, quran}
 
 
 \RequirePackage{tocbasic}

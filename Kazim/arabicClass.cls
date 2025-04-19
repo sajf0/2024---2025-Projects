@@ -4,13 +4,11 @@
 \LoadClass[14pt, a4paper]{extreport}
 
 \RequirePackage[
-top=1.5in,
-left=1in,
-right=1in
+margin=1in
 ]{geometry}
 
 % For the title page 
-\RequirePackage{graphicx , xcolor}
+\RequirePackage{graphicx , xcolor, array, booktabs}
 
 \RequirePackage{float}
 
@@ -29,7 +27,7 @@ right=1in
 
 
 % To use the arabic language
-\RequirePackage{polyglossia}
+\RequirePackage{polyglossia, quran}
 
 
 \RequirePackage{tocbasic}
@@ -55,6 +53,7 @@ right=1in
 
 % Set the arabic and the english font
 \newfontfamily{\arabicfont}[Script=Arabic]{Times New Roman}
+\newfontfamily{\amirifont}{Amiri}[Script=Arabic]
 
 \usepackage[T1]{fontenc}
 \usepackage{times}

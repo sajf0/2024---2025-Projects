@@ -6,7 +6,8 @@
 \RequirePackage[
 top=1in,
 left=0.8in,
-right=0.8in
+right=0.8in,
+bottom=1in
 ]{geometry}
 
 % For the title page 
@@ -28,7 +29,7 @@ right=0.8in
 
 
 % To use the arabic language
-\RequirePackage{polyglossia}
+\RequirePackage{polyglossia, quran}
 
 
 % For fancy headers

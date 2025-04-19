@@ -1,9 +1,9 @@
 \chapter{فضاء المتجهات}
 
-\section{مقدمة}
+\section*{مقدمة}
 تلعب الفضاءات المتجهة (الخطية) دوراً هاماً في العلوم الرياضية وتطبيقاتها وعناصرها قد تكون دوال او متتاليات عددية ... الخ ، يمكن جمعها و اجراء عمليات حسابية عليها وتكون نتيجة هذه العمليات من الفضاء نفسه.
 
-\subsection*{تعريف}
+\section[تعريف فضاء المتجهات]{تعريف فضاء المتجهات \cite{key1}}
 الفضاء المتجهي على الحقل $F$ هو مجموعة غير خالية $V$ من العناصر $\{x, y, \dots\}$ (تدعى متجهات) وهذه المجموعة مزودة بعمليتين جبريتين:\\ \\
 \noindent
 \textbf{العملية الاولى:} داخلية نرمز لها بــ "+" اي الجمع المتجهي حيث يربط كل عنصرين $x, y$ من $V$ بعنصر ثالث $x+y$ ينتمي الى $V$.\\
@@ -12,16 +12,16 @@
 \noindent
 نسمي الثلاثي $(V, +, \cdot)$ فضاء متجهي او فضاء خطي على $F$ ونرمز له بــ $V(F)$ اذا حقق الشروط التالية:\\ \\
 \noindent
-لكل $V, U, W$ متجهات و $a, b$ اعداد:
+لكل $V, U, W$ متجهات و $\alpha, \beta \in \R$  :
 \begin{english}
 	\begin{enumerate}
 	\item $U+V = V+U$
 	\item $U+(V+W) = (U+V)+W$
 	\item $U+0=0+U=U$
 	\item $U+(-U) = 0$
-	\item $a(U+V) = aU + aV$
-	\item $(a+b)\cdot U = aU + bU$
-	\item $(ab)\cdot U = a\cdot (bU)$
+	\item $\alpha(U+V) = \alpha U + \alpha V$
+	\item $(\alpha+\beta)\cdot U = \alpha U + \beta U$
+	\item $(\alpha\beta)\cdot U = \alpha\cdot (\beta U)$
 	\item $1\cdot U = U$
 \end{enumerate}
 \end{english}
@@ -75,7 +75,7 @@
 	\\
 	(5 $
 	\begin{aligned}[t]
-			\forall x &= (x_1, x_2, \dots, x_n) \in \R^n: 1\cdot x\\
+			\forall x = (x_1, x_2, \dots, x_n) \in \R^n: 1\cdot x
 			&= 1 \cdot (x_1, x_2, \dots, x_n)\\
 			&= (x_1, x_2, \dots, x_n) \\
 			&= x
@@ -84,7 +84,7 @@ $\\
 \noindent
 (6 $
 \begin{aligned}[t]
-	\forall \alpha&\in\R , \forall x,y \in \R^n: \alpha (x+y)\\
+	\forall \alpha\in\R , \forall x,y \in \R^n: \alpha (x+y)
 	&= \alpha(x_1+y_1, x_2+y_2, \dots, x_n+y_n)\\
 	&= (\alpha(x_1+y_1), \alpha(x_2+y_2), \dots, \alpha(x_n+y_n))\\
 	&= (\alpha x_1+\alpha y_1, \alpha x_2+\alpha y_2, \dots, \alpha x_n+\alpha y_n)\\
@@ -94,7 +94,7 @@ $\\\\
 \noindent
 (7 $
 \begin{aligned}[t]
-	\forall \alpha, \beta &\in \R, \forall x\in \R^n: (\alpha + \beta)\cdot x\\
+	\forall \alpha, \beta \in \R, \forall x\in \R^n: (\alpha + \beta)\cdot x
 	&= (\alpha + \beta)\cdot (x_1, x_2, \dots, x_n)\\
 	&= ((\alpha+\beta)x_1, (\alpha+\beta)x_2, \dots, (\alpha+\beta)x_n)\\
 	&= (\alpha x_1 + \beta x_1, \alpha x_2 + \beta x_2, \dots , \alpha x_n + \beta x_n)\\
@@ -104,7 +104,7 @@ $\\
 \\
 (8 $
 \begin{aligned}[t]
-		\forall \alpha, \beta &\in \R, \forall x\in \R^n: (\alpha \beta)\cdot x\\
+		\forall \alpha, \beta \in \R, \forall x\in \R^n: (\alpha \beta)\cdot x
 		&= (\alpha\beta)(x_1, x_2, \dots, x_n)\\
 		&= (\alpha\beta x_1, \alpha\beta x_2, \dots, \alpha\beta x_n)\\
 		&= (\alpha(\beta x_1), \alpha(\beta x_2), \dots, \alpha(\beta x_n))\\
@@ -113,7 +113,7 @@ $\\
 $
 \end{example}
 
-\section{الفضاء الجزئي}
+\section[الفضاء الجزئي]{الفضاء الجزئي \cite{key1}}
 ليكن $V(F)$ فضاءاً متجهياً على الحقل $F$ و $\varnothing \neq W\subseteq V$ نسمي $W$ فضاء متجه جزئي من فضاء المتجهات $V(F)$ اذا كان $W$ فضاءاً متجهياً بحد ذاته بالنسبة لعمليتي الجمع والضرب.\\
 \noindent
 ويكون $W$ فضاء متجهي اذا تحقق :
@@ -148,13 +148,13 @@ $
 	اذن $W$ فضاء جزئي من $\R^3$.
 \end{solution}
 
-\begin{theorem}
-	تقاطع اي فضائين جزئين هو فضاء جزئي.
+\begin{theorem}[\cite{key3}]
+	تقاطع اي فضائين متجهين جزئين هو فضاء جزئي.
 \end{theorem}
 \noindent
 \textbf{البرهان}\\
 \noindent
-لنفرض $W_1, W_2 $ فضائين جزئين من فضاء المتجهات $V(F)$ ونبرهن ان $W_1\cap W_2$ فضاء جزئي من $V(F)$.
+لنفرض $W_1, W_2 $ فضائين متجهين جزئين من فضاء المتجهات $V(F)$ ونبرهن ان $W_1\cap W_2$ فضاء جزئي من $V(F)$.
 \[
 \forall \alpha, \beta\in F; \forall x,y\in W_1\cap W_2
 \]
@@ -169,8 +169,8 @@ $
 \]
 ومنه$W_1\cap W_2$ فضاء متجهات جزئي.
 
-\section{الجمع المباشر}
-ليكن $M_1, M_2$ فضائين جزئيين من الفضاء $V$ نقول ان $V$ هو الجمع المباشر لــ $M_1$ و $M_2$ 
+\section[الجمع المباشر]{الجمع المباشر \cite{key1}}
+ليكن $M_1, M_2$ فضائين متجهين جزئيين من الفضاء $V$ نقول ان $V$ هو الجمع المباشر لــ $M_1$ و $M_2$ 
 \[
 V  = M_1 \oplus M_2
 \]
@@ -207,14 +207,15 @@ V  = M_1 \oplus M_2
 	اذن $\R^2 = M\oplus N$.
 \end{solution}
 	
-	\section{التركيب الخطي}
+	\section[التركيب الخطي]{التركيب الخطي \cite{key1}}
 	ليكن $V$ فضاء متجهات وان 
 	$\vec{v}_1, \vec{v}_2,\dots, \vec{v}_n$
 متجهات في $V$ يقال للمتجه $\vec{v}$ بأنه تركيب خطي من $\vec{v}_1, \vec{v}_2,\dots, \vec{v}_n$ اذا امكن التعبير عن $\vec{v}$ بالشكل 
 \[
-\vec{v} = \vec{v}_1+\vec{v}_2+\cdots +\vec{v}_n
+	\vec{v} = k_1\vec{v}_1+k_2\vec{v}_2+\cdots +k_n\vec{v}_n
 \]
-
+حيث
+$k_1, k_2, \dots, k_n$ اعداد حقيقية
 \begin{example}
 	ليكن $\vec{v}_1=(1,2,1)$ و $\vec{v}_2=(1,0,-3)$ و $\vec{v}_3=(-1,0,0)$ متجهات من $\R^3$ \\ هل  ان $\vec{v} = (2,-2,5)$ تركيب خطي من 
 	$\vec{v}_1, \vec{v}_2, \vec{v}_3$
@@ -247,7 +248,7 @@ V  = M_1 \oplus M_2
 \]
 \end{solution}
 
-\section{مولد فضاء المتجهات}
+\section[مولد فضاء المتجهات]{مولد فضاء المتجهات \cite{key1}}
 ليكن $S = \{v_1, v_2, \dots, v_n\}$ مجموعة جزئية من المتجهات في فضاء المجهات $V$ ، تكون $S$ مولد لــ $V$ اذا كان كل المتجهات هي تركيب خطي من $S$ اي ان
 \[
 v = k_1v_1 + k_2v_2 + \cdots + k_nv_n
@@ -305,7 +306,7 @@ v = k_1v_1 + k_2v_2 + \cdots + k_nv_n
 	\end{enumerate}
 \end{solution}
 
-\section{الاستقلال الخطي و الارتباط الخطي}
+\section[الاستقلال الخطي و الارتباط الخطي]{الاستقلال الخطي و الارتباط الخطي \cite{key1}}
 في الجبر الخطي تدعى مجموعة من المتجهات مجموعة مستقلة خطياً اذا كان من المستحيل كتابة اي من المتجهات في المجموعة كتركيبة خطية من  عدد نهائي من المتجهات الاخرى في المجمعوعة. اذا لم يتحقق ذلك ، تسمى هذه المجموعة مجموعة تابعة خطياً (مرتبطة خطياً).
 
 \begin{definition}
@@ -326,10 +327,10 @@ v = k_1v_1 + k_2v_2 + \cdots + k_nv_n
 \begin{solution}
 	لتكن $k_1,k_2,k_3\in \R$ بحيث 
 	\[
-	k_1 v_1 + k_2v_2 + k_3v_3
+	k_1 v_1 + k_2v_2 + k_3v_3 = (0, 0, 0)
 	\]
 	\[
-	k_1(1,0,2) + k_2(0,-1,3) + k_3(-2,0,1)
+	k_1(1,0,2) + k_2(0,-1,3) + k_3(-2,0,1) = (0, 0, 0)
 	\]
 	ومن حل هذه المعادلات نحصل على المعادلات الخطية التالية
 	\begin{align*}
@@ -341,96 +342,65 @@ v = k_1v_1 + k_2v_2 + \cdots + k_nv_n
 	اذن $S$ مستقلة خطياً.
 \end{solution}
 
-\begin{example}
-	هل المتجهات التالية 
-	$v_1 = (1,-1), v_2 = (2,-3), v_3 = (5,1)$
-	مستقلة ام مرتبطة خطياً؟
-\end{example}
-\begin{solution}
-		لتكن $k_1,k_2,k_3\in \R$ بحيث 
-	\[
-	k_1 v_1 + k_2v_2 + k_3v_3 = 0
-	\]
-	\[
-	k_1 (1,-1) + k_2(2,-3) + k_3(5,1) = 0
-	\]
-	ومن حل هذه المعادلات نحصل على 
-	\begin{align*}
-		k_1 + 2k_2 + 5k_3 &= 0\\
-		-k_1 -3 k_2 + k_3 &= 0 
-	\end{align*}
-	هذا النظام مكون من معادلتين وثلاث متغيرات فيكون له ما لانهاية من الحلول ولايجاد احدى هذه الحلول نفرض ان $k_3$ يساوي قيمة اختيارية ثم نجد بدلالتها $k_1,k_2$ وكما يلي:\\
-	\\
-	نفرض $k_3=1$ نحصل على
-	\begin{align*}
-		k_1 + 2k_2 &= -5 \tag{1}\\
-		-k_1 -3 k_2 &= -1\tag{2} 
-	\end{align*}
-	بجمع (1) مع (2) نحصل على $-k_2= -6$ اذن $k_2=6 $. نعوض في المعادلة (1) نحصل على 
-	\[
-	k_1 + 12 = -5 \Rightarrow k_1 = -17 
-	\]
-	اذن $S$ مرتبطة خطياً.
-\end{solution}
-
-\section{الاساس والبعد}
-لتكن
-$S = \{v_1, v_2, \dots, v_n\}$
-مجموعة جزئية من فضاء المتجهات $V$ ، نقول ان $S$ اساس للفضاء $V$ اذا تحقق الشرطان 
-\begin{enumerate}
-	\item $S$ تولد $V$.
-	\item $S$ مستقلة خطياً.
-\end{enumerate}
-
-\begin{example}
-	لتكن $ S =\{v_1, v_2\}$ بحيث $v_1 = (1,1) , v_2=(1,-1)$ هل ان $S$ اساس للفضاء $\R^3$؟
-\end{example}
-\begin{solution}
-	ليكن $k_1, k_2\in \R$ \\
-	1.
-	\begin{gather*}
-		k_1 v_1+ k_2 v_2 = 0\\
-		k_1(1,1) + k_2(1,-1) =0\\
-		(k_1,k_1) + (k_2,-k_2) = 0\\
-		(k_1+k_2, k_1-k_2) =0 
-	\end{gather*}
-	نحصل النظام
-	\begin{align*}
-		k_1 + k_2 = 0\\
-		k_1 - k_2 = 0
-	\end{align*}
-	نجد مصفوفة النظام
-	\[
-	A =
-	\begin{bmatrix}
-		1 & 1\\
-		1 & -1
-	\end{bmatrix}
-	\]
-	نجد المحدد
-	\[
-	|A| = 
-	\begin{vmatrix}
-		1 & 1\\
-		1 & -1
-	\end{vmatrix} = -1-1=-2\neq 0
-	\]
-	اذن $S$ تولد $\R^2$ \\
-	2. من حل المعادلات اعلاه نجد $k_1=k_2=0$ بالتالي $S$ مستقلة خطياً. اذن $S$ اساس للفضاء $\R^2$.
-\end{solution}
-
-\begin{definition}
-	اذا كانت $S = \{v_1, v_2, \dots, v_n\}$ اساس للفضاء $V$ فإن عدد المتجهات $n$ في $S$ يسمى بعد dimension للفضاء $V$ ونكتب $\dim V = n$
-\end{definition}
-
-\begin{example}
-	المجموعة $S = \{e_1, e_2,e_3\}$ اساس الفضاء $\R^3$ حيث
-	\[
-	e_1 = (1,0,0), e_2 = (0,1,0) , e_3 = (0,0,1)
-	\]
-	اذن 
-	\[
-	\dim \R^3 = 3
-	\]
-\end{example}
+%
+%\section{الاساس والبعد \cite{key1}}
+%لتكن
+%$S = \{v_1, v_2, \dots, v_n\}$
+%مجموعة جزئية من فضاء المتجهات $V$ ، نقول ان $S$ اساس للفضاء $V$ اذا تحقق الشرطان 
+%\begin{enumerate}
+%	\item $S$ تولد $V$.
+%	\item $S$ مستقلة خطياً.
+%\end{enumerate}
+%
+%\begin{example}
+%	لتكن $ S =\{v_1, v_2\}$ بحيث $v_1 = (1,1) , v_2=(1,-1)$ هل ان $S$ اساس للفضاء $\R^3$؟
+%\end{example}
+%\begin{solution}
+%	ليكن $k_1, k_2\in \R$ \\
+%	1.
+%	\begin{gather*}
+%		k_1 v_1+ k_2 v_2 = 0\\
+%		k_1(1,1) + k_2(1,-1) =0\\
+%		(k_1,k_1) + (k_2,-k_2) = 0\\
+%		(k_1+k_2, k_1-k_2) =0 
+%	\end{gather*}
+%	نحصل النظام
+%	\begin{align*}
+%		k_1 + k_2 = 0\\
+%		k_1 - k_2 = 0
+%	\end{align*}
+%	نجد مصفوفة النظام
+%	\[
+%	A =
+%	\begin{bmatrix}
+%		1 & 1\\
+%		1 & -1
+%	\end{bmatrix}
+%	\]
+%	نجد المحدد
+%	\[
+%	|A| = 
+%	\begin{vmatrix}
+%		1 & 1\\
+%		1 & -1
+%	\end{vmatrix} = -1-1=-2\neq 0
+%	\]
+%	اذن $S$ تولد $\R^2$ \\
+%	2. من حل المعادلات اعلاه نجد $k_1=k_2=0$ بالتالي $S$ مستقلة خطياً. اذن $S$ اساس للفضاء $\R^2$.
+%\end{solution}
+%
+%\begin{definition}
+%	اذا كانت $S = \{v_1, v_2, \dots, v_n\}$ اساس للفضاء $V$ فإن عدد المتجهات $n$ في $S$ يسمى بعد dimension للفضاء $V$ ونكتب $\dim V = n$
+%\end{definition}
+%
+%\begin{example}
+%	المجموعة $S = \{e_1, e_2,e_3\}$ اساس الفضاء $\R^3$ حيث
+%	\[
+%	e_1 = (1,0,0), e_2 = (0,1,0) , e_3 = (0,0,1)
+%	\]
+%	اذن 
+%	\[
+%	\dim \R^3 = 3
+%	\]
+%\end{example}
 

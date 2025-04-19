@@ -1,6 +1,6 @@
 \chapter{تطبيقات}
 
-\section{معادلة الحركة \en{Equation of Motion}}
+\section[معادلة الحركة \en{Equation of Motion} ]{معادلة الحركة \en{Equation of Motion} [6]}
 
 من قانون نيوتن الثاني لحركة جسم ما 
 \begin{equation}
@@ -66,7 +66,7 @@ Y(s) = \frac{-g}{s^3} + \frac{v_0}{s^2} + \frac{y_0}{s}
 	\]
 \end{solution}
 
-\section{معادلة تدفق بوازوي \en{Poiseuille's Flow Equation}}
+\section[معادلة تدفق بوازوي \en{Poiseuille's Flow Equation}]{معادلة تدفق بوازوي \en{Poiseuille's Flow Equation} [7]}
 يعد قانون بوازوي من القوانين الاساسية في ميكانيكا الموائع. حيث يصف تدفق الموائع اللزجة داخل الانابيب الدقيقة. لكي نشتق هذا القانون نستخدم من معادلات نافير ستوكس \\(\en{Navier Stokes Equations}) للحالة الخاصة بتدفق طبقي منتظم لسائل لزج داخل انبوب اسطواني افقي.\\
 \noindent
 \textbf{الفرضيات}
@@ -95,6 +95,17 @@ Y(s) = \frac{-g}{s^3} + \frac{v_0}{s^2} + \frac{y_0}{s}
 	\right)
 	= - \frac{\partial p}{\partial z} + \mu \nabla^2 v_z
 \end{equation}
+حيث
+\begin{itemize}
+	\item $\rho$: الكثافة (Density) للمائع، وهي الكتلة لكل وحدة حجم.
+	\item $v_z$: مركبة السرعة في اتجاه $z$.
+	\item $\vec{v}$: متجه السرعة الكلي للمائع، ويشمل $v_x$, $v_y$, و $v_z$.
+	\item ${\partial v_z}/{\partial t}$: التغير الزمني لمركبة السرعة $v_z$.
+	\item $\vec{v} \cdot \nabla v_z$: التسارع الناتج عن الحمل \LR{(Convective acceleration)}، أي تأثير التغير المكاني على السرعة.
+	\item $-{\partial p}/{\partial z}$: تدرج الضغط في الاتجاه $z$، أي القوة الناتجة عن الضغط.
+	\item $\mu$: اللزوجة الديناميكية \LR{(Dynamic viscosity)} للمائع.
+	\item $\nabla^2 v_z$: لابلاسيان المركبة $v_z$، أي المشتقة الثانية مكانياً، وتعبر عن قوى الاحتكاك الداخلي في المائع.
+\end{itemize}
 لكن بالفرضيات التي ذكرناها تصبح المعادلة \eqref{eq:generalnavierstokes}:
 \[
 \frac{dp }{dz} = \mu \cdot \frac{1}{r} \frac{d}{dr} \left(r \frac{dv_z}{dr}\right)
@@ -189,7 +200,7 @@ Q = \frac{\pi R^4 \Delta p}{8 \mu L}
 Q = \frac{\pi (0.001)^4}{8\times 3\times10^{-3}} \cdot \frac{100}{0.1} \approx 1.31 \, \mu L/s
 \]
 
-\section{الحركة التوافقية البسيطة \en{Simple Harmonic Motion}}
+\section[الحركة التوافقية البسيطة \en{Simple Harmonic Motion}]{الحركة التوافقية البسيطة \en{Simple Harmonic Motion} [8]}
 الحركة التوافقية البسيطة هي نوع من الحركة التبذبية حيث يتحرك الجسم ذهاباً و اياباً حول موضع اتزان ، وتكون القوة المؤثرة عليه متناسبة طردياً مع الازاحة من موضع الاتزان ، لكنها تعاكسها في الاتجاه ، اي  ان القوة المؤثرة عليه تحقق العلاقة 
 \[
 F = - k x

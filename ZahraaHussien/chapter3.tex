@@ -1,15 +1,18 @@
 \chapter{مؤثر لوباس من نوع مجموع - تكامل}
-\begin{note}
-	\[
-	\int_{0}^{\infty} p_{n, k}(t) t^m \, dt = \frac{(k+m)(k-m-2)!}{k!(n-1)!}
-	\]
-\end{note}
+
 \section{تعريف المؤثر $B_n(f(t); x)$}
 متتابعة من المؤثرات الخطية الموجبة من الفضاء $C_h[0, \infty)$ الى نفسه كما يلي
 \[
 B_n(f(t); x) = (n-1)\sum_{k=0}^{\infty} p_{n, k}(x) \int_{0}^{\infty} p_{n, k}(t) f\left(\frac{nt + \alpha}{n + \beta}\right) \, dt
 \]
 حيث $0 \leq \alpha\leq \beta$
+
+\begin{note}
+	\[
+	\int_{0}^{\infty} p_{n, k}(t) t^m \, dt = \frac{(k+m)(k-m-2)!}{k!(n-1)!}
+	\]
+\end{note}
+
 \subsection*{اثبات ان المؤثر $B_n(f(t); x)$ خطي وموجب}
 1) نثبت ان المؤثر $B_n(f(t); x)$ هو خطي
 \begin{align*}
@@ -134,8 +137,8 @@ B_n(f(t); x) \geq 0 \iff f(t) \geq 0
 
 \section{مبرهنة كورفكن للمؤثر $\tB_n(f(t); x)$}
 لتكن $\tB_n(f(t); x)$ متتابعة من المؤثرات الخطية الموجبة \en{\textit{L.P.O}} تحقق الشروط التالية
-\begin{english}
-	\begin{enumerate}[label=\arabic*)]
+\setLR
+	\begin{enumerate}[label=(\arabic*]
 		\item $\tB_n(1; x) = 1\to 1$
 		\item $\tB_n(t; x) = \dfrac{(n+2)x+2}{n-2}\to x$
 		\item $\tB_n(t^2; x) = \dfrac{(n+2)(n+3)x^2 + 6(n+2)x + 6}{(n-3)(n-2)}\to x^2$
@@ -143,7 +146,8 @@ B_n(f(t); x) \geq 0 \iff f(t) \geq 0
 		\Rightarrow \tB(f(t); x) \to f(x)\quad \text{as}\quad n \to \infty
 		\]
 	\end{enumerate}
-\end{english}
+
+\setRL
 \noindent
 \textbf{البرهان}
 \begin{align*}

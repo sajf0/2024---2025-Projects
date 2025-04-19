@@ -4,11 +4,11 @@
 \usepackage{setspace, float}
 \setstretch{1.2}
 \usepackage{tikz}
-\usepackage{subcaption}
+\usepackage{subcaption, tasks}
 
-\usepackage{amsmath, amssymb, amsthm, nicematrix}
+\usepackage{amsmath, amssymb, amsthm, nicematrix, pst-node}
 
-\usepackage{polyglossia}
+\usepackage{polyglossia, quran}
 \setdefaultlanguage[numerals=maghrib,locale=algeria]{arabic} % locale=mashriq, libya, algeria, tunisia, morocco, or mauritania  for names of months in \date 
 \setotherlanguage{english}
 \newfontfamily\arabicfont[Script=Arabic]{Amiri}
@@ -34,7 +34,15 @@
 \DeclareMathSymbol{8}{\mathalpha}{operators}{`8}
 \DeclareMathSymbol{9}{\mathalpha}{operators}{`9}
 
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\LL}{\mathcal{L}}
+
 \usetheme{Warsaw}
+\setbeamertemplate{bibliography item}{\insertbiblabel}
 %\usecolortheme{crane}
 
 % for RTL liste
